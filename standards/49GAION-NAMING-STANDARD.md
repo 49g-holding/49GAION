@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v1.0.0` · approved by Iman Tajik (Founder).** Part of the 49GAION Standard.
+**Version `v1.1.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -13,7 +13,7 @@
 ### R1. 49GAION is the framework; `[ORG]AION` is its product
 - `49GAION` is the organisation design framework, written `49GAION`, never "AION" alone. AION stands for AI Operating Nexus.
 - 49GAION documents and capabilities are "49GAION [Full Name]" ("49GAION Standard", "49GAION Operating Protocol", "49GAION Self-Improvement"). **They take no code.** "49GAION-SL" is wrong.
-- The product of 49GAION is `[ORG]AION`, one per organisation, shown as "`<Brand>` AION, Powered by 49GAION" (for example "Nike AION, Powered by 49GAION").
+- The product of 49GAION is `[ORG]AION`, one per organisation, shown as "`<Brand>` AION, Powered by 49GAION" (for example "Ten AION, Powered by 49GAION").
 - 49GAION is the framework itself, not an `[ORG]AION`.
 
 ### R2. AIOCs: `[ORG]AIOC-[INITIALS]`
@@ -40,7 +40,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version is `v1.0.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version is `v1.1.0`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -70,6 +70,13 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 2. **Initials of the unit's own name.** "AI" appears in a code only when it is part of the unit's name.
 3. **No hard-coded `49`.** Central texts never use `49` as a code prefix; they write `[ORG]`.
 4. **HOAC.** The 49GAION Human Oversight & Accountability Centre has the code family `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
+
+### R14. A unit's place is a field, never part of its code
+1. Every unit, AIOC or HOAC, keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the unit moves.
+2. Its place is the `parent` field of its card and its register entry: the code of the unit that holds it, or `none` at the top of the organisation.
+3. Moving a unit changes its `parent` field, never its code. A subscope (R2) names a specialisation, never a parent.
+4. A change of `parent` changes the unit's line of authority, so it needs the approval of the human seat over that unit; `[ORG]AIOC-OCO` cannot make it alone (Standard §1.7, item 8).
+5. Where a HOAC type is held by more than one seat, each seat's code adds the initials of the seat's name: `[ORG]HOAC-ACS-SL`.
 
 ## 3. Capability names
 
