@@ -12,3 +12,4 @@ for f in $files; do
 done
 [ $fail -eq 0 ] && echo "stale-labels: clean ($want)"
 exit $fail
+# test r1011
