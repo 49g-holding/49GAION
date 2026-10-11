@@ -150,7 +150,7 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 6. **Human ports.** The HU ports and the stop door of a unit held inside an AIOC never pass through that AIOC or any AI (§6.1).
 7. **Card and blueprint.** Every unit, at every depth, has its own card and its own blueprint. A parent's blueprint lists its inner units by link, never by copy.
 8. **Names and moves.** Every unit keeps one fixed code wherever it sits; moving it changes only its `parent` field (Naming Standard R14). A change of parent changes the unit's line of authority, so it needs the approval of the human seat over that unit; OCO cannot make it alone.
-9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff of a composite AIOC is the door to its inner units.
+9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff of a composite AIOC is the door for AI work to its inner units; the HU ports and stop doors of inner units never pass through it.
 
 ## 2. Self-Improvement
 
