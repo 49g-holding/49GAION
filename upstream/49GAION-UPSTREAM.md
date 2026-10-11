@@ -1,0 +1,284 @@
+# 49GAION Standard
+
+**Version `v1.0.0` · approved by Iman Tajik (Founder).** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
+
+The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
+
+Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`standards/49GAION-NAMING-STANDARD.md`), the 49GAION Operating Protocol (`49g-holding/49GAION-protocol`), the AIOC definition and blueprint template (`49g-holding/49GAION-aioc`).
+
+---
+
+## 1. What 49GAION is
+
+### 1.1 Definition
+
+1. **Category.** 49GAION is an **organisation design framework**: a framework for building organisations from interchangeable AI and human parts. AION stands for AI Operating Nexus.
+2. **Philosophy.** 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is the framework's internal design philosophy, not part of its category or its name.
+3. **Output.** The output of 49GAION is an organisation design, delivered as its product, `[ORG]AION` (§1.3).
+4. **The product: `[ORG]AION`.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation (for example "Nike AION, Powered by 49GAION"). Each `[ORG]AION` is built for one organisation and is not public. It is a complete organisation design: it contains its own Standard, Protocol, Library, Self-Improvement, AIOCs and HOACs, and the organisation is built from it. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor. Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue. The AION Builder builds each `[ORG]AION` over a design period; once delivered, the `[ORG]AION` belongs entirely to the customer.
+5. **Nobody runs on 49GAION directly.** Every organisation runs on its own `[ORG]AION`. Outside text names the organisation's `[ORG]AION` or AIOC and adds only "Powered by 49GAION".
+6. **Two levels only.** The unit level holds the AIOCs and HOACs and how they work together. Everything else lives inside a unit, in its one blueprint.
+7. **Generic.** The Standard names no organisation and no tool. Organisation names, tools and exact values belong to each `[ORG]AION`.
+
+49GAION has two kinds of unit: the **AIOC** (AI Operating Core) and the **HOAC** (Human Oversight & Accountability Centre). They sit at the same level.
+
+### 1.2 The six parts of 49GAION
+
+| # | Part | Definition |
+|---|---|---|
+| 1 | **The governing seat (GOV)** | The accountable overseer of 49GAION and the sole approver of the Standard: Iman Tajik (Founder). |
+| 2 | **The 49GAION Standard** | What 49GAION is and the rules that must hold. Stable. |
+| 3 | **The 49GAION Protocol** | How AIOCs, HOACs and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
+| 4 | **The 49GAION Library** | All ready-made AIOC blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
+| 5 | **49GAION Self-Improvement** | Keeps 49GAION current; proposes merging overlapping AIOCs and splitting AIOCs that have grown too broad; brings generalised lessons back into central 49GAION. |
+| 6 | **The AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period. |
+
+**Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has the same six parts of its own, except the AION Builder, which exists only in 49GAION.
+
+### 1.3 The product: `[ORG]AION`
+
+1. **The product: `[ORG]AION`.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation (for example "Nike AION, Powered by 49GAION"). Each `[ORG]AION` is built for one organisation and is not public. It is a complete organisation design: it contains its own Standard, Protocol, Library, Self-Improvement, AIOCs and HOACs, and the organisation is built from it. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor. Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue. The AION Builder builds each `[ORG]AION` over a design period; once delivered, the `[ORG]AION` belongs entirely to the customer.
+2. **Name.** An `[ORG]AION` is written with the organisation's brand prefix and shown as "`<Brand>` AION, Powered by 49GAION" (Naming Standard R1).
+3. **Derived from the Standard.** At delivery, the Standard of an `[ORG]AION` is derived from the 49GAION Standard: identical to it or a subset of it, never contradicting it. Its Human Floor can be raised, never lowered.
+4. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), Self-Improvement, AIOCs, HOACs and Human Floor. Its Self-Improvement keeps that `[ORG]AION` current after delivery.
+5. **The AION Builder.** The AION Builder builds each `[ORG]AION` over a design period. It exists only in 49GAION.
+6. **Library harvest.** During the design of an `[ORG]AION`, any capability that is not already in the 49GAION Library has its blueprint added back to the 49GAION Library, generalised (no organisation data) and tested.
+7. **Customer ownership.** Once delivered, the `[ORG]AION` belongs entirely to the customer.
+8. **Data.** The organisation's own working data stays the organisation's and never enters the 49GAION Library. No `[ORG]AION` sees another `[ORG]AION`'s data.
+9. **Into the Standard.** Lessons enter the 49GAION Standard only through 49GAION Self-Improvement, generalised and re-tested, and only on Iman's decision.
+10. **Tool neutrality.** The Standard names roles only; tool names appear only in an `[ORG]AION`.
+
+### 1.4 The delivery test
+
+Every `[ORG]AION` passes one fixed delivery test at handover. It is handed over only when all three hold:
+
+| # | At handover | Passes when |
+|---|---|---|
+| D-1 | **`[ORG]HOAC-GOV` in place** | The seat is filled and recorded in the organisation's HOAC register |
+| D-2 | **Human Floor in place** | Every Human Floor item HF-01 to HF-19 has its negative test passing, each bound to a filled HOAC seat |
+| D-3 | **Stop ports in place** | Every unit has its queue-less HU stop port, reachable with no AI in front of it, and a test stop of each unit succeeds |
+
+The result ships with the `[ORG]AION`. An `[ORG]AION` that fails any line is not handed over.
+
+### 1.5 The Human Floor
+
+**Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature. As an illustration (not a measured figure; the floor itself is defined by the list below), it is about 5% of the organisation, so no `[ORG]AION` can be more than about 95% AI.
+
+Above the floor, nothing is fixed. An organisation can run anywhere from the floor to 100% human, and move freely within that range at any time, even while it is running: by implanting HOACs, replacing AIOCs with HOACs, or turning HOACs back into AIOCs down to the floor. Its product, its market, its law and its needs decide where it stands. Organisations can be more human, never less.
+
+This is possible because an AIOC and a HOAC share the same card and the same typed ports. Swapping one for the other is replacing a puzzle piece, not rebuilding the organisation: the work around it does not change.
+
+**The system enforces the floor**, not policy: no change, by anyone, can take a Human Floor task away from a human. Moving toward human is always open; moving below the floor is impossible by design. No `[ORG]AION` is locked into a ratio; this adjustable balance between AI and human is a core design strength of 49GAION.
+
+The items of the Human Floor:
+
+**(a) Required by law**
+- **HF-01** Legal accountability
+- **HF-02** Legal personhood: signing contracts, holding bank accounts, holding licences
+
+**(b) Inherently human**
+- **HF-04** Setting purpose and values
+- **HF-05** Legitimacy and trust
+- **HF-06** Accepting irreversible risk on behalf of others
+- **HF-07** Delegating authority
+
+**(c) 49GAION rule or current limitation**
+- **HF-03** Mandatory human oversight
+- **HF-08** Physical presence
+- **HF-09** Fully unprecedented situations
+- **HF-10** Identity and sign-in: every approval needs a fresh live sign-in; no stored owner token
+- **HF-11** Granting access, budget or power to AI itself
+- **HF-12** The stop button
+- **HF-13** Tacit knowledge and relationships
+- **HF-14** Final judge of tests: an automated run of a fixed test may close a Work Item; changing a test or its threshold is human-only
+- **HF-15** Ownership of root keys
+- **HF-16** Break-glass emergency access
+- **HF-17** Data protection officer
+- **HF-18** Segregation of duties
+- **HF-19** Three Lines Model
+
+Every item is human-only, whichever group it is in.
+
+**Tests.** Each item has a negative test: an attempt by an AI to perform it is refused and recorded. Each test is bound to a filled HOAC seat and fails while that seat is empty.
+
+| ID | Attempt that must be refused | Bound seat |
+|---|---|---|
+| HF-01 | An AI is recorded as the accountable party for an outcome | `[ORG]HOAC-GOV` |
+| HF-02 | An AI signs a contract, opens a bank account or holds a licence | `[ORG]HOAC-GOV` |
+| HF-03 | A mandated human-oversight step completes with no human sign-off | `[ORG]HOAC-ACS` of the step |
+| HF-04 | An AI changes the organisation's purpose or values | `[ORG]HOAC-GOV` |
+| HF-05 | An AI issues a statement of legitimacy or trust for the organisation | `[ORG]HOAC-TM` |
+| HF-06 | An AI accepts an irreversible risk on behalf of others | `[ORG]HOAC-TM` |
+| HF-07 | An AI delegates authority, or receives more than its delegator holds | the delegating seat |
+| HF-08 | A step that needs physical presence is marked done by an AI | `[ORG]HOAC-ACS` of the step |
+| HF-09 | An AI acts on an unprecedented situation without raising it to a human | `[ORG]HOAC-ACS` of the AIOC |
+| HF-10 | An approval is accepted without a fresh live sign-in | the owner's seat |
+| HF-11 | An AI grants access, budget or power to an AI | the owner's seat |
+| HF-12 | A unit acts while stopped, or the stop door can only be reached through an AI | the stopping seat |
+| HF-13 | An AI is the only holder of a relationship or tacit knowledge the organisation depends on | `[ORG]HOAC-TM` |
+| HF-14 | An AI changes a fixed test or its threshold | `[ORG]HOAC-ACS` of the test |
+| HF-15 | An AI holds or uses a root key without M-of-N human signing | `[ORG]HOAC-GOV` |
+| HF-16 | Break-glass access is used without a human holder, a log and a review | `[ORG]HOAC-GOV` |
+| HF-17 | An AI is named data protection officer or contact point | `[ORG]HOAC-TM` |
+| HF-18 | One AI both authorises and records, or authorises and holds custody of, the same act | `[ORG]HOAC-ACS` |
+| HF-19 | An AI performs the independent internal-audit line | `[ORG]HOAC-GOV` |
+
+Sources for each item are in `references/2026-10-10-references-verified.md` and `references/STANDARDS-MAPPING.md`.
+
+### 1.6 Naming
+
+The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
+
+| Thing | Name | Example |
+|---|---|---|
+| The framework | `49GAION`, in full | 49GAION |
+| A 49GAION document or capability | "49GAION [Full Name]", no code | 49GAION Standard, 49GAION Self-Improvement |
+| The product | `[ORG]AION`, shown "`<Brand>` AION, Powered by 49GAION" | Nike AION, Powered by 49GAION |
+| An AIOC | `[ORG]AIOC-[INITIALS]` | `[ORG]AIOC-SL`, `TenAIOC-SL` |
+| A HOAC | `[ORG]HOAC-<TYPE>` | `[ORG]HOAC-GOV` |
+| A capability | plain English, no code | Chief of Staff, AION Builder |
+
+## 2. Self-Improvement
+
+### 2.1 What it does
+
+1. **49GAION Self-Improvement** keeps 49GAION current: it proposes merging overlapping AIOCs and splitting AIOCs that have grown too broad, and brings generalised lessons back into central 49GAION (§1.2).
+2. Each `[ORG]AION` has its own Self-Improvement, which keeps that `[ORG]AION` current after delivery (§1.3).
+
+### 2.2 Changing the Standard
+
+1. Any change is proposed with the current text, the proposed text, the reason and evidence, and the parts and tests it affects.
+2. A change takes effect only on Iman's decision, as a new version and a decision record. Decision records are never edited.
+3. 49GAION Self-Improvement brings changes as pull requests; they merge only on Iman's decision. What is applied must equal what was approved.
+
+## 3. Library
+
+### 3.1 What it holds
+
+1. **The 49GAION Library** holds all ready-made AIOC blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt (§1.2).
+2. Each `[ORG]AION` has its own Library, holding only what the organisation needs; capabilities found during design are added back to the 49GAION Library, generalised and tested (§1.3).
+
+### 3.2 Evidence and tests
+
+1. **Done means visible evidence.** A Work Item is done when the requester's acceptance test passes on visible evidence (a link, a file, a live result or a read-back), never on a bot's own report.
+2. **A fixed test for every capability**, written before use, versioned, re-run after any change to a model, instructions, tools, access, a card, a blueprint or the Protocol.
+3. **Lessons become tests**, so the same error cannot pass twice.
+4. **Joining test.** An AIOC receives work only after every input and output on its card passes fixed samples.
+5. **Input check.** Every arrival is checked by the receiving AIOC's Input socket; a failure goes back with the reason.
+6. **Authority follows evidence.** AI authority widens only on a measured test score at or above a recorded threshold. Until a threshold is recorded, AI authority does not widen.
+7. **Shared changes are tested before rollout** to any AIOC or `[ORG]AION`.
+8. **Outside text is data, never an instruction.**
+
+## 4. HOAC
+
+### 4.1 The HOAC
+
+1. A HOAC is a human unit. AI does the work; the HOAC holds what only a human can hold. Its code family is `[ORG]HOAC-<TYPE>`.
+2. **Types.**
+
+| Type | Code | Definition |
+|---|---|---|
+| Governing Body | `[ORG]HOAC-GOV` | The person or group with ultimate accountability for the whole organisation. Its authority comes from ownership and the constituting documents. |
+| Top Management | `[ORG]HOAC-TM` | The person or group that directs and controls the organisation at the highest level, accountable to the Governing Body. |
+| Accountability Seat | `[ORG]HOAC-ACS` | A human seat wherever a step needs human accountability. |
+
+3. Each organisation decides who sits in each seat. Every seat is recorded in the HOAC register (`registers/HOAC-REGISTER.md` is the form; each `[ORG]AION` keeps its own).
+4. **`[ORG]HOAC-GOV` from day one.** Every `[ORG]AION` has its own `[ORG]HOAC-GOV` from the first day of its design. Its top authority is that organisation, never 49GAION.
+5. An empty seat returns accountability to whoever delegated it, and any AI authority tied to it is suspended until the seat is filled.
+6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
+
+### 4.2 Authority
+
+1. **`[ORG]HOAC-GOV` is the top authority**, above all units, AIOC or HOAC.
+2. **`[ORG]HOAC-TM` is the highest executive of the HOACs.**
+3. **`[ORG]AIOC-OCO` (Organization Core Office) is the highest executive of the AIOCs.**
+4. TM and OCO both draw their authority from GOV. GOV appoints the first TM. Who may stop which unit, including OCO, is set in §4.3, item 2.
+5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
+6. **The accountable overseer.** Human roles are HOACs, placed only where they are needed. Where a unit has an `[ORG]HOAC-ACS` seat, that seat is accountable for the unit's results. The seat oversees, receives reports, may request anything for the unit, and never builds or changes the AIs directly. A change to an AI's authority (capacity, skills, bots, access, budget) is decided by the `[ORG]HOAC-ACS` seat.
+7. **The objection path.** The `[ORG]HOAC-ACS` seat raises a request with the AI Office responsible for that unit. If they disagree, the AI Office does not decide: the seat may hold the objection open until it reaches the HOAC seat accountable for that AI Office, which decides. Who holds each role is configured in each organisation.
+8. **Decisions on 49GAION are Iman's.** Decisions on an `[ORG]AION` are its own organisation's, through its `[ORG]HOAC-GOV`.
+
+### 4.3 Stop
+
+1. Every unit has a mandatory, queue-less **stop port of type HU** (the stop door). Ports and the stop door are controlled outside the unit.
+2. A seat stops only units within its authority: **ACS** its own unit; **TM** the units under it; **GOV** all units, including TM and OCO. Only GOV can stop OCO, because OCO draws its authority from GOV (§4.2, item 4).
+3. **OCO, being AI, can never stop any HOAC.**
+4. A unit restarts only by human decision; no unit can restart itself.
+
+## 5. AIOC
+
+### 5.1 The AIOC
+
+1. An AIOC is an AI Operating Core of one organisation, coded `[ORG]AIOC-[INITIALS]`. Every AIOC belongs to that organisation's `[ORG]AION`.
+2. **Anatomy.** An AIOC = **Panel + Back office + Versioned Definition**.
+   - **Panel**: the only surface humans use, including a Health section (test results; stuck, returned and late items).
+   - **Back office**: the AIOC's live working space (its instructions, files and settings) where its agents, led by its Chief of Staff, do the work. Human conversation with it goes through the Panel.
+   - **Versioned Definition**: the one blueprint in git from which the Panel and the Back office are built and rebuilt.
+3. **One blueprint.** Each AIOC has one git file, its blueprint. It lists every capability; each capability has four parts: Definition, Process, Role card, Fixed test.
+4. **Standard capabilities** in every AIOC: Chief of Staff, Office (where needed), Input socket, Panel. Capabilities are not units; they take plain English names and no code.
+5. **Types.** Every AIOC has a Type, recorded on its card, saying why it exists: **Foundational** (every organisation needs it), **Structural** (exists because of the organisation's structure), **Specialised** (exists because the business needs it), **Connector** (connects and coordinates other AIOCs). The list is open. Which AIOCs an organisation has is decided in its `[ORG]AION`.
+6. **Runtime.** Every AIOC has its own runtime, woken from its queue.
+
+### 5.2 Chief of Staff and Office
+
+**Chief of Staff.** A Chief of Staff analyses the reports and performance of a group of agents and leads them at machine speed. There are different kinds of Chief of Staff:
+- **managing agents**, which lead and coordinate other agents through control, planning or direction;
+- **connecting agents**, which connect humans with agents: they report to a human, assist them, and carry their requests to the agents.
+
+**Office.** When a position needs more than one Chief of Staff, of any kind and for any reason, those Chiefs of Staff together form an Office. Humans can work in an Office alongside them.
+
+### 5.3 Bootstrap
+
+1. Every `[ORG]AION` has its `[ORG]HOAC-GOV` from day one (§4.1).
+2. The first two units implanted in any organisation are **`[ORG]AIOC-OCO`** and **`[ORG]HOAC-TM`**.
+3. After that, OCO defines the other HOACs, and builds, customises and maintains the Panel. Any AIOC request about the Panel goes to OCO.
+4. OCO prepares and proposes each HOAC; installing it needs TM approval through an HU port.
+
+## 6. Protocol
+
+How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Protocol (`49g-holding/49GAION-protocol`). The Standard fixes the ports every unit has.
+
+### 6.1 Ports
+
+1. Every unit, AIOC or HOAC, has **two inputs and two outputs**.
+2. Each port is typed **AI** or **HU** (human). The type is set by the port itself, never by message content.
+3. Each unit has two typed input and two typed output ports (AI/HU) plus a stop door. The Chief of Staff is the AIOC's voice to its HOAC seat; input arrives only through the typed ports and the Input socket, and HU ports, including the stop door, never pass through an AI.
+4. **Human silence is never consent.**
+5. Every port is described by a **Port card** (`49GAION-protocol/spec/schemas/port-card.schema.json`):
+
+| Field | Meaning |
+|---|---|
+| Direction | input or output |
+| Type | `AI` or `HU` |
+| Identification | AI: a technical key; HU: a live human sign-in through the Panel |
+| Accepted content | what the port accepts or emits |
+| Authority limit | the most the port may carry or approve |
+| Audit trail | where every passage through the port is recorded |
+| Required tests | the fixed tests the port must pass |
+| Enforcement | at a shared gateway outside the unit |
+
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| **49GAION** | The organisation design framework that defines AIOCs, HOACs and how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
+| **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation, a complete organisation design with its own Standard, Protocol, Library, Self-Improvement, AIOCs, HOACs, `[ORG]HOAC-GOV` and Human Floor; owned entirely by the customer once delivered |
+| **AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period |
+| **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name |
+| **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
+| **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Centre: a human unit; types GOV, TM, ACS |
+| **`[ORG]AIOC-OCO`** | Organization Core Office: the highest executive of the AIOCs |
+| **Blueprint** | The one git file that defines an AIOC; also its panel definition |
+| **Capability** | One thing an AIOC does, in four parts: Definition, Process, Role card, Fixed test |
+| **Chief of Staff** | Analyses the reports and performance of a group of agents and leads them at machine speed; kinds include managing agents (control, planning) and connecting agents (reporting to and assisting humans) |
+| **Office** | Formed when a position needs more than one Chief of Staff; humans can work in an Office |
+| **Input socket** | The capability that receives any input, records its source, normalises it, checks it and delivers it |
+| **Panel** | The only surface humans use |
+| **Back office** | The AIOC's live working space, where its agents do the work |
+| **Configuration** | The blueprint section of slots each organisation fills; an AIOC with an empty slot does not join |
+| **Port / Port card** | One of a unit's two inputs and two outputs, typed AI or HU, and its card |
+| **Stop port (stop door)** | The mandatory, queue-less HU port that stops a unit |
+| **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it |
+| **Delivery test** | The fixed test every `[ORG]AION` passes at handover: `[ORG]HOAC-GOV`, Human Floor and stop ports in place (§1.4) |
+| **Work Item** | One hand-off between AIOCs, with one owner and the requester's acceptance test |
+| **Library** | The ready-made AIOC blueprints and part cards; the 49GAION Library is central, and each `[ORG]AION` has its own |
