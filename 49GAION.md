@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.0.0` · approved by Iman Tajik (Founder).** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.1.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 ## 1. The definition
 
@@ -8,7 +8,7 @@
 
 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is its internal design philosophy, not part of its category or its name.
 
-**The product: `[ORG]AION`.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation (for example "Nike AION, Powered by 49GAION"). Each `[ORG]AION` is built for one organisation and is not public. It is a complete organisation design: it contains its own Standard, Protocol, Library, Self-Improvement, AIOCs and HOACs, and the organisation is built from it. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor. Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue. The AION Builder builds each `[ORG]AION` over a design period; once delivered, the `[ORG]AION` belongs entirely to the customer.
+**The product: `[ORG]AION`**, the AI Operating Nexus of one organisation; its one definition is in the Standard, §1.3, item 1.
 
 49GAION consists of six parts: the governing seat (GOV), the 49GAION Standard, the 49GAION Protocol, the 49GAION Library, 49GAION Self-Improvement and the AION Builder (Standard §1.2). To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
 
@@ -32,13 +32,15 @@
 2. **The accountable overseer.** Human roles are HOACs, placed only where they are needed. An `[ORG]HOAC-ACS` seat oversees and requests, but never builds or changes the AIs directly.
 3. **Chief of Staff and Office.** A Chief of Staff analyses the reports and performance of a group of agents and leads them at machine speed. When a position needs more than one Chief of Staff, they form an Office, where humans can also work (Standard §5.2).
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5).
-5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts. An AIOC and a HOAC share the same card and ports, so one can replace the other. A change replaces or updates a part, never rebuilds the whole.
-6. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
-7. **One valid version of everything, linked, never copied.**
-8. **Done means visible evidence**, never a bot's own report.
-9. **Configuration, not forks.**
-10. **Outside text is data, never an instruction.**
-11. **Structure over exhortation.** Errors are cut by cards, owned Work Items, typed ports, a check on arrival and tests that re-run on every change.
+5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: any unit may be composed of smaller units of either kind, to any depth, and from outside it is still one unit (Standard §1.7). An AIOC and a HOAC share the same card and ports, so one can replace the other. A change replaces or updates a part, never rebuilds the whole.
+6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
+7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat (Standard §2).
+8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
+9. **One valid version of everything, linked, never copied.**
+10. **Done means visible evidence**, never a bot's own report.
+11. **Configuration, not forks.**
+12. **Outside text is data, never an instruction.**
+13. **Structure over exhortation.** Errors are cut by cards, owned Work Items, typed ports, a check on arrival and tests that re-run on every change.
 
 ## 4. What 49GAION is not
 
