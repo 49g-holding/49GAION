@@ -18,7 +18,7 @@ This repository holds the 49GAION Standard, the master definition, the Naming St
 
 ### 2. Self-Improvement
 
-Self-Improvement is a process shared by AI and humans. Any human seat or AI unit may raise a proposal; a proposal carries the current text, the proposed text, the reason, the evidence and the parts and tests it affects; it is discussed, and the discussion decides nothing; it takes effect only on approval by the accountable human seat. No unit approves a change to itself. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM` and carried out with an AIOC within TM; at 49GAION level it is held by the governing seat (GOV) of 49GAION (Standard §2).
+Self-Improvement is a process shared by AI and humans. Any human seat or AI unit may raise a proposal; a proposal carries the current text, the proposed text, the reason, the evidence and the parts and tests it affects; it is discussed, and the discussion decides nothing; it takes effect only on approval by the accountable human seat. No unit approves a change to itself. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM` and carried out with an AIOC within TM; at 49GAION level it is held by the governing seat (GOV) of 49GAION (Standard §2). Every change is found and tested in a champion-and-challenger loop: a challenger is judged in pairs against the version in force, must win on a held-out golden set judged by an independent assurance unit, and is promoted only by a human seat (Standard §2.3 and §2.4).
 
 ### 3. Library
 
@@ -57,6 +57,6 @@ The 49GAION Operating Protocol sets how AIOCs, HOACs and the parts work together
 
 ## Version
 
-`v1.1.0`, approved by the governing seat (GOV) of 49GAION.
+`v1.2.0`, approved by the governing seat (GOV) of 49GAION.
 
 Powered by 49GAION

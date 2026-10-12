@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.1.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.2.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 ## 1. The definition
 
@@ -34,7 +34,7 @@
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5).
 5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: any unit may be composed of smaller units of either kind, to any depth, and from outside it is still one unit (Standard §1.7). An AIOC and a HOAC share the same card and ports, so one can replace the other. A change replaces or updates a part, never rebuilds the whole.
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
-7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat (Standard §2).
+7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
 9. **One valid version of everything, linked, never copied.**
 10. **Done means visible evidence**, never a bot's own report.
