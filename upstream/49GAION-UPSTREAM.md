@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.1.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
+**Version `v1.2.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -179,6 +179,33 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 1. 49GAION Self-Improvement brings changes to 49GAION as pull requests; they merge only on the decision of the governing seat of 49GAION.
 2. No unit approves a change to itself. A change to `[ORG]AIOC-OCO` is proposed, discussed and approved like any other, and OCO only carries it out once approved.
 
+### 2.3 The improvement loop
+
+How a change is found, tested and promoted. The loop applies to every process, blueprint and Protocol value of an `[ORG]AION`, to any move of a work unit between human and AI, and to 49GAION itself.
+
+1. **The process record.** Every process that can be improved is written down in four parts: the **role** of each unit or position in it; its **instruction**; its **contract**, meaning what each step must hand over and the checks it must have passed before handing over; and its **order**, meaning the sequence of hand-offs, including where work returns to an earlier step. Contracts and order are carried on the cards and in the Work Items.
+2. **The champion.** For every process, the version in force is its champion. It stays in force until a challenger beats it.
+3. **The challenger.** A proposal (§2.1) to change a process is written as a challenger: a difference to the champion. Contracts and order are changed first, roles and instructions last, because most of what a process needs to know lives in what is handed over, with what checks, and in what order.
+4. **Shadow run.** The challenger runs beside the champion on the same cases, past cases replayed or live cases in shadow, with no effect on real work.
+5. **Pairwise judgment.** A judge, separate from the proposer, compares the challenger's result with the champion's, case by case, and records which is better and why. Results are compared in pairs, never by a single absolute score, and each pair is judged with the two results shown in both orders.
+6. **Iteration.** The Self-Improvement AIOC (§2.1, item 6) revises the challenger using the whole history of judgments, for a bounded number of rounds set in the `[ORG]AION`.
+7. **The golden set.** Every process has a golden set: real past cases, frozen and held out, never used to tune or to judge rounds. The surviving challenger is run on it and judged blind by the assurance unit (item 9).
+8. **Promotion.** A challenger goes to the human seat that approves the change (§2.2) only when it wins on the golden set by the margin set in the `[ORG]AION`, passes every fixed test and every Human Floor test, and costs no more per case unless that seat accepts the cost. On approval it becomes the champion, as a new version; the former champion is kept for rollback.
+9. **The assurance unit.** An assurance unit, an AIOC independent of the proposer and the judge, measures every challenger that reaches the golden set. It runs on a different model provider where one is available, and its `[ORG]HOAC-ACS` seat reviews a sample of its verdicts. Its verdicts measure; they are never fed back into the rounds they measure. Any change to it, its judges or its access to data needs the approval of `[ORG]HOAC-TM`, as for the Self-Improvement AIOC. No unit grades its own work, and `[ORG]AIOC-OCO` never grades the AIOCs it builds.
+10. **Dwell and rollback.** After a promotion, the process is not changed again for a dwell time set in the `[ORG]AION`, except on an incident. Any human seat accountable for the process may order a rollback at once.
+11. **Distillation.** At set intervals, the best runs of each champion are written into its defaults: roles, instructions and contracts absorb what worked, so the process no longer needs special instructions; the best cases are kept as worked examples; every failure seen becomes a fixed test (§3.2, item 3). Generalised lessons go to the 49GAION Library (§1.3, item 7).
+12. **The proposer.** The proposer is the bottleneck of the loop: good judgments are wasted on a proposer that cannot use them. The strongest available model writes and revises challengers; a lighter model may judge early rounds, with the assurance unit confirming.
+13. **Measure.** Progress is measured as quality per unit of cost, against the champion, on the golden set.
+
+### 2.4 Safeguards of the loop
+
+1. **Shared blind spots.** When the same kind of model executes, proposes and judges, one flaw can be produced, accepted as an improvement and built into the next version. The assurance unit, the held-out golden set and human review exist to break that circle; the loop may not remove or weaken any of them.
+2. **Noisy search.** Strong rounds can be followed by sharp regressions. The champion is therefore kept until beaten, a win needs a margin, each case is run more than once, and every promotion has a dwell time and a rollback.
+3. **Judge drift.** At every distillation, agreement between the judge and the assurance unit is measured. If it falls below the level set in the `[ORG]AION`, promotions stop until a human seat has reviewed the judge.
+4. **Tuning to the test.** A human seat chooses and rotates the golden set on a schedule; the loop never chooses its own golden set.
+5. **Authority.** The loop never widens AI authority by itself. A move of a work unit toward AI is a challenger like any other, and also needs the evidence required by §3.2, item 6, and the approval set in §2.2. No AI approves a promotion, changes a fixed test or its threshold, or grants itself access (HF-11, HF-14).
+6. **Basis.** The loop follows published research on recursive self-improvement through multi-agent self-supervision. The sources, and what was and was not taken from them, are in `references/2026-10-12-references-self-improvement.md`.
+
 ## 3. Library
 
 ### 3.1 What it holds
@@ -304,6 +331,10 @@ How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Pro
 | **Composite unit** | A unit that holds smaller units of either kind; seen from outside, one unit (§1.7) |
 | **Parent** | The unit that holds another; recorded in the `parent` field of the inner unit's card and register entry |
 | **Self-Improvement** | The process, shared by AI and humans, by which any seat or unit proposes a change, it is discussed, and a human seat approves it; held inside `[ORG]HOAC-TM`, and at 49GAION level by its governing seat (§2) |
+| **Champion** | The version of a process in force; it stays until a challenger beats it (§2.3) |
+| **Challenger** | A proposed change to a process, run in shadow and judged in pairs against the champion (§2.3) |
+| **Golden set** | Real past cases of a process, frozen and held out, on which a challenger must win before promotion (§2.3) |
+| **Assurance unit** | The independent AIOC that measures every challenger on the golden set and never steers the loop (§2.3) |
 | **Blueprint** | The one git file that defines a unit; for an AIOC, also its panel definition |
 | **Capability** | One thing an AIOC does, in four parts: Definition, Process, Role card, Fixed test |
 | **Chief of Staff** | Analyses the reports and performance of a group of agents and leads them at machine speed; kinds include managing agents (control, planning) and connecting agents (reporting to and assisting humans) |
