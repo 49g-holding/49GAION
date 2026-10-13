@@ -54,7 +54,11 @@ def add_row(d, n, status):
     (d / f"decisions/{n}-x.md").write_text(f"# {n}\n", encoding="utf-8")
 
 # Record numbers follow the tree under test, so the cases hold as records are added.
-_nums = [int(f.name[3:7]) for f in (HUB / "decisions").glob("DR-[0-9][0-9][0-9][0-9]*.md")]
+# The next number is derived as dr-frozen derives it: from the highest number in the base index
+# rows and record files (the base here is this tree's decisions/, i.e. main on a push run).
+_idx = (HUB / "decisions/README.md").read_text(encoding="utf-8")
+_nums = [int(n) for n in re.findall(r"^\| \[`DR-(\d{4})`\]", _idx, re.M)]
+_nums += [int(f.name[3:7]) for f in (HUB / "decisions").glob("DR-[0-9][0-9][0-9][0-9]*.md")]
 NEXT, SKIP, MISSING = (f"DR-{max(_nums) + k:04d}" for k in (1, 2, 4))
 
 dr_case("unchanged tree passes", lambda d: None)
@@ -74,6 +78,10 @@ dr_case("deleting an index row fails",
 dr_case("changing a row's date fails", lambda d: sub(idx(d), "| 2026-10-11 |", "| 2026-10-10 |"), "DR-INDEX-ROW-CHANGED")
 dr_case("changing a row's title fails", lambda d: sub(idx(d), "day zero", "day one"), "DR-INDEX-ROW-CHANGED")
 dr_case("new record skipping a number fails", lambda d: add_row(d, SKIP, "proposed"), "DR-NUMBER-SKIPPED")
+dr_case("new record skipping past an index-only number fails",
+        lambda d: add_row(d, SKIP, "proposed"), "DR-NUMBER-SKIPPED")
+dr_case("new record reusing the highest number fails",
+        lambda d: (d / f"decisions/DR-{max(_nums):04d}-another-subject.md").write_text(f"# DR-{max(_nums):04d}\n"), "DR-NUMBER-REUSED")
 dr_case("new record reusing a number fails", lambda d: (d / "decisions/DR-0005-another-subject.md").write_text("# DR-0005\n"), "DR-NUMBER-REUSED")
 dr_case("unreadable index fails closed", lambda d: idx(d).unlink(), "failing closed")
 
