@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
+**Version `v1.3.0` · proposed.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -249,6 +249,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
 7. **On the card.** The HOAC label is a field of the card of the Cell, Pod or AIOC that carries it. The card keeps its typed ports and its stop door (§6.1).
 8. **Superseded meaning.** HOAC formerly meant Human Oversight & Accountability Centre, a human unit beside the AIOC with a card of its own. That meaning is superseded (DR-0004) and is kept only to read the records written under it, which stay unchanged.
+9. **A label on a Pod or an AIOC.** When a HOAC label sits on a Pod or an AIOC, a human Cell inside it holds the label. If that Cell becomes empty or is filled by an AI, the label's powers are held, as for an empty seat (item 5).
 
 ### 4.2 Authority and the two hubs
 
@@ -275,10 +276,10 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 1. **One register.** Each `[ORG]AION` keeps one unit register of every AIOC, Pod and Cell, with its code, kind, type, HOAC label, parent, filler and status. The form is `registers/HOAC-REGISTER.md`.
 2. **Append-only.** Entries are never edited or deleted. A retired entry stays, marked retired, and its code is never reused. A change of filler and a change of parent are recorded events on the existing entry, never new parts.
-3. **Split write rights.** `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. Neither writes the other's.
+3. **Split write rights.** `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. Neither writes the other's. A register event whose decision type is on the Human Floor signature list (item 6), for example granting or widening access or changing a parent, is written only with the valid signature of that seat; `[ORG]AIOC-OCO` cannot write it alone.
 4. **Access follows the filled seat.** Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool: each Cell holds only its own.
 5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for. An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
-6. **The Human Floor signature list.** As part of the Human Floor (§1.5), the Standard keeps one plain machine-readable list of decision types that require a human seat's signature (`upstream/human-floor-signature-types.json`). An `[ORG]AION` may add types to its own copy; it never removes one. At the tool gateway, an action of a listed type runs only with a valid signature of a human seat, even in an AIOC that is 100% AI. If that seat is empty or retired, the action is held, never skipped. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9).
+6. **The Human Floor signature list.** As part of the Human Floor (§1.5), the Standard keeps one plain machine-readable list of decision types that require a human seat's signature (`upstream/human-floor-signature-types.json`). An `[ORG]AION` may add types to its own copy; it never removes one. At the tool gateway, an action of a listed type runs only with a valid signature, even in an AIOC that is 100% AI. A signature is valid only from the human seat with authority over that part: the nearest HOAC above it, within its authority (§4.3, item 2). For a restart of a stopped unit, the signature comes from the HOAC above the stopped unit, never from the stopped unit or anything under it. If that seat is empty or retired, the action is held, never skipped. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9).
 7. **External attachments.** An external service, API or tool is not a Cell. Each connection to one is a port on the card of the Cell that receives from it or sends to it, and passes only through the tool gateway. Stopping or retiring that Cell cuts the connection automatically, and the register records each port's `connected` and `disconnected` events. An external AI agent that acts directly in the organisation's work is registered as an AI Cell: the organisation grants its access and holds its stop door (AIOC definition, `docs/CELLS-AND-PODS.md`).
 
 ## 5. AIOC

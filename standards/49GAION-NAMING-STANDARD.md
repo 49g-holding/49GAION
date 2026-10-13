@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v1.3.0` · proposed.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -83,7 +83,7 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 2. **Cell.** A Cell's code is the organisation's prefix, `CELL`, a hyphen and the initials of the Cell's own name, 2 to 8 upper-case letters or digits: "Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`; "Top Management Seat" → `[ORG]CELL-TMS`.
 3. **One register, one code.** Every Pod and Cell code is unique in the organisation's unit register and passes the collision check in §5 before first use. Retired codes are never reused (R5).
 4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
-5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own edition, its `[ORG]AION` (R13).
+5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
 ## 3. Capability names
 
