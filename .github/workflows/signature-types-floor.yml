@@ -24,6 +24,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check every [ORG]AION list keeps the Standard's types
-        env:
-          BASE_REF: ${{ github.base_ref || 'main' }}
         run: python3 .github/scripts/check_signature_types_floor.py

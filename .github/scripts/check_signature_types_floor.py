@@ -8,7 +8,7 @@ import json, os, subprocess, sys, pathlib
 
 STD = "upstream/human-floor-signature-types.json"
 GLOBS = ["org-aion-signature-types/**/*.json", "**/*.signature-types.json"]
-base = os.environ.get("BASE_REF", "main")
+base = "main"  # source of truth is always main
 
 def ids(doc, where):
     try:
@@ -16,10 +16,11 @@ def ids(doc, where):
     except (KeyError, TypeError):
         print(f"::error file={where}::not a signature-type list (needs decision_types[].id)"); sys.exit(1)
 
-try:
-    base_text = subprocess.run(["git", "show", f"origin/{base}:{STD}"], check=True, capture_output=True, text=True).stdout
-except subprocess.CalledProcessError:
-    base_text = pathlib.Path(STD).read_text(encoding="utf-8")
+# Floor IDs come only from the main copy of the Standard's file, never from the PR branch.
+r = subprocess.run(["git", "show", f"origin/{base}:{STD}"], capture_output=True, text=True)
+if r.returncode != 0:
+    print(f"::error::cannot read origin/{base}:{STD} (checkout needs fetch-depth: 0)"); sys.exit(1)
+base_text = r.stdout
 floor = ids(json.loads(base_text), f"origin/{base}:{STD}")
 print(f"Standard list ({base}): {sorted(floor)}")
 fail = False
