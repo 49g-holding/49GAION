@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.4.1` · proposed.** Decisions are recorded in `decisions/README.md`.
+**Version `v1.4.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -183,8 +183,6 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 
 1. 49GAION Self-Improvement brings changes to 49GAION as pull requests; they merge only on the decision of the governing seat of 49GAION.
 2. No unit approves a change to itself. A change to `[ORG]AIOC-OCO` is proposed, discussed and approved like any other, and OCO only carries it out once approved.
-3. **Decision records are frozen (DR-0006).** A decision record on main never changes: it is not edited, renamed or deleted. A new record takes the next free number, with no gap and no reuse. In the index, a record's row changes only in its status, from proposed to in force, or from in force to superseded by a newer record that is on main or arrives in the same change. A required check on main enforces this, and fails closed when the index cannot be read.
-4. **How a change reaches main (DR-0006).** Every change to 49GAION reaches main as a pull request that the governing seat (GOV) of 49GAION approves and merges, with the required checks passing and no bypass of the main-protection rules. A change to the checks themselves is its own pull request and lands before the content that needs it. A check judges each change with the copy of the check on main, never with a copy the change brings.
 
 ### 2.3 The improvement loop
 
@@ -282,9 +280,6 @@ How a change is found, tested and promoted. The loop applies to every process, b
 4. **Access follows the filled seat.** Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool: each Cell holds only its own.
 5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for. An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
 6. **The Human Floor signature list.** As part of the Human Floor (§1.5), the Standard keeps one plain machine-readable list of decision types that require a human seat's signature (`upstream/human-floor-signature-types.json`). An `[ORG]AION` may add types to its own copy; it never removes one. At the tool gateway, an action of a listed type runs only with a valid signature, even in an AIOC that is 100% AI. A signature is valid only from the human seat with authority over that part: the nearest HOAC above it, within its authority (§4.3, item 2). For a restart of a stopped unit, the signature comes from the HOAC above the stopped unit, never from the stopped unit or anything under it. If that seat is empty or retired, the action is held, never skipped. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9). A type is removed from this list only by a decision of 49GAION's governing seat (GOV), recorded in a new DR, with the matching change to `signature-types-floor` in the same PR. An `[ORG]AION` never removes a type. An `[ORG]AION` signature list sits under `org-aion-signature-types/` or is named `*.signature-types.json`, and holds its types under the key `decision_types`.
-   - **Removing an organisation's own types (DR-0006).** A type that an `[ORG]AION` added to its own list is removed only by its `[ORG]HOAC-GOV`, in a recorded decision; types of the 49GAION list are never removed by an `[ORG]AION`.
-   - **Reading note (DR-0006).** "An `[ORG]AION` never removes a type" restates "it never removes one" earlier in this item; it adds no further rule. The removal path of DR-0005 item 1 stays in force: the removal and the matching change to the check are in the same pull request, approved by the governing seat (GOV) of 49GAION.
-   - **The check's floor (DR-0006).** The check that guards this list reads the list it protects from main for a pull request, and from the latest release of the Standard for a change already on main, never from the change under test. Each `[ORG]AION` runs the same check in its own repositories as part of D-2.
 7. **External attachments.** An external service, API or tool is not a Cell. Each connection to one is a port on the card of the Cell that receives from it or sends to it, and passes only through the tool gateway. Stopping or retiring that Cell cuts the connection automatically, and the register records each port's `connected` and `disconnected` events. An external AI agent that acts directly in the organisation's work is registered as an AI Cell: the organisation grants its access and holds its stop door (AIOC definition, `docs/CELLS-AND-PODS.md`).
 
 ## 5. AIOC

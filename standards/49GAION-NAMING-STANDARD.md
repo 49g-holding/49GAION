@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v1.4.1` · proposed.** Part of the 49GAION Standard.
+**Version `v1.4.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
