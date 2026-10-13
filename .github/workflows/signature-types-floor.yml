@@ -5,8 +5,9 @@
 # named *.signature-types.json anywhere in the tree. Each must contain every type ID of the
 # Standard's list; extra IDs pass; comparison is by `id` only, never by label.
 # A change that removes a type ID from the Standard's own file also fails.
-# Lists are also found by content: any JSON object with decision_types[].id outside those
-# paths (other than the Standard's own file) fails.
+# Lists are also found by content: any .json file (other than the Standard's own file) with
+# an array holding two or more of the Standard's type IDs must sit at those paths and hold
+# its types under the key decision_types; otherwise it fails.
 name: signature-types-floor
 on:
   pull_request:
