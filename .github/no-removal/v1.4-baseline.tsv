@@ -1,0 +1,344 @@
+# 49GAION v1.4.0 no-removal list (hub), from the v1.4.0 release tag (main 9e77ac3).
+# It carries every entry of the v1.2.0 list (v1.2-baseline.tsv, kept unchanged for the record),
+# then every heading of every hub text at v1.4.0 and every Standard glossary term at v1.4.0.
+# Decision records are guarded by dr-frozen, not here.
+# One entry per line: <file>\t<kind>\t<value>. Kinds: heading (heading text), id (section,
+# rule or decision id; 'Heading N' = a heading numbered N), term (glossary or defined term;
+# a HOAC term matches only on a heading, a glossary row or a bold definition lead), concept
+# (a regex that must match somewhere in the repo). Only presence is checked, never definition text.
+49GAION.md	heading	49GAION · the master definition
+49GAION.md	heading	1. The definition
+49GAION.md	heading	1.1 The names
+49GAION.md	heading	2. Why 49GAION exists
+49GAION.md	heading	3. The philosophy
+49GAION.md	heading	4. What 49GAION is not
+49GAION.md	heading	5. Ownership
+49GAION.md	heading	6. The delivery test
+49GAION.md	heading	7. How 49GAION is shown
+49GAION.md	heading	8. Where things are
+49GAION.md	id	Heading 1
+49GAION.md	id	Heading 1.1
+49GAION.md	id	Heading 2
+49GAION.md	id	Heading 3
+49GAION.md	id	Heading 4
+49GAION.md	id	Heading 5
+49GAION.md	id	Heading 6
+49GAION.md	id	Heading 7
+49GAION.md	id	Heading 8
+49GAION.md	id	Standard §1.2
+49GAION.md	id	Standard §1.3
+49GAION.md	id	Standard §1.4
+49GAION.md	id	Standard §1.5
+49GAION.md	id	Standard §1.7
+49GAION.md	id	Standard §2
+49GAION.md	id	Standard §4.1
+49GAION.md	id	Standard §4.2
+49GAION.md	id	Standard §5.2
+49GAION.md	id	§1.2
+49GAION.md	id	§1.3
+49GAION.md	id	§1.4
+49GAION.md	id	§1.5
+49GAION.md	id	§1.7
+49GAION.md	id	§2
+49GAION.md	id	§4.1
+49GAION.md	id	§4.2
+49GAION.md	id	§5.2
+49GAION.md	term	AIOC
+49GAION.md	term	HOAC
+AGENTS.md	heading	Agent instructions
+README.md	heading	49GAION · the central hub
+README.md	heading	Overview
+README.md	heading	1. What 49GAION is
+README.md	heading	2. Self-Improvement
+README.md	heading	3. Library
+README.md	heading	4. HOAC
+README.md	heading	5. AIOC
+README.md	heading	6. Protocol
+README.md	heading	Start here
+README.md	heading	Rules of this repository
+README.md	heading	Version
+README.md	id	HF-01
+README.md	id	HF-19
+README.md	id	Heading 1
+README.md	id	Heading 2
+README.md	id	Heading 3
+README.md	id	Heading 4
+README.md	id	Heading 5
+README.md	id	Heading 6
+README.md	id	Standard §2
+README.md	id	Standard §2.3
+README.md	id	§1
+README.md	id	§1.3
+README.md	id	§2
+README.md	id	§2.3
+README.md	id	§2.4
+README.md	id	§3
+README.md	id	§4
+README.md	id	§5
+README.md	id	§6
+STATE.md	heading	State
+STATE.md	id	DR-0001
+STATE.md	id	DR-0002
+STATE.md	id	DR-0003
+decisions/README.md	heading	Decision records
+decisions/README.md	id	DR-0001
+decisions/README.md	id	DR-0002
+decisions/README.md	id	DR-0003
+references/2026-10-10-references-verified.md	heading	49GAION human layer references: verification table (2026-10-10)
+references/2026-10-10-references-verified.md	heading	Summary of key corrections
+references/2026-10-12-references-self-improvement.md	heading	49GAION Self-Improvement references: verification table (2026-10-12)
+references/2026-10-12-references-self-improvement.md	heading	What 49GAION takes from MASS, and what it does not
+references/2026-10-12-references-self-improvement.md	id	Standard §2.3
+references/2026-10-12-references-self-improvement.md	id	§2.2
+references/2026-10-12-references-self-improvement.md	id	§2.3
+references/2026-10-12-references-self-improvement.md	id	§2.4
+references/SOURCE-KEYS.md	heading	Source keys used by the 49GAION Standard
+references/SOURCE-KEYS.md	id	DR-0001
+references/SOURCE-KEYS.md	id	DR-0007
+references/SOURCE-KEYS.md	id	DR-0009
+references/SOURCE-KEYS.md	id	DR-0015
+references/SOURCE-KEYS.md	id	DR-0016
+references/SOURCE-KEYS.md	id	DR-0018
+references/STANDARDS-MAPPING.md	heading	49GAION terms and external standards
+references/STANDARDS-MAPPING.md	id	HF-03
+references/STANDARDS-MAPPING.md	id	HF-12
+references/STANDARDS-MAPPING.md	id	HF-17
+references/STANDARDS-MAPPING.md	id	HF-19
+references/STANDARDS-MAPPING.md	id	Protocol §12
+references/STANDARDS-MAPPING.md	id	Standard §4.2
+references/STANDARDS-MAPPING.md	id	§12
+references/STANDARDS-MAPPING.md	id	§4.2
+references/STANDARDS-MAPPING.md	term	Accountability Seat
+references/STANDARDS-MAPPING.md	term	Authority chain
+references/STANDARDS-MAPPING.md	term	Authority record
+references/STANDARDS-MAPPING.md	term	Data protection officer (Human Floor HF-17)
+references/STANDARDS-MAPPING.md	term	Failure categories answered by the Protocol
+references/STANDARDS-MAPPING.md	term	GOV above TM
+references/STANDARDS-MAPPING.md	term	Governing Body
+references/STANDARDS-MAPPING.md	term	Human Oversight (in HOAC); Human Floor HF-03
+references/STANDARDS-MAPPING.md	term	No accountability without authority; the delegator stays accountable
+references/STANDARDS-MAPPING.md	term	Stop port (Human Floor HF-12)
+references/STANDARDS-MAPPING.md	term	Three Lines Model (Human Floor HF-19)
+references/STANDARDS-MAPPING.md	term	Top Management
+references/STANDARDS-MAPPING.md	term	Work Item; card
+registers/HOAC-REGISTER.md	heading	HOAC register (49GAION level)
+registers/HOAC-REGISTER.md	id	DR-0001
+registers/HOAC-REGISTER.md	id	R14
+registers/HOAC-REGISTER.md	id	Standard §4.1
+registers/HOAC-REGISTER.md	id	§1.5
+registers/HOAC-REGISTER.md	id	§4.1
+standards/49GAION-NAMING-STANDARD.md	heading	The 49GAION Naming Standard
+standards/49GAION-NAMING-STANDARD.md	heading	1. Purpose and scope
+standards/49GAION-NAMING-STANDARD.md	heading	2. The rules
+standards/49GAION-NAMING-STANDARD.md	heading	R1. 49GAION is the framework; `[ORG]AION` is its product
+standards/49GAION-NAMING-STANDARD.md	heading	R2. AIOCs: `[ORG]AIOC-[INITIALS]`
+standards/49GAION-NAMING-STANDARD.md	heading	R3. Capabilities have plain English names
+standards/49GAION-NAMING-STANDARD.md	heading	R4. Nothing else gets a code
+standards/49GAION-NAMING-STANDARD.md	heading	R5. Retired codes are never reused
+standards/49GAION-NAMING-STANDARD.md	heading	R6. Check before you name
+standards/49GAION-NAMING-STANDARD.md	heading	R7. Versions
+standards/49GAION-NAMING-STANDARD.md	heading	R8. Identifiers and display names are separate
+standards/49GAION-NAMING-STANDARD.md	heading	R9. Repositories
+standards/49GAION-NAMING-STANDARD.md	heading	R10. Signed identities never change name silently
+standards/49GAION-NAMING-STANDARD.md	heading	R11. Outside text
+standards/49GAION-NAMING-STANDARD.md	heading	R12. 49GAION capabilities are named by function
+standards/49GAION-NAMING-STANDARD.md	heading	R13. The prefix comes from the organisation's brand; HOAC
+standards/49GAION-NAMING-STANDARD.md	heading	R14. A unit's place is a field, never part of its code
+standards/49GAION-NAMING-STANDARD.md	heading	3. Capability names
+standards/49GAION-NAMING-STANDARD.md	heading	4. Retired codes
+standards/49GAION-NAMING-STANDARD.md	heading	5. Collision check for a new AIOC code
+standards/49GAION-NAMING-STANDARD.md	id	Heading 1
+standards/49GAION-NAMING-STANDARD.md	id	Heading 2
+standards/49GAION-NAMING-STANDARD.md	id	Heading 3
+standards/49GAION-NAMING-STANDARD.md	id	Heading 4
+standards/49GAION-NAMING-STANDARD.md	id	Heading 5
+standards/49GAION-NAMING-STANDARD.md	id	Heading R1
+standards/49GAION-NAMING-STANDARD.md	id	Heading R10
+standards/49GAION-NAMING-STANDARD.md	id	Heading R11
+standards/49GAION-NAMING-STANDARD.md	id	Heading R12
+standards/49GAION-NAMING-STANDARD.md	id	Heading R13
+standards/49GAION-NAMING-STANDARD.md	id	Heading R14
+standards/49GAION-NAMING-STANDARD.md	id	Heading R2
+standards/49GAION-NAMING-STANDARD.md	id	Heading R3
+standards/49GAION-NAMING-STANDARD.md	id	Heading R4
+standards/49GAION-NAMING-STANDARD.md	id	Heading R5
+standards/49GAION-NAMING-STANDARD.md	id	Heading R6
+standards/49GAION-NAMING-STANDARD.md	id	Heading R7
+standards/49GAION-NAMING-STANDARD.md	id	Heading R8
+standards/49GAION-NAMING-STANDARD.md	id	Heading R9
+standards/49GAION-NAMING-STANDARD.md	id	R1
+standards/49GAION-NAMING-STANDARD.md	id	R10
+standards/49GAION-NAMING-STANDARD.md	id	R11
+standards/49GAION-NAMING-STANDARD.md	id	R12
+standards/49GAION-NAMING-STANDARD.md	id	R13
+standards/49GAION-NAMING-STANDARD.md	id	R14
+standards/49GAION-NAMING-STANDARD.md	id	R2
+standards/49GAION-NAMING-STANDARD.md	id	R3
+standards/49GAION-NAMING-STANDARD.md	id	R4
+standards/49GAION-NAMING-STANDARD.md	id	R5
+standards/49GAION-NAMING-STANDARD.md	id	R6
+standards/49GAION-NAMING-STANDARD.md	id	R7
+standards/49GAION-NAMING-STANDARD.md	id	R8
+standards/49GAION-NAMING-STANDARD.md	id	R9
+standards/49GAION-NAMING-STANDARD.md	id	Standard §1.7
+standards/49GAION-NAMING-STANDARD.md	id	§1.7
+standards/49GAION-NAMING-STANDARD.md	id	§4
+standards/49GAION-NAMING-STANDARD.md	id	§5
+standards/49GAION-NAMING-STANDARD.md	term	AION Builder
+standards/49GAION-NAMING-STANDARD.md	term	Chief of Staff
+standards/49GAION-NAMING-STANDARD.md	term	Executive assistant
+standards/49GAION-NAMING-STANDARD.md	term	Input socket
+standards/49GAION-NAMING-STANDARD.md	term	Office
+standards/49GAION-NAMING-STANDARD.md	term	Panel
+standards/49GAION-NAMING-STANDARD.md	term	Position Register
+standards/49GAION-NAMING-STANDARD.md	term	Role card
+upstream/49GAION-UPSTREAM.md	heading	49GAION Standard
+upstream/49GAION-UPSTREAM.md	heading	1. What 49GAION is
+upstream/49GAION-UPSTREAM.md	heading	1.1 Definition
+upstream/49GAION-UPSTREAM.md	heading	1.2 The six parts of 49GAION
+upstream/49GAION-UPSTREAM.md	heading	1.3 The product: `[ORG]AION`
+upstream/49GAION-UPSTREAM.md	heading	1.4 The delivery test
+upstream/49GAION-UPSTREAM.md	heading	1.5 The Human Floor
+upstream/49GAION-UPSTREAM.md	heading	1.6 Naming
+upstream/49GAION-UPSTREAM.md	heading	1.7 Composition
+upstream/49GAION-UPSTREAM.md	heading	2. Self-Improvement
+upstream/49GAION-UPSTREAM.md	heading	2.1 What it is
+upstream/49GAION-UPSTREAM.md	heading	2.2 Who approves
+upstream/49GAION-UPSTREAM.md	heading	2.3 The improvement loop
+upstream/49GAION-UPSTREAM.md	heading	2.4 Safeguards of the loop
+upstream/49GAION-UPSTREAM.md	heading	3. Library
+upstream/49GAION-UPSTREAM.md	heading	3.1 What it holds
+upstream/49GAION-UPSTREAM.md	heading	3.2 Evidence and tests
+upstream/49GAION-UPSTREAM.md	heading	4. HOAC
+upstream/49GAION-UPSTREAM.md	heading	4.1 The HOAC
+upstream/49GAION-UPSTREAM.md	heading	4.2 Authority and the two hubs
+upstream/49GAION-UPSTREAM.md	heading	4.3 Stop
+upstream/49GAION-UPSTREAM.md	heading	5. AIOC
+upstream/49GAION-UPSTREAM.md	heading	5.1 The AIOC
+upstream/49GAION-UPSTREAM.md	heading	5.2 Chief of Staff and Office
+upstream/49GAION-UPSTREAM.md	heading	5.3 Bootstrap
+upstream/49GAION-UPSTREAM.md	heading	6. Protocol
+upstream/49GAION-UPSTREAM.md	heading	6.1 Ports
+upstream/49GAION-UPSTREAM.md	heading	Glossary
+upstream/49GAION-UPSTREAM.md	id	HF-01
+upstream/49GAION-UPSTREAM.md	id	HF-02
+upstream/49GAION-UPSTREAM.md	id	HF-03
+upstream/49GAION-UPSTREAM.md	id	HF-04
+upstream/49GAION-UPSTREAM.md	id	HF-05
+upstream/49GAION-UPSTREAM.md	id	HF-06
+upstream/49GAION-UPSTREAM.md	id	HF-07
+upstream/49GAION-UPSTREAM.md	id	HF-08
+upstream/49GAION-UPSTREAM.md	id	HF-09
+upstream/49GAION-UPSTREAM.md	id	HF-10
+upstream/49GAION-UPSTREAM.md	id	HF-11
+upstream/49GAION-UPSTREAM.md	id	HF-12
+upstream/49GAION-UPSTREAM.md	id	HF-13
+upstream/49GAION-UPSTREAM.md	id	HF-14
+upstream/49GAION-UPSTREAM.md	id	HF-15
+upstream/49GAION-UPSTREAM.md	id	HF-16
+upstream/49GAION-UPSTREAM.md	id	HF-17
+upstream/49GAION-UPSTREAM.md	id	HF-18
+upstream/49GAION-UPSTREAM.md	id	HF-19
+upstream/49GAION-UPSTREAM.md	id	Heading 1
+upstream/49GAION-UPSTREAM.md	id	Heading 1.1
+upstream/49GAION-UPSTREAM.md	id	Heading 1.2
+upstream/49GAION-UPSTREAM.md	id	Heading 1.3
+upstream/49GAION-UPSTREAM.md	id	Heading 1.4
+upstream/49GAION-UPSTREAM.md	id	Heading 1.5
+upstream/49GAION-UPSTREAM.md	id	Heading 1.6
+upstream/49GAION-UPSTREAM.md	id	Heading 1.7
+upstream/49GAION-UPSTREAM.md	id	Heading 2
+upstream/49GAION-UPSTREAM.md	id	Heading 2.1
+upstream/49GAION-UPSTREAM.md	id	Heading 2.2
+upstream/49GAION-UPSTREAM.md	id	Heading 2.3
+upstream/49GAION-UPSTREAM.md	id	Heading 2.4
+upstream/49GAION-UPSTREAM.md	id	Heading 3
+upstream/49GAION-UPSTREAM.md	id	Heading 3.1
+upstream/49GAION-UPSTREAM.md	id	Heading 3.2
+upstream/49GAION-UPSTREAM.md	id	Heading 4
+upstream/49GAION-UPSTREAM.md	id	Heading 4.1
+upstream/49GAION-UPSTREAM.md	id	Heading 4.2
+upstream/49GAION-UPSTREAM.md	id	Heading 4.3
+upstream/49GAION-UPSTREAM.md	id	Heading 5
+upstream/49GAION-UPSTREAM.md	id	Heading 5.1
+upstream/49GAION-UPSTREAM.md	id	Heading 5.2
+upstream/49GAION-UPSTREAM.md	id	Heading 5.3
+upstream/49GAION-UPSTREAM.md	id	Heading 6
+upstream/49GAION-UPSTREAM.md	id	Heading 6.1
+upstream/49GAION-UPSTREAM.md	id	R1
+upstream/49GAION-UPSTREAM.md	id	R14
+upstream/49GAION-UPSTREAM.md	id	§1.2
+upstream/49GAION-UPSTREAM.md	id	§1.3
+upstream/49GAION-UPSTREAM.md	id	§1.4
+upstream/49GAION-UPSTREAM.md	id	§1.5
+upstream/49GAION-UPSTREAM.md	id	§1.7
+upstream/49GAION-UPSTREAM.md	id	§2
+upstream/49GAION-UPSTREAM.md	id	§2.1
+upstream/49GAION-UPSTREAM.md	id	§2.2
+upstream/49GAION-UPSTREAM.md	id	§2.3
+upstream/49GAION-UPSTREAM.md	id	§3.2
+upstream/49GAION-UPSTREAM.md	id	§4.1
+upstream/49GAION-UPSTREAM.md	id	§4.2
+upstream/49GAION-UPSTREAM.md	id	§4.3
+upstream/49GAION-UPSTREAM.md	id	§6.1
+upstream/49GAION-UPSTREAM.md	term	49GAION
+upstream/49GAION-UPSTREAM.md	term	AI hub / `[ORG]AIOC-OCO`
+upstream/49GAION-UPSTREAM.md	term	AI-first
+upstream/49GAION-UPSTREAM.md	term	AIOC / `[ORG]AIOC-*`
+upstream/49GAION-UPSTREAM.md	term	AION Builder
+upstream/49GAION-UPSTREAM.md	term	Assurance unit
+upstream/49GAION-UPSTREAM.md	term	Back office
+upstream/49GAION-UPSTREAM.md	term	Blueprint
+upstream/49GAION-UPSTREAM.md	term	Capability
+upstream/49GAION-UPSTREAM.md	term	Challenger
+upstream/49GAION-UPSTREAM.md	term	Champion
+upstream/49GAION-UPSTREAM.md	term	Chief of Staff
+upstream/49GAION-UPSTREAM.md	term	Composite unit
+upstream/49GAION-UPSTREAM.md	term	Configuration
+upstream/49GAION-UPSTREAM.md	term	Delivery test
+upstream/49GAION-UPSTREAM.md	term	Golden set
+upstream/49GAION-UPSTREAM.md	term	HOAC / `[ORG]HOAC-*`
+upstream/49GAION-UPSTREAM.md	term	Human Floor
+upstream/49GAION-UPSTREAM.md	term	Human hub / `[ORG]HOAC-TM`
+upstream/49GAION-UPSTREAM.md	term	Input socket
+upstream/49GAION-UPSTREAM.md	term	Library
+upstream/49GAION-UPSTREAM.md	term	Office
+upstream/49GAION-UPSTREAM.md	term	Panel
+upstream/49GAION-UPSTREAM.md	term	Parent
+upstream/49GAION-UPSTREAM.md	term	Port / Port card
+upstream/49GAION-UPSTREAM.md	term	Self-Improvement
+upstream/49GAION-UPSTREAM.md	term	Stop port (stop door)
+upstream/49GAION-UPSTREAM.md	term	Work Item
+upstream/49GAION-UPSTREAM.md	term	`[ORG]AION`
+upstream/README.md	heading	upstream/ · the 49GAION Standard
+*	concept	Self-Improvement	Self-Improvement
+*	concept	improvement loop	improvement loop
+*	concept	Input socket	Input socket
+*	concept	\binput\b.*\boutput\b|\boutput\b.*\binput\b	input/output (input port / output port)
+*	concept	HOAC-TM	HOAC-TM (human hub)
+*	concept	AIOC-OCO	AIOC-OCO (AI hub)
+*	concept	two hubs	two hubs
+*	concept	Human Floor	Human Floor
+*	concept	HOAC-GOV	HOAC-GOV
+*	concept	HOAC-TM	HOAC-TM type
+*	concept	HOAC-ACS	HOAC-ACS
+*	concept	\bPanel\b	Panel
+*	concept	Chief of Staff	Chief of Staff
+*	concept	\bOffice\b	Office
+*	concept	Executive\s+assistant	Executive assistant
+*	concept	Position Register	Position Register
+*	concept	AION Builder	AION Builder
+*	concept	`parent`|\bparent:	parent field
+*	concept	[Ss]top (?:port|door)	stop ports
+registers/HOAC-REGISTER.md	heading	Unit register (file name kept for links)
+registers/HOAC-REGISTER.md	heading	Entries
+registers/HOAC-REGISTER.md	heading	Events
+standards/49GAION-NAMING-STANDARD.md	heading	R15. Pods and Cells
+upstream/49GAION-UPSTREAM.md	heading	4.4 The unit register and the Human Floor signature list
+upstream/49GAION-UPSTREAM.md	term	Human Oversight & Accountability Centre
+upstream/49GAION-UPSTREAM.md	term	Cell / `[ORG]CELL-*`
+upstream/49GAION-UPSTREAM.md	term	Pod / `[ORG]POD-*`
+upstream/49GAION-UPSTREAM.md	term	Filler
+upstream/49GAION-UPSTREAM.md	term	Unit register
+upstream/49GAION-UPSTREAM.md	term	External attachment
+upstream/49GAION-UPSTREAM.md	term	Human Floor signature list
