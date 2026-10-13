@@ -3,6 +3,7 @@
 - **Date:** 2026-10-13
 - **Decided by:** the governing seat (GOV) of 49GAION (holder in `registers/HOAC-REGISTER.md`)
 - **Source:** internal and external reviews, 2026-10-13, of hub 69a3e81, and the decision of the governing seat (GOV) of 49GAION on them
+- **Status:** in force
 
 ## Decision
 
