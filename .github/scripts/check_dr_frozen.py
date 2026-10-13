@@ -85,7 +85,8 @@ def main():
         elif blob(base, p) != blob(head, p):
             errs.append(f"DR-FROZEN-EDITED {p}")
     # 2. numbering
-    top = max((int(n[3:]) for n in bnum), default=0)
+    # The next number follows the highest number on the base, in its record files or its index rows.
+    top = max([int(n[3:]) for n in bnum] + [int(n[3:]) for n in index(base)], default=0)
     new = sorted({n for p, m in hf.items() if p not in bf for n in [m.group(1)]})
     for n, ps in sorted(hnum.items()):
         if len(ps) > 1:
