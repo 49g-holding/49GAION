@@ -249,7 +249,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
 7. **On the card.** The HOAC label is a field of the card of the Cell, Pod or AIOC that carries it. The card keeps its typed ports and its stop door (§6.1).
 8. **Superseded meaning.** HOAC formerly meant Human Oversight & Accountability Centre, a human unit beside the AIOC with a card of its own. That meaning is superseded (DR-0004) and is kept only to read the records written under it, which stay unchanged.
-9. **A label on a Pod or an AIOC.** When a HOAC label sits on a Pod or an AIOC, a human Cell inside it holds the label. If that Cell becomes empty or is filled by an AI, the label's powers are held, as for an empty seat (item 5).
+9. **A label on a Pod or an AIOC.** When a HOAC label sits on a Pod or an AIOC, a human Cell inside it holds the label. If that Cell becomes empty or is filled by an AI, the label's powers are held, as for an empty seat (item 5). If a Cell carrying a HOAC label is filled by an AI, the label's powers are held, as for an empty seat (item 5).
 
 ### 4.2 Authority and the two hubs
 
