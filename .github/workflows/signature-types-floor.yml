@@ -1,0 +1,27 @@
+# signature-types-floor: an [ORG]AION may add decision types to the Human Floor signature
+# list (Standard §4.4, item 6) but never removes one.
+# Source of truth: upstream/human-floor-signature-types.json on main (the base branch).
+# [ORG]AION lists checked: any JSON under org-aion-signature-types/ (recursive) and any file
+# named *.signature-types.json anywhere in the tree. Each must contain every type ID of the
+# Standard's list; extra IDs pass; comparison is by `id` only, never by label.
+# A change that removes a type ID from the Standard's own file also fails.
+# Lists are also found by content: any .json file (other than the Standard's own file) with
+# an array holding two or more of the Standard's type IDs must sit at those paths and hold
+# its types under the key decision_types; otherwise it fails.
+name: signature-types-floor
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  signature-types-floor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check every [ORG]AION list keeps the Standard's types
+        run: python3 .github/scripts/check_signature_types_floor.py
