@@ -16,7 +16,7 @@
 - **Framework:** `49GAION`, upper case, one word. A bare "AION" is not used for the framework.
 - **Product:** `[ORG]AION`, where `[ORG]` is the organisation's brand prefix; shown as "`<Brand>` AION, Powered by 49GAION". 49GAION is the framework itself, not an `[ORG]AION`.
 - **AIOC = AI Operating Core**, an AI unit of one organisation: `[ORG]AIOC-[INITIALS]`; an organisation named Ten has `TenAIOC-SL`.
-- **HOAC = Human Oversight & Accountability Control**, a label of human accountability on a Cell, a Pod or an AIOC (Standard §4.1).
+- **H.O.A.C. = Human Oversight & Accountability Control**, a label of human accountability on a Cell, a Pod or an AIOC (Standard §4.1).
 - **Cell and Pod.** Inside an AIOC's Blueprint, a Cell is the smallest part and a Pod groups Cells (Standard §1.7).
 
 ## 2. Why 49GAION exists
