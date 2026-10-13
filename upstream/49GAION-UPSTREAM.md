@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.3.0` · proposed.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
+**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
