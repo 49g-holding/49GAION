@@ -1,8 +1,7 @@
-# The 49GAION Standard changes only additively: every section ID and glossary term of
-# v1.2.0, listed in .github/no-removal/v1.2-ids.txt, must still be present in
-# upstream/49GAION-UPSTREAM.md. Only presence is checked, not the definition text, so a
-# definition may change by decision while its term stays. To become a required check on
-# main after this workflow is merged.
+# 49GAION changes only additively: every heading, section/rule/decision id, term and key
+# concept of the v1.2.0 hub baseline (.github/no-removal/v1.2-baseline.tsv) must still be
+# present. Presence only, never definition text: HOAC matches on its token, so its
+# expansion may change by decision. To become a required check on main after merge.
 name: no-removal
 on:
   pull_request:
@@ -16,5 +15,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check v1.2.0 sections and glossary terms are present
+      - name: Check the v1.2.0 baseline is present
         run: python3 .github/scripts/check_no_removal.py
