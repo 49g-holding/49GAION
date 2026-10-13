@@ -1,4 +1,4 @@
-# DR-0006 · 49GAION v1.4.1 — decision records frozen; how a change reaches main
+# DR-0006 · Decision records frozen; how a change reaches main
 
 - **Date:** 2026-10-13
 - **Decided by:** the governing seat (GOV) of 49GAION (holder in `registers/HOAC-REGISTER.md`)
@@ -12,6 +12,6 @@
 4. **The signature-type check.** `signature-types-floor` reads its floor from main for a pull request and from the latest release tag for a change on main; it finds lists by content in any `.json`, `.yaml`, `.yml` or `.toml` file outside the allowed paths; it accepts only the keys `decision_types`, `id`, `human_floor`, `label`, `note` and the policy fields that the Standard's own list declares; and it fails a list that names a stop, a disconnection, narrowing or revoking AI access, or raising a matter to a human (Standard §4.4, item 6).
 5. **No-removal baseline.** The no-removal baseline moves to the v1.4.0 release and keeps every v1.2.0 entry; a HOAC term must stand on its own heading, glossary row or definition.
 6. **Removal of types.** The removal path of DR-0005 item 1 stays in force: a type of the 49GAION list is removed only by a decision of the governing seat (GOV) of 49GAION, recorded in a new decision record, with the matching change to the check in the same pull request. A type that an `[ORG]AION` added to its own list is removed only by its `[ORG]HOAC-GOV`, in a recorded decision.
-7. **Version.** The 49GAION Standard moves to `v1.4.1`.
+7. **Text.** The 49GAION Standard records items 1 and 6 in its next version; this record does not change the version.
 
 Powered by 49GAION
