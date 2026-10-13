@@ -78,7 +78,7 @@ jobs:
       - name: Person names (lines added or changed; path and line only)
         shell: bash
         env:
-          PERSON_NAMES: ${{ secrets.PERSON_NAMES }}
+          PERSON_NAMES: ${{ secrets.PERSON_NAMES_DOES_NOT_EXIST }}
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
         run: |
           # The script is taken from the base; only the change that first adds it runs its own copy.
