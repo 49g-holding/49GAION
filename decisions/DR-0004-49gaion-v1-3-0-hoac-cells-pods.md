@@ -17,3 +17,4 @@
 9. **Version.** The 49GAION Standard, the Operating Protocol and the AIOC definition and blueprint template are `v1.3.0`.
 
 Powered by 49GAION
+
