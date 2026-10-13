@@ -1,13 +1,18 @@
-# signature-types-floor: an [ORG]AION may add decision types to the Human Floor signature
-# list (Standard §4.4, item 6) but never removes one.
-# Source of truth: upstream/human-floor-signature-types.json on main (the base branch).
-# [ORG]AION lists checked: any JSON under org-aion-signature-types/ (recursive) and any file
-# named *.signature-types.json anywhere in the tree. Each must contain every type ID of the
-# Standard's list; extra IDs pass; comparison is by `id` only, never by label.
-# A change that removes a type ID from the Standard's own file also fails.
-# Lists are also found by content: any .json file (other than the Standard's own file) with
-# an array holding two or more of the Standard's type IDs must sit at those paths and hold
-# its types under the key decision_types; otherwise it fails.
+# Required check on main. signature-types-floor (hub): this check guards the Standard's own
+# Human Floor signature list (upstream/human-floor-signature-types.json) and any [ORG]AION
+# list kept here. Each [ORG]AION runs the same check in its own repositories as part of D-2.
+# - Trusted code: the script is the copy on the base branch, never the pull request's head.
+# - Floor: on a pull request from the base commit; on a push or manual run from the highest
+#   release tag v<major>.<minor>.<patch> reachable from main; unreadable floor fails closed.
+# - Lists found by content: any .json/.yaml/.yml/.toml file holding even one floor ID fails
+#   unless it is a list (under org-aion-signature-types/ or named *.signature-types.*) or
+#   sits under an allowed path (tests/, .github/tests/, library/cards/, registers/).
+# - Key allowlist: decision_types, id, human_floor, label, note (and title, standard, rule,
+#   type_fields at top level); the policy fields of Standard §5.1 are accepted once the
+#   Standard's own file declares them in type_fields. Any other key fails (enforced, exempt_units).
+# - Never held: a list naming a stop, a disconnection, narrowing or revoking AI access, or
+#   raising a matter to a human fails.
+# - PyYAML is pinned (pyyaml==6.0.2) to read YAML lists.
 name: signature-types-floor
 on:
   pull_request:
@@ -23,5 +28,35 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Check every [ORG]AION list keeps the Standard's types
-        run: python3 .github/scripts/check_signature_types_floor.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml==6.0.2
+      - name: Load the check from the base branch (trusted code)
+        shell: bash
+        env:
+          TRUSTED: ${{ github.event.pull_request.base.sha || github.sha }}
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          FILES: .github/scripts/check_signature_types_floor.py
+        run: |
+          # The check that judges a change is always the copy on the base branch (main),
+          # read with git show, never the working tree of the pull request.
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/trusted"
+          for f in $FILES; do
+            if git cat-file -e "$TRUSTED:$f" 2>/dev/null; then
+              git show "$TRUSTED:$f" > "$RUNNER_TEMP/trusted/$(basename "$f")"
+            elif [ "$EVENT" = pull_request ] && [ -z "$(git diff --name-only "$BASE"...HEAD | grep -v "^\.github/" || true)" ]; then
+              echo "::warning::$f is not on the base branch yet. This .github/-only pull request introduces it, so its own copy runs this once."
+              cp "$f" "$RUNNER_TEMP/trusted/$(basename "$f")"
+            else
+              echo "::error::$f cannot be read from the base branch ($TRUSTED); failing closed."
+              exit 1
+            fi
+          done
+      - name: Every list keeps the Standard's types
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 "$RUNNER_TEMP/trusted/check_signature_types_floor.py"

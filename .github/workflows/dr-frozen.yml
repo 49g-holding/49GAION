@@ -1,0 +1,56 @@
+# Required check on main. Decision records are frozen (decisions/README.md):
+# a record file on main never changes (edit, rename and deletion fail; compared by number
+# and path against main); a new record takes the next free number (a skip or a reuse
+# fails); an index row changes only in its Status cell, from "proposed" to "in force", or
+# from "in force" to "superseded by DR-xxxx" where DR-xxxx is a newer record on main or in
+# the same pull request; an unreadable index fails closed.
+# On a pull request the base is its base commit; on a push to main, the commit before the push.
+# The script is the copy on the base branch (trusted code).
+name: dr-frozen
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dr-frozen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Load the check from the base branch (trusted code)
+        shell: bash
+        env:
+          TRUSTED: ${{ github.event.pull_request.base.sha || github.sha }}
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+          FILES: .github/scripts/check_dr_frozen.py
+        run: |
+          # The check that judges a change is always the copy on the base branch (main),
+          # read with git show, never the working tree of the pull request.
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/trusted"
+          for f in $FILES; do
+            if git cat-file -e "$TRUSTED:$f" 2>/dev/null; then
+              git show "$TRUSTED:$f" > "$RUNNER_TEMP/trusted/$(basename "$f")"
+            elif [ "$EVENT" = pull_request ] && [ -z "$(git diff --name-only "$BASE"...HEAD | grep -v "^\.github/" || true)" ]; then
+              echo "::warning::$f is not on the base branch yet. This .github/-only pull request introduces it, so its own copy runs this once."
+              cp "$f" "$RUNNER_TEMP/trusted/$(basename "$f")"
+            else
+              echo "::error::$f cannot be read from the base branch ($TRUSTED); failing closed."
+              exit 1
+            fi
+          done
+      - name: Decision records are frozen
+        shell: bash
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          set -euo pipefail
+          B="$BASE"
+          if [ -z "$B" ] || ! git cat-file -e "$B^{commit}" 2>/dev/null; then B=$(git rev-parse HEAD~1); fi
+          python3 "$RUNNER_TEMP/trusted/check_dr_frozen.py" "$B"
