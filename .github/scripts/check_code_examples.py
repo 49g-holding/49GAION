@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""code-examples: every AIOC or HOAC code example in the 49GAION Standard and the
-Naming Standard validates against the unit card schema (code field and the pattern for
-its kind). Placeholders (with <...>, [MODULE]-style slots or *) are skipped.
+"""code-examples: every AIOC, Pod or Cell code example and every HOAC label example in
+the 49GAION Standard and the Naming Standard validates against the unit card schema (the
+code field and the pattern for its kind; HOAC labels against the hoac field). Placeholders (with <...>, [MODULE]-style slots or *) are skipped.
 HUB_DIR holds the Standard; SCHEMA is the path of unit-card.schema.json."""
 import json, os, re, sys, pathlib
 from jsonschema import Draft202012Validator
@@ -16,9 +16,15 @@ for rule in schema.get("allOf", []):
     p = rule.get("then", {}).get("properties", {}).get("code")
     if k and p:
         kind[k] = p
-if set(kind) != {"AIOC", "HOAC"}:
-    print("::error::unit card schema must define code patterns for AIOC and HOAC"); sys.exit(1)
-TOKEN = re.compile(r"[^\s`\"'(),;:]*(?:AIOC|HOAC)-[^\s`\"'(),;:]*")
+if "AIOC" not in kind:
+    print("::error::unit card schema must define the code pattern for AIOC"); sys.exit(1)
+label = schema["properties"].get("hoac")
+if label is None and "HOAC" in kind:  # schema where HOAC is a unit kind
+    label = {"allOf": [code, kind["HOAC"]]}
+if label is None:
+    print("::error::unit card schema must define the hoac label or a HOAC kind"); sys.exit(1)
+KINDS = sorted(k for k in kind if k != "HOAC")
+TOKEN = re.compile(r"[^\s`\"'(),;:]*(?:AIOC|POD|CELL|HOAC)-[^\s`\"'(),;:]*")
 bad, seen = [], set()
 for rel in ("upstream/49GAION-UPSTREAM.md", "standards/49GAION-NAMING-STANDARD.md"):
     for n, line in enumerate((HUB / rel).read_text(encoding="utf-8").splitlines(), 1):
@@ -28,8 +34,14 @@ for rel in ("upstream/49GAION-UPSTREAM.md", "standards/49GAION-NAMING-STANDARD.m
                 if "/" in t or "<" in t or "*" in t or re.search(r"\[(?!ORG\])", t) or t.endswith("-"):
                     continue
                 seen.add(t)
-                k = "AIOC" if "AIOC-" in t else "HOAC"
-                for sch in (code, kind[k]):
+                if "HOAC-" in t:
+                    checks = (label,)
+                else:
+                    k = next((k for k in KINDS if k + "-" in t), None)
+                    if k is None:
+                        bad.append(f"{rel}:{n}: {t} (no such kind in the schema)"); continue
+                    checks = (code, kind[k])
+                for sch in checks:
                     if not Draft202012Validator(sch).is_valid(t):
                         bad.append(f"{rel}:{n}: {t}"); break
 if bad:

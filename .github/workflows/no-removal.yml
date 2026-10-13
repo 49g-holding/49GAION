@@ -1,0 +1,19 @@
+# 49GAION changes only additively: every heading, section/rule/decision id, term and key
+# concept of the v1.2.0 hub baseline (.github/no-removal/v1.2-baseline.tsv) must still be
+# present. Presence only, never definition text: HOAC matches on its token, so its
+# expansion may change by decision. To become a required check on main after merge.
+name: no-removal
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  no-removal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the v1.2.0 baseline is present
+        run: python3 .github/scripts/check_no_removal.py
