@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.4.0` · proposed.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.4.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 ## 1. The definition
 
