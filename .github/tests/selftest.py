@@ -181,6 +181,9 @@ if deps:
         env = {"HUB_DIR": ".", "PROTOCOL_DIR": f"{deps}/protocol", "AIOC_DIR": f"{deps}/aioc", "BASE_SHA": ""}
         expect("ref-check: " + name, sh(d / "hub", sys.executable, str(S / "check_refs.py"), env=env, check=False), code)
 
+# ---------- person-names (fictional name; the real list is never used here) ----------
+expect("person-names: selftest cases", subprocess.run([sys.executable, str(pathlib.Path(__file__).resolve().parent / "person_names_selftest.py")], capture_output=True, text=True))
+
 bad = [n for n, ok, _ in results if not ok]
 print(f"\nci-selftest: {len(results) - len(bad)}/{len(results)} cases as expected")
 if bad:
