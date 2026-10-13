@@ -14,7 +14,9 @@ An empty seat returns accountability to whoever delegated it, suspends any AI au
 
 | Seat | Code | Kind | Type | HOAC | Parent | Filler | Current filler kind (column formerly "Filler kind") | Delegated by (and scope) | Date | Record | Status | Signature ID | accountable_to | Entity | Valid from | Valid to |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 49GAION owner | none (49GAION-level seats take no code) | CELL | Human Seat | GOV | none | Iman Tajik (Founder) | human | Owner of 49GAION (constituting authority) | 2026-10-11 | `49GAION/DR-0001` | Filled | | | | | |
+| the governing seat (GOV) of 49GAION | none (49GAION-level seats take no code) | CELL | Human Seat | GOV | none | seat only (filler in the private holders register) | human | constituting authority | 2026-10-11 | `49GAION/DR-0001` | Filled | | | | | |
+
+**Correction (2026-10-13, DR-0007).** The GOV row above was corrected to seat only under DR-0007: it names the seat, the governing seat (GOV) of 49GAION, and no filler. Fillers are kept in the private holders register (see Holders below).
 
 ## Events
 
@@ -51,6 +53,6 @@ The register records these events (DR-0007), each with its date, the signature I
 
 ## Holders
 
-For every entry added from v1.5.0 on, names of fillers are kept in a separate holders register keyed by Cell code, in a private store outside this repository; the unit register carries structure only, and points to that store by its location (Standard §4.4, item 3). The existing GOV row stays as it is.
+For every entry added from v1.5.0 on, names of fillers are kept in a separate holders register keyed by Cell code, in a private store outside this repository; the unit register carries structure only, and points to that store by its location (Standard §4.4, item 3). The GOV row was corrected to seat only on 2026-10-13 (DR-0007); its filler is kept in the holders register.
 
 Columns: **Seat** (name of the seat), **Code** (the fixed code of the AIOC, Pod or Cell; Naming Standard R14, R15), **Kind** (AIOC, POD, CELL), **Type** (the card type, from the organisation's open list), **HOAC** (GOV, TM, ACS or none), **Parent** (the code of the part that holds it, or `none` at the top), **Filler** (person, agent, or "empty"; for a Pod or AIOC, "none"), **Filler kind** (human or AI), **Delegated by** (the seat that delegated it, and what was delegated), **Date** (from), **Record** (decision record and quote ID), **Status** (Filled, Empty, Active, Retired; Ended, the earlier name, equals Retired).

@@ -20,5 +20,6 @@
 11. **Decisions of the governing seat on the options raised.** (a) A human-led AIOC may set its Chief of Staff Cell to human-or-ai; whatever the filler, a Chief of Staff never signs for its person (Standard §5.1, item 7). (b) Decision bodies are adopted as in item 2. (c) Compensating controls are adopted: each is signed by GOV and recorded as its own register event with a date and a review date, never as a standing waiver, and the delivery test result points to those events (Standard §4.4, item 12). (d) Legal entities are adopted; the entity field is optional where an `[ORG]AION` has one entity (Standard §4.4, item 13). (e) The removal path of signature types in DR-0005 stays in force.
 12. **Machine forms.** The unit card, Port card, Work Item, signature record and process record schemas, the Library v3 cards, the reference organisations and the blueprint template are changed to match, in `49g-holding/49GAION-protocol` and `49g-holding/49GAION-aioc`.
 13. **Version.** The 49GAION Standard, the Operating Protocol and the AIOC definition and template move to `v1.5.0`.
+14. **Register correction (2026-10-13).** The GOV row of `registers/HOAC-REGISTER.md` is corrected to seat only: it names the governing seat (GOV) of 49GAION and no filler; the filler is kept in the private holders register (item 9).
 
 Powered by 49GAION

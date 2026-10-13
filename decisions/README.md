@@ -19,5 +19,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - Records written before v1.1.0 may name a person and carry a Status line of their own. The index above governs status; those records are not edited.
 - DR-0002 item 1, "Any unit, AIOC or HOAC, may be composed of smaller units of either kind": superseded (DR-0004): an AIOC may hold other AIOCs and its own Pods and Cells; HOAC is a label, not a unit.
 - Decisions are recorded under "the governing seat (GOV) of 49GAION".
+- A record from before v1.5.0 (`DR-0001`) names a filler of a seat. Records are frozen and stay as written (DR-0006); from v1.5.0 on, fillers are kept in the private holders register, not in records or the unit register (DR-0007).
 
 Powered by 49GAION
