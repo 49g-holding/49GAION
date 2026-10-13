@@ -64,7 +64,7 @@ The result ships with the `[ORG]AION`. An `[ORG]AION` that fails any line is not
 
 ### 1.5 The Human Floor
 
-**Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature. As an illustration (not a measured figure; the floor itself is defined by the list below), it is about 5% of the organisation, so no `[ORG]AION` can be more than about 95% AI. A single AIOC may be up to 100% AI; the floor holds for the organisation as a whole, and the AI Ceiling (§4.4) holds in every AIOC.
+**Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature. As an illustration (not a measured figure; the floor itself is defined by the list below), it is about 5% of the organisation, so no `[ORG]AION` can be more than about 95% AI. A single AIOC may be up to 100% AI; the floor holds for the organisation as a whole, and the Human Floor signature list (§4.4, item 6) holds in every AIOC.
 
 Above the floor, nothing is fixed. An organisation can run anywhere from the floor to 100% human, and move freely within that range at any time, even while it is running: by adding human Cells, changing the filler of a Cell from AI to human, or changing it back to AI down to the floor. Its product, its market, its law and its needs decide where it stands. Organisations can be more human, never less.
 
@@ -271,14 +271,14 @@ How a change is found, tested and promoted. The loop applies to every process, b
 5. **Inner parts.** Stopping an AIOC or a Pod stops everything under it, at every depth. Stopping an inner part does not stop its parent.
 6. A human port, including the stop door, never passes through an AI; the stop door of a part held inside an AIOC never passes through that AIOC (§1.7, item 6).
 
-### 4.4 The unit register and the AI Ceiling
+### 4.4 The unit register and the Human Floor signature list
 
 1. **One register.** Each `[ORG]AION` keeps one unit register of every AIOC, Pod and Cell, with its code, kind, type, HOAC label, parent, filler and status. The form is `registers/HOAC-REGISTER.md`.
 2. **Append-only.** Entries are never edited or deleted. A retired entry stays, marked retired, and its code is never reused. A change of filler and a change of parent are recorded events on the existing entry, never new parts.
 3. **Split write rights.** `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. Neither writes the other's.
 4. **Access follows the filled seat.** Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool: each Cell holds only its own.
 5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for. An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
-6. **The AI Ceiling.** Each `[ORG]AION` keeps an AI Ceiling list of actions that AI never performs alone. An action on the list executes only with the signature of a human seat at the tool gateway, even in an AIOC that is 100% AI. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9).
+6. **The Human Floor signature list.** As part of the Human Floor (§1.5), the Standard keeps one plain machine-readable list of decision types that require a human seat's signature (`upstream/human-floor-signature-types.json`). An `[ORG]AION` may add types to its own copy; it never removes one. At the tool gateway, an action of a listed type runs only with a valid signature of a human seat, even in an AIOC that is 100% AI. If that seat is empty or retired, the action is held, never skipped. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9).
 7. **External attachments.** An external service, API or tool is not a Cell. Each connection to one is a port on the card of the Cell that receives from it or sends to it, and passes only through the tool gateway. Stopping or retiring that Cell cuts the connection automatically, and the register records each port's `connected` and `disconnected` events. An external AI agent that acts directly in the organisation's work is registered as an AI Cell: the organisation grants its access and holds its stop door (AIOC definition, `docs/CELLS-AND-PODS.md`).
 
 ## 5. AIOC
@@ -350,7 +350,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Filler** | The human or AI agent that fills a Cell; replaceable without changing the Cell |
 | **Unit register** | The one append-only register of every AIOC, Pod and Cell of an `[ORG]AION` (§4.4) |
 | **External attachment** | A connection to an outside service, API or tool: a port on the card of the Cell that receives or sends, never a Cell (§4.4) |
-| **AI Ceiling** | The list of actions AI never performs alone; each executes only with a human seat's signature at the tool gateway (§4.4) |
+| **Human Floor signature list** | The machine-readable list of decision types that run at the tool gateway only with a valid human seat's signature; an `[ORG]AION` may add types, never remove one (§4.4) |
 | **Human hub / `[ORG]HOAC-TM`** | Top Management: decides and orders, and holds Self-Improvement as a process inside it |
 | **AI hub / `[ORG]AIOC-OCO`** | Organization Core Office, under `[ORG]HOAC-TM`: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done |
 | **Composite unit** | An AIOC that holds Pods, Cells or other AIOCs; seen from outside, one unit (§1.7) |

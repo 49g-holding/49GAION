@@ -1,4 +1,6 @@
-# Unit register (49GAION level)
+# HOAC register (49GAION level)
+
+## Unit register
 
 The single unit register of 49GAION itself, and the form every `[ORG]AION` uses for its own (Standard §4.4). One entry per AIOC, Pod or Cell. The register is append-only: entries are never edited or deleted; a retired entry stays, marked "Retired", and its code is never reused. A change of filler or of parent is a recorded event on the existing entry, never a new entry.
 

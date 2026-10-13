@@ -71,7 +71,7 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 3. **No hard-coded `49`.** Central texts never use `49` as a code prefix; they write `[ORG]`.
 4. **HOAC.** The 49GAION Human Oversight & Accountability Control label is written `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
 
-### R14. A part's place is a field, never part of its code
+### R14. A unit's place is a field, never part of its code
 1. Every AIOC, Pod and Cell keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the part moves or its filler changes.
 2. Its place is the `parent` field of its card and its register entry: the code of the AIOC, Pod or Cell that holds it, or `none` at the top of the organisation.
 3. Moving a part changes its `parent` field, never its code. No code is a path, and no code carries a suffix naming its parent or its seat. A subscope (R2) names a specialisation, never a parent.
@@ -102,9 +102,9 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 
 `[ORG]AIOC-EO`, `[ORG]AIOC-COS`, `[ORG]AIOC-EA`, `[ORG]AIOC-RC`, `[ORG]AIOC-PR`, `[ORG]AIOC-EB`, `49AIIN`, `49AIB`, the `CORE` segment for anything new, and the placeholders `{OFFICE}`, `{COS}`, `{EA}`, `{RC}`, `{PR}`, `{IN}`, `{UD}`.
 
-## 5. Collision check for a new AIOC, Pod or Cell code
+## 5. Collision check for a new AIOC code
 
-Before a new code is used, check that it:
+The same check applies to a new Pod or Cell code. Before a new code is used, check that it:
 1. does not recreate `[ORG]AIOC`, `[ORG]AION` or `49GAION` in its initials;
 2. does not match an existing module code in the organisation's register;
 3. does not read as a version suffix (`RC`) or a common acronym that misleads (`PR`);

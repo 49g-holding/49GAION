@@ -1,0 +1,16 @@
+{
+  "title": "49GAION Human Floor signature list",
+  "standard": "49GAION Standard v1.3.0, §1.5 and §4.4 item 6",
+  "rule": "An action of any listed decision type runs at the tool gateway only with a valid signature of a human seat. If the seat is empty or retired, the action is held, never skipped. An [ORG]AION may add types; it never removes one.",
+  "decision_types": [
+    { "id": "sign-contract", "human_floor": "HF-02" },
+    { "id": "commit-money", "human_floor": "HF-02" },
+    { "id": "legal-filing", "human_floor": "HF-01" },
+    { "id": "accept-irreversible-risk", "human_floor": "HF-06" },
+    { "id": "delegate-authority", "human_floor": "HF-07" },
+    { "id": "change-parent", "human_floor": "HF-07" },
+    { "id": "grant-or-widen-access", "human_floor": "HF-07" },
+    { "id": "set-purpose-or-values", "human_floor": "HF-04" },
+    { "id": "restart-stopped-unit", "human_floor": "HF-03" }
+  ]
+}
