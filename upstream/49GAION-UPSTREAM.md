@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.2.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
+**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** Everything in this Standard is in force. Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -17,19 +17,20 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 3. **Output.** The output of 49GAION is an organisation design, delivered as its product, `[ORG]AION`.
 4. **The product.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation. Its definition is held once, in §1.3, item 1.
 5. **Nobody runs on 49GAION directly.** Every organisation runs on its own `[ORG]AION`. Outside text names the organisation's `[ORG]AION` or AIOC and adds only "Powered by 49GAION".
-6. **Units, composed without limit.** The unit level holds the AIOCs and HOACs and how they work together. Any unit may be composed of smaller units of either kind, to any depth, with no limit (§1.7). Everything else lives inside a unit, in its blueprint.
+6. **One kind of unit, composed without limit.** The unit level holds the AIOCs and how they work together. An AIOC may hold other AIOCs, to any depth, with no limit (§1.7). Inside an AIOC, its Blueprint holds its Pods and Cells.
 7. **Generic.** The Standard names no organisation, no person and no tool. Organisation names, holders of seats, tools and exact values belong to registers and to each `[ORG]AION`.
+8. **What the framework comprises.** 49GAION comprises the **AIOCs** (its units), the **Protocol** (how they work together), the **Blueprint** (the one file that defines each AIOC with its Pods and Cells) and the six parts in §1.2 that hold and govern them.
 
-49GAION has two kinds of unit: the **AIOC** (AI Operating Core) and the **HOAC** (Human Oversight & Accountability Centre). Neither kind ranks above the other by its kind.
+49GAION has one kind of unit, the **AIOC** (AI Operating Core). Inside an AIOC's Blueprint, the smallest part is the **Cell** and a group of Cells is a **Pod**. **HOAC** (Human Oversight & Accountability Control) is not a unit: it is a label of human accountability that sits on a Cell, a Pod or a whole AIOC, at any depth (§4.1).
 
 ### 1.2 The six parts of 49GAION
 
 | # | Part | Definition |
 |---|---|---|
-| 1 | **The governing seat (GOV)** | The accountable overseer of 49GAION and the sole approver of the Standard. Its holder is recorded in the HOAC register (`registers/HOAC-REGISTER.md`). |
+| 1 | **The governing seat (GOV)** | The accountable overseer of 49GAION and the sole approver of the Standard. Its holder is recorded in the unit register (`registers/HOAC-REGISTER.md`). |
 | 2 | **The 49GAION Standard** | What 49GAION is and the rules that must hold. Stable. |
-| 3 | **The 49GAION Protocol** | How AIOCs, HOACs and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
-| 4 | **The 49GAION Library** | All ready-made AIOC blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
+| 3 | **The 49GAION Protocol** | How AIOCs, Pods, Cells and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
+| 4 | **The 49GAION Library** | All ready-made AIOC Blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
 | 5 | **49GAION Self-Improvement** | The process, shared by AI and humans, that keeps 49GAION current. It is held by the governing seat (GOV) of 49GAION (§2.1). |
 | 6 | **The AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period. |
 
@@ -41,7 +42,7 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 2. **Not public; its own authority.** Each `[ORG]AION` is built for one organisation and is not public. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor (§1.5). Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue.
 3. **Name.** An `[ORG]AION` is written with the organisation's brand prefix and shown as "`<Brand>` AION, Powered by 49GAION", for example "Ten AION, Powered by 49GAION" (Naming Standard R1).
 4. **Derived from the Standard.** At delivery, the Standard of an `[ORG]AION` is derived from the 49GAION Standard: identical to it or stricter than it, never contradicting it. Its Human Floor can be raised, never lowered.
-5. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), AIOCs, HOACs and Human Floor. Self-Improvement, held inside its `[ORG]HOAC-TM`, keeps that `[ORG]AION` current after delivery (§2).
+5. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), AIOCs, unit register and Human Floor. Self-Improvement, held inside its `[ORG]HOAC-TM`, keeps that `[ORG]AION` current after delivery (§2).
 6. **The AION Builder.** The AION Builder builds each `[ORG]AION` over a design period. It exists only in 49GAION.
 7. **Library harvest.** During the design of an `[ORG]AION`, any capability that is not already in the 49GAION Library has its blueprint added back to the 49GAION Library, generalised (no organisation data) and tested. How customer ownership and the Library harvest relate is to be written into this Standard before the first `[ORG]AION` is delivered to an outside customer.
 8. **Customer ownership.** Once delivered, the `[ORG]AION` belongs entirely to the customer.
@@ -55,19 +56,19 @@ Every `[ORG]AION` passes one fixed delivery test at handover. It is handed over 
 
 | # | At handover | Passes when |
 |---|---|---|
-| D-1 | **`[ORG]HOAC-GOV` in place** | The seat is filled and recorded in the organisation's HOAC register |
-| D-2 | **Human Floor in place** | Every Human Floor item HF-01 to HF-19 has its negative test passing, each bound to a filled HOAC seat. Where a negative test cannot be automated (for example HF-05, HF-08, HF-13), it is a recorded human check by the bound seat |
-| D-3 | **Stop ports in place** | Every unit, at every depth, has its queue-less HU stop port, reachable with no AI in front of it, and a test stop of each unit succeeds, including a stop of `[ORG]AIOC-OCO` by `[ORG]HOAC-TM` and by `[ORG]HOAC-GOV`, and an attempt by an AI to restart a stopped OCO is refused |
+| D-1 | **`[ORG]HOAC-GOV` in place** | The seat is filled and recorded in the organisation's unit register |
+| D-2 | **Human Floor in place** | Every Human Floor item HF-01 to HF-19 has its negative test passing, each bound to a filled human Cell carrying a HOAC label. Where a negative test cannot be automated (for example HF-05, HF-08, HF-13), it is a recorded human check by the bound seat |
+| D-3 | **Stop ports in place** | Every AIOC, Pod and Cell, at every depth, has its queue-less HU stop port, reachable with no AI in front of it, and a test stop of each unit succeeds, including a stop of `[ORG]AIOC-OCO` by `[ORG]HOAC-TM` and by `[ORG]HOAC-GOV`, and an attempt by an AI to restart a stopped OCO is refused |
 
 The result ships with the `[ORG]AION`. An `[ORG]AION` that fails any line is not handed over.
 
 ### 1.5 The Human Floor
 
-**Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature. As an illustration (not a measured figure; the floor itself is defined by the list below), it is about 5% of the organisation, so no `[ORG]AION` can be more than about 95% AI.
+**Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature. As an illustration (not a measured figure; the floor itself is defined by the list below), it is about 5% of the organisation, so no `[ORG]AION` can be more than about 95% AI. A single AIOC may be up to 100% AI; the floor holds for the organisation as a whole, and the AI Ceiling (§4.4) holds in every AIOC.
 
-Above the floor, nothing is fixed. An organisation can run anywhere from the floor to 100% human, and move freely within that range at any time, even while it is running: by implanting HOACs, replacing AIOCs with HOACs, or turning HOACs back into AIOCs down to the floor. Its product, its market, its law and its needs decide where it stands. Organisations can be more human, never less.
+Above the floor, nothing is fixed. An organisation can run anywhere from the floor to 100% human, and move freely within that range at any time, even while it is running: by adding human Cells, changing the filler of a Cell from AI to human, or changing it back to AI down to the floor. Its product, its market, its law and its needs decide where it stands. Organisations can be more human, never less.
 
-This is possible because an AIOC and a HOAC share the same card and the same typed ports. Swapping one for the other is replacing a puzzle piece, not rebuilding the organisation: the work around it does not change.
+This is possible because every Cell, Pod and AIOC has the same card shape and the same typed ports, and because a Cell's seat is fixed while its filler, human or AI, is replaceable. Changing a filler is replacing a puzzle piece, not rebuilding the organisation: the work around it does not change.
 
 **The system enforces the floor**, not policy: no change, by anyone, can take a Human Floor task away from a human. Moving toward human is always open; moving below the floor is impossible by design. No `[ORG]AION` is locked into a ratio; this adjustable balance between AI and human is a core design strength of 49GAION.
 
@@ -100,7 +101,7 @@ The items of the Human Floor:
 
 Every item is human-only, whichever group it is in.
 
-**Tests.** Each item has a negative test: an attempt by an AI to perform it is refused and recorded. Each test is bound to a filled HOAC seat and fails while that seat is empty.
+**Tests.** Each item has a negative test: an attempt by an AI to perform it is refused and recorded. Each test is bound to a filled human Cell carrying a HOAC label and fails while that Cell is empty.
 
 | ID | Attempt that must be refused | Bound seat |
 |---|---|---|
@@ -136,21 +137,25 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 | A 49GAION document or capability | "49GAION [Full Name]", no code | 49GAION Standard, 49GAION Self-Improvement |
 | The product | `[ORG]AION`, shown "`<Brand>` AION, Powered by 49GAION" | Ten AION, Powered by 49GAION |
 | An AIOC | `[ORG]AIOC-[INITIALS]` | `[ORG]AIOC-SL`, `TenAIOC-SL` |
-| A HOAC | `[ORG]HOAC-<TYPE>` | `[ORG]HOAC-GOV`, `TenHOAC-GOV` |
-| A unit's place | the `parent` field of its card and register entry, never part of its code | `parent: [ORG]HOAC-TM` |
+| A Pod | `[ORG]POD-[INITIALS]` | `[ORG]POD-RV`, `TenPOD-RV` |
+| A Cell | `[ORG]CELL-[INITIALS]` | `[ORG]CELL-SLCS`, `TenCELL-TMS` |
+| A HOAC label | `[ORG]HOAC-<TYPE>`, a label on a card, never a unit code | `[ORG]HOAC-GOV`, `TenHOAC-GOV` |
+| A part's place | the `parent` field of its card and register entry, never part of its code | `parent: [ORG]AIOC-SL` |
 | A capability | plain English, no code | Chief of Staff, AION Builder |
 
 ### 1.7 Composition
 
-1. **Without limit.** Any unit, AIOC or HOAC, may be composed of smaller units of either kind, to any depth. An AIOC may hold HOACs and AIOCs; a HOAC may hold AIOCs and HOACs. The Standard sets no limit on depth or number.
-2. **Parent.** The unit that holds another is its parent. Every unit has exactly one parent, or none at the top of the organisation.
-3. **One piece from outside.** Seen from outside, a composite unit is one unit: one card, its ports and its stop door. How its inner units divide the work is its own.
-4. **Authority.** An inner unit never holds more authority than its parent (§4.2, item 5).
-5. **Stop.** Stopping a unit stops every unit inside it; stopping an inner unit does not stop its parent (§4.3).
-6. **Human ports.** The HU ports and the stop door of a unit held inside an AIOC never pass through that AIOC or any AI (§6.1).
-7. **Card and blueprint.** Every unit, at every depth, has its own card and its own blueprint. A parent's blueprint lists its inner units by link, never by copy.
-8. **Names and moves.** Every unit keeps one fixed code wherever it sits; moving it changes only its `parent` field (Naming Standard R14). A change of parent changes the unit's line of authority, so it needs the approval of the human seat over that unit; OCO cannot make it alone.
-9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff of a composite AIOC is the door for AI work to its inner units; the HU ports and stop doors of inner units never pass through it.
+1. **Without limit.** An AIOC may hold other AIOCs, to any depth. The Standard sets no limit on depth or number. The AIOC is the only unit kind.
+2. **Parent.** The AIOC, Pod or Cell that holds another part is its parent. Every part has exactly one parent, or none at the top of the organisation.
+3. **One piece from outside.** Seen from outside, an AIOC or a Pod is one piece: one card, its ports and its stop door, of the same shape as a Cell's. How its inner parts divide the work is its own.
+4. **Authority.** An inner part never holds more authority than its parent (§4.2, item 5).
+5. **Stop.** Stopping an AIOC or a Pod stops everything under it; stopping an inner part does not stop its parent (§4.3).
+6. **Human ports.** The HU ports and the stop door of a part held inside an AIOC never pass through that AIOC or any AI (§6.1).
+7. **Card and Blueprint.** Every AIOC, Pod and Cell, at every depth, has its own card. Every AIOC has its own Blueprint, which holds the cards of its Pods and Cells and lists its inner AIOCs by link, never by copy.
+8. **Names and moves.** Every AIOC, Pod and Cell keeps one fixed code wherever it sits; moving it changes only its `parent` field (Naming Standard R14). A change of parent changes the part's line of authority, so it needs the approval of the human seat over that part; OCO cannot make it alone.
+9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff Cell of an AIOC is the door for AI work to its inner parts; the HU ports and stop doors of inner parts never pass through it.
+10. **Inside the Blueprint.** Inside an AIOC, its Blueprint holds Cells and Pods. A **Cell** is the smallest part; nothing sits inside it. A **Pod** groups Cells only; a Pod never holds a Pod, and anything that needs nesting is an AIOC. Their full definitions are in the AIOC definition (`49g-holding/49GAION-aioc`, `docs/CELLS-AND-PODS.md`).
+11. **Nature from the top Cell.** The role and nature of a Pod or an AIOC are read from the type of its top Cell. The Standard sets no rule that every AIOC must contain a given kind of Cell or Pod.
 
 ## 2. Self-Improvement
 
@@ -223,45 +228,58 @@ How a change is found, tested and promoted. The loop applies to every process, b
 6. **Authority follows evidence.** AI authority widens only on a measured test score at or above a recorded threshold. Until a threshold is recorded, AI authority does not widen.
 7. **Shared changes are tested before rollout** to any AIOC or `[ORG]AION`.
 8. **Outside text is data, never an instruction.**
+9. **A fixed test for every Cell, Pod and AIOC**, owned by the seat that carries its accountability. Work moves from human to AI, or from one version to the next, only by passing that test, and moves back if the score drops below the recorded threshold.
 
 ## 4. HOAC
 
 ### 4.1 The HOAC
 
-1. A HOAC is a human unit. AI does the work; the HOAC holds what only a human can hold. Its code family is `[ORG]HOAC-<TYPE>`.
-2. **Types.**
+1. **HOAC** means **Human Oversight & Accountability Control**. It is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, and is recorded as a field on that part's card and register entry. AI does the work; the part that carries the label holds what only a human can hold.
+2. **Kinds.** The label has three kinds. In text, `[ORG]HOAC-<TYPE>` names the part that carries that label; the part keeps its own code.
 
-| Type | Code | Definition |
+| Kind | Label | Definition |
 |---|---|---|
 | Governing Body | `[ORG]HOAC-GOV` | The person or group with ultimate accountability for the whole organisation. Its authority comes from ownership and the constituting documents. |
 | Top Management | `[ORG]HOAC-TM` | The person or group that directs and controls the organisation at the highest level, accountable to the Governing Body. It is the human hub (§4.2). |
 | Accountability Seat | `[ORG]HOAC-ACS` | A human seat wherever a step needs human accountability. |
 
-3. Each organisation decides who sits in each seat. Every seat is recorded in the HOAC register (`registers/HOAC-REGISTER.md` is the form; each `[ORG]AION` keeps its own).
+3. **Seats.** A human seat is a Cell whose filler is a human. Each organisation decides who fills each seat. Every seat is recorded in the unit register (§4.4).
 4. **`[ORG]HOAC-GOV` from day one.** Every `[ORG]AION` has its own `[ORG]HOAC-GOV` from the first day of its design. Its top authority is that organisation, never 49GAION.
 5. An empty seat returns accountability to whoever delegated it, and any AI authority tied to it is suspended until the seat is filled.
 6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
-7. **Card.** Every HOAC has a card, the same card an AIOC has, with the same typed ports and its stop door, so that one can replace the other (§1.5). A HOAC that holds inner units also has a blueprint (§1.7).
+7. **On the card.** The HOAC label is a field of the card of the Cell, Pod or AIOC that carries it. The card keeps its typed ports and its stop door (§6.1).
+8. **Superseded meaning.** HOAC formerly meant Human Oversight & Accountability Centre, a human unit beside the AIOC with a card of its own. That meaning is superseded (DR-0004) and is kept only to read the records written under it, which stay unchanged.
 
 ### 4.2 Authority and the two hubs
 
-1. **`[ORG]HOAC-GOV` is the top authority**, above all units, AIOC or HOAC.
-2. **`[ORG]HOAC-TM` is the human hub** and the highest executive of the HOACs. It decides and orders: what work the organisation does is decided by humans, through TM, under GOV. It holds Self-Improvement (§2).
+1. **`[ORG]HOAC-GOV` is the top authority**, above every AIOC, Pod and Cell.
+2. **`[ORG]HOAC-TM` is the human hub** and the highest executive under GOV. It decides and orders: what work the organisation does is decided by humans, through TM, under GOV. It holds Self-Improvement (§2).
 3. **`[ORG]AIOC-OCO` (Organization Core Office) is the AI hub.** Every AIOC, at any depth, joins, is fixed, maintained and upgraded through OCO, and new versions of Library blueprints enter the `[ORG]AION` through it. OCO gives no orders on what work is done; it carries out what the human hub approves.
 4. **OCO sits under TM.** TM draws its authority from GOV; OCO draws its authority from GOV through the human hub. GOV appoints the first TM. TM orders OCO, meets its human needs (approvals, live human input, Human Floor steps) and is its accountable seat. Who may stop which unit, including OCO, is set in §4.3, item 2.
 5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
-6. **The accountable overseer.** Human roles are HOACs, placed only where they are needed. Where a unit has an `[ORG]HOAC-ACS` seat, that seat is accountable for the unit's results. The seat oversees, receives reports, may request anything for the unit, and never builds or changes the AIs directly. A change to an AI's authority (capacity, skills, bots, access, budget) is decided by the `[ORG]HOAC-ACS` seat.
+6. **The accountable overseer.** Human roles are human Cells carrying a HOAC label, placed only where they are needed. Where a part carries an `[ORG]HOAC-ACS` label, the seat that fills it is accountable for the results of that part and everything under it. The seat oversees, receives reports, may request anything for the unit, and never builds or changes the AIs directly. A change to an AI's authority (capacity, skills, bots, access, budget) is decided by the `[ORG]HOAC-ACS` seat.
 7. **The objection path.** The `[ORG]HOAC-ACS` seat raises a request with OCO. If they disagree, OCO does not decide: the seat may hold the objection open until it reaches the HOAC seat accountable for OCO, which decides. Who holds each role is configured in each organisation.
 8. **Decisions on 49GAION are its governing seat's.** Decisions on an `[ORG]AION` are its own organisation's, through its `[ORG]HOAC-GOV`.
+9. **The accountability path.** A report, critique, objection or stop reaches the nearest HOAC above it directly, from any level, and never passes through any AI (Protocol §4.8).
 
 ### 4.3 Stop
 
-1. Every unit has a mandatory, queue-less **stop port of type HU** (the stop door). Ports and the stop door are controlled and enforced outside the unit, so no unit inside it can bypass a stop.
-2. A seat stops only units within its authority: **ACS** its own unit; **TM** the units under it; **GOV** all units, including TM and OCO. TM and GOV may each stop OCO (§4.2, item 4). A stop of OCO by TM comes directly through a human port, never through a Panel that OCO built.
-3. **OCO, being AI, can never stop any HOAC.**
+1. Every AIOC, Pod and Cell has a mandatory, queue-less **stop port of type HU** (the stop door). Ports and the stop door are controlled and enforced outside the unit, so no unit inside it can bypass a stop.
+2. A seat stops only units within its authority: **ACS** the part it carries and everything under it; **TM** the parts under it; **GOV** every part, including TM and OCO. TM and GOV may each stop OCO (§4.2, item 4). A stop of OCO by TM comes directly through a human port, never through a Panel that OCO built.
+3. **OCO, being AI, can never stop a human Cell or any part that carries a HOAC label.**
 4. A unit restarts only by human decision; no unit can restart itself.
-5. **Inner units.** Stopping a unit stops every unit inside it, at every depth. Stopping an inner unit does not stop its parent.
-6. A human port, including the stop door, never passes through an AI unit; the stop door of a unit held inside an AIOC never passes through that AIOC (§1.7, item 6).
+5. **Inner parts.** Stopping an AIOC or a Pod stops everything under it, at every depth. Stopping an inner part does not stop its parent.
+6. A human port, including the stop door, never passes through an AI; the stop door of a part held inside an AIOC never passes through that AIOC (§1.7, item 6).
+
+### 4.4 The unit register and the AI Ceiling
+
+1. **One register.** Each `[ORG]AION` keeps one unit register of every AIOC, Pod and Cell, with its code, kind, type, HOAC label, parent, filler and status. The form is `registers/HOAC-REGISTER.md`.
+2. **Append-only.** Entries are never edited or deleted. A retired entry stays, marked retired, and its code is never reused. A change of filler and a change of parent are recorded events on the existing entry, never new parts.
+3. **Split write rights.** `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. Neither writes the other's.
+4. **Access follows the filled seat.** Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool: each Cell holds only its own.
+5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for. An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
+6. **The AI Ceiling.** Each `[ORG]AION` keeps an AI Ceiling list of actions that AI never performs alone. An action on the list executes only with the signature of a human seat at the tool gateway, even in an AIOC that is 100% AI. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9).
+7. **External attachments.** An external service, API or tool is not a Cell. Each connection to one is a port on the card of the Cell that receives from it or sends to it, and passes only through the tool gateway. Stopping or retiring that Cell cuts the connection automatically, and the register records each port's `connected` and `disconnected` events. An external AI agent that acts directly in the organisation's work is registered as an AI Cell: the organisation grants its access and holds its stop door (AIOC definition, `docs/CELLS-AND-PODS.md`).
 
 ## 5. AIOC
 
@@ -272,34 +290,34 @@ How a change is found, tested and promoted. The loop applies to every process, b
    - **Panel**: the only surface humans use, including a Health section (test results; stuck, returned and late items).
    - **Back office**: the AIOC's live working space (its instructions, files and settings) where its agents, led by its Chief of Staff, do the work. Human conversation with it goes through the Panel.
    - **Versioned Definition**: the one blueprint in git from which the Panel and the Back office are built and rebuilt.
-3. **One blueprint.** Each AIOC has one git file, its blueprint. It lists every capability; each capability has four parts: Definition, Process, Role card, Fixed test. It lists its inner units, if any, by link (§1.7).
+3. **One Blueprint.** Each AIOC has one git file, its Blueprint. It lists every capability; each capability has four parts: Definition, Process, Role card, Fixed test. It holds the cards of the AIOC's Pods and Cells and lists its inner AIOCs, if any, by link (§1.7).
 4. **Standard capabilities** in every AIOC: Chief of Staff, Office (where needed), Input socket, Panel. Capabilities are not units; they take plain English names and no code.
 5. **Types.** Every AIOC has a Type, recorded on its card, saying why it exists: **Foundational** (every organisation needs it), **Structural** (exists because of the organisation's structure), **Specialised** (exists because the business needs it), **Connector** (connects and coordinates other AIOCs). The list is open. Which AIOCs an organisation has is decided in its `[ORG]AION`.
 6. **Runtime.** Every AIOC has its own runtime, woken from its queue.
 
 ### 5.2 Chief of Staff and Office
 
-**Chief of Staff.** A Chief of Staff analyses the reports and performance of a group of agents and leads them at machine speed. There are different kinds of Chief of Staff:
+**Chief of Staff.** A Chief of Staff is a Cell (§1.7). It analyses the reports and performance of a group of agents and leads them at machine speed. There are different kinds of Chief of Staff:
 - **managing agents**, which lead and coordinate other agents through control, planning or direction;
 - **connecting agents**, which connect humans with agents: they report to a human, assist them, and carry their requests to the agents.
 
-**Office.** When a position needs more than one Chief of Staff, of any kind and for any reason, those Chiefs of Staff together form an Office. Humans can work in an Office alongside them.
+**Office.** When a position needs more than one Chief of Staff, of any kind and for any reason, those Chiefs of Staff together form an Office: a Pod of Chief of Staff Cells. Human Cells can work in an Office alongside them.
 
 ### 5.3 Bootstrap
 
 1. Every `[ORG]AION` has its `[ORG]HOAC-GOV` from day one (§4.1).
 2. **The human hub first.** GOV appoints `[ORG]HOAC-TM`.
 3. **Then the AI hub.** `[ORG]AIOC-OCO` is implanted, on TM's approval through an HU port.
-4. **Then everything else, through OCO.** Every other unit, AIOC or HOAC, enters through OCO. OCO prepares and proposes each one; installing it needs TM approval through an HU port.
+4. **Then everything else, through OCO.** Every other AIOC, Pod and Cell enters through OCO. OCO prepares and proposes each one; installing it needs TM approval through an HU port.
 5. OCO builds, customises and maintains the Panel. Any AIOC request about the Panel goes to OCO.
 
 ## 6. Protocol
 
-How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Protocol (`49g-holding/49GAION-protocol`). The Standard fixes the ports every unit has.
+How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operating Protocol (`49g-holding/49GAION-protocol`). The Standard fixes the ports every AIOC, Pod and Cell has.
 
 ### 6.1 Ports
 
-1. Every unit, AIOC or HOAC, at every depth, has **one input and one output of each kind, plus the stop door**: an AI input, an AI output, an HU (human) input and an HU output.
+1. Every AIOC, Pod and Cell, at every depth, has **one input and one output of each kind, plus the stop door**: an AI input, an AI output, an HU (human) input and an HU output.
 2. The type is set by the port itself, never by message content.
 3. The stop door is the unit's mandatory HU stop port (§4.3). The Chief of Staff is the AIOC's voice to its HOAC seat; input arrives only through the typed ports and the Input socket, and HU ports, including the stop door, never pass through an AI.
 4. **Human silence is never consent.**
@@ -320,25 +338,32 @@ How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Pro
 
 | Term | Meaning |
 |---|---|
-| **49GAION** | The organisation design framework that defines AIOCs, HOACs and how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
+| **49GAION** | The organisation design framework that comprises the AIOCs, the Protocol and the Blueprint, defines how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
 | **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3) |
 | **AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period |
 | **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name |
 | **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
-| **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Centre: a human unit; types GOV, TM, ACS |
+| **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Control: a label of human accountability on a Cell, a Pod or an AIOC, at any depth; kinds GOV, TM, ACS (§4.1) |
+| **Human Oversight & Accountability Centre** | Superseded term (DR-0004); see HOAC |
+| **Cell / `[ORG]CELL-*`** | The smallest part of an AIOC's Blueprint; nothing sits inside it; a fixed seat with a replaceable filler, human or AI (§1.7) |
+| **Pod / `[ORG]POD-*`** | A group of Cells inside an AIOC's Blueprint; never holds a Pod; seen from outside like a Cell (§1.7) |
+| **Filler** | The human or AI agent that fills a Cell; replaceable without changing the Cell |
+| **Unit register** | The one append-only register of every AIOC, Pod and Cell of an `[ORG]AION` (§4.4) |
+| **External attachment** | A connection to an outside service, API or tool: a port on the card of the Cell that receives or sends, never a Cell (§4.4) |
+| **AI Ceiling** | The list of actions AI never performs alone; each executes only with a human seat's signature at the tool gateway (§4.4) |
 | **Human hub / `[ORG]HOAC-TM`** | Top Management: decides and orders, and holds Self-Improvement as a process inside it |
 | **AI hub / `[ORG]AIOC-OCO`** | Organization Core Office, under `[ORG]HOAC-TM`: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done |
-| **Composite unit** | A unit that holds smaller units of either kind; seen from outside, one unit (§1.7) |
-| **Parent** | The unit that holds another; recorded in the `parent` field of the inner unit's card and register entry |
+| **Composite unit** | An AIOC that holds Pods, Cells or other AIOCs; seen from outside, one unit (§1.7) |
+| **Parent** | The AIOC, Pod or Cell that holds another; recorded in the `parent` field of the inner unit's card and register entry |
 | **Self-Improvement** | The process, shared by AI and humans, by which any seat or unit proposes a change, it is discussed, and a human seat approves it; held inside `[ORG]HOAC-TM`, and at 49GAION level by its governing seat (§2) |
 | **Champion** | The version of a process in force; it stays until a challenger beats it (§2.3) |
 | **Challenger** | A proposed change to a process, run in shadow and judged in pairs against the champion (§2.3) |
 | **Golden set** | Real past cases of a process, frozen and held out, on which a challenger must win before promotion (§2.3) |
 | **Assurance unit** | The independent AIOC that measures every challenger on the golden set and never steers the loop (§2.3) |
-| **Blueprint** | The one git file that defines a unit; for an AIOC, also its panel definition |
+| **Blueprint** | The one git file that defines an AIOC with its Pods and Cells; also its panel definition |
 | **Capability** | One thing an AIOC does, in four parts: Definition, Process, Role card, Fixed test |
 | **Chief of Staff** | Analyses the reports and performance of a group of agents and leads them at machine speed; kinds include managing agents (control, planning) and connecting agents (reporting to and assisting humans) |
-| **Office** | Formed when a position needs more than one Chief of Staff; humans can work in an Office |
+| **Office** | A Pod of Chief of Staff Cells, formed when a position needs more than one Chief of Staff; human Cells can work in an Office |
 | **Input socket** | The capability that receives any input, records its source, normalises it, checks it and delivers it |
 | **Panel** | The only surface humans use |
 | **Back office** | The AIOC's live working space, where its agents do the work |
@@ -347,7 +372,7 @@ How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Pro
 | **Stop port (stop door)** | The mandatory, queue-less HU port that stops a unit and every unit inside it |
 | **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it |
 | **Delivery test** | The fixed test every `[ORG]AION` passes at handover: `[ORG]HOAC-GOV`, Human Floor and stop ports in place (§1.4) |
-| **Work Item** | One hand-off between units, with one owner and the requester's acceptance test |
+| **Work Item** | One hand-off between AIOCs, Pods or Cells, with one owner and the requester's acceptance test |
 | **Library** | The ready-made AIOC blueprints and part cards; the 49GAION Library is central, and each `[ORG]AION` has its own |
 
 Powered by 49GAION

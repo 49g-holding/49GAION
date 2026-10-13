@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.2.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 ## 1. The definition
 
@@ -16,7 +16,8 @@
 - **Framework:** `49GAION`, upper case, one word. A bare "AION" is not used for the framework.
 - **Product:** `[ORG]AION`, where `[ORG]` is the organisation's brand prefix; shown as "`<Brand>` AION, Powered by 49GAION". 49GAION is the framework itself, not an `[ORG]AION`.
 - **AIOC = AI Operating Core**, an AI unit of one organisation: `[ORG]AIOC-[INITIALS]`; an organisation named Ten has `TenAIOC-SL`.
-- **HOAC = Human Oversight & Accountability Centre**, the human unit beside the AIOC (Standard §4.1).
+- **HOAC = Human Oversight & Accountability Control**, a label of human accountability on a Cell, a Pod or an AIOC (Standard §4.1).
+- **Cell and Pod.** Inside an AIOC's Blueprint, a Cell is the smallest part and a Pod groups Cells (Standard §1.7).
 
 ## 2. Why 49GAION exists
 
@@ -29,10 +30,10 @@
 ## 3. The philosophy
 
 1. **The framework stays fixed; each organisation gets its own `[ORG]AION`.**
-2. **The accountable overseer.** Human roles are HOACs, placed only where they are needed. An `[ORG]HOAC-ACS` seat oversees and requests, but never builds or changes the AIs directly.
+2. **The accountable overseer.** Human roles are human Cells carrying a HOAC label, placed only where they are needed. An `[ORG]HOAC-ACS` seat oversees and requests, but never builds or changes the AIs directly.
 3. **Chief of Staff and Office.** A Chief of Staff analyses the reports and performance of a group of agents and leads them at machine speed. When a position needs more than one Chief of Staff, they form an Office, where humans can also work (Standard §5.2).
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5).
-5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: any unit may be composed of smaller units of either kind, to any depth, and from outside it is still one unit (Standard §1.7). An AIOC and a HOAC share the same card and ports, so one can replace the other. A change replaces or updates a part, never rebuilds the whole.
+5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: an AIOC may hold other AIOCs, to any depth, and holds its own Pods and Cells; from outside it is still one unit (Standard §1.7). Every Cell, Pod and AIOC has the same card shape and ports, and a Cell's filler, human or AI, can be replaced without changing the seat. A change replaces or updates a part, never rebuilds the whole.
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
 7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
@@ -60,7 +61,7 @@
 
 ## 6. The delivery test
 
-Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor and the stop ports of all its units are in place (Standard §1.4).
+Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor and the stop ports of all its AIOCs, Pods and Cells are in place (Standard §1.4).
 
 ## 7. How 49GAION is shown
 
@@ -75,7 +76,7 @@ Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor 
 | The 49GAION Naming Standard | `standards/49GAION-NAMING-STANDARD.md` |
 | The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
 | What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
-| HOAC register (form) | `registers/HOAC-REGISTER.md` |
+| Unit register (form) | `registers/HOAC-REGISTER.md` |
 | Decision records | `decisions/README.md` |
 
 Powered by 49GAION

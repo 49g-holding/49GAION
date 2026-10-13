@@ -1,0 +1,19 @@
+# DR-0004 · 49GAION v1.3.0 — HOAC as a label; Cells and Pods
+
+- **Date:** 2026-10-13
+- **Decided by:** the governing seat (GOV) of 49GAION (holder in `registers/HOAC-REGISTER.md`)
+- **Source:** board decision, 2026-10-13
+
+## Decision
+
+1. **What the framework comprises.** 49GAION comprises the AIOCs, the Protocol and the Blueprint, held and governed by its six parts (Standard §1.1, §1.2).
+2. **HOAC.** HOAC means Human Oversight & Accountability Control. It is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with the same three kinds: GOV, TM and ACS. The definitions of accountability are unchanged. The AIOC is the only unit kind, and nests to any depth. This supersedes the meaning of HOAC as a unit beside the AIOC recorded in DR-0001 and DR-0002; those records are unchanged.
+3. **Cell and Pod.** Inside an AIOC's Blueprint, the Cell is the smallest part, with nothing inside it. Its card has a type from an open list each organisation configures (for example Human Seat, Human Reviewer, AI Agent, AI Chief of Staff) and states the filler kind it allows; the seat is fixed and its filler, human or agent, is replaceable. The Chief of Staff is itself a Cell. A Pod groups Cells only and never holds a Pod; anything that needs nesting is an AIOC. Seen from outside, a Pod is like a Cell: the same card shape, ports and stop door. A person's AI assistants are separate registered AI Cells attached to that person's Cell. The role and nature of a Pod or an AIOC are read from its top Cell's type; there is no rule that every AIOC must contain a given part.
+4. **Accountability path and AI Ceiling.** A report, critique, objection or stop reaches the nearest HOAC directly from any level and never passes through any AI. The stop door of each part is outside it; stopping a Pod or an AIOC stops everything under it. Actions on the AI Ceiling list execute only with a human seat's signature at the tool gateway, even in an AIOC that is 100% AI; all other AI work is logged with the code of the accountable seat above it. An AIOC may be up to 100% AI; the organisation-wide Human Floor wording is unchanged.
+5. **Unit register.** One append-only register of every AIOC, Pod and Cell; retired entries stay and retired codes are never reused; a filler change or a parent change is a recorded event, not a new part; write rights are split (OCO for AI Cells, TM for human Cells); access opens only for an active, filled Cell whose filler passed the seat's fixed test, closes automatically on a filler change or retirement, and never pools within a Pod. Signatures by one person filling several human Cells are recorded with each Cell's code, and dual approval by the same person is flagged.
+6. **Fixed tests.** Every Cell, Pod and AIOC has a fixed test owned by its seat. Work moves from human to AI, or from version to version, only by passing it, and moves back if the score drops.
+7. **Naming.** Every AIOC, Pod and Cell has one fixed code and a separate `parent` field; codes are never paths and carry no suffix. Pods are coded `[ORG]POD-[INITIALS]` and Cells `[ORG]CELL-[INITIALS]` (Naming Standard R15). A HOAC label is written `[ORG]HOAC-<TYPE>` and is never a code. The organisation prefix is filled in each organisation's own edition.
+8. **Where each definition sits.** HOAC, the unit register, the AI Ceiling, naming and the glossary: the 49GAION Standard and the Naming Standard (hub). The accountability path, the AI Ceiling gate, register write and access rules, and the card schema with its tests: the 49GAION Operating Protocol (`49GAION-protocol`). Cell, Pod and their place in the Blueprint: the AIOC definition and blueprint template (`49GAION-aioc`, `docs/CELLS-AND-PODS.md`).
+9. **Version.** The 49GAION Standard, the Operating Protocol and the AIOC definition and blueprint template are `v1.3.0`.
+
+Powered by 49GAION
