@@ -53,23 +53,27 @@ def add_row(d, n, status):
     sub(idx(d), "\n\nPowered by", f"\n| [`{n}`]({n}-x.md) | 2026-10-14 | x | {status} |\n\nPowered by")
     (d / f"decisions/{n}-x.md").write_text(f"# {n}\n", encoding="utf-8")
 
+# Record numbers follow the tree under test, so the cases hold as records are added.
+_nums = [int(f.name[3:7]) for f in (HUB / "decisions").glob("DR-[0-9][0-9][0-9][0-9]*.md")]
+NEXT, SKIP, MISSING = (f"DR-{max(_nums) + k:04d}" for k in (1, 2, 4))
+
 dr_case("unchanged tree passes", lambda d: None)
 dr_case("edit DR-0004 fails", lambda d: (d / "decisions/DR-0004-49gaion-v1-3-0-hoac-cells-pods.md").open("a").write("x\n"), "DR-FROZEN-EDITED")
 dr_case("delete DR-0001 fails", lambda d: (d / "decisions/DR-0001-49gaion-v1-0-0-day-zero.md").unlink(), "DR-FROZEN-DELETED")
 dr_case("rename DR-0002 fails", lambda d: (d / "decisions/DR-0002-49gaion-v1-1-0-two-hubs-composition.md").rename(d / "decisions/DR-0002-renamed.md"), "DR-FROZEN-RENAMED")
-dr_case("new record with next number passes", lambda d: add_row(d, "DR-0006", "proposed"))
-dr_case("status flip proposed -> in force passes", lambda d: sub(idx(d), "| x | proposed |", "| x | in force |"), None, lambda d: add_row(d, "DR-0006", "proposed"))
+dr_case("new record with next number passes", lambda d: add_row(d, NEXT, "proposed"))
+dr_case("status flip proposed -> in force passes", lambda d: sub(idx(d), "| x | proposed |", "| x | in force |"), None, lambda d: add_row(d, NEXT, "proposed"))
 dr_case("supersede with the newer record in the same change passes",
-        lambda d: (add_row(d, "DR-0006", "proposed"), sub(idx(d), "loop of Self-Improvement | in force |", "loop of Self-Improvement | superseded by DR-0006 |")))
+        lambda d: (add_row(d, NEXT, "proposed"), sub(idx(d), "loop of Self-Improvement | in force |", "loop of Self-Improvement | superseded by " + NEXT + " |")))
 dr_case("supersede naming a missing record fails",
-        lambda d: sub(idx(d), "loop of Self-Improvement | in force |", "loop of Self-Improvement | superseded by DR-0009 |"), "DR-INDEX-SUPERSEDER-MISSING")
+        lambda d: sub(idx(d), "loop of Self-Improvement | in force |", "loop of Self-Improvement | superseded by " + MISSING + " |"), "DR-INDEX-SUPERSEDER-MISSING")
 dr_case("status flip in force -> proposed fails",
         lambda d: sub(idx(d), "loop of Self-Improvement | in force |", "loop of Self-Improvement | proposed |"), "DR-INDEX-STATUS-CHANGE")
 dr_case("deleting an index row fails",
         lambda d: idx(d).write_text("\n".join(l for l in idx(d).read_text().splitlines() if "DR-0002" not in l) + "\n"), "DR-INDEX-ROW-DELETED")
 dr_case("changing a row's date fails", lambda d: sub(idx(d), "| 2026-10-11 |", "| 2026-10-10 |"), "DR-INDEX-ROW-CHANGED")
 dr_case("changing a row's title fails", lambda d: sub(idx(d), "day zero", "day one"), "DR-INDEX-ROW-CHANGED")
-dr_case("new record skipping a number fails", lambda d: add_row(d, "DR-0007", "proposed"), "DR-NUMBER-SKIPPED")
+dr_case("new record skipping a number fails", lambda d: add_row(d, SKIP, "proposed"), "DR-NUMBER-SKIPPED")
 dr_case("new record reusing a number fails", lambda d: (d / "decisions/DR-0005-another-subject.md").write_text("# DR-0005\n"), "DR-NUMBER-REUSED")
 dr_case("unreadable index fails closed", lambda d: idx(d).unlink(), "failing closed")
 
@@ -149,8 +153,11 @@ sig_case("push to main reads the floor from the release tag, not from head", {},
 sig_case("push to main with no release tag fails closed", {}, "SIG-FLOOR-UNREADABLE", event="push", tag=False)
 pol = dict(STD, type_fields=["related_floor"], decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
 sig_case("the Standard declaring a policy field in the same change passes", {}, None, head_std=pol)
+# A base Standard with no declared policy fields, whatever the tree under test declares.
+nodecl = dict({k: v for k, v in STD.items() if k != "type_fields"},
+              decision_types=[{k: v for k, v in e.items() if k in ("id", "human_floor", "label", "note")} for e in STD["decision_types"]])
 sig_case("a list using a policy field the base Standard has not declared fails",
-         {"org-aion-signature-types/acme.json": full(related_floor=["HF-12"])}, "SIG-KEY-NOT-ALLOWED")
+         {"org-aion-signature-types/acme.json": full(related_floor=["HF-12"])}, "SIG-KEY-NOT-ALLOWED", std=nodecl)
 sig_case("a list using a policy field the base Standard declares passes",
          {"org-aion-signature-types/acme.json": full(related_floor=["HF-12"])}, None, std=pol)
 
