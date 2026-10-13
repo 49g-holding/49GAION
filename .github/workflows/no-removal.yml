@@ -1,0 +1,20 @@
+# The 49GAION Standard changes only additively: every section ID and glossary term of
+# v1.2.0, listed in .github/no-removal/v1.2-ids.txt, must still be present in
+# upstream/49GAION-UPSTREAM.md. Only presence is checked, not the definition text, so a
+# definition may change by decision while its term stays. To become a required check on
+# main after this workflow is merged.
+name: no-removal
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  no-removal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check v1.2.0 sections and glossary terms are present
+        run: python3 .github/scripts/check_no_removal.py
