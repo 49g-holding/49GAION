@@ -14,4 +14,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0006`](DR-0006-decision-record-lock.md) | 2026-10-13 | Decision records frozen; how a change reaches main | in force |
 | [`DR-0007`](DR-0007-49gaion-v1-5-0-structure-accountability-signatures.md) | 2026-10-13 | 49GAION v1.5.0 — structure, accountability, signatures, gateway and register | proposed |
 
+## Reading notes
+
+- A record from before v1.5.0 (`DR-0001`) names a filler of a seat. Records are frozen and stay as written (DR-0006); from v1.5.0 on, fillers are kept in the private holders register, not in records or the unit register (DR-0007).
+
 Powered by 49GAION
