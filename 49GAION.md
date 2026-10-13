@@ -10,7 +10,7 @@
 
 **The product: `[ORG]AION`**, the AI Operating Nexus of one organisation; its one definition is in the Standard, §1.3, item 1.
 
-49GAION consists of six parts: the governing seat (GOV), the 49GAION Standard, the 49GAION Protocol, the 49GAION Library, 49GAION Self-Improvement and the AION Builder (Standard §1.2). To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
+49GAION consists of six parts: the governing seat (GOV), the 49GAION Standard, the 49GAION Protocol, the 49GAION Library, 49GAION Improvement and the AION Builder (Standard §1.2). To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
 
 ### 1.1 The names
 - **Framework:** `49GAION`, upper case, one word. A bare "AION" is not used for the framework.
@@ -34,7 +34,7 @@
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5).
 5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: any unit may be composed of smaller units of either kind, to any depth, and from outside it is still one unit (Standard §1.7). An AIOC and a HOAC share the same card and ports, so one can replace the other. A change replaces or updates a part, never rebuilds the whole.
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
-7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
+7. **Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
 9. **One valid version of everything, linked, never copied.**
 10. **Done means visible evidence**, never a bot's own report.

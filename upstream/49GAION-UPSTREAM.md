@@ -30,10 +30,10 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 | 2 | **The 49GAION Standard** | What 49GAION is and the rules that must hold. Stable. |
 | 3 | **The 49GAION Protocol** | How AIOCs, HOACs and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
 | 4 | **The 49GAION Library** | All ready-made AIOC blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
-| 5 | **49GAION Self-Improvement** | The process, shared by AI and humans, that keeps 49GAION current. It is held by the governing seat (GOV) of 49GAION (§2.1). |
+| 5 | **49GAION Improvement** | The process, shared by AI and humans, that keeps 49GAION current. It is held by the governing seat (GOV) of 49GAION (§2.1). |
 | 6 | **The AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period. |
 
-**Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has its own governing seat (`[ORG]HOAC-GOV`), Standard, Protocol and Library. In an `[ORG]AION`, Self-Improvement is not a separate part: it is a process inside its `[ORG]HOAC-TM` (§2.1). The AION Builder exists only in 49GAION.
+**Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has its own governing seat (`[ORG]HOAC-GOV`), Standard, Protocol and Library. In an `[ORG]AION`, Improvement is not a separate part: it is a process inside its `[ORG]HOAC-TM` (§2.1). The AION Builder exists only in 49GAION.
 
 ### 1.3 The product: `[ORG]AION`
 
@@ -41,12 +41,12 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 2. **Not public; its own authority.** Each `[ORG]AION` is built for one organisation and is not public. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor (§1.5). Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue.
 3. **Name.** An `[ORG]AION` is written with the organisation's brand prefix and shown as "`<Brand>` AION, Powered by 49GAION", for example "Ten AION, Powered by 49GAION" (Naming Standard R1).
 4. **Derived from the Standard.** At delivery, the Standard of an `[ORG]AION` is derived from the 49GAION Standard: identical to it or stricter than it, never contradicting it. Its Human Floor can be raised, never lowered.
-5. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), AIOCs, HOACs and Human Floor. Self-Improvement, held inside its `[ORG]HOAC-TM`, keeps that `[ORG]AION` current after delivery (§2).
+5. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), AIOCs, HOACs and Human Floor. Improvement, held inside its `[ORG]HOAC-TM`, keeps that `[ORG]AION` current after delivery (§2).
 6. **The AION Builder.** The AION Builder builds each `[ORG]AION` over a design period. It exists only in 49GAION.
 7. **Library harvest.** During the design of an `[ORG]AION`, any capability that is not already in the 49GAION Library has its blueprint added back to the 49GAION Library, generalised (no organisation data) and tested. How customer ownership and the Library harvest relate is to be written into this Standard before the first `[ORG]AION` is delivered to an outside customer.
 8. **Customer ownership.** Once delivered, the `[ORG]AION` belongs entirely to the customer.
 9. **Data.** The organisation's own working data stays the organisation's and never enters the 49GAION Library. No `[ORG]AION` sees another `[ORG]AION`'s data.
-10. **Into the Standard.** Lessons enter the 49GAION Standard only through 49GAION Self-Improvement, generalised and re-tested, and only on the decision of the governing seat of 49GAION.
+10. **Into the Standard.** Lessons enter the 49GAION Standard only through 49GAION Improvement, generalised and re-tested, and only on the decision of the governing seat of 49GAION.
 11. **Tool neutrality.** The Standard names roles only; tool names appear only in an `[ORG]AION`.
 
 ### 1.4 The delivery test
@@ -133,7 +133,7 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 | Thing | Name | Example |
 |---|---|---|
 | The framework | `49GAION`, in full | 49GAION |
-| A 49GAION document or capability | "49GAION [Full Name]", no code | 49GAION Standard, 49GAION Self-Improvement |
+| A 49GAION document or capability | "49GAION [Full Name]", no code | 49GAION Standard, 49GAION Improvement |
 | The product | `[ORG]AION`, shown "`<Brand>` AION, Powered by 49GAION" | Ten AION, Powered by 49GAION |
 | An AIOC | `[ORG]AIOC-[INITIALS]` | `[ORG]AIOC-SL`, `TenAIOC-SL` |
 | A HOAC | `[ORG]HOAC-<TYPE>` | `[ORG]HOAC-GOV`, `TenHOAC-GOV` |
@@ -152,20 +152,20 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 8. **Names and moves.** Every unit keeps one fixed code wherever it sits; moving it changes only its `parent` field (Naming Standard R14). A change of parent changes the unit's line of authority, so it needs the approval of the human seat over that unit; OCO cannot make it alone.
 9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff of a composite AIOC is the door for AI work to its inner units; the HU ports and stop doors of inner units never pass through it.
 
-## 2. Self-Improvement
+## 2. Improvement
 
 ### 2.1 What it is
 
-1. **A shared process.** Self-Improvement is a process shared by AI and humans. It keeps an organisation current: its units, blueprints, processes, Protocol and Standard.
+1. **A shared process.** Improvement is a process shared by AI and humans. It keeps an organisation current: its units, blueprints, processes, Protocol and Standard.
 2. **Proposers.** Any human seat and any AI unit may raise a proposal. A human may want a change for reasons the system cannot see (the market, the law, people, strategy); an AI may find one in the records (stuck or returned work, failing tests, units that overlap, a unit grown too broad).
 3. **Form.** Every proposal carries the current text, the proposed text, the reason and the evidence, and the parts and tests it affects. It is recorded as a Work Item of type `design-proposal`.
 4. **Discussion.** A proposal is discussed between its proposer, the human hub and the units it affects, until its text is ready for decision. The discussion records the arguments; it decides nothing.
 5. **Decision.** A proposal takes effect only on approval by the accountable human seat (§2.2), as a new version and a decision record. Decision records are never edited. What is applied must equal what was approved. Human silence is never consent.
-6. **Its place.** Self-Improvement is not a separate part of an `[ORG]AION`. It is a process held inside the human hub, `[ORG]HOAC-TM` (§4.2, item 2), and carried out jointly by humans and by one AIOC held within TM. That AIOC raises proposals of its own and prepares every proposal for decision; TM decides, including on changes to `[ORG]AIOC-OCO`. `[ORG]AIOC-OCO` carries out what is approved.
-7. **Its records.** The Self-Improvement AIOC reads the shared queue, the gateway logs and the test results directly and read-only, never only through a Panel. These records are kept where OCO cannot change or delete them.
-8. **Its own changes.** The Self-Improvement AIOC is maintained through OCO like every AIOC, but any change to it, including its tests and its access to data, needs the approval of `[ORG]HOAC-TM`.
+6. **Its place.** Improvement is not a separate part of an `[ORG]AION`. It is a process held inside the human hub, `[ORG]HOAC-TM` (§4.2, item 2), and carried out jointly by humans and by one AIOC held within TM. That AIOC raises proposals of its own and prepares every proposal for decision; TM decides, including on changes to `[ORG]AIOC-OCO`. `[ORG]AIOC-OCO` carries out what is approved.
+7. **Its records.** The Improvement AIOC reads the shared queue, the gateway logs and the test results directly and read-only, never only through a Panel. These records are kept where OCO cannot change or delete them.
+8. **Its own changes.** The Improvement AIOC is maintained through OCO like every AIOC, but any change to it, including its tests and its access to data, needs the approval of `[ORG]HOAC-TM`.
 9. **Merging and splitting.** Proposals to merge units that overlap, or to split a unit that has grown too broad, follow the same process.
-10. **49GAION Self-Improvement** is the same process for 49GAION itself, held by the governing seat (GOV) of 49GAION. It also brings generalised lessons from each `[ORG]AION` back into central 49GAION.
+10. **49GAION Improvement** is the same process for 49GAION itself, held by the governing seat (GOV) of 49GAION. It also brings generalised lessons from each `[ORG]AION` back into central 49GAION.
 
 ### 2.2 Who approves
 
@@ -176,7 +176,7 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 | The authority of an AI (capacity, skills, bots, access, budget) | The `[ORG]HOAC-ACS` seat of its unit (§4.2, item 6) |
 | Any other unit, blueprint, process or Protocol value of an `[ORG]AION`, including `[ORG]AIOC-OCO` itself | Its `[ORG]HOAC-TM` |
 
-1. 49GAION Self-Improvement brings changes to 49GAION as pull requests; they merge only on the decision of the governing seat of 49GAION.
+1. 49GAION Improvement brings changes to 49GAION as pull requests; they merge only on the decision of the governing seat of 49GAION.
 2. No unit approves a change to itself. A change to `[ORG]AIOC-OCO` is proposed, discussed and approved like any other, and OCO only carries it out once approved.
 
 ### 2.3 The improvement loop
@@ -188,10 +188,10 @@ How a change is found, tested and promoted. The loop applies to every process, b
 3. **The challenger.** A proposal (§2.1) to change a process is written as a challenger: a difference to the champion. Contracts and order are changed first, roles and instructions last, because most of what a process needs to know lives in what is handed over, with what checks, and in what order.
 4. **Shadow run.** The challenger runs beside the champion on the same cases, past cases replayed or live cases in shadow, with no effect on real work.
 5. **Pairwise judgment.** A judge, separate from the proposer, compares the challenger's result with the champion's, case by case, and records which is better and why. Results are compared in pairs, never by a single absolute score, and each pair is judged with the two results shown in both orders.
-6. **Iteration.** The Self-Improvement AIOC (§2.1, item 6) revises the challenger using the whole history of judgments, for a bounded number of rounds set in the `[ORG]AION`.
+6. **Iteration.** The Improvement AIOC (§2.1, item 6) revises the challenger using the whole history of judgments, for a bounded number of rounds set in the `[ORG]AION`.
 7. **The golden set.** Every process has a golden set: real past cases, frozen and held out, never used to tune or to judge rounds. The surviving challenger is run on it and judged blind by the assurance unit (item 9).
 8. **Promotion.** A challenger goes to the human seat that approves the change (§2.2) only when it wins on the golden set by the margin set in the `[ORG]AION`, passes every fixed test and every Human Floor test, and costs no more per case unless that seat accepts the cost. On approval it becomes the champion, as a new version; the former champion is kept for rollback.
-9. **The assurance unit.** An assurance unit, an AIOC independent of the proposer and the judge, measures every challenger that reaches the golden set. It runs on a different model provider where one is available, and its `[ORG]HOAC-ACS` seat reviews a sample of its verdicts. Its verdicts measure; they are never fed back into the rounds they measure. Any change to it, its judges or its access to data needs the approval of `[ORG]HOAC-TM`, as for the Self-Improvement AIOC. No unit grades its own work, and `[ORG]AIOC-OCO` never grades the AIOCs it builds.
+9. **The assurance unit.** An assurance unit, an AIOC independent of the proposer and the judge, measures every challenger that reaches the golden set. It runs on a different model provider where one is available, and its `[ORG]HOAC-ACS` seat reviews a sample of its verdicts. Its verdicts measure; they are never fed back into the rounds they measure. Any change to it, its judges or its access to data needs the approval of `[ORG]HOAC-TM`, as for the Improvement AIOC. No unit grades its own work, and `[ORG]AIOC-OCO` never grades the AIOCs it builds.
 10. **Dwell and rollback.** After a promotion, the process is not changed again for a dwell time set in the `[ORG]AION`, except on an incident. Any human seat accountable for the process may order a rollback at once.
 11. **Distillation.** At set intervals, the best runs of each champion are written into its defaults: roles, instructions and contracts absorb what worked, so the process no longer needs special instructions; the best cases are kept as worked examples; every failure seen becomes a fixed test (§3.2, item 3). Generalised lessons go to the 49GAION Library (§1.3, item 7).
 12. **The proposer.** The proposer is the bottleneck of the loop: good judgments are wasted on a proposer that cannot use them. The strongest available model writes and revises challengers; a lighter model may judge early rounds, with the assurance unit confirming.
@@ -246,7 +246,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 ### 4.2 Authority and the two hubs
 
 1. **`[ORG]HOAC-GOV` is the top authority**, above all units, AIOC or HOAC.
-2. **`[ORG]HOAC-TM` is the human hub** and the highest executive of the HOACs. It decides and orders: what work the organisation does is decided by humans, through TM, under GOV. It holds Self-Improvement (§2).
+2. **`[ORG]HOAC-TM` is the human hub** and the highest executive of the HOACs. It decides and orders: what work the organisation does is decided by humans, through TM, under GOV. It holds Improvement (§2).
 3. **`[ORG]AIOC-OCO` (Organization Core Office) is the AI hub.** Every AIOC, at any depth, joins, is fixed, maintained and upgraded through OCO, and new versions of Library blueprints enter the `[ORG]AION` through it. OCO gives no orders on what work is done; it carries out what the human hub approves.
 4. **OCO sits under TM.** TM draws its authority from GOV; OCO draws its authority from GOV through the human hub. GOV appoints the first TM. TM orders OCO, meets its human needs (approvals, live human input, Human Floor steps) and is its accountable seat. Who may stop which unit, including OCO, is set in §4.3, item 2.
 5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
@@ -326,11 +326,11 @@ How AIOCs, HOACs and the parts work together is set in the 49GAION Operating Pro
 | **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name |
 | **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
 | **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Centre: a human unit; types GOV, TM, ACS |
-| **Human hub / `[ORG]HOAC-TM`** | Top Management: decides and orders, and holds Self-Improvement as a process inside it |
+| **Human hub / `[ORG]HOAC-TM`** | Top Management: decides and orders, and holds Improvement as a process inside it |
 | **AI hub / `[ORG]AIOC-OCO`** | Organization Core Office, under `[ORG]HOAC-TM`: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done |
 | **Composite unit** | A unit that holds smaller units of either kind; seen from outside, one unit (§1.7) |
 | **Parent** | The unit that holds another; recorded in the `parent` field of the inner unit's card and register entry |
-| **Self-Improvement** | The process, shared by AI and humans, by which any seat or unit proposes a change, it is discussed, and a human seat approves it; held inside `[ORG]HOAC-TM`, and at 49GAION level by its governing seat (§2) |
+| **Improvement** | The process, shared by AI and humans, by which any seat or unit proposes a change, it is discussed, and a human seat approves it; held inside `[ORG]HOAC-TM`, and at 49GAION level by its governing seat (§2) |
 | **Champion** | The version of a process in force; it stays until a challenger beats it (§2.3) |
 | **Challenger** | A proposed change to a process, run in shadow and judged in pairs against the champion (§2.3) |
 | **Golden set** | Real past cases of a process, frozen and held out, on which a challenger must win before promotion (§2.3) |
