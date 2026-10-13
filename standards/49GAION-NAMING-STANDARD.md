@@ -1,11 +1,11 @@
 # The 49GAION Naming Standard
 
-**Version `v1.2.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v1.3.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
-1. **One name per thing, and as few codes as possible.** Every code is a future collision and a future migration. Codes are given only to units (AIOCs and HOACs) and to the product (`[ORG]AION`).
-2. **Scope.** The framework (`49GAION`), its product (`[ORG]AION`), 49GAION documents and capabilities, AIOCs, HOACs, releases and repositories.
+1. **One name per thing, and as few codes as possible.** Every code is a future collision and a future migration. Codes are given only to AIOCs, Pods and Cells, and to the product (`[ORG]AION`). A HOAC label is written `[ORG]HOAC-<TYPE>` but is a label on a card, never a code.
+2. **Scope.** The framework (`49GAION`), its product (`[ORG]AION`), 49GAION documents and capabilities, AIOCs, Pods, Cells, HOAC labels, releases and repositories.
 3. **Out of scope.** Positions and each organisation's own document series (kept in its `[ORG]AION`). Capabilities take plain names (R3).
 
 ## 2. The rules
@@ -31,7 +31,7 @@
   ```
 
 ### R4. Nothing else gets a code
-Position codes are entries in a register, never appended to a unit code. No code with a hard-coded `49` prefix exists (R13).
+Position codes are entries in a register, never appended to a code. Nothing is appended to a code to show where a part sits or what it belongs to (R14). No code with a hard-coded `49` prefix exists (R13).
 
 ### R5. Retired codes are never reused
 The codes in §4 are retired and never issued again, for any meaning.
@@ -40,7 +40,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.2.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.3.0`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -69,14 +69,21 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 1. **Brand-derived prefix.** A code's prefix comes from the brand of the organisation that owns the `[ORG]AION`. Centrally it is written `[ORG]`; the AION Builder fills it. The prefix keeps the brand's registered case; `AION`, `AIOC` and `HOAC` are always upper case. Example for an organisation named Ten: `TenAION`, `TenAIOC-SL`, `TenHOAC-GOV`.
 2. **Initials of the unit's own name.** "AI" appears in a code only when it is part of the unit's name.
 3. **No hard-coded `49`.** Central texts never use `49` as a code prefix; they write `[ORG]`.
-4. **HOAC.** The 49GAION Human Oversight & Accountability Centre has the code family `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
+4. **HOAC.** The 49GAION Human Oversight & Accountability Control label is written `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
 
 ### R14. A unit's place is a field, never part of its code
-1. Every unit, AIOC or HOAC, keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the unit moves.
-2. Its place is the `parent` field of its card and its register entry: the code of the unit that holds it, or `none` at the top of the organisation.
-3. Moving a unit changes its `parent` field, never its code. A subscope (R2) names a specialisation, never a parent.
-4. A change of `parent` changes the unit's line of authority, so it needs the approval of the human seat over that unit; `[ORG]AIOC-OCO` cannot make it alone (Standard §1.7, item 8).
-5. Where a HOAC type is held by more than one seat, each seat's code adds the initials of the seat's name: `[ORG]HOAC-ACS-SL`.
+1. Every AIOC, Pod and Cell keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the part moves or its filler changes.
+2. Its place is the `parent` field of its card and its register entry: the code of the AIOC, Pod or Cell that holds it, or `none` at the top of the organisation.
+3. Moving a part changes its `parent` field, never its code. No code is a path, and no code carries a suffix naming its parent or its seat. A subscope (R2) names a specialisation, never a parent.
+4. A change of `parent` changes the part's line of authority, so it needs the approval of the human seat over that part; `[ORG]AIOC-OCO` cannot make it alone (Standard §1.7, item 8).
+5. *Superseded (DR-0004):* seat codes formed by adding the seat's initials to a HOAC label. Each seat is a Cell with its own code (R15), and the HOAC label is a field on its card.
+
+### R15. Pods and Cells
+1. **Pod.** A Pod's code is the organisation's prefix, `POD`, a hyphen and the initials of the Pod's own name, 2 to 8 upper-case letters or digits: "Review" → `[ORG]POD-RV`.
+2. **Cell.** A Cell's code is the organisation's prefix, `CELL`, a hyphen and the initials of the Cell's own name, 2 to 8 upper-case letters or digits: "Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`; "Top Management Seat" → `[ORG]CELL-TMS`.
+3. **One register, one code.** Every Pod and Cell code is unique in the organisation's unit register and passes the collision check in §5 before first use. Retired codes are never reused (R5).
+4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
+5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
 ## 3. Capability names
 
@@ -97,7 +104,7 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 
 ## 5. Collision check for a new AIOC code
 
-Before a new code is used, check that it:
+The same check applies to a new Pod or Cell code. Before a new code is used, check that it:
 1. does not recreate `[ORG]AIOC`, `[ORG]AION` or `49GAION` in its initials;
 2. does not match an existing module code in the organisation's register;
 3. does not read as a version suffix (`RC`) or a common acronym that misleads (`PR`);

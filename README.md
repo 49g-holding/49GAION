@@ -1,6 +1,6 @@
 # 49GAION · the central hub
 
-This repository holds the 49GAION Standard, the master definition, the Naming Standard, the HOAC register and the decision records.
+This repository holds the 49GAION Standard, the master definition, the Naming Standard, the unit register form and the decision records.
 
 ## Overview
 
@@ -26,15 +26,15 @@ The 49GAION Library holds all ready-made AIOC blueprints and part cards, built o
 
 ### 4. HOAC
 
-A HOAC (Human Oversight & Accountability Centre) is a human unit: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop door. Every HOAC has a card like an AIOC. `[ORG]HOAC-TM` is the human hub: it decides and orders.
+HOAC (Human Oversight & Accountability Control) is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with three kinds: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop door. A report, critique, objection or stop reaches the nearest HOAC directly, never through any AI. `[ORG]HOAC-TM` is the human hub: it decides and orders.
 
 ### 5. AIOC
 
-An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. Any unit may be composed of smaller units of either kind, to any depth.
+An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. Any unit may be composed of smaller units of either kind, to any depth.
 
 ### 6. Protocol
 
-The 49GAION Operating Protocol sets how AIOCs, HOACs and the parts work together: the card, the Work Item, typed ports and the stop door.
+The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work together: the card, the Work Item, typed ports and the stop door.
 
 ## Start here
 
@@ -42,7 +42,7 @@ The 49GAION Operating Protocol sets how AIOCs, HOACs and the parts work together
 |---|---|
 | 1. What 49GAION is: the master definition | [`49GAION.md`](49GAION.md) |
 | The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
-| 4. HOAC register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
+| 4. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
 | 5. What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
 | 6. The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
 | Naming Standard | [`standards/49GAION-NAMING-STANDARD.md`](standards/49GAION-NAMING-STANDARD.md) |
@@ -57,6 +57,6 @@ The 49GAION Operating Protocol sets how AIOCs, HOACs and the parts work together
 
 ## Version
 
-`v1.2.0`, approved by the governing seat (GOV) of 49GAION.
+`v1.3.0`, approved by the governing seat (GOV) of 49GAION.
 
 Powered by 49GAION
