@@ -30,7 +30,7 @@ HOAC (Human Oversight & Accountability Control) is a label of human accountabili
 
 ### 5. AIOC
 
-An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. Any unit may be composed of smaller units of either kind, to any depth.
+An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells.
 
 ### 6. Protocol
 
@@ -41,13 +41,13 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 | What | Where |
 |---|---|
 | 1. What 49GAION is: the master definition | [`49GAION.md`](49GAION.md) |
-| The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
-| 4. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
-| 5. What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
-| 6. The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
-| Naming Standard | [`standards/49GAION-NAMING-STANDARD.md`](standards/49GAION-NAMING-STANDARD.md) |
-| Decision records | [`decisions/README.md`](decisions/README.md) |
-| Sources, source keys and standards mapping | [`references/`](references/) |
+| 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
+| 3. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
+| 4. What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
+| 5. The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
+| 6. Naming Standard | [`standards/49GAION-NAMING-STANDARD.md`](standards/49GAION-NAMING-STANDARD.md) |
+| 7. Decision records | [`decisions/README.md`](decisions/README.md) |
+| 8. Sources, source keys and standards mapping | [`references/`](references/) |
 
 ## Rules of this repository
 
@@ -57,6 +57,6 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 ## Version
 
-`v1.4.0`, approved by the governing seat (GOV) of 49GAION.
+`v1.5.0`, proposed. The version in force is `v1.4.0`, approved by the governing seat (GOV) of 49GAION.
 
 Powered by 49GAION

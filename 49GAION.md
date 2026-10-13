@@ -24,7 +24,7 @@
 1. **AI produces faster than people can read, record and remember.** Without structure, the owner becomes the bottleneck or loses track of what was decided.
 2. **Work moves by copy-paste.** Nothing records who owns the work, which source version it used, whether the receiver checked it, or how often it bounced.
 3. **Every new organisation looks like a new product.** Without a design framework, each organisation gets a fork, and forks drift. 49GAION gives one Library of tested parts and one `[ORG]AION` per organisation, built from it.
-4. **Names collide and multiply.** Every new code is a future defect; 49GAION keeps codes for units only.
+4. **Names collide and multiply.** Every new code is a future defect; 49GAION keeps codes for units only. (Label, DR-0004: "units" here reads "AIOCs, Pods and Cells"; a HOAC label is not a code.)
 5. **Multi-agent systems fail in predictable ways** (MAST, Cemri et al., NeurIPS 2025, arXiv 2503.13657): specification failures, misalignment between agents, and failed verification. The answer is structure.
 
 ## 3. The philosophy

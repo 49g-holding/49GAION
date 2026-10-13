@@ -20,10 +20,12 @@
 - An AIOC's code is the organisation's prefix, `AIOC`, a hyphen and the initials of its full name: "Source Lifecycle" → `[ORG]AIOC-SL`; "Self-Improvement" → `[ORG]AIOC-SI`.
 - Nothing that is not an AIOC may begin with `[ORG]AIOC`.
 - Full grammar: `[ORG]AIOC-[MODULE]-[OPTIONAL SUBSCOPE]-R[NNN]`. A subscope is used only for a real specialisation.
+- **Reading note (DR-0007).** R[NNN] is a release identifier written beside the code, never part of it (R14). AIOC initials are 2 to 5 upper-case letters.
 
 ### R3. Capabilities have plain English names
 - Office, Chief of Staff, Executive assistant, Input socket, Panel, and every functional capability an AIOC adds, are capabilities, not units. Their name is the plain English word and nothing else: no code, no prefix, no branding.
 - Prose may say whose capability it is: "the Chief of Staff of `[ORG]AIOC-SL`".
+- **Addition (DR-0007).** The capability keeps its plain name; the Cell or Pod that performs it has its own code (R15).
 - Machine references use two separate fields, never a joined string:
   ```yaml
   aioc: "[ORG]AIOC-SL"
@@ -40,7 +42,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.4.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.5.0` (proposed).
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -72,7 +74,7 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 4. **HOAC.** The 49GAION Human Oversight & Accountability Control label is written `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
 
 ### R14. A unit's place is a field, never part of its code
-1. Every AIOC, Pod and Cell keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the part moves or its filler changes.
+1. Every AIOC, Pod and Cell keeps one fixed code wherever it sits and however deep it is nested. The code never changes when the part moves or its filler changes. This applies within an `[ORG]AION`; 49GAION-level seats, which belong to no `[ORG]AION`, take no code (`registers/HOAC-REGISTER.md`).
 2. Its place is the `parent` field of its card and its register entry: the code of the AIOC, Pod or Cell that holds it, or `none` at the top of the organisation.
 3. Moving a part changes its `parent` field, never its code. No code is a path, and no code carries a suffix naming its parent or its seat. A subscope (R2) names a specialisation, never a parent.
 4. A change of `parent` changes the part's line of authority, so it needs the approval of the human seat over that part; `[ORG]AIOC-OCO` cannot make it alone (Standard §1.7, item 8).
@@ -86,6 +88,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
 ## 3. Capability names
+
+**Reading note (DR-0007).** "A single-function Chief of Staff of the assisting kind" below reads as a connecting agent (Standard §5.2).
 
 | Capability | The only name | Wrong |
 |---|---|---|

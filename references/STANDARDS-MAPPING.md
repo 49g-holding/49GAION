@@ -2,6 +2,8 @@
 
 How 49GAION terms relate to terms in external standards and law.
 
+**Reading note (DR-0004).** In the "Code" column, a `[ORG]HOAC-*` entry is a label carried on a part's card, never a unit code.
+
 | 49GAION term | Code | External term | Source clause | Verification |
 |---|---|---|---|---|
 | Governing Body | `[ORG]HOAC-GOV` | governing body | ISO 37000:2021, 3.3.4 (also cited in CEN CWA 17995:2023) | verified |
