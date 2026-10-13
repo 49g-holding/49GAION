@@ -30,7 +30,7 @@ HOAC (Human Oversight & Accountability Control) is a label of human accountabili
 
 ### 5. AIOC
 
-An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. Any unit may be composed of smaller units of either kind, to any depth.
+An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells.
 
 ### 6. Protocol
 
@@ -57,6 +57,6 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 ## Version
 
-`v1.4.0`, approved by the governing seat (GOV) of 49GAION.
+`v1.5.0`, proposed. The version in force is `v1.4.0`, approved by the governing seat (GOV) of 49GAION.
 
 Powered by 49GAION
