@@ -10,13 +10,47 @@ An empty seat returns accountability to whoever delegated it, suspends any AI au
 
 ## Entries
 
-| Seat | Code | Kind | Type | HOAC | Parent | Filler | Filler kind | Delegated by (and scope) | Date | Record | Status |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| 49GAION owner | none (49GAION-level seats take no code) | CELL | Human Seat | GOV | none | Iman Tajik (Founder) | human | Owner of 49GAION (constituting authority) | 2026-10-11 | `49GAION/DR-0001` | Filled |
+| Seat | Code | Kind | Type | HOAC | Parent | Filler | Current filler kind (column formerly "Filler kind") | Delegated by (and scope) | Date | Record | Status | Signature ID | accountable_to | Entity | Valid from | Valid to |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| the governing seat (GOV) of 49GAION | none (49GAION-level seats take no code) | CELL | Human Seat | GOV | none | seat only (filler in the private holders register) | human | constituting authority | 2026-10-11 | `49GAION/DR-0001` | Filled | | | | | |
+
+**Correction (2026-10-13, DR-0007).** The GOV row above was corrected to seat only under DR-0007: it names the seat, the governing seat (GOV) of 49GAION, and no filler. Fillers are kept in the private holders register (see Holders below).
 
 ## Events
 
 | Code or seat | Event (filler change, parent change, retirement; `connected` or `disconnected` for an external port) | From | To | Approved by | Date | Record |
 |---|---|---|---|---|---|---|
+
+**New columns (DR-0007).** Signature ID, accountable_to, Entity, Valid from and Valid to are added without backfill. A blank value in these columns on an entry made before v1.5.0 means "recorded before this rule". The column "Filler kind" is now headed "Current filler kind": it records the kind of the present filler, while the card's `filler_kind` records the kind the seat allows.
+
+## Event types
+
+The register records these events (DR-0007), each with its date, the signature ID where the type is listed, and the record:
+
+- label assigned, moved or removed;
+- delegation granted, varied, revoked or expired;
+- acting start and acting end;
+- absent and returned;
+- stopped and restarted;
+- filler-kind changed;
+- test passed or failed;
+- entity changed;
+- succeeded-by;
+- port connected or disconnected;
+- compensating control recorded, reviewed or ended (Standard §4.4, item 12).
+
+## Status and lifecycle state
+
+| Register Status | Schema `lifecycle_state` (Protocol unit card) |
+|---|---|
+| Active | `joined` or `live` |
+| Filled | `live` (a human Cell with a filler) |
+| Empty | `designed` or `built` (no filler) |
+| Retired (earlier: Ended) | `retired` |
+| Replaced | `replaced` |
+
+## Holders
+
+For every entry added from v1.5.0 on, names of fillers are kept in a separate holders register keyed by Cell code, in a private store outside this repository; the unit register carries structure only, and points to that store by its location (Standard §4.4, item 3). The GOV row was corrected to seat only on 2026-10-13 (DR-0007); its filler is kept in the holders register.
 
 Columns: **Seat** (name of the seat), **Code** (the fixed code of the AIOC, Pod or Cell; Naming Standard R14, R15), **Kind** (AIOC, POD, CELL), **Type** (the card type, from the organisation's open list), **HOAC** (GOV, TM, ACS or none), **Parent** (the code of the part that holds it, or `none` at the top), **Filler** (person, agent, or "empty"; for a Pod or AIOC, "none"), **Filler kind** (human or AI), **Delegated by** (the seat that delegated it, and what was delegated), **Date** (from), **Record** (decision record and quote ID), **Status** (Filled, Empty, Active, Retired; Ended, the earlier name, equals Retired).

@@ -1,0 +1,25 @@
+# DR-0007 · 49GAION v1.5.0 — structure, accountability, signatures, gateway and register
+
+- **Date:** 2026-10-13
+- **Decided by:** the governing seat (GOV) of 49GAION (holder in the private holders register)
+- **Source:** internal and external reviews, 2026-10-13, of hub 69a3e81, and the decisions of the governing seat (GOV) of 49GAION on the options they raised
+- **Number:** this record takes the next free number at merge, after DR-0006
+
+## Decision
+
+1. **Two relations and the root.** `parent` names only the AIOC or Pod whose Blueprint holds a part's card; `accountable_to` names the human Cell carrying a HOAC label to which the part answers; every rule on accountability, signatures, stop authority, "above" and "under" follows `accountable_to`. Each `[ORG]AION` has one root AIOC, its Charter, approved by GOV and changed only on GOV's signature (Standard §1.7, items 11 to 13).
+2. **Labels.** A label on a Pod or an AIOC names a `label_holder` or a `decision_rule`; each member of a body signs under their own Cell and one person holding two seats in the same body counts once. Labels run GOV, then TM, then ACS along any path, and sit only on a Cell whose seat kind is human; if that seat is empty or AI-filled, the label is held. Acting fillers, absence and succession are recorded events (Standard §4.1, items 9 to 12).
+3. **Signer.** Who signs a listed type is set in Standard §4.4 item 8. This supersedes the signer rule of DR-0004 item 4 where they differ, with two fixed exceptions that apply first: a part never signs its own restart, and a seat never signs an action it is the subject of.
+4. **Skip, recusal and stops.** Any report may also go to any HOAC above and to the internal-audit line, and the nearest HOAC above always receives it; a seat that is the subject of a listed action recuses. A stop reaches everything inside by `parent` and everything accountable to the part, takes effect at the gateway at once, and leaves human Cells their HU ports (Standard §4.2, item 10; §4.3, items 7 and 8).
+5. **Held actions.** A held action becomes a Work Item to the delegating seat and never runs because time has passed; a stop, a disconnection, narrowing or revoking AI access and raising a matter to a human are never listed and never held (Standard §4.4, item 9).
+6. **Signature list.** Twenty-one decision types are added to `upstream/human-floor-signature-types.json`, every existing entry is kept, `related_floor` is added to two types, and the optional policy fields `min_signer`, `signers_required`, `max_validity` and `never_held` are declared. Every Human Floor item whose negative test refuses an action names a listed type or records why it cannot be gated (Standard §4.4, items 6 and 10).
+7. **Signature record and identity.** A signature is a record bound to the payload hash, the executor, a single-use nonce and an expiry, made with a live, phishing-resistant sign-in of one person; records and logs hold no personal data (Protocol §4.10, items 9 and 10).
+8. **The tool gateway and its human surface.** The gateway is a registered part outside every AIOC, changed only under `change-gateway-policy` signed by TM and GOV, fails closed, and serves the stop doors, signature prompts and HU ports at a sign-in that no AI built, hosts or can change (Standard §4.4, item 11; §6.1, item 6).
+9. **Register.** Register writes for AI Cells, OCO's own Cells, the AI Cells serving the Self-Improvement process in TM and the assurance unit need the signatures set in Standard §4.4 item 3; the register gains event types, five columns without backfill, a status map and a holders register kept outside the repository.
+10. **Delivery test.** D-4, accountability chain in place, is added (Standard §1.4).
+11. **Decisions of the governing seat on the options raised.** (a) A human-led AIOC may set its Chief of Staff Cell to human-or-ai; whatever the filler, a Chief of Staff never signs for its person (Standard §5.1, item 7). (b) Decision bodies are adopted as in item 2. (c) Compensating controls are adopted: each is signed by GOV and recorded as its own register event with a date and a review date, never as a standing waiver, and the delivery test result points to those events (Standard §4.4, item 12). (d) Legal entities are adopted; the entity field is optional where an `[ORG]AION` has one entity (Standard §4.4, item 13). (e) The removal path of signature types in DR-0005 stays in force.
+12. **Machine forms.** The unit card, Port card, Work Item, signature record and process record schemas, the Library v3 cards, the reference organisations and the blueprint template are changed to match, in `49g-holding/49GAION-protocol` and `49g-holding/49GAION-aioc`.
+13. **Version.** The 49GAION Standard, the Operating Protocol and the AIOC definition and template move to `v1.5.0`.
+14. **Register correction (2026-10-13).** The GOV row of `registers/HOAC-REGISTER.md` is corrected to seat only: it names the governing seat (GOV) of 49GAION and no filler; the filler is kept in the private holders register (item 9).
+
+Powered by 49GAION
