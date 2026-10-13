@@ -1,0 +1,37 @@
+{
+  "title": "Ten AION signature list",
+  "decision_types": [
+    {
+      "id": "sign-contract",
+      "human_floor": "HF-02"
+    },
+    {
+      "id": "commit-money",
+      "human_floor": "HF-02"
+    },
+    {
+      "id": "legal-filing",
+      "human_floor": "HF-01"
+    },
+    {
+      "id": "accept-irreversible-risk",
+      "human_floor": "HF-06"
+    },
+    {
+      "id": "delegate-authority",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "change-parent",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "grant-or-widen-access",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "set-purpose-or-values",
+      "human_floor": "HF-04"
+    }
+  ]
+}
