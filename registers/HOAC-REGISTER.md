@@ -20,3 +20,5 @@ An empty seat returns accountability to whoever delegated it, suspends any AI au
 |---|---|---|---|---|---|---|
 
 Columns: **Seat** (name of the seat), **Code** (the fixed code of the AIOC, Pod or Cell; Naming Standard R14, R15), **Kind** (AIOC, POD, CELL), **Type** (the card type, from the organisation's open list), **HOAC** (GOV, TM, ACS or none), **Parent** (the code of the part that holds it, or `none` at the top), **Filler** (person, agent, or "empty"; for a Pod or AIOC, "none"), **Filler kind** (human or AI), **Delegated by** (the seat that delegated it, and what was delegated), **Date** (from), **Record** (decision record and quote ID), **Status** (Filled, Empty, Active, Retired; Ended, the earlier name, equals Retired).
+
+| proof | Tajik |
