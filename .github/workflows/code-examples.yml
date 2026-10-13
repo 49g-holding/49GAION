@@ -1,5 +1,5 @@
-# Required check on main. Every AIOC or HOAC code example in the 49GAION Standard and
-# the Naming Standard (hub) validates against the unit card schema (protocol).
+# Required check on main. Every AIOC, Pod or Cell code and every HOAC label example in the
+# 49GAION Standard and the Naming Standard (hub) validates against the unit card schema (protocol).
 # The companion repository is read at main, or at the ref in the repository variable
 # HUB_REF / PROTOCOL_REF when set and still present.
 name: code-examples
