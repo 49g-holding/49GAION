@@ -13,6 +13,7 @@ An empty seat returns accountability to whoever delegated it, suspends any AI au
 | Seat | Code | Kind | Type | HOAC | Parent | Filler | Filler kind | Delegated by (and scope) | Date | Record | Status |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 49GAION owner | none (49GAION-level seats take no code) | CELL | Human Seat | GOV | none | Iman Tajik (Founder) | human | Owner of 49GAION (constituting authority) | 2026-10-11 | `49GAION/DR-0001` | Filled |
+| proof seat | none | CELL | Human Seat | GOV | none | Iman Tajik | human | proof | 2026-10-13 | proof | Filled |
 
 ## Events
 
