@@ -1,0 +1,32 @@
+{
+  "title": "Ten AION signature list",
+  "types": [
+    {
+      "id": "sign-contract"
+    },
+    {
+      "id": "commit-money"
+    },
+    {
+      "id": "legal-filing"
+    },
+    {
+      "id": "accept-irreversible-risk"
+    },
+    {
+      "id": "delegate-authority"
+    },
+    {
+      "id": "change-parent"
+    },
+    {
+      "id": "grant-or-widen-access"
+    },
+    {
+      "id": "set-purpose-or-values"
+    },
+    {
+      "id": "restart-stopped-unit"
+    }
+  ]
+}
