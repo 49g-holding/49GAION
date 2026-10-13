@@ -7,6 +7,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0001`](DR-0001-49gaion-v1-0-0-day-zero.md) | 2026-10-11 | 49GAION v1.0.0 — day zero | in force |
 | [`DR-0002`](DR-0002-49gaion-v1-1-0-two-hubs-composition.md) | 2026-10-12 | 49GAION v1.1.0 — two hubs, shared Self-Improvement, composition | in force |
 | [`DR-0003`](DR-0003-49gaion-v1-2-0-self-improvement-loop.md) | 2026-10-12 | 49GAION v1.2.0 — the improvement loop of Self-Improvement | in force |
-| [`DR-0004`](DR-0004-49gaion-v1-3-0-hoac-cells-pods.md) | 2026-10-13 | 49GAION v1.3.0 — HOAC as a label; Cells and Pods | in force |
+| [`DR-0004`](DR-0004-49gaion-v1-3-0-hoac-cells-pods.md) | 2026-10-13 | 49GAION v1.3.0 — HOAC as a label; Cells and Pods | proposed |
 
 Powered by 49GAION
