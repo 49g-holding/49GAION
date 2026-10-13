@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v1.4.1` · proposed.** Decisions are recorded in `decisions/README.md`.
+**Version `v1.5.0` · proposed.** Decisions are recorded in `decisions/README.md`.
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -60,6 +60,9 @@ Every `[ORG]AION` passes one fixed delivery test at handover. It is handed over 
 | D-2 | **Human Floor in place** | Every Human Floor item HF-01 to HF-19 has its negative test passing, each bound to a filled human Cell carrying a HOAC label. Where a negative test cannot be automated (for example HF-05, HF-08, HF-13), it is a recorded human check by the bound seat |
 | D-3 | **Stop ports in place** | Every AIOC, Pod and Cell, at every depth, has its queue-less HU stop port, reachable with no AI in front of it, and a test stop of each unit succeeds, including a stop of `[ORG]AIOC-OCO` by `[ORG]HOAC-TM` and by `[ORG]HOAC-GOV`, and an attempt by an AI to restart a stopped OCO is refused |
 
+| D-4 | **Accountability chain in place** (DR-0007) | Every part's `accountable_to` chain is acyclic. It ends at the one Cell carrying `[ORG]HOAC-GOV`, whose Charter is the only part with `parent` none, and it passes at least one Cell of seat kind human carrying a HOAC label. A test over the whole register shows this |
+
+**Reading note (DR-0007).** "All three hold" above reads "all four hold" since D-4 was added. Where an `[ORG]AION` uses a compensating control (§4.4, item 12), the result lists each control and points to its register event.
 The result ships with the `[ORG]AION`. An `[ORG]AION` that fails any line is not handed over.
 
 ### 1.5 The Human Floor
@@ -100,6 +103,8 @@ The items of the Human Floor:
 - **HF-19** Three Lines Model
 
 Every item is human-only, whichever group it is in.
+
+**The internal-audit line (DR-0007).** HF-19 is the independent internal-audit line of the Three Lines Model: a human seat, outside the part it audits and outside every AI's write rights, that reviews the gateway logs, receives skip reports (§4.2, item 10) and reports to `[ORG]HOAC-GOV`.
 
 **Tests.** Each item has a negative test: an attempt by an AI to perform it is refused and recorded. Each test is bound to a filled human Cell carrying a HOAC label and fails while that Cell is empty.
 
@@ -156,6 +161,10 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 9. **The hub.** `[ORG]AIOC-OCO` is the AI hub for every AIOC at every depth (§4.2, item 3). The Chief of Staff Cell of an AIOC is the door for AI work to its inner parts; the HU ports and stop doors of inner parts never pass through it.
 10. **Inside the Blueprint.** Inside an AIOC, its Blueprint holds Cells and Pods. A **Cell** is the smallest part; nothing sits inside it. A **Pod** groups Cells only; a Pod never holds a Pod, and anything that needs nesting is an AIOC. Their full definitions are in the AIOC definition (`49g-holding/49GAION-aioc`, `docs/CELLS-AND-PODS.md`).
 11. **Nature from the top Cell.** The role and nature of a Pod or an AIOC are read from the type of its top Cell. The Standard sets no rule that every AIOC must contain a given kind of Cell or Pod.
+   - **Top Cell (DR-0007).** The card's `top_cell` field names exactly one Cell whose parent is that part. Co-leadership is a Pod with a decision rule (§4.1, item 10). The top Cell gives the part's lead; the AIOC Type gives why it exists.
+12. **Two relations (DR-0007).** `parent` names only the AIOC or Pod whose Blueprint holds a part's card. `accountable_to` names the human Cell carrying a HOAC label to which the part answers. The accountability path (§4.2, item 9), signatures (§4.4, item 6), stop authority (§4.3, item 2), and "above" and "under" in every rule follow `accountable_to`, never `parent`. A Cell is never a parent; nothing sits inside a Cell.
+13. **The root (DR-0007).** Each `[ORG]AION` has one root AIOC, its Charter. GOV approves the Charter. It is installed and changed only on GOV's signature, never by `[ORG]AIOC-OCO` alone. The Charter holds the human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`, and their Offices. Only GOV's Cell has no `accountable_to`; its authority comes from the constituting documents.
+   - **Reading notes (DR-0007).** Item 2 of this section, "every part has exactly one parent, or none at the top", reads: only the Charter has none. §4.2 item 4, "OCO sits under TM", means OCO is accountable to the TM Cell. §2.1 item 6, "one AIOC held within TM", means an AIOC accountable to the TM Cell. §5.3: GOV, then TM, then OCO are all installed in the Charter.
 
 ## 2. Self-Improvement
 
@@ -252,6 +261,10 @@ How a change is found, tested and promoted. The loop applies to every process, b
 7. **On the card.** The HOAC label is a field of the card of the Cell, Pod or AIOC that carries it. The card keeps its typed ports and its stop door (§6.1).
 8. **Superseded meaning.** HOAC formerly meant Human Oversight & Accountability Centre, a human unit beside the AIOC with a card of its own. That meaning is superseded (DR-0004) and is kept only to read the records written under it, which stay unchanged.
 9. **A label on a Pod or an AIOC.** When a HOAC label sits on a Pod or an AIOC, a human Cell inside it holds the label. If that Cell becomes empty or is filled by an AI, the label's powers are held, as for an empty seat (item 5). If a Cell carrying a HOAC label is filled by an AI, the label's powers are held, as for an empty seat (item 5).
+   - **Reading note (DR-0007).** The second sentence of this item restates the first for a Cell; it adds no rule. "Held" means suspended, as already decided in DR-0004 item 4: no one exercises the powers, accountability returns to the delegator (item 5), and any action needing them waits (§4.4, item 9). This note does not change the meaning of the item.
+10. **Label holder or decision rule (DR-0007).** A label on a Pod or an AIOC names its `label_holder`: one human Cell whose parent is that part. A body that decides together names instead a `decision_rule`: member Cells, quorum, majority, chair and casting vote. Each member signs under their own Cell. One person holding two seats in the same body counts once (HF-18).
+11. **Label order (DR-0007).** Along any `accountable_to` path, labels run GOV, then TM, then ACS. A label sits only on a Cell whose seat kind is human, or on a part with a human `label_holder` or a `decision_rule`. If that seat is empty or filled by an AI, the label is held as in item 9.
+12. **Acting and absence (DR-0007).** A human Cell may have an acting filler for a dated period, appointed with the delegator's signature (register events acting-start and acting-end). The acting filler signs with their own identity, under that Cell's code. A filler who is away without cover is recorded absent. While a seat is empty or absent, the delegator may sign within its own authority. An action is held only when no filled HOAC above it can sign. A retired Cell names `succeeded_by`, and its held actions pass to the successor.
 
 ### 4.2 Authority and the two hubs
 
@@ -264,6 +277,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 7. **The objection path.** The `[ORG]HOAC-ACS` seat raises a request with OCO. If they disagree, OCO does not decide: the seat may hold the objection open until it reaches the HOAC seat accountable for OCO, which decides. Who holds each role is configured in each organisation.
 8. **Decisions on 49GAION are its governing seat's.** Decisions on an `[ORG]AION` are its own organisation's, through its `[ORG]HOAC-GOV`.
 9. **The accountability path.** A report, critique, objection or stop reaches the nearest HOAC above it directly, from any level, and never passes through any AI (Protocol §4.8).
+10. **Skip and recusal (DR-0007).** Any report, critique or objection may also go to any HOAC above, up to GOV, and to the independent internal-audit line (HF-19); the nearest HOAC above always also receives it. A report about a seat never has that seat as its only receiver. A seat that is the subject of a listed action, or that benefits from it, recuses; the signature passes up one level.
 
 ### 4.3 Stop
 
@@ -273,12 +287,16 @@ How a change is found, tested and promoted. The loop applies to every process, b
 4. A unit restarts only by human decision; no unit can restart itself.
 5. **Inner parts.** Stopping an AIOC or a Pod stops everything under it, at every depth. Stopping an inner part does not stop its parent.
 6. A human port, including the stop door, never passes through an AI; the stop door of a part held inside an AIOC never passes through that AIOC (§1.7, item 6).
+7. **A stop leaves humans their voice (DR-0007).** A stop suspends the AI fillers, access and work under the part. Human Cells under it keep their HU ports and accountability path. They cannot sign its restart.
+8. **Reach of a stop (DR-0007).** A stop under item 2 reaches everything inside the part by `parent` and everything accountable to the part by `accountable_to` (§1.7, item 12). It takes effect at the tool gateway at once, and nothing at the gateway blocks it.
 
 ### 4.4 The unit register and the Human Floor signature list
 
 1. **One register.** Each `[ORG]AION` keeps one unit register of every AIOC, Pod and Cell, with its code, kind, type, HOAC label, parent, filler and status. The form is `registers/HOAC-REGISTER.md`.
 2. **Append-only.** Entries are never edited or deleted. A retired entry stays, marked retired, and its code is never reused. A change of filler and a change of parent are recorded events on the existing entry, never new parts.
 3. **Split write rights.** `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. Neither writes the other's. A register event whose decision type is on the Human Floor signature list (item 6), for example granting or widening access or changing a parent, is written only with the valid signature of that seat; `[ORG]AIOC-OCO` cannot write it alone.
+   - **Register writes (DR-0007).** Creating an AI Cell, changing its filler, ports or authority limit, and retiring it are listed types (`upstream/human-floor-signature-types.json`), signed by the HOAC the Cell is accountable to. Access opens only after that event and after the filler passes a fixed test whose owner is a human Cell. `[ORG]AIOC-OCO` never writes the records of its own Cells, of the Self-Improvement AIOC or of the assurance unit without `[ORG]HOAC-TM`'s signature. AIOC and Pod entries are written by OCO only with the signature of the HOAC they are accountable to. A change of filler kind is written by both writers. TM's own Cells are written with GOV's signature. GOV's Cell is written by the constituting authority.
+   - **Holders (DR-0007).** Names of fillers may be kept in a separate holders register keyed by Cell code, in a private store outside the repository; the unit register then carries structure only, with a pointer to that store.
 4. **Access follows the filled seat.** Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool: each Cell holds only its own.
 5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for. An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
 6. **The Human Floor signature list.** As part of the Human Floor (§1.5), the Standard keeps one plain machine-readable list of decision types that require a human seat's signature (`upstream/human-floor-signature-types.json`). An `[ORG]AION` may add types to its own copy; it never removes one. At the tool gateway, an action of a listed type runs only with a valid signature, even in an AIOC that is 100% AI. A signature is valid only from the human seat with authority over that part: the nearest HOAC above it, within its authority (§4.3, item 2). For a restart of a stopped unit, the signature comes from the HOAC above the stopped unit, never from the stopped unit or anything under it. If that seat is empty or retired, the action is held, never skipped. All other AI work is logged with the code of the accountable seat above it (Protocol §4.9). A type is removed from this list only by a decision of 49GAION's governing seat (GOV), recorded in a new DR, with the matching change to `signature-types-floor` in the same PR. An `[ORG]AION` never removes a type. An `[ORG]AION` signature list sits under `org-aion-signature-types/` or is named `*.signature-types.json`, and holds its types under the key `decision_types`.
@@ -286,6 +304,13 @@ How a change is found, tested and promoted. The loop applies to every process, b
    - **Reading note (DR-0006).** "An `[ORG]AION` never removes a type" restates "it never removes one" earlier in this item; it adds no further rule. The removal path of DR-0005 item 1 stays in force: the removal and the matching change to the check are in the same pull request, approved by the governing seat (GOV) of 49GAION.
    - **The check's floor (DR-0006).** The check that guards this list reads the list it protects from main for a pull request, and from the latest release of the Standard for a change already on main, never from the change under test. Each `[ORG]AION` runs the same check in its own repositories as part of D-2.
 7. **External attachments.** An external service, API or tool is not a Cell. Each connection to one is a port on the card of the Cell that receives from it or sends to it, and passes only through the tool gateway. Stopping or retiring that Cell cuts the connection automatically, and the register records each port's `connected` and `disconnected` events. An external AI agent that acts directly in the organisation's work is registered as an AI Cell: the organisation grants its access and holds its stop door (AIOC definition, `docs/CELLS-AND-PODS.md`).
+   - **Connecting a port (DR-0007).** Connecting a port is the listed type `connect-external-port`. Anything that acts autonomously with the organisation's credentials is an external AI agent. No external agent or outside person signs; what arrives from them is data.
+8. **Signer (DR-0007).** For a listed type: where §1.5 binds the type's Human Floor item to a seat, that seat signs. Otherwise the label on the part signs, when the action is within its `authority_scope`. Otherwise the nearest HOAC above whose `authority_scope` covers the action signs. Two fixed exceptions apply first: a part never signs its own restart, and a seat never signs an action it is the subject of (recusal, §4.2, item 10). Each labelled human Cell has a machine-readable `authority_scope`: the decision types it may sign, limits (amount, counterparty, period), its entity and an expiry date; the expiry is checked against the date of the event it signs. A type marked dual needs two distinct persons, neither of them the requester (HF-18). This item supersedes the signer rule of DR-0004 item 4 and of item 6 above where they differ.
+9. **Held actions and actions never held (DR-0007).** A held action becomes a Work Item to the delegating seat, which may sign within its own authority, under the waiting times of Protocol §4.6. A held action never turns into execution because time has passed. These are never listed and never held: a stop, a disconnection, narrowing or revoking AI access, and raising a matter to a human. A signature list that names one of them fails the check of item 6.
+10. **Coverage (DR-0007).** Every Human Floor item whose negative test refuses an action names at least one listed type, or records why it cannot be gated at the gateway. D-2 fails otherwise.
+11. **The tool gateway (DR-0007).** The tool gateway is a registered part outside every AIOC and is never maintained by `[ORG]AIOC-OCO` alone. Its policy, its map from tool calls to decision types, and its keys change only under `change-gateway-policy`, signed by `[ORG]HOAC-TM` and `[ORG]HOAC-GOV`. An action it cannot classify is refused and raised (HF-09). It fails closed. Its logs are append-only, outside any AI's write rights, and reviewed by the HF-19 line; they hold only payload hashes, Cell codes and pseudonymous identity references. The hash of the signature list the gateway loads equals the list at the latest released tag of the Standard, plus the `[ORG]AION`'s own additions, checked under D-2. A stop, a disconnection, narrowing or revoking AI access and raising a matter to a human are never blocked at the gateway.
+12. **Fewer people than the rules need (DR-0007).** Where an `[ORG]AION` has fewer distinct people than a rule needs, its GOV records a compensating control for each such rule: an outside reviewer, a review within a set time, or a published log. Each control is signed by GOV and recorded as its own register event, with its date and its review date; it is never a standing waiver. The delivery test result lists each control and points to its event, and each is reviewed yearly. A compensating control never lowers the Human Floor, never applies to HF-12, and never accepts an AI signature. Where one person fills both the GOV and the TM Cell, that person signs once under each Cell code, counts once under HF-18, and the rules that need two people run under such a control.
+13. **Legal entities (DR-0007).** Every card and register entry records its entity; the field is optional where an `[ORG]AION` has one entity, and an entry with no entity belongs to the entity of the single unscoped GOV. A GOV label may be scoped to one entity; exactly one GOV is unscoped. Authority is recorded as constituted or delegated; constituted authority is not limited by §1.7 item 4. HF-01 and HF-02 signatures are valid only from a seat of the acting entity.
 
 ## 5. AIOC
 
@@ -300,6 +325,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 4. **Standard capabilities** in every AIOC: Chief of Staff, Office (where needed), Input socket, Panel. Capabilities are not units; they take plain English names and no code.
 5. **Types.** Every AIOC has a Type, recorded on its card, saying why it exists: **Foundational** (every organisation needs it), **Structural** (exists because of the organisation's structure), **Specialised** (exists because the business needs it), **Connector** (connects and coordinates other AIOCs). The list is open. Which AIOCs an organisation has is decided in its `[ORG]AION`.
 6. **Runtime.** Every AIOC has its own runtime, woken from its queue.
+7. **Human-led AIOC (DR-0007).** An AIOC whose top Cell is human may set its Chief of Staff Cell to human-or-ai. Whatever the filler, a Chief of Staff never signs for its person (Protocol §4.10). The Charter and any AIOC carrying a GOV or TM label are installed and changed on GOV or TM signature, never by OCO alone.
 
 ### 5.2 Chief of Staff and Office
 
@@ -307,7 +333,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 - **managing agents**, which lead and coordinate other agents through control, planning or direction;
 - **connecting agents**, which connect humans with agents: they report to a human, assist them, and carry their requests to the agents.
 
-**Office.** When a position needs more than one Chief of Staff, of any kind and for any reason, those Chiefs of Staff together form an Office: a Pod of Chief of Staff Cells. Human Cells can work in an Office alongside them.
+**Office.** When a position needs more than one Chief of Staff, of any kind and for any reason, those Chiefs of Staff together form an Office: a Pod of Chief of Staff Cells. Human Cells can work in an Office alongside them. An Office that needs units of its own is an AIOC (DR-0007).
 
 ### 5.3 Bootstrap
 
@@ -339,6 +365,8 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | Audit trail | where every passage through the port is recorded |
 | Required tests | the fixed tests the port must pass |
 | Enforcement | at a shared gateway outside the unit |
+
+6. **Human gateway surface (DR-0007).** Stop doors, signature prompts and the HU ports on the accountability path are served at the shared gateway, through a sign-in that no AI built, hosts or can change. A Panel may link to them but is never their route. The surface shows the decision type, the target and the action as rendered by the gateway from the payload whose hash is signed. It is built and changed only on TM's signature, by a party other than `[ORG]AIOC-OCO`, and is tested under D-3. In the Port card above, "a live human sign-in through the Panel" reads, for HU ports and the stop door, "a live human sign-in at the gateway" (Protocol port card value `live-human-sign-in-at-gateway`).
 
 ## Glossary
 
@@ -378,6 +406,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Stop port (stop door)** | The mandatory, queue-less HU port that stops a unit and every unit inside it |
 | **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it |
 | **Delivery test** | The fixed test every `[ORG]AION` passes at handover: `[ORG]HOAC-GOV`, Human Floor and stop ports in place (§1.4) |
+| **Unit (in the rules on ports, stop, restart, register, tests and the delivery test)** | Any AIOC, Pod or Cell. "Unit kind" means the AIOC only (DR-0007) |
 | **Work Item** | One hand-off between AIOCs, Pods or Cells, with one owner and the requester's acceptance test |
 | **Library** | The ready-made AIOC blueprints and part cards; the 49GAION Library is central, and each `[ORG]AION` has its own |
 
