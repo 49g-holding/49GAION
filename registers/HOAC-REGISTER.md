@@ -2,6 +2,8 @@
 
 ## HOAC register (49GAION level)
 
+*Heading kept for links. Superseded name (DR-0004): this is the unit register; HOAC is a label on its entries.*
+
 The single unit register of 49GAION itself, and the form every `[ORG]AION` uses for its own (Standard §4.4). One entry per AIOC, Pod or Cell. The register is append-only: entries are never edited or deleted; a retired entry stays, marked "Retired", and its code is never reused. A change of filler or of parent is a recorded event on the existing entry, never a new entry.
 
 Write rights are split: `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. An event of a type on the Human Floor signature list (Standard §4.4, item 6), such as granting or widening access or changing a parent, is written only with that seat's signature; `[ORG]AIOC-OCO` cannot write it alone. Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool. When one person fills several human Cells, each signature is recorded with that Cell's code, and dual approval by the same person is flagged.

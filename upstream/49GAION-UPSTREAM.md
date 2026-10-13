@@ -274,6 +274,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 4. **OCO sits under TM.** TM draws its authority from GOV; OCO draws its authority from GOV through the human hub. GOV appoints the first TM. TM orders OCO, meets its human needs (approvals, live human input, Human Floor steps) and is its accountable seat. Who may stop which unit, including OCO, is set in §4.3, item 2.
 5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
 6. **The accountable overseer.** Human roles are human Cells carrying a HOAC label, placed only where they are needed. Where a part carries an `[ORG]HOAC-ACS` label, the seat that fills it is accountable for the results of that part and everything under it. The seat oversees, receives reports, may request anything for the unit, and never builds or changes the AIs directly. A change to an AI's authority (capacity, skills, bots, access, budget) is decided by the `[ORG]HOAC-ACS` seat.
+   - **Reading note (DR-0007).** Where a text names the ACS or HOAC seat "of" a part that carries no label, it means the nearest HOAC above that part along `accountable_to`. This covers HF-09 ("`[ORG]HOAC-ACS` of the AIOC"), "the AIOC's voice to its HOAC seat" (§6.1, item 3, and the Protocol) and Protocol §4.4.
 7. **The objection path.** The `[ORG]HOAC-ACS` seat raises a request with OCO. If they disagree, OCO does not decide: the seat may hold the objection open until it reaches the HOAC seat accountable for OCO, which decides. Who holds each role is configured in each organisation.
 8. **Decisions on 49GAION are its governing seat's.** Decisions on an `[ORG]AION` are its own organisation's, through its `[ORG]HOAC-GOV`.
 9. **The accountability path.** A report, critique, objection or stop reaches the nearest HOAC above it directly, from any level, and never passes through any AI (Protocol §4.8).
@@ -350,6 +351,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 ### 6.1 Ports
 
 1. Every AIOC, Pod and Cell, at every depth, has **one input and one output of each kind, plus the stop door**: an AI input, an AI output, an HU (human) input and an HU output.
+   - **Addition (DR-0007).** "One input and one output of each kind" reads "one input and one output of each kind, plus the external ports of §4.4 item 7, which pass only through the tool gateway". The Standard states this rule; each `[ORG]AION` enforces it in its D-3 gateway delivery test.
 2. The type is set by the port itself, never by message content.
 3. The stop door is the unit's mandatory HU stop port (§4.3). The Chief of Staff is the AIOC's voice to its HOAC seat; input arrives only through the typed ports and the Input socket, and HU ports, including the stop door, never pass through an AI.
 4. **Human silence is never consent.**
@@ -407,6 +409,34 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it |
 | **Delivery test** | The fixed test every `[ORG]AION` passes at handover: `[ORG]HOAC-GOV`, Human Floor and stop ports in place (§1.4) |
 | **Unit (in the rules on ports, stop, restart, register, tests and the delivery test)** | Any AIOC, Pod or Cell. "Unit kind" means the AIOC only (DR-0007) |
+| **Part** | Any AIOC, Pod or Cell, seen as a place in the structure (§1.7) (DR-0007) |
+| **Seat** | A Cell as a fixed place with a replaceable filler (§4.1, item 3) (DR-0007) |
+| **Human seat** | A Cell whose seat kind (`filler_kind` on its card) is human (§4.1, items 3 and 11) (DR-0007) |
+| **AI Cell** | A Cell whose filler is an AI agent; it never carries a HOAC label's powers (§4.1, item 11) (DR-0007) |
+| **Attached Cell** | An AI Cell that serves one person's Cell, in the same Blueprint, named in `attached_to`; it never signs for that person (`docs/CELLS-AND-PODS.md`; §4.4, item 6) (DR-0007) |
+| **Above / Under** | Along `accountable_to`, never along `parent` (§1.7, item 12) (DR-0007) |
+| **`accountable_to`** | The card field naming the human Cell carrying a HOAC label to which a part answers (§1.7, item 12) (DR-0007) |
+| **Charter** | The one root AIOC of an `[ORG]AION`, approved and changed only by GOV; it holds the GOV and TM Cells (§1.7, item 13) (DR-0007) |
+| **Tool gateway** | The registered part outside every AIOC that runs, signs-checks and logs every tool call and serves the human surface (§4.4, item 11; §6.1, item 6). Synonyms kept as labelled: "shared gateway" and "shared AI gateway" (DR-0007) |
+| **Signature** | The record of one human seat's decision on one listed action, bound to its payload hash, executor, nonce and expiry (§4.4, item 8; Protocol §4.10) (DR-0007) |
+| **Accountability path** | The route by which a report, critique, objection or stop reaches the nearest HOAC above, never through an AI (§4.2, item 9) (DR-0007) |
+| **Objection path** | The route by which an `[ORG]HOAC-ACS` seat holds an objection open until the HOAC seat accountable for OCO decides (§4.2, item 7) (DR-0007) |
+| **HU** | Human: the type of a port reached by a live human sign-in (§6.1) (DR-0007) |
+| **Label holder** | The one human Cell, inside a Pod or an AIOC, that holds the label on that part (§4.1, item 10) (DR-0007) |
+| **Decision rule** | Member Cells, quorum, majority, chair and casting vote of a body that holds a label together (§4.1, item 10) (DR-0007) |
+| **Authority scope** | The decision types, limits, entity and expiry within which a labelled human Cell signs (§4.4, item 8) (DR-0007) |
+| **Acting filler** | A person appointed for a dated period to fill a human Cell, signing under their own identity and the Cell's code (§4.1, item 12) (DR-0007) |
+| **Shadow run** | A run of a challenger beside the champion on the same cases, with no effect on real work (§2.3, item 4) (DR-0007) |
+| **Judge** | The part, separate from the proposer, that compares challenger and champion case by case (§2.3, item 5) (DR-0007) |
+| **Proposer** | The part that writes and revises challengers (§2.3, item 12) (DR-0007) |
+| **Process record** | A process written down in role, instruction, contract and order (§2.3, item 1) (DR-0007) |
+| **Distillation** | Writing the best runs of a champion into its defaults at set intervals (§2.3, item 11) (DR-0007) |
+| **Dwell time** | The period after a promotion in which the process is not changed again, except on an incident (§2.3, item 10) (DR-0007) |
+| **Joining test** | The fixed samples every input and output on an AIOC's card passes before it receives work (§3.2, item 4) (DR-0007) |
+| **Versioned Definition** | The one blueprint in git from which an AIOC's Panel and Back office are built (§5.1, item 2) (DR-0007) |
+| **Type** | For an AIOC, its AIOC Type: why it exists (§5.1, item 5). For a Cell or a Pod, its type from the organisation's open list (§1.7, item 11) (DR-0007) |
+| **Retired** | The status of a part that no longer works; its entry stays and its code is never reused; it may name `succeeded_by` (§4.4, item 2; §4.1, item 12) (DR-0007) |
+| **Operating Core Office** | Labelled synonym of Organization Core Office, the in-force expansion of `[ORG]AIOC-OCO` (§4.2, item 3) (DR-0007) |
 | **Work Item** | One hand-off between AIOCs, Pods or Cells, with one owner and the requester's acceptance test |
 | **Library** | The ready-made AIOC blueprints and part cards; the 49GAION Library is central, and each `[ORG]AION` has its own |
 

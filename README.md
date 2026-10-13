@@ -41,13 +41,13 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 | What | Where |
 |---|---|
 | 1. What 49GAION is: the master definition | [`49GAION.md`](49GAION.md) |
-| The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
-| 4. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
-| 5. What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
-| 6. The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
-| Naming Standard | [`standards/49GAION-NAMING-STANDARD.md`](standards/49GAION-NAMING-STANDARD.md) |
-| Decision records | [`decisions/README.md`](decisions/README.md) |
-| Sources, source keys and standards mapping | [`references/`](references/) |
+| 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
+| 3. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
+| 4. What an AIOC is; the blueprint template | [`49g-holding/49GAION-aioc`](https://github.com/49g-holding/49GAION-aioc) |
+| 5. The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |
+| 6. Naming Standard | [`standards/49GAION-NAMING-STANDARD.md`](standards/49GAION-NAMING-STANDARD.md) |
+| 7. Decision records | [`decisions/README.md`](decisions/README.md) |
+| 8. Sources, source keys and standards mapping | [`references/`](references/) |
 
 ## Rules of this repository
 

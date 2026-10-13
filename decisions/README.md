@@ -14,4 +14,10 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0006`](DR-0006-49gaion-v1-4-1-decision-record-lock.md) | 2026-10-13 | 49GAION v1.4.1 — decision records frozen; how a change reaches main | proposed |
 | [`DR-0007`](DR-0007-49gaion-v1-5-0-structure-accountability-signatures.md) | 2026-10-13 | 49GAION v1.5.0 — structure, accountability, signatures, gateway and register | proposed |
 
+## Reading notes
+
+- Records written before v1.1.0 may name a person and carry a Status line of their own. The index above governs status; those records are not edited.
+- DR-0002 item 1, "Any unit, AIOC or HOAC, may be composed of smaller units of either kind": superseded (DR-0004): an AIOC may hold other AIOCs and its own Pods and Cells; HOAC is a label, not a unit.
+- Decisions are recorded under "the governing seat (GOV) of 49GAION".
+
 Powered by 49GAION

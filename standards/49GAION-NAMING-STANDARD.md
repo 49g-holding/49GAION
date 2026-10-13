@@ -20,10 +20,12 @@
 - An AIOC's code is the organisation's prefix, `AIOC`, a hyphen and the initials of its full name: "Source Lifecycle" → `[ORG]AIOC-SL`; "Self-Improvement" → `[ORG]AIOC-SI`.
 - Nothing that is not an AIOC may begin with `[ORG]AIOC`.
 - Full grammar: `[ORG]AIOC-[MODULE]-[OPTIONAL SUBSCOPE]-R[NNN]`. A subscope is used only for a real specialisation.
+- **Reading note (DR-0007).** R[NNN] is a release identifier written beside the code, never part of it (R14). AIOC initials are 2 to 5 upper-case letters.
 
 ### R3. Capabilities have plain English names
 - Office, Chief of Staff, Executive assistant, Input socket, Panel, and every functional capability an AIOC adds, are capabilities, not units. Their name is the plain English word and nothing else: no code, no prefix, no branding.
 - Prose may say whose capability it is: "the Chief of Staff of `[ORG]AIOC-SL`".
+- **Addition (DR-0007).** The capability keeps its plain name; the Cell or Pod that performs it has its own code (R15).
 - Machine references use two separate fields, never a joined string:
   ```yaml
   aioc: "[ORG]AIOC-SL"
@@ -86,6 +88,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
 ## 3. Capability names
+
+**Reading note (DR-0007).** "A single-function Chief of Staff of the assisting kind" below reads as a connecting agent (Standard §5.2).
 
 | Capability | The only name | Wrong |
 |---|---|---|
