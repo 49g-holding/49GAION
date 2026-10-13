@@ -1,7 +1,7 @@
 # DR-0007 · 49GAION v1.5.0 — structure, accountability, signatures, gateway and register
 
 - **Date:** 2026-10-13
-- **Decided by:** the governing seat (GOV) of 49GAION (holder in `registers/HOAC-REGISTER.md`)
+- **Decided by:** the governing seat (GOV) of 49GAION (holder in the private holders register)
 - **Source:** internal and external reviews, 2026-10-13, of hub 69a3e81, and the decisions of the governing seat (GOV) of 49GAION on the options they raised
 - **Number:** this record takes the next free number at merge, after DR-0006
 
