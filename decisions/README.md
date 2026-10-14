@@ -14,6 +14,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0006`](DR-0006-decision-record-lock.md) | 2026-10-13 | Decision records frozen; how a change reaches main | in force |
 | [`DR-0007`](DR-0007-49gaion-v1-5-0-structure-accountability-signatures.md) | 2026-10-13 | 49GAION v1.5.0 — structure, accountability, signatures, gateway and register | in force |
 | [`DR-0008`](DR-0008-source-lifecycle-first-stage.md) | 2026-10-14 | 49GAION Source Lifecycle — the first stage of every source | in force |
+| [`DR-0009`](DR-0009-supplement-to-dr-0008.md) | 2026-10-14 | Supplement to DR-0008 — signing delegation, gateway reading, after-the-fact review of OCO's commits | in force |
 | [`DR-0009`](DR-0009-mechanisms-from-practice.md) | 2026-10-14 | 49GAION — fifty-five mechanisms adopted from practice | in force |
 
 ## Reading notes
@@ -23,5 +24,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - Decisions are recorded under "the governing seat (GOV) of 49GAION".
 - A record from before v1.5.0 (`DR-0001`) names a filler of a seat. Records are frozen and stay as written (DR-0006); from v1.5.0 on, fillers are kept in the private holders register, not in records or the unit register (DR-0007).
 - DR-0007 item 8, 'outside every AIOC', is read with the root rule (Standard §1.7, item 13): the gateway is held in the Charter, outside every other AIOC.
+- DR-0008: Read with DR-0009 (signing delegation, gateway reading, after-the-fact review of OCO's commits).
+- DR-0008 item 2, "the first part an organisation receives after the Charter", is read with Protocol §13, item 1: "with the GOV, TM and OCO installed in it" reads as "with `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` and `[ORG]AIOC-OCO` installed in it".
+- DR-0008 item 5, "the joining test": defined in Standard §3.2, item 4, and Protocol §11, item 1.
 
 Powered by 49GAION

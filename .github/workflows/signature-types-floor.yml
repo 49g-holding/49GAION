@@ -8,7 +8,7 @@
 #   unless it is a list (under org-aion-signature-types/ or named *.signature-types.*) or
 #   sits under an allowed path (tests/, .github/tests/, library/cards/, registers/).
 # - Key allowlist: decision_types, id, human_floor, label, note (and title, standard, rule,
-#   type_fields at top level); the policy fields of Standard §5.1 are accepted once the
+#   type_fields at top level); the policy fields of Standard §4.4 items 6 to 11 are accepted once the
 #   Standard's own file declares them in type_fields. Any other key fails (enforced, exempt_units).
 # - Never held: a list naming a stop, a disconnection, narrowing or revoking AI access, or
 #   raising a matter to a human fails.
