@@ -13,6 +13,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0005`](DR-0005-49gaion-v1-4-0-signature-list-rules.md) | 2026-10-13 | 49GAION v1.4.0 — Human Floor signature list: removal path and list location | in force |
 | [`DR-0006`](DR-0006-decision-record-lock.md) | 2026-10-13 | Decision records frozen; how a change reaches main | in force |
 | [`DR-0007`](DR-0007-49gaion-v1-5-0-structure-accountability-signatures.md) | 2026-10-13 | 49GAION v1.5.0 — structure, accountability, signatures, gateway and register | in force |
+| [`DR-0008`](DR-0008-source-lifecycle-first-stage.md) | 2026-10-14 | 49GAION Source Lifecycle — the first stage of every source | in force |
 
 ## Reading notes
 
