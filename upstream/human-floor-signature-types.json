@@ -1,6 +1,6 @@
 {
   "title": "49GAION Human Floor signature list",
-  "standard": "49GAION Standard v1.5.0, §1.5 and §4.4 items 6 to 11; items 17 and 18 (DR-0009)",
+  "standard": "49GAION Standard v1.5.0, §1.5 and §4.4 items 6 to 11; items 17 and 18 (DR-0010)",
   "rule": "An action of any listed decision type runs at the tool gateway only with a valid signature of a human seat with authority over that part (Standard §4.4, item 6). An AI Cell attached to a person, including that person's Chief of Staff, never provides that person's signature. If the seat is empty or retired, the action is held, never skipped. An [ORG]AION may add types; it never removes a type of this list, and a type it added is removed only by its [ORG]HOAC-GOV, in a recorded decision (DR-0006). A type is removed only by a decision of 49GAION's governing seat (GOV), recorded in a new DR.",
   "decision_types": [
     { "id": "sign-contract", "human_floor": "HF-02" },

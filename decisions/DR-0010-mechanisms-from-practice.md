@@ -1,9 +1,9 @@
-# DR-0009 · 49GAION — fifty-five mechanisms adopted from practice
+# DR-0010 · 49GAION — fifty-five mechanisms adopted from practice
 
 - **Date:** 2026-10-14
 - **Decided by:** the governing seat (GOV) of 49GAION (holder in the private holders register)
-- **Source:** the direction of the governing seat (GOV) of 49GAION of 2026-10-14, on a report of the mechanisms found in the working practice of a pilot organisation's engineering AIOC (source key `SRC-ENG-MECHANISMS-2026-10-14`, `references/SOURCE-KEYS.md`), read in full against 49GAION v1.5.0
-- **Number:** this record takes the next free number at merge, after DR-0008
+- **Source:** the direction of the governing seat (GOV) of 49GAION of 2026-10-14, on a report of the mechanisms found in the working practice of a pilot organisation's engineering AIOC (source key `SRC-ENG-MECHANISMS-2026-10-14`, `references/SOURCE-KEYS.md`; frozen copy `ARC-0001` of 2026-10-14 in the pilot organisation's private archive), read in full against 49GAION v1.5.0
+- **Number:** DR-0010. This number is final. DR-0009 is the supplement to DR-0008, merged before this record.
 
 ## Decision
 
@@ -11,7 +11,7 @@
 
 2. **Where they sit.** Rules go in the Standard. Working mechanisms go in the Operating Protocol, with their schemas, fixtures and Library part cards. The AIOC matters go in the AIOC definition and its blueprint template. Capabilities keep plain names and take no code (Naming Standard R3).
 
-3. **The Standard.** The following items are added, each marked "(DR-0009)":
+3. **The Standard.** The following items are added, each marked "(DR-0010)":
    - §1.5: sensitivity class;
    - §1.7: items 14 and 15 (assignment, temporary parts);
    - §2.1: items 11 to 13 (intake from failures, reversal triggers, the Reserve);
@@ -53,16 +53,16 @@
    - (a) **Recommendation and the assistance contract.** A Chief of Staff recommends on routine decisions. For a decision of a listed type, or of the highest sensitivity class, the assistance contract governs and no pick or score sits on the item.
    - (b) **The dispute exit.** At the bounce limit, a dispute in a class the `[ORG]AION` names as sensitive goes to the accountable human with a recommendation. Any other dispute may proceed labelled disputed. An objection held by a human is never passed.
    - (c) **A chat as a Panel view.** A chat may be a Panel view for reading and unsigned writes only. It is never the route of an HU port, a stop door, a signature prompt or the accountability path.
-   - (d) **Disposal.** Disposing of records or data is the new listed type `dispose-records-or-data`.
-   - (e) **Lifting a hold.** A hold that a human placed is lifted only by a human seat.
-   - (f) **Class signature.** A standing action class is signed once, for reversible actions only, as the new listed type `sign-standing-action-class`. It never covers `commit-money`, `grant-or-widen-access` or a type bound to HF-01, HF-02 or HF-15.
+   - (d) **Disposal.** Disposing of records or data is the new listed type `dispose-records-or-data`, added to the signature file (item 7).
+   - (e) **Lifting a hold.** A hold that a human placed is lifted only by a human seat. A hold on a part or its work is lifted with `restart-stopped-unit`; a containment hold on a resource, a flow or an outside effect, which stops no part, is lifted with `restore-or-rollback` (Standard §4.3, item 9; §4.4, item 19).
+   - (f) **Class signature.** A standing action class is signed once, for reversible actions only, as the new listed type `sign-standing-action-class`, added to the signature file (item 7). It never covers `commit-money`, `grant-or-widen-access` or a type bound to HF-01, HF-02 or HF-15.
    - (g) **Model change.** A model change within the tier the seat signed re-runs the fixed test. A change of tier, or below the floor, is `change-filler`.
 
-7. **The signature list.** Two types are added to `upstream/human-floor-signature-types.json`:
-   - `sign-standing-action-class` (HF-11, related HF-03);
-   - `dispose-records-or-data` (HF-06, related HF-17).
+7. **The signature list.** This decision adds two decision types to the signature file `upstream/human-floor-signature-types.json`:
+   - `sign-standing-action-class` (HF-11, related HF-03), added;
+   - `dispose-records-or-data` (HF-06, related HF-17), added.
 
-   Every existing type is kept.
+   The file's `standard` field cites them as "items 17 and 18 (DR-0010)". Every existing type is kept unchanged.
 
 8. **Version.** The texts sit on main under the unreleased `v1.6.0`. The version labels and `state.json` stay at `v1.5.0` until GOV releases. Any CI check for these rules goes in its own `.github` pull request, and becomes required only after it runs green on main.
 
