@@ -1,6 +1,7 @@
 # excluded-types-parity (DR-0010, Open items). Not a required check at first; it becomes
 # required only after it runs green on main. Compares the Protocol's excluded-types list
-# with upstream/human-floor-signature-types.json.
+# with upstream/human-floor-signature-types.json, and checks that the aioc copy of the
+# arrangement check and its self-test is identical to this one (one copy per repository).
 name: excluded-types-parity
 on:
   pull_request:
@@ -20,3 +21,16 @@ jobs:
         env:
           PROTOCOL_DIR: .deps/protocol
         run: python3 .github/scripts/check_excluded_types_parity.py
+      - name: Fetch the AIOC definition
+        run: bash .github/scripts/fetch.sh 49GAION-aioc .deps/aioc "${{ vars.AIOC_REF || github.head_ref }}"
+      - name: Arrangement check copies are identical
+        shell: bash
+        run: |
+          set -eu
+          bad=0
+          for f in .github/scripts/check_arrangements.py .github/tests/arrangements_selftest.sh; do
+            if [ ! -f ".deps/aioc/$f" ]; then echo "::error::$f is missing in 49GAION-aioc"; bad=1
+            elif ! cmp -s "$f" ".deps/aioc/$f"; then echo "::error::$f differs from the 49GAION-aioc copy"; bad=1
+            else echo "$f: identical in 49GAION-aioc"; fi
+          done
+          exit $bad
