@@ -394,8 +394,21 @@ How a change is found, tested and promoted. The loop applies to every process, b
 - **Tiered Model:** teams in levels, under a higher team.
 - **Hybrid Model:** some positions are held by individuals and others by teams, in different scopes at once.
 - **Self-Arranging Model:** a team designs and tests its own internal arrangement within the scope TM gives it.
+- **Overseen Model:** a team or position oversees another's work, for example a Quality team overseeing Engineering.
+- **Advised Model:** a position decides with a standing advisory team that advises but holds no authority.
+- **Paired Model:** two occupants hold one position jointly, both signing.
+- **Rotating Model:** occupancy rotates among named members on a recorded schedule.
+- **Interim Model:** a temporary occupant holds a vacant position until a permanent one is assigned.
+- **Matrix Model:** one occupant serves two positions or reports along two lines, each recorded.
+- **Assisted Model:** a position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows.
+- **Backup Model:** a designated deputy steps in automatically when the occupant is absent.
+- **Federated Model:** separate units each hold their own positions under a shared top position.
+- **Shadow Model:** a successor shadows the occupant before handover, without authority.
+- **Pool Model:** a pool of qualified people, any of whom may fill the position per action under a recorded rule.
+- **Elected Model:** occupants are chosen by a recorded vote of a defined group.
+- The list stays open: an organisation may name further models.
 
-An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Tiered). A trial is a time-boxed run of any arrangement model, not a model of its own.
+An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Overseen). A trial is a time-boxed run of any arrangement model, not a model of its own.
 
 **Register entry labels (DR-0011).** The unit register (§4.4) carries four entry labels, which are labels of entries, not units: position, arrangement, occupancy and handover. Position and arrangement entries contain no people and may be public. Occupancy and handover entries carry internal person IDs and stay in each organisation's private register copy, never in a public repository. Each signed decision is stamped with the position code and the occupant ID or IDs at that moment. Occupancy entries carry a valid time and a recorded time; a correction is a new entry. A handover entry lists what passed to the new occupant.
 
@@ -521,6 +534,18 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Tiered Model** | Teams in levels under a higher team (§5.2) (DR-0011) |
 | **Hybrid Model** | Some positions held by individuals, others by teams, in different scopes at once (§5.2) (DR-0011) |
 | **Self-Arranging Model** | A team designs and tests its own internal arrangement within the scope TM gives it (§5.2) (DR-0011) |
+| **Overseen Model** | A team or position oversees another's work, for example a Quality team overseeing Engineering (§5.2) (DR-0011) |
+| **Advised Model** | A position decides with a standing advisory team that advises but holds no authority (§5.2) (DR-0011) |
+| **Paired Model** | Two occupants hold one position jointly, both signing (§5.2) (DR-0011) |
+| **Rotating Model** | Occupancy rotates among named members on a recorded schedule (§5.2) (DR-0011) |
+| **Interim Model** | A temporary occupant holds a vacant position until a permanent one is assigned (§5.2) (DR-0011) |
+| **Matrix Model** | One occupant serves two positions or reports along two lines, each recorded (§5.2) (DR-0011) |
+| **Assisted Model** | A position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows (§5.2) (DR-0011) |
+| **Backup Model** | A designated deputy steps in automatically when the occupant is absent (§5.2) (DR-0011) |
+| **Federated Model** | Separate units each hold their own positions under a shared top position (§5.2) (DR-0011) |
+| **Shadow Model** | A successor shadows the occupant before handover, without authority (§5.2) (DR-0011) |
+| **Pool Model** | A pool of qualified people, any of whom may fill the position per action under a recorded rule (§5.2) (DR-0011) |
+| **Elected Model** | Occupants are chosen by a recorded vote of a defined group (§5.2) (DR-0011) |
 | **position** (entry label) | A register entry for a position and its code; no people; may be public (§5.2) (DR-0011) |
 | **arrangement** (entry label) | A register entry for the model and arrangement of a position; no people; may be public (§5.2) (DR-0011) |
 | **occupancy** (entry label) | A register entry of who holds a position, by internal person ID, with valid and recorded time; private register copy only (§5.2) (DR-0011) |
