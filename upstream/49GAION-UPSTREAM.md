@@ -374,7 +374,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 **Delegation ladder (DR-0010).** The human seat served by a Chief of Staff sets, for each class of act, one of four levels: decides alone, decides and reports at once, only prepares, or never handles it. Each delegated act is tagged, shown and reversible by the seat in one action, and summarised in a return brief after an absence. The level that covers an act is read from the act itself, never from what the AI cites. Outside commitments, the Chief of Staff's own limits, matters about people, speaking as the human and every listed type are never delegated.
 
-**Holder Chief of Staff (DR-0010).** Every holder of a HOAC label has its own Chief of Staff of the connecting kind (a Cell, an Office, or an AIOC, as in DR-0007), attached to the holder's Cell. It receives, analyses, sorts and simplifies what the AIOCs bring to the holder; manages on the holder's behalf only within authority the holder has delegated to it (§5.2, delegation ladder); advises and proposes where it holds no authority; and carries out the holder's routine actions as its executive assistant. It acts only through the tool gateway with its own credential, within the delegated scope, and every action it takes for the holder is logged; types in upstream/human-floor-signature-types.json stay with the holder. It never signs for the holder, and the holder's HU ports and stop door never pass through it (§4.4, item 6; Protocol §4.10, item 6).
+**Holder Chief of Staff (DR-0010).** Every holder of a HOAC label has its own Chief of Staff of the connecting kind (a Cell, an Office, or an AIOC, as in DR-0007), attached to the holder's Cell. It receives, analyses, sorts and simplifies what the AIOCs bring to the holder; manages on the holder's behalf only within authority the holder has delegated to it (§5.2, delegation ladder); advises and proposes where it holds no authority; and carries out the holder's routine actions as its executive assistant. It acts only through the tool gateway with its own credential, within the delegated scope, and every action it takes for the holder is logged; types in upstream/human-floor-signature-types.json stay with the holder. It never signs for the holder, and the holder's HU ports and stop door never pass through it (§4.4, item 6; Protocol §4.10, item 6). The line "It never signs for the holder" is superseded (DR-0011): the Chief of Staff never acts on its own; with its position's approval, per action or as a standing grant with a set scope and end date, revocable, and checked and logged at the tool gateway, it may act, including signing, up to what the position allows, as assistant and executive assistant. Types in upstream/human-floor-signature-types.json still need the position's own human signature.
 
 **Completed staff work (DR-0010).** A matter for a human decision arrives as one record: one recommendation, its reason, risks, whether it can be reversed, the dissent of the preparing office, and what the waiting party does meanwhile. The seat answers yes, veto, or change this part, which is a new request. A veto closes the subject with responsibility recorded as the seat's; only that seat or its acting filler (§4.1, item 12) reopens it, and new facts come only as facts. The advisor dissents once, then carries out the decision as its own. A closure never suppresses a report on the accountability path (§4.2, items 9 and 10).
 
@@ -383,6 +383,34 @@ How a change is found, tested and promoted. The loop applies to every process, b
 **The duty deputy (DR-0010).** An always-on AI Cell may answer members' recurring asks for a human seat, only from a register of rulings that seat has signed, each with a one-line rule, its source and an expiry; an expired ruling counts as absent. It cites the ruling it used, raises at once every ask no current ruling covers (HF-09) and every conflict between rulings, and never answers a listed type. The seat samples its answers on a schedule.
 
 **The intent envelope (DR-0010).** An approved instruction states its intent, what is not wanted, when it is done and its owner. The intent is fixed and the means are open: when the means fail but the intent holds, the executing unit changes the means; otherwise it drafts a change for decision while the rest of the work goes on. An envelope never contains a listed type; a change of intent is a `design-proposal`.
+
+**Position Principle (DR-0011).** A HOAC is always defined as a position, never a person, everywhere: in the Blueprint, in the engine and in the naming rule. Every field that points to a human seat takes a position code only. Who held each position at each moment is recorded, and that history never moves. When the occupant changes, everything the position carries (effects, achievements, losses, commitments and open work) passes in full to the new occupant; the accountability record of who held it when stays as history.
+
+**Arranging power (DR-0011).** Assigning occupants to positions is an option managed by `[ORG]HOAC-TM` under `[ORG]HOAC-GOV`. TM arranges the positions below it; GOV arranges TM and sets its limits; GOV is set by the organisation's founding configuration; no position arranges itself. TM may test arrangement models over periods; its fixed duty is a complete record.
+
+**HOAC Arrangement Models (DR-0011).** An open list of named options; a model is not a unit and carries no code. Organisations configure the models they use; the Standard fixes only the shape.
+- **Solo Model:** one person holds every HOAC position.
+- **Team Model:** a team holds a position and decides by its own recorded rule.
+- **Tiered Model:** teams in levels, under a higher team.
+- **Hybrid Model:** some positions are held by individuals and others by teams, in different scopes at once.
+- **Self-Arranging Model:** a team designs and tests its own internal arrangement within the scope TM gives it.
+- **Overseen Model:** a team or position oversees another's work, for example a Quality team overseeing Engineering.
+- **Advised Model:** a position decides with a standing advisory team that advises but holds no authority.
+- **Paired Model:** two occupants hold one position jointly, both signing.
+- **Rotating Model:** occupancy rotates among named members on a recorded schedule.
+- **Interim Model:** a temporary occupant holds a vacant position until a permanent one is assigned.
+- **Matrix Model:** one occupant serves two positions or reports along two lines, each recorded.
+- **Assisted Model:** a position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows.
+- **Backup Model:** a designated deputy steps in automatically when the occupant is absent.
+- **Federated Model:** separate units each hold their own positions under a shared top position.
+- **Shadow Model:** a successor shadows the occupant before handover, without authority.
+- **Pool Model:** a pool of qualified people, any of whom may fill the position per action under a recorded rule.
+- **Elected Model:** occupants are chosen by a recorded vote of a defined group.
+- The list stays open: an organisation may name further models.
+
+An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Overseen). A trial is a time-boxed run of any arrangement model, not a model of its own.
+
+**Register entry labels (DR-0011).** The unit register (§4.4) carries four entry labels, which are labels of entries, not units: position, arrangement, occupancy and handover. Position and arrangement entries contain no people and may be public. Occupancy and handover entries carry internal person IDs and stay in each organisation's private register copy, never in a public repository. Each signed decision is stamped with the position code and the occupant ID or IDs at that moment. Occupancy entries carry a valid time and a recorded time; a correction is a new entry. A handover entry lists what passed to the new occupant.
 
 ### 5.3 Bootstrap
 
@@ -498,7 +526,30 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Planned halt** | A halt through running, draining, paused and resuming states, distinct from the stop door (§4.3, item 10) (DR-0010) |
 | **Standing action class** | A class of reversible actions signed once inside an envelope the gateway enforces (§4.4, item 17) (DR-0010) |
 | **Windowed position** | A position run by several AI instances, each a Chief of Staff Cell with its own code and credential, together forming an Office (DR-0007): a Pod of Chief of Staff Cells (§5.2) (DR-0010) |
-| **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) |
+| **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) (line superseded by DR-0011) |
+| **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
+| **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) |
+| **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) |
+| **Team Model** | A team holds a position and decides by its own recorded rule (§5.2) (DR-0011) |
+| **Tiered Model** | Teams in levels under a higher team (§5.2) (DR-0011) |
+| **Hybrid Model** | Some positions held by individuals, others by teams, in different scopes at once (§5.2) (DR-0011) |
+| **Self-Arranging Model** | A team designs and tests its own internal arrangement within the scope TM gives it (§5.2) (DR-0011) |
+| **Overseen Model** | A team or position oversees another's work, for example a Quality team overseeing Engineering (§5.2) (DR-0011) |
+| **Advised Model** | A position decides with a standing advisory team that advises but holds no authority (§5.2) (DR-0011) |
+| **Paired Model** | Two occupants hold one position jointly, both signing (§5.2) (DR-0011) |
+| **Rotating Model** | Occupancy rotates among named members on a recorded schedule (§5.2) (DR-0011) |
+| **Interim Model** | A temporary occupant holds a vacant position until a permanent one is assigned (§5.2) (DR-0011) |
+| **Matrix Model** | One occupant serves two positions or reports along two lines, each recorded (§5.2) (DR-0011) |
+| **Assisted Model** | A position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows (§5.2) (DR-0011) |
+| **Backup Model** | A designated deputy steps in automatically when the occupant is absent (§5.2) (DR-0011) |
+| **Federated Model** | Separate units each hold their own positions under a shared top position (§5.2) (DR-0011) |
+| **Shadow Model** | A successor shadows the occupant before handover, without authority (§5.2) (DR-0011) |
+| **Pool Model** | A pool of qualified people, any of whom may fill the position per action under a recorded rule (§5.2) (DR-0011) |
+| **Elected Model** | Occupants are chosen by a recorded vote of a defined group (§5.2) (DR-0011) |
+| **position** (entry label) | A register entry for a position and its code; no people; may be public (§5.2) (DR-0011) |
+| **arrangement** (entry label) | A register entry for the model and arrangement of a position; no people; may be public (§5.2) (DR-0011) |
+| **occupancy** (entry label) | A register entry of who holds a position, by internal person ID, with valid and recorded time; private register copy only (§5.2) (DR-0011) |
+| **handover** (entry label) | A register entry of a change of occupant listing what passed; private register copy only (§5.2) (DR-0011) |
 | **Delegation ladder** | The four levels a human seat sets for its Chief of Staff, per class of act (§5.2) (DR-0010) |
 | **Assistance contract** | The rules for AI that prepares material for a human seat (§5.2) (DR-0010) |
 | **Evidence class** | Proven, measured, cited, hypothesis or not established, on every claim shown for a decision (§5.2) (DR-0010) |
