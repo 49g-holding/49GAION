@@ -248,6 +248,12 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 1. **The 49GAION Library** holds all ready-made AIOC blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt (§1.2).
 2. Each `[ORG]AION` has its own Library, holding only what the organisation needs; capabilities found during design are added back to the 49GAION Library, generalised and tested (§1.3).
+3. **Process and Position Design (DR-0014).** The 49GAION Library holds **49GAION Process and Position Design**, the design stage after the target operating model (Protocol §17). In an `[ORG]AION` it is the AIOC `[ORG]AIOC-PPD`, a part of its own, never merged with the part before it or the stage after it.
+   - **What it does.** From a decided target operating model, it designs how the organisation's work runs and the positions that carry it, processes first: the processes under each part of the model, with their steps, decisions, hand-offs and measures; then the positions, each built from the steps and decisions it holds, with its job description generated from them; then reporting lines, standing forums and the work each position carries.
+   - **Linked to the target operating model directly.** It takes the decided release by reference (ID, version and hash) from the part that made it. It never edits that release: each defect it finds goes back to that part as a return, and the two parts go back and forth until the release holds.
+   - **Other sources.** Every other source, such as the organisation's existing processes, volumes and times, comes only from Source Lifecycle, and what is missing is asked through it.
+   - **Positions only.** It designs positions, never people (§1.1, item 9). It makes no choice of what fills a position; that belongs to a later stage.
+   - **Decided and filed.** Every element is decided by the organisation before release. The release is frozen, filed into Source Lifecycle as a source, and handed to the next stage by reference.
 
 ### 3.2 Evidence and tests
 
@@ -549,6 +555,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) (line superseded by DR-0011) |
 | **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
 | **No natural person** | In the system a human exists only as a position, a legal persona; the link to natural persons belongs only to top management's own mechanism, and no AI part touches it (§1.1, item 9) (DR-0013) |
+| **Process and Position Design / `[ORG]AIOC-PPD`** | The Library part, and its AIOC in an `[ORG]AION`, that designs the organisation's processes and the positions that carry them from a decided target operating model, linked to that model's part directly (§3.1, item 3) |
 | **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) (line superseded by DR-0012) |
 | **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) (line superseded by DR-0012) |
 | **Team Model** | A team holds a position and decides by its own recorded rule (§5.2) (DR-0011) (line superseded by DR-0012) |
