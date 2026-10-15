@@ -6,6 +6,8 @@ The 49GAION Standard defines what 49GAION is, its product, its units, its parts 
 
 Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`standards/49GAION-NAMING-STANDARD.md`), the 49GAION Operating Protocol (`49g-holding/49GAION-protocol`), the AIOC definition and blueprint template (`49g-holding/49GAION-aioc`). Where a companion and this Standard differ, this Standard governs.
 
+> **No natural person (DR-0013).** In 49GAION and in every `[ORG]AION`, a natural person does not exist. Every human in the system is a **position**: a legal persona with its own code. The link between a position and the natural persons who occupy it belongs only to `[ORG]HOAC-TM`, in its own mechanism, and no AI part ever touches it. The rule is §1.1, item 9; every other text of 49GAION is read with it.
+
 ---
 
 ## 1. What 49GAION is
@@ -20,6 +22,12 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 6. **One kind of unit, composed without limit.** The unit level holds the AIOCs and how they work together. An AIOC may hold other AIOCs, to any depth, with no limit (§1.7). Inside an AIOC, its Blueprint holds its Pods and Cells.
 7. **Generic.** The Standard names no organisation, no person and no tool. Organisation names, holders of seats, tools and exact values belong to registers and to each `[ORG]AION`.
 8. **What the framework comprises.** 49GAION comprises the **AIOCs** (its units), the **Protocol** (how they work together), the **Blueprint** (the one file that defines each AIOC with its Pods and Cells) and the six parts in §1.2 that hold and govern them.
+9. **No natural person (DR-0013).** The direction of GOV of 15 October 2026: "In the AION system the human as a natural person does not exist at all. Every human that exists, exists as a legal persona. Where legal personas are linked to natural persons, that has its place only in top management, belongs to it, has its own mechanism, and has nothing to do with you." (translated)
+   - **Only positions.** A human exists in the system only as a position: a legal persona with its own code, carrying a HOAC label (§4.1; §5.2, Position Principle). Every human act in the system (deciding, signing, approving, answering, contributing, being accountable) is the act of a position.
+   - **Nowhere a natural person.** No Blueprint, card, Work Item, register entry read by a part, record, prompt, instruction or AI memory names, addresses, describes or reasons about a natural person who acts in the system.
+   - **The link is top management's alone.** The link between a position and the natural persons who occupy it belongs only to `[ORG]HOAC-TM`, under `[ORG]HOAC-GOV`, in its own mechanism: the arrangement of each position, and the occupancy and handover entries of the private register copy (§5.2, Arranging power and Register entry labels). For `[ORG]HOAC-TM` itself, GOV holds that link; for GOV, the founding configuration.
+   - **No AI part touches it.** No AIOC, Pod, Cell, bot or other AI part holds, reads, writes, stores or infers that link. An AI part addresses a position, through that position's HU port; whoever occupies the position under the arrangement in force receives it there. Only the tool gateway checks, at sign-in and at signing, that a live sign-in belongs to a current occupant, and it writes the occupant IDs of a decision stamp into top management's records alone.
+   - **Content is not an actor.** The rule is about who acts in the system. An organisation's own sources may name people as their content (a contract, a minute, a register of members); that content stays data, under its classification and the restricted partition (§4.4, item 15), and never becomes an actor of the system.
 
 49GAION has one kind of unit, the **AIOC** (AI Operating Core). Inside an AIOC's Blueprint, the smallest part is the **Cell** and a group of Cells is a **Pod**. **HOAC** (Human Oversight & Accountability Control) is not a unit: it is a label of human accountability that sits on a Cell, a Pod or a whole AIOC, at any depth (§4.1).
 
@@ -273,6 +281,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 | Accountability Seat | `[ORG]HOAC-ACS` | A human seat wherever a step needs human accountability. |
 
 3. **Seats.** A human seat is a Cell whose filler is a human. Each organisation decides who fills each seat. Every seat is recorded in the unit register (§4.4).
+   - **Reading note (DR-0013).** This section is read with §1.1, item 9. "The person or group" in the table above, "a human seat", "filler" and "who fills each seat" all name a position and its occupancy. Each kind is a position, a legal persona; who occupies it is top management's own mechanism, and no AI part sees it.
 4. **`[ORG]HOAC-GOV` from day one.** Every `[ORG]AION` has its own `[ORG]HOAC-GOV` from the first day of its design. Its top authority is that organisation, never 49GAION.
 5. An empty seat returns accountability to whoever delegated it, and any AI authority tied to it is suspended until the seat is filled.
 6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
@@ -539,6 +548,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Windowed position** | A position run by several AI instances, each a Chief of Staff Cell with its own code and credential, together forming an Office (DR-0007): a Pod of Chief of Staff Cells (§5.2) (DR-0010) |
 | **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) (line superseded by DR-0011) |
 | **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
+| **No natural person** | In the system a human exists only as a position, a legal persona; the link to natural persons belongs only to top management's own mechanism, and no AI part touches it (§1.1, item 9) (DR-0013) |
 | **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) (line superseded by DR-0012) |
 | **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) (line superseded by DR-0012) |
 | **Team Model** | A team holds a position and decides by its own recorded rule (§5.2) (DR-0011) (line superseded by DR-0012) |

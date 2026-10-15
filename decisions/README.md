@@ -18,6 +18,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0010`](DR-0010-mechanisms-from-practice.md) | 2026-10-14 | 49GAION — fifty-five mechanisms adopted from practice | in force |
 | [`DR-0011`](DR-0011-position-principle-arrangement-models.md) | 2026-10-15 | 49GAION — the Position Principle, HOAC Arrangement Models and the holder Chief of Staff acting with approval | in force |
 | [`DR-0012`](DR-0012-three-hoac-arrangement-models.md) | 2026-10-15 | 49GAION — three HOAC Arrangement Models: Solo, Team and Overseen | in force |
+| [`DR-0013`](DR-0013-no-natural-person.md) | 2026-10-15 | 49GAION — no natural person: every human is a position | in force |
 
 ## Reading notes
 
