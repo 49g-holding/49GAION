@@ -20,6 +20,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0012`](DR-0012-three-hoac-arrangement-models.md) | 2026-10-15 | 49GAION — three HOAC Arrangement Models: Solo, Team and Overseen | in force |
 | [`DR-0013`](DR-0013-no-natural-person.md) | 2026-10-15 | 49GAION — no natural person: every human is a position | in force |
 | [`DR-0014`](DR-0014-process-and-position-design.md) | 2026-10-15 | 49GAION — Process and Position Design, a Library part after the target operating model | in force |
+| [`DR-0015`](DR-0015-the-human-rule.md) | 2026-10-15 | 49GAION — the human rule: every human is present as a legal persona; two positions are two parties | in force |
 
 ## Reading notes
 
@@ -32,5 +33,10 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0008 item 2, "the first part an organisation receives after the Charter", is read with Protocol §13, item 1: "with the GOV, TM and OCO installed in it" reads as "with `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` and `[ORG]AIOC-OCO` installed in it".
 - DR-0008 item 5, "the joining test": defined in Standard §3.2, item 4, and Protocol §11, item 1.
 - DR-0011 Decision item 3, the list of seventeen arrangement models: superseded (DR-0012): three models remain (Solo, Team, Overseen); the other names are withdrawn, not renamed.
+- DR-0013, "a natural person does not exist" and "no natural person": read with DR-0015, item 1: no natural person is an actor of the system, and every human is present in it as its position, a legal persona; the natural person behind it exists, known only to top management.
+- DR-0007 Decision item 2, "one person holding two seats in the same body counts once": superseded (DR-0015): each member Cell of a body is its own party and counts once.
+- DR-0007 Decision item 11 (c), compensating controls, as far as it makes a control a rule for fewer distinct people than a rule needs: superseded (DR-0015): two positions are two parties; a compensating control is top management's own choice, and no rule, gateway or check reads it.
+- DR-0007 Decision item 7, "a live, phishing-resistant sign-in of one person": read with DR-0015, item 7: the sign-in proves only that the signer is a current occupant of the signing position.
+- DR-0010 Decision item 3, the lines it added that count persons (Standard §4.1, item 13, the load line per person; §4.4, item 16, one person under two seats counts once): superseded (DR-0015): load and coverage are measured per position, and two seats are two parties.
 
 Powered by 49GAION
