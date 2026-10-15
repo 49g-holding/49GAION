@@ -1,0 +1,22 @@
+# excluded-types-parity (DR-0010, Open items). Not a required check at first; it becomes
+# required only after it runs green on main. Compares the Protocol's excluded-types list
+# with upstream/human-floor-signature-types.json.
+name: excluded-types-parity
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  excluded-types-parity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the Protocol
+        run: bash .github/scripts/fetch.sh 49GAION-protocol .deps/protocol "${{ vars.PROTOCOL_REF }}"
+      - name: Check parity
+        env:
+          PROTOCOL_DIR: .deps/protocol
+        run: python3 .github/scripts/check_excluded_types_parity.py
