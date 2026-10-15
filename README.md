@@ -22,7 +22,7 @@ Self-Improvement is a process shared by AI and humans. Any human seat or AI unit
 
 ### 3. Library
 
-The 49GAION Library holds all ready-made AIOC blueprints and part cards, built once, configured per `[ORG]AION`, never rebuilt. Every capability has a fixed test.
+The 49GAION Library holds all ready-made AIOC blueprints and part cards, built once, configured per `[ORG]AION`, never rebuilt. Every capability has a fixed test. Its register names every part once, with its card, its fixed test and, for an AIOC part, its mother blueprint held by pin: [`library/README.md`](https://github.com/49g-holding/49GAION-protocol/blob/main/library/README.md) in `49GAION-protocol`.
 
 ### 4. HOAC
 
