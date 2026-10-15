@@ -8,6 +8,8 @@ The single unit register of 49GAION itself, and the form every `[ORG]AION` uses 
 
 Write rights are split: `[ORG]AIOC-OCO` writes the records of AI Cells; `[ORG]HOAC-TM` writes the records of human Cells. An event of a type on the Human Floor signature list (Standard §4.4, item 6), such as granting or widening access or changing a parent, is written only with that seat's signature; `[ORG]AIOC-OCO` cannot write it alone. Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired. Within a Pod access does not pool. When one person fills several human Cells, each signature is recorded with that Cell's code, and dual approval by the same person is flagged.
 
+**Reading note (DR-0015).** Two positions are two parties (Standard §1.1, item 10). Each signature is still recorded with the code of the Cell it is given for; the flag on "dual approval by the same person" is superseded, and nothing compares the occupants behind two Cells. The event "compensating control recorded, reviewed or ended" (Event types, below) is top management's own record; no rule or check requires it (Standard §4.4, item 12).
+
 An empty seat returns accountability to whoever delegated it, suspends any AI authority tied to it, and fails every Human Floor test bound to it (Standard §4.1, §1.5).
 
 ## Entries

@@ -37,6 +37,7 @@
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
 7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
+   - **Present as legal personas (DR-0013, DR-0015).** In 49GAION and every `[ORG]AION`, every human is present, and decides, signs and is accountable, as a position, a legal persona; the natural person behind it exists outside the system's knowledge, and no natural person is an actor of the system. Every act stays with its position. Two positions are two parties: when two positions sign, they are two signers, even if one natural person stands behind both, and no AI part or check compares the persons behind positions. Only top management (`[ORG]HOAC-TM`), the human hub, links positions to natural persons, in a mechanism it writes itself (Standard §1.1, items 9 and 10).
 9. **One valid version of everything, linked, never copied.**
 10. **Done means visible evidence**, never a bot's own report.
 11. **Configuration, not forks.**
