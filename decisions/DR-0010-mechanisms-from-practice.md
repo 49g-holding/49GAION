@@ -21,7 +21,7 @@
    - §4.3: items 9 to 11 (graded pause, planned halt, fenced cut-off);
    - §4.4: items 14 to 19 (tighten freely and loosen only signed, restricted partition, signers by risk label, standing action class, custody and disposal, harm precedence and soft containment);
    - §5.1: items 8 and 9 (runtime contract and engine binding, spend);
-   - §5.2: the windowed position, the delegation ladder, completed staff work, the assistance contract, the duty deputy and the intent envelope;
+   - §5.2: the windowed position, the delegation ladder, the holder Chief of Staff, completed staff work, the assistance contract, the duty deputy and the intent envelope;
    - §6.1: items 7 and 8 (the signing pack, a chat as a Panel view);
    - fourteen glossary rows.
 
@@ -65,5 +65,9 @@
    The file's `standard` field cites them as "items 17 and 18 (DR-0010)". Every existing type is kept unchanged.
 
 8. **Version.** The texts sit on main under the unreleased `v1.6.0`. The version labels and `state.json` stay at `v1.5.0` until GOV releases. Any CI check for these rules goes in its own `.github` pull request, and becomes required only after it runs green on main.
+
+## Open items
+
+- A parity check between the Protocol's excluded-types list and `upstream/human-floor-signature-types.json` comes later in its own `.github`-only PR and becomes required only after it runs green on main.
 
 Powered by 49GAION
