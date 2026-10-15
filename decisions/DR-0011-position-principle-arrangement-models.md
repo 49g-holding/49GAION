@@ -26,6 +26,8 @@
    - **Tiered Model:** teams in levels, under a higher team.
    - **Hybrid Model:** some positions are held by individuals and others by teams, in different scopes at once.
    - **Self-Arranging Model:** a team designs and tests its own internal arrangement within the scope TM gives it.
+   - An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Tiered).
+   - A trial is a time-boxed run of any arrangement model, not a model of its own.
 
 4. **Register entry labels.** In the append-only unit register (DR-0004; Standard §4.4) four entry labels are added. They are labels of entries, not units.
    - **position:** a position and its code. It contains no people and may be public.

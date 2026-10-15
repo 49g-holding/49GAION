@@ -395,6 +395,8 @@ How a change is found, tested and promoted. The loop applies to every process, b
 - **Hybrid Model:** some positions are held by individuals and others by teams, in different scopes at once.
 - **Self-Arranging Model:** a team designs and tests its own internal arrangement within the scope TM gives it.
 
+An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Tiered). A trial is a time-boxed run of any arrangement model, not a model of its own.
+
 **Register entry labels (DR-0011).** The unit register (§4.4) carries four entry labels, which are labels of entries, not units: position, arrangement, occupancy and handover. Position and arrangement entries contain no people and may be public. Occupancy and handover entries carry internal person IDs and stay in each organisation's private register copy, never in a public repository. Each signed decision is stamped with the position code and the occupant ID or IDs at that moment. Occupancy entries carry a valid time and a recorded time; a correction is a new entry. A handover entry lists what passed to the new occupant.
 
 ### 5.3 Bootstrap
@@ -511,7 +513,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Planned halt** | A halt through running, draining, paused and resuming states, distinct from the stop door (§4.3, item 10) (DR-0010) |
 | **Standing action class** | A class of reversible actions signed once inside an envelope the gateway enforces (§4.4, item 17) (DR-0010) |
 | **Windowed position** | A position run by several AI instances, each a Chief of Staff Cell with its own code and credential, together forming an Office (DR-0007): a Pod of Chief of Staff Cells (§5.2) (DR-0010) |
-| **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) |
+| **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) (line superseded by DR-0011) |
 | **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
 | **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) |
 | **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) |
