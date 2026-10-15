@@ -410,6 +410,17 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Overseen). A trial is a time-boxed run of any arrangement model, not a model of its own.
 
+The model list above is superseded (DR-0012). The direction of GOV of 15 October 2026: "Write only what is really a model and gives a different result; don't add the extras, remove them." (translated)
+
+**HOAC Arrangement Models, three (DR-0012).** A model stays only if it changes who decides or the result of a decision; a future model is admitted only under that test, and the list stays open under it.
+- **Solo Model:** one holder decides alone.
+- **Team Model:** several holders hold one position and decide by a recorded signing rule: any one, majority, or all. Every decision records one named accountable member in the decision stamp, filled at signing; that member must be a current occupant; CI checks the structure only, and the tool gateway checks at signing that the member is a current occupant. Two holders signing together is a Team setting, not a model.
+- **Overseen Model:** a higher position can stop or override; it is a link that combines with Solo or Team and records a timing form. Pre: the action waits at the tool gateway until the overseeing position clears it, or a recorded hold window lapses with no stop. Post: the action runs and can be reversed only by a new signed decision referencing the reversed decision's identifier; the original stays and is marked reversed.
+
+Overseen rules (DR-0012). A clearance is a stamped decision (overseeing position, occupant IDs, time). A lapse writes a "window lapsed, no stop" entry and counts only if the overseeing position has a holder at that moment and a window is recorded. If the overseeing position is vacant, the held action escalates to the position that set the arrangement (TM, then GOV) and never passes automatically; escalation ends at GOV, and if GOV is vacant the action stays held until GOV is filled through the founding configuration. An arrangement in which GOV is overseen by a lower position is rejected (no loops). The tool gateway marks each tool action reversible or not; an irreversible tool action (sent message, payment, deletion) under the Overseen Model always goes through pre, whatever form is recorded.
+
+Occupancy rules (DR-0012): a temporary occupant, a backup occupant and a rotation among occupants are not models; each change is already an occupancy entry. The names Tiered, Hybrid, Self-Arranging, Advised, Matrix, Assisted, Federated, Shadow, Pool, Elected, Paired, Interim, Backup and Rotating are withdrawn as model names, not renamed; no old name maps to a new one.
+
 **Register entry labels (DR-0011).** The unit register (§4.4) carries four entry labels, which are labels of entries, not units: position, arrangement, occupancy and handover. Position and arrangement entries contain no people and may be public. Occupancy and handover entries carry internal person IDs and stay in each organisation's private register copy, never in a public repository. Each signed decision is stamped with the position code and the occupant ID or IDs at that moment. Occupancy entries carry a valid time and a recorded time; a correction is a new entry. A handover entry lists what passed to the new occupant.
 
 ### 5.3 Bootstrap
@@ -528,24 +539,28 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Windowed position** | A position run by several AI instances, each a Chief of Staff Cell with its own code and credential, together forming an Office (DR-0007): a Pod of Chief of Staff Cells (§5.2) (DR-0010) |
 | **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010) (line superseded by DR-0011) |
 | **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
-| **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) |
-| **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) |
-| **Team Model** | A team holds a position and decides by its own recorded rule (§5.2) (DR-0011) |
-| **Tiered Model** | Teams in levels under a higher team (§5.2) (DR-0011) |
-| **Hybrid Model** | Some positions held by individuals, others by teams, in different scopes at once (§5.2) (DR-0011) |
-| **Self-Arranging Model** | A team designs and tests its own internal arrangement within the scope TM gives it (§5.2) (DR-0011) |
-| **Overseen Model** | A team or position oversees another's work, for example a Quality team overseeing Engineering (§5.2) (DR-0011) |
-| **Advised Model** | A position decides with a standing advisory team that advises but holds no authority (§5.2) (DR-0011) |
-| **Paired Model** | Two occupants hold one position jointly, both signing (§5.2) (DR-0011) |
-| **Rotating Model** | Occupancy rotates among named members on a recorded schedule (§5.2) (DR-0011) |
-| **Interim Model** | A temporary occupant holds a vacant position until a permanent one is assigned (§5.2) (DR-0011) |
-| **Matrix Model** | One occupant serves two positions or reports along two lines, each recorded (§5.2) (DR-0011) |
-| **Assisted Model** | A position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows (§5.2) (DR-0011) |
-| **Backup Model** | A designated deputy steps in automatically when the occupant is absent (§5.2) (DR-0011) |
-| **Federated Model** | Separate units each hold their own positions under a shared top position (§5.2) (DR-0011) |
-| **Shadow Model** | A successor shadows the occupant before handover, without authority (§5.2) (DR-0011) |
-| **Pool Model** | A pool of qualified people, any of whom may fill the position per action under a recorded rule (§5.2) (DR-0011) |
-| **Elected Model** | Occupants are chosen by a recorded vote of a defined group (§5.2) (DR-0011) |
+| **HOAC Arrangement Models** | The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Solo Model** | One person holds every HOAC position (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Team Model** | A team holds a position and decides by its own recorded rule (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Tiered Model** | Teams in levels under a higher team (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Hybrid Model** | Some positions held by individuals, others by teams, in different scopes at once (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Self-Arranging Model** | A team designs and tests its own internal arrangement within the scope TM gives it (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Overseen Model** | A team or position oversees another's work, for example a Quality team overseeing Engineering (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Advised Model** | A position decides with a standing advisory team that advises but holds no authority (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Paired Model** | Two occupants hold one position jointly, both signing (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Rotating Model** | Occupancy rotates among named members on a recorded schedule (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Interim Model** | A temporary occupant holds a vacant position until a permanent one is assigned (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Matrix Model** | One occupant serves two positions or reports along two lines, each recorded (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Assisted Model** | A position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Backup Model** | A designated deputy steps in automatically when the occupant is absent (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Federated Model** | Separate units each hold their own positions under a shared top position (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Shadow Model** | A successor shadows the occupant before handover, without authority (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Pool Model** | A pool of qualified people, any of whom may fill the position per action under a recorded rule (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **Elected Model** | Occupants are chosen by a recorded vote of a defined group (§5.2) (DR-0011) (line superseded by DR-0012) |
+| **HOAC Arrangement Models (three)** | Solo, Team and Overseen; a model stays only if it changes who decides or the result; the list stays open under that test (§5.2) (DR-0012) |
+| **Solo Model (DR-0012)** | One holder decides alone (§5.2) (DR-0012) |
+| **Team Model (DR-0012)** | Several holders with a recorded signing rule (any one, majority, all) and one named accountable member in each decision stamp (§5.2) (DR-0012) |
+| **Overseen Model (DR-0012)** | A higher position can stop or override; a link combined with Solo or Team, with a pre or post timing form (§5.2) (DR-0012) |
 | **position** (entry label) | A register entry for a position and its code; no people; may be public (§5.2) (DR-0011) |
 | **arrangement** (entry label) | A register entry for the model and arrangement of a position; no people; may be public (§5.2) (DR-0011) |
 | **occupancy** (entry label) | A register entry of who holds a position, by internal person ID, with valid and recorded time; private register copy only (§5.2) (DR-0011) |

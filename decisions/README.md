@@ -16,7 +16,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0008`](DR-0008-source-lifecycle-first-stage.md) | 2026-10-14 | 49GAION Source Lifecycle — the first stage of every source | in force |
 | [`DR-0009`](DR-0009-supplement-to-dr-0008.md) | 2026-10-14 | Supplement to DR-0008 — signing delegation, gateway reading, after-the-fact review of OCO's commits | in force |
 | [`DR-0010`](DR-0010-mechanisms-from-practice.md) | 2026-10-14 | 49GAION — fifty-five mechanisms adopted from practice | in force |
-| [`DR-0011`](DR-0011-position-principle-arrangement-models.md) | 2026-10-15 | 49GAION — the Position Principle, HOAC Arrangement Models and the holder Chief of Staff acting with approval | proposed |
+| [`DR-0011`](DR-0011-position-principle-arrangement-models.md) | 2026-10-15 | 49GAION — the Position Principle, HOAC Arrangement Models and the holder Chief of Staff acting with approval | in force |
+| [`DR-0012`](DR-0012-three-hoac-arrangement-models.md) | 2026-10-15 | 49GAION — three HOAC Arrangement Models: Solo, Team and Overseen | in force |
 
 ## Reading notes
 
@@ -28,5 +29,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0008: Read with DR-0009 (signing delegation, gateway reading, after-the-fact review of OCO's commits).
 - DR-0008 item 2, "the first part an organisation receives after the Charter", is read with Protocol §13, item 1: "with the GOV, TM and OCO installed in it" reads as "with `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` and `[ORG]AIOC-OCO` installed in it".
 - DR-0008 item 5, "the joining test": defined in Standard §3.2, item 4, and Protocol §11, item 1.
+- DR-0011 Decision item 3, the list of seventeen arrangement models: superseded (DR-0012): three models remain (Solo, Team, Overseen); the other names are withdrawn, not renamed.
 
 Powered by 49GAION
