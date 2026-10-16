@@ -24,6 +24,10 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0016`](DR-0016-target-operating-model-in-the-library.md) | 2026-10-15 | 49GAION — Target Operating Model, a Library part, linked directly to Process and Position Design | in force |
 | [`DR-0017`](DR-0017-delivery-and-implementation.md) | 2026-10-15 | 49GAION — Delivery and Implementation, the stage that takes the design into a running organisation | in force |
 | [`DR-0018`](DR-0018-one-design-return-contract.md) | 2026-10-15 | 49GAION — One return contract between design stages | in force |
+| [`DR-0019`](DR-0019-the-design-chain-connected.md) | 2026-10-16 | 49GAION — The design chain connected; the Library register; one release notice contract | in force |
+| [`DR-0020`](DR-0020-engines-at-the-tool-gateway.md) | 2026-10-16 | 49GAION — Engines at the tool gateway | in force |
+| [`DR-0021`](DR-0021-naming-r9-repositories.md) | 2026-10-16 | 49GAION — Naming Standard R9: visibility, where a repository is recorded, mother and instance | in force |
+| [`DR-0022`](DR-0022-method-catalogues-in-the-library.md) | 2026-10-16 | 49GAION — Method catalogues in the Library; the reference-model catalogue | in force |
 
 ## Reading notes
 

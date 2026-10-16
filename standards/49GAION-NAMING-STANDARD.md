@@ -58,6 +58,11 @@ The full identifier controls in manifests, records and registers; the display na
 
 Names are kept; changing a name is a governed migration. A repository is recorded before it is created.
 
+**Addition (DR-0021).**
+1. **Visibility.** The writing repository of an AIOC may be public only when it holds no organisation's data. Its `-records` and `-records-restricted` repositories are never public.
+2. **Where it is recorded.** A repository is recorded before it is created, as an event on the AIOC's entry in the unit register, with its name, its visibility and its platform.
+3. **Mother and instance.** Where an AIOC's writing repository also holds a Library mother blueprint, the mother holds no organisation's data, and the Library register pins it (Standard §3.1, item 9); the organisation's own values live in its records repository.
+
 ### R10. Signed identities never change name silently
 An identity migration is a separate governed act. A new asset is born on the R2 grammar.
 
