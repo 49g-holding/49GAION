@@ -63,6 +63,9 @@ Names are kept; changing a name is a governed migration. A repository is recorde
 2. **Where it is recorded.** A repository is recorded before it is created, as an event on the AIOC's entry in the unit register, with its name, its visibility and its platform.
 3. **Mother and instance.** Where an AIOC's writing repository also holds a Library mother blueprint, the mother holds no organisation's data, and the Library register pins it (Standard §3.1, item 9); the organisation's own values live in its records repository.
 
+**Addition (DR-0024).**
+4. **A mother repository.** Where the writing repository of a Library part's first instance holds an organisation's data, the part's mother blueprint lives in its own public repository, named `49GAION-<part>` (the part's name after "49GAION", in lower case, words joined by hyphens), beside the hub companions. It holds the mother only; the instance keeps its private writing repository and names the mother by pin.
+
 ### R10. Signed identities never change name silently
 An identity migration is a separate governed act. A new asset is born on the R2 grammar.
 
