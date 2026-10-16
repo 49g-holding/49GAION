@@ -30,6 +30,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0022`](DR-0022-method-catalogues-in-the-library.md) | 2026-10-16 | 49GAION — Method catalogues in the Library; the reference-model catalogue | in force |
 | [`DR-0023`](DR-0023-what-the-design-stages-also-carry.md) | 2026-10-16 | 49GAION — What the design stages also carry: strategy, delivery, priority, value, and the work as it runs | in force |
 | [`DR-0024`](DR-0024-library-mother-repositories.md) | 2026-10-16 | 49GAION — A mother repository for a Library part whose first instance holds an organisation's data | in force |
+| [`DR-0025`](DR-0025-built-from-the-smallest-units.md) | 2026-10-16 | 49GAION — Built from the smallest units; the Library's parts and products | in force |
 
 ## Reading notes
 
