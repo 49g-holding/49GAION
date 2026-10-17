@@ -32,6 +32,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0024`](DR-0024-library-mother-repositories.md) | 2026-10-16 | 49GAION — A mother repository for a Library part whose first instance holds an organisation's data | in force |
 | [`DR-0025`](DR-0025-built-from-the-smallest-units.md) | 2026-10-16 | 49GAION — Built from the smallest units; the Library's Parts and Products | in force |
 | [`DR-0026`](DR-0026-engine-room-named-in-the-library.md) | 2026-10-17 | 49GAION — The Engine Room named in the Library | in force |
+| [`DR-0027`](DR-0027-operations-event-register.md) | 2026-10-17 | 49GAION — The Operations Event Register; Organisation Memory | in force |
 
 ## Reading notes
 
