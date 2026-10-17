@@ -12,7 +12,7 @@
 
 ## Decision
 
-1. **The part.** The 49GAION Library holds **49GAION Operations Event Register**, an AIOC part (Standard §3.1, item 13). In an `[ORG]AION` it is `[ORG]AIOC-OER` (Naming Standard R2). Its mother blueprint is written in its own public mother repository, `49GAION-operations-event-register` (DR-0024). Its Protocol section and its part card follow in `49GAION-protocol`.
+1. **The part.** The 49GAION Library holds **49GAION Operations Event Register**, an AIOC part (Standard §3.1, item 13). In an `[ORG]AION` it is `[ORG]AIOC-OER` (Naming Standard R2). Its mother blueprint is written in its own public mother repository, `49GAION-operations-event-register` (DR-0024). Its Protocol section and its part card follow in `49GAION-protocol`. It is also offered alone, as a product of its own (DR-0025).
 
 2. **What it is.** It gives every formal act and crossing of an organisation's units and positions, on any work surface, one number in one append-only, hash-chained register, by reference to where the content lives. From that register it tells each unit and each process what was recorded, linked, answered and sourced, and what was not. It decides nothing, carries nothing and says nothing about a person.
 
@@ -24,9 +24,11 @@
 
 4. **Acts, not activity (reading note on DR-0023, item 2).** "No part watches work" stays in force. Recording the formal acts and crossings of units and positions, by reference and hash, is not watching work.
    - **Watching work** means recording or measuring a person's activity. It covers a sweep of a mailbox or chat, read or response times, presence, recordings of calls, and a count, rate or history of a human position's acts over time. The register does none of these.
-   - **AI positions.** Every act of an AI Cell is recorded, as metadata and references; payloads stay hashed at the gateway (§4.4, item 11).
+   - **AI positions.** Every act of an AI Cell is recorded, as metadata and references; payloads stay hashed at the gateway (§4.4, item 11). A Cell that acts for a holder mirrors a human position (a Chief of Staff, an attached assistant, a duty deputy). Of such a Cell, only the acts that leave the holder's sphere are recorded: Work Items sent, signed actions carried out, formal outgoing items. The exchange between the holder and the Cell is never recorded.
    - **Human positions.** Only their formal acts are recorded. For a human position, the register shows only the live state of its own open items, to that position, and never a measure of it.
-   - **Feedback.** It is given by entity, unit, process and AI Cell; by role-type only above a minimum group size.
+   - **Parties.** A party is the Cell code the gateway stamps on an act, or the unit or position that owns the address (a functional mailbox, a formal channel, a Work Item's port); otherwise it reads `not attributed`. The register never receives, holds or infers an identifier of a natural person.
+   - **Feedback.** It is given by entity, unit, process and AI Cell. A figure drawn from the acts of fewer human positions than a minimum group size rolls up to the parent unit.
+   - **A fixed list.** The register's projections and measures are fixed in its Protocol section. A new one, or a new class or purpose, runs only after a new impact assessment, a decision of `[ORG]HOAC-TM` and the consultation the law requires. The internal-audit line reviews the register's use every year.
    - **This note governs the Operations Event Register.** It changes no other text.
 
 5. **What a human decides.** Before each surface is connected:
