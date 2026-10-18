@@ -57,6 +57,6 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 ## Version
 
-`v1.5.0`, proposed. The version in force is `v1.4.0`, approved by the governing seat (GOV) of 49GAION.
+`v1.6.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
 
 Powered by 49GAION

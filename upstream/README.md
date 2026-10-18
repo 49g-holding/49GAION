@@ -2,6 +2,6 @@
 
 | File | What |
 |---|---|
-| [`49GAION-UPSTREAM.md`](49GAION-UPSTREAM.md) | **The 49GAION Standard**, `v1.5.0` (proposed) |
+| [`49GAION-UPSTREAM.md`](49GAION-UPSTREAM.md) | **The 49GAION Standard**, `v1.6.0` |
 
 Read first: [`../49GAION.md`](../49GAION.md), the master definition.
