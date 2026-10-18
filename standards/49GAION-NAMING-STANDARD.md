@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v1.5.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v1.6.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -42,7 +42,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.5.0` (proposed).
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.6.0`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
