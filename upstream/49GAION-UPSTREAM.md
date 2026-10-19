@@ -309,6 +309,14 @@ How a change is found, tested and promoted. The loop applies to every process, b
 14. **The second assembly (DR-0027).** **49GAION Organisation Memory**: Source Lifecycle and the Operations Event Register, placed side by side. Source Lifecycle keeps what the organisation knows, and the register what it did. Three things connect them: an entry a position asks to keep is filed as a source of origin kind `correspondence`, fixed as received; the register's projection of the work by role-type and process is filed as an `export`; and work done without a source reaches Source Lifecycle as a gap signal. They have one shared test.
    - **With the first assembly.** Placed beside Organisation Design and Delivery (item 12), it closes the loop of an AI-native operation: the design runs, the register records it, and the next design starts from the record.
    - **Named now, built later.** Its parts are `DRAFT`, `NOT_RUN`. This records what is built; it is not yet a rule set.
+15. **The Charter in the Library (DR-0029).** The 49GAION Library holds **49GAION Charter** (its Protocol section of the same name), the part from which the root AIOC of every `[ORG]AION` is made (§1.7, item 13). In an `[ORG]AION` it is the AIOC `[ORG]AIOC-CH`; its mother blueprint is in its own mother repository (item 9).
+   - **What it holds.** The human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`, and their Offices (§1.7, item 13), and three Pods of shared services that every other part relies on:
+     - **Gateway:** the tool gateway (§4.4, item 11), with its signature gate, its engine register, its log, the stop door and the human surface;
+     - **Records:** the registry of record types, the one numbering service, the event store that serves every part's record home, the projections and their daily check, and the restricted partition;
+     - **Work:** the shared queue of Work Items with its watchdog, the routing data, and wake.
+   - **One of each.** An `[ORG]AION` has one tool gateway, one numbering service and one shared queue. No other part keeps its own; each part writes only its own records and its own Work Items.
+   - **Who changes it.** It is installed and changed only on GOV's signature, never by `[ORG]AIOC-OCO` alone (§1.7, item 13), and its gateway policy only under `change-gateway-policy` (§4.4, item 11). Engine Room, named in the Library register, supplies the engines the gateway binds and never replaces the gateway (DR-0026).
+   - **Named now, built later.** Its card is `DRAFT`, `NOT_RUN`. This records what is built; it is not yet a rule set.
 
 ### 3.2 Evidence and tests
 
@@ -587,6 +595,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Above / Under** | Along `accountable_to`, never along `parent` (§1.7, item 12) (DR-0007) |
 | **`accountable_to`** | The card field naming the human Cell carrying a HOAC label to which a part answers (§1.7, item 12) (DR-0007) |
 | **Charter** | The one root AIOC of an `[ORG]AION`, approved and changed only by GOV; it holds the GOV and TM Cells (§1.7, item 13) (DR-0007) |
+| **49GAION Charter / `[ORG]AIOC-CH`** | The Library part from which every `[ORG]AION`'s Charter is made: the root AIOC, with the GOV and TM Cells and three Pods of shared services, Gateway, Records and Work (§3.1, item 15) (DR-0029) |
 | **Tool gateway** | The registered part, held in the Charter and outside every other AIOC, that runs every tool call, checks its signature, logs it and serves the human surface (§4.4, item 11; §6.1, item 6). Synonyms kept as labelled: "shared gateway" and "shared AI gateway" (DR-0007) |
 | **Signature** | The record of one human seat's decision on one listed action, bound to its payload hash, executor, nonce and expiry (§4.4, item 8; Protocol §4.10) (DR-0007) |
 | **Accountability path** | The route by which a report, critique, objection or stop reaches the nearest HOAC above, never through an AI (§4.2, item 9) (DR-0007) |
