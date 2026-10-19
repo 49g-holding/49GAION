@@ -95,6 +95,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
+**Reading note (DR-0030).** The Cell that carries the unscoped `[ORG]HOAC-GOV` may take the code `[ORG]CELL-GOV`. GOV is the Standard's own short form of the governing seat, as COS is of the Chief of Staff (R16). This is the second exception to the initials of item 2; R16, item 2, "the one exception", reads "one of two exceptions".
+
 ### R16. The Chief of Staff, written COS (DR-0028)
 1. **The short form.** "COS" is the one short form of "Chief of Staff". It may stand for it wherever a short form is needed: in display names, Panels, tables and prose, as "COS of `[ORG]AIOC-DI`" or, in a display name, "COS DI". The capability's name stays "Chief of Staff" (§3); COS names the capability, never a unit.
 2. **In a Cell's code.** The Chief of Staff Cell of an AIOC takes the code `[ORG]CELL-COS<initials>`, where `<initials>` are the initials of that AIOC's code: the Chief of Staff Cell of `[ORG]AIOC-DI` is `[ORG]CELL-COSDI`; of `[ORG]AIOC-SL`, `[ORG]CELL-COSSL`. This is the one exception to the initials of R15, item 2. As in R15's own example ("Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`), the AIOC's initials are part of the Cell's own name, the AIOC it serves; R14, item 3 is read with this item.
