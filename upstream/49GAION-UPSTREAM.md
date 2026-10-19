@@ -443,6 +443,8 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 ### 5.2 Chief of Staff and Office
 
+**Reading note (DR-0028).** The short form of "Chief of Staff" is COS, and the Chief of Staff Cell of an AIOC takes the code `[ORG]CELL-COS<initials>`, with that AIOC's initials, such as `[ORG]CELL-COSDI` (Naming Standard R16).
+
 **Chief of Staff.** A Chief of Staff is a Cell (§1.7). It analyses the reports and performance of a group of agents and leads them at machine speed. There are different kinds of Chief of Staff:
 - **managing agents**, which lead and coordinate other agents through control, planning or direction;
 - **connecting agents**, which connect humans with agents: they report to a human, assist them, and carry their requests to the agents.

@@ -95,6 +95,13 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
+### R16. The Chief of Staff, written COS (DR-0028)
+1. **The short form.** "COS" is the one short form of "Chief of Staff". It may stand for it wherever a short form is needed: in display names, Panels, tables and prose, as "COS of `[ORG]AIOC-DI`" or, in a display name, "COS DI". The capability's name stays "Chief of Staff" (§3); COS names the capability, never a unit.
+2. **In a Cell's code.** The Chief of Staff Cell of an AIOC takes the code `[ORG]CELL-COS<initials>`, where `<initials>` are the initials of that AIOC's code: the Chief of Staff Cell of `[ORG]AIOC-DI` is `[ORG]CELL-COSDI`; of `[ORG]AIOC-SL`, `[ORG]CELL-COSSL`. This is the one exception to the initials of R15, item 2. As in R15's own example ("Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`), the AIOC's initials are part of the Cell's own name, the AIOC it serves; R14, item 3 is read with this item.
+3. **An Office.** Where an Office holds more than one Chief of Staff of the same AIOC, the second and each later one adds a digit: `[ORG]CELL-COSDI2`. Where a code would pass eight characters, the Cell takes its initials under R15, item 2, recorded with the collision check (§5).
+4. **Never a unit.** COS never forms an AIOC or a Pod code. `[ORG]AIOC-COS` and the placeholder `{COS}` stay retired (§4).
+5. **Codes already issued.** A code never changes in place (R14, item 1). A mother blueprint moves its Chief of Staff Cell to its COS code at its next version: the old code is retired (R5) and recorded in the card's lineage. In an `[ORG]AION`, an installed Chief of Staff Cell moves only by entries in the unit register that retire the old code and issue the new one, under the Standard's rules for creating and retiring a part.
+
 ## 3. Capability names
 
 **Reading note (DR-0007).** "A single-function Chief of Staff of the assisting kind" below reads as a connecting agent (Standard §5.2).
@@ -109,6 +116,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 | The AIOC's operating face | **Panel** | `[ORG]AIOC-PF` |
 | The role-card template | **Role card** | `[ORG]AIOC-RC` |
 | The register of positions | **Position Register** | `[ORG]AIOC-PR` |
+
+**Reading note (DR-0028).** The short form of "Chief of Staff" is COS (R16). `[ORG]AIOC-COS` stays wrong: COS never names a unit.
 
 ## 4. Retired codes
 
