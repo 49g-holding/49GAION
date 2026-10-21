@@ -4,13 +4,19 @@
 
 ## 1. The definition
 
-**49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, `[ORG]AION`.
+**49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, [`[ORG]AION`](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
 
-49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is its internal design philosophy, not part of its category or its name.
+**49GAION designs AI-native organisations.** An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps. Above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, because in 49GAION an AI never accepts accountability.
 
-**The product: `[ORG]AION`**, the AI Operating Nexus of one organisation; its one definition is in the Standard, §1.3, item 1.
+49GAION consists of six parts (Standard §1.2):
+- the [governing seat (GOV)](upstream/49GAION-UPSTREAM.md#12-the-six-parts-of-49gaion);
+- the [49GAION Standard](upstream/49GAION-UPSTREAM.md);
+- the [49GAION Protocol](https://github.com/49g-holding/49GAION-protocol);
+- the [49GAION Library](https://github.com/49g-holding/49GAION-protocol/blob/main/library/README.md);
+- [49GAION Self-Improvement](upstream/49GAION-UPSTREAM.md#2-self-improvement);
+- the [AION Builder](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
 
-49GAION consists of six parts: the governing seat (GOV), the 49GAION Standard, the 49GAION Protocol, the 49GAION Library, 49GAION Self-Improvement and the AION Builder (Standard §1.2). To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
+To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
 
 ### 1.1 The names
 - **Framework:** `49GAION`, upper case, one word. A bare "AION" is not used for the framework.
@@ -20,6 +26,83 @@
 - **Cell and Pod.** Inside an AIOC's Blueprint, a Cell is the smallest part and a Pod groups Cells (Standard §1.7).
 
 ## 2. Why 49GAION exists
+
+### 2.1 Organisations were built around the human
+
+**An organisation is what reaches and holds the capability to produce a product or a service for someone outside itself: repeatable, of high quality, and not dependent on any one person.**
+- What counts is the final output that arrives.
+- Its quality is a stated standard, set by the recipient's needs. That standard includes the principles the work must respect (law, safety and fairness), and those principles are never traded away.
+- The capability to deliver the output again is the organisation's second product.
+
+For thousands of years, organisations have reached that capability around the human being, with human capacities and human limits. An AI-native organisation does something else in place of each structure those limits produced:
+
+| Human limit | What human organisations built for it | What an AI-native organisation does instead |
+|---|---|---|
+| Memory is short | files, minutes and reports | one complete record that is never forgotten |
+| People tire | shifts, queues, deadlines and hand-offs | continuous work, with no shifts and no hand-offs between tired people |
+| One person holds few skills | specialisation, departments and divisions | one AI unit that holds many skills, with no department for each skill |
+| One person can attend to little at a time | hierarchy, spans of control and reporting layers | AI reads everything; only decisions and exceptions reach a human, through that human's Chief of Staff |
+| One person cannot be everywhere | coordination meetings, approvals and chasing | one shared queue of work and its live state, with no meeting to coordinate |
+
+The tools were built for the same human: forms, inboxes, spreadsheets and organisation charts.
+
+Some of these structures also do work that is not about a human limit. They divide power, liability and checks, and they build trust. In 49GAION that work stays, and it is placed in human seats (2.3 below).
+
+### 2.2 Human-native and AI-native
+
+**The difference is where the design starts.**
+- A human-native organisation starts from people and the jobs they do, and adds AI to them.
+- An AI-native organisation starts from the output and from what AI can do, and adds people where they are needed.
+
+Most organisations that use AI today are **human-native**. They are designed around the human, and they add AI as a tool inside that design. They put AI where a human was, and tell it to do what the human did. That keeps the human limits, and it wastes what AI can do.
+
+**49GAION challenges this.** AI need not work by the human model, and the human model should not be forced on it. AI has capacities the human does not have. It also has gaps of its own:
+- it can be wrong with confidence;
+- it holds no legal personhood;
+- it depends on the quality of its data, on its security, on its cost and on its suppliers.
+
+**An AI-native organisation is designed from the start for AI.** It begins with the final output, not with the workflows of a human organisation:
+- AI produces the output;
+- humans increase the power of AI and cover its gaps;
+- a human seat is accountable for every output.
+
+**An example, as an illustration.** Take the closing of a month's accounts.
+- **Human-native:** ten to fifteen people work for about two weeks, each covering a part, with AI tools helping each of them.
+- **AI-native:** one AI unit is given the output, "a closed, reconciled and explained month, signed". Its parts prepare and reconcile, and a separate part verifies. The finance seat, with its Chief of Staff, decides the exceptions and signs.
+
+**What AI-native is not.**
+- It does not mean removing the human.
+- It does not mean that AI is always better. It is the right use of AI.
+- It is not only for new organisations. An organisation that already runs can be redesigned this way, output by output.
+
+### 2.3 How 49GAION builds an organisation
+
+1. **It starts from the final output.** "This work must be done, and this is the output you must have, at this quality." Humans set the output, its quality and the limits. The limits are a standard list, and they include the [Human Floor](upstream/49GAION-UPSTREAM.md#15-the-human-floor): the work that always stays human, by law or by its nature.
+
+2. **It builds the organisation first on what AI can do.** The design works back from the final output and corrects every step that comes before it. The processes are built from the capabilities of AI, not from the experience of human organisations, and many human workflows and structures are then not needed at all. The organisation is built from these parts:
+   - **The [AIOC](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/WHAT-IS-AN-AIOC.md) (AI Operating Core)** is the unit, and the only unit kind. It has a [Panel](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/WHAT-IS-AN-AIOC.md#2-anatomy) for the humans who work with it, a back office where its AI does the work, and one versioned blueprint. An AIOC may hold other AIOCs, to any depth, and from outside it is one piece ([composition](upstream/49GAION-UPSTREAM.md#17-composition)).
+   - **A [Cell](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/CELLS-AND-PODS.md#1-cell)** is the smallest part of an AIOC: a fixed seat whose filler, human or AI, can be replaced without changing the seat.
+   - **A [Pod](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/CELLS-AND-PODS.md#2-pod)** groups Cells, and from outside it is one piece.
+   - **Each AIOC is led by its [Chief of Staff (COS)](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office)**, a Cell that analyses the work of its agents and leads them at machine speed.
+   - **When a position needs more than one Chief of Staff, they form an [Office](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office)**, a Pod of Chief of Staff Cells, where humans can also work.
+   - **Every AIOC joins through the AI hub, [OCO](upstream/49GAION-UPSTREAM.md#42-authority-and-the-two-hubs)** (Organization Core Office). This holds at any depth. Through OCO every AIOC is fixed, maintained and upgraded, and OCO gives no orders on what work is done.
+
+3. **It covers the gaps of AI with humans.** Above the AI parts sit the human seats, each marked with a [HOAC](upstream/49GAION-UPSTREAM.md#41-the-hoac) (Human Oversight & Accountability Control) label. A HOAC label sits on a Cell, a Pod or a whole AIOC, and holds what only a human can hold: authority, accountability and the stop. It comes in three kinds:
+   - **[GOV](upstream/49GAION-UPSTREAM.md#41-the-hoac)**, the governing seat: the owner;
+   - **[TM](upstream/49GAION-UPSTREAM.md#42-authority-and-the-two-hubs)**, the human hub, which decides and orders;
+   - **[ACS](upstream/49GAION-UPSTREAM.md#41-the-hoac)**, the accountable seat over a unit.
+
+   Each human seat is a position of the organisation, filled by a real person through the organisation's assignment mechanism. No human seat is left alone with the power of AI. Each has its own [Chief of Staff](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office), which is both a translator and an assistant. It turns the speed and the language of AI into the speed and the language of the human. With the seat's approval, it can do the seat's work.
+
+4. **It never locks the organisation.** The organisation is a puzzle. Any part, down to the smallest Cell, can be changed from AI to a human seat, or back, at any time, up to the top. The owner chooses how far AI runs it, and the standard list decides what must stay human. The design stays AI-native whoever fills a part: the part's card and connections stay the same, and a human who takes it has a Chief of Staff.
+
+5. **Its aim is a successful organisation.** Along its path, 49GAION aims to turn what it builds into a successful organisation. Such an organisation has reached and holds the capability to produce its output repeatably, at its quality, and without depending on any one person. It keeps that capability alive:
+   - it has an accountable seat;
+   - it measures itself and improves;
+   - it adapts as its world changes;
+   - it sustains itself.
+
+### 2.4 The problems 49GAION also solves
 
 1. **AI produces faster than people can read, record and remember.** Without structure, the owner becomes the bottleneck or loses track of what was decided.
 2. **Work moves by copy-paste.** Nothing records who owns the work, which source version it used, whether the receiver checked it, or how often it bounced.

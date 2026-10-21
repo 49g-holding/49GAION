@@ -18,6 +18,7 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 
 1. **Category.** 49GAION is an **organisation design framework**: a framework for building organisations from interchangeable AI and human parts. AION stands for AI Operating Nexus.
 2. **Philosophy.** 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is the framework's internal design philosophy, not part of its category or its name.
+   - **Addition (DR-0031): AI-native.** 49GAION designs AI-native organisations. An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps; above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, and no AI accepts accountability (HF-01). AI-first, in this item and in the glossary, reads as AI-native. Like AI-first, AI-native is part of neither the category nor the name. The full text is in the master definition, `49GAION.md`, sections 1 and 2.
 3. **Output.** The output of 49GAION is an organisation design, delivered as its product, `[ORG]AION`.
 4. **The product.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation. Its definition is held once, in §1.3, item 1.
 5. **Nobody runs on 49GAION directly.** Every organisation runs on its own `[ORG]AION`. Outside text names the organisation's `[ORG]AION` or AIOC and adds only "Powered by 49GAION".
@@ -558,7 +559,8 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **49GAION** | The organisation design framework that comprises the AIOCs, the Protocol and the Blueprint, defines how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
 | **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3) |
 | **AION Builder** | The 49GAION capability that builds `[ORG]AION` products over a design period |
-| **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name |
+| **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name. Reads as AI-native (DR-0031) |
+| **AI-native** | The design philosophy of 49GAION: an organisation designed from the start so that AI produces its output; humans increase the power of AI and cover its gaps inside the work, and own, set and answer for it above the work; a human seat is accountable for every output; not part of its category or name (§1.1, item 2) (DR-0031) |
 | **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
 | **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Control: a label of human accountability on a Cell, a Pod or an AIOC, at any depth; kinds GOV, TM, ACS (§4.1) |
 | **Human Oversight & Accountability Centre** | Superseded term (DR-0004); see HOAC |
