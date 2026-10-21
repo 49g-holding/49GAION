@@ -36,6 +36,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0028`](DR-0028-chief-of-staff-written-cos.md) | 2026-10-19 | 49GAION — The Chief of Staff, written COS | in force |
 | [`DR-0029`](DR-0029-the-charter-in-the-library.md) | 2026-10-19 | 49GAION — The Charter in the Library, with three Pods of shared services | in force |
 | [`DR-0030`](DR-0030-five-readings-from-the-charter-mother.md) | 2026-10-19 | 49GAION — Five readings from the Charter mother | in force |
+| [`DR-0031`](DR-0031-ai-native-the-definition-and-the-introduction.md) | 2026-10-21 | 49GAION — AI-native: the definition and the introduction | in force |
 
 ## Reading notes
 

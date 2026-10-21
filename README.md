@@ -8,6 +8,14 @@ This repository holds the 49GAION Standard, the master definition, the Naming St
 
 **49GAION** is an organisation design framework: a framework for building organisations from interchangeable AI and human parts. AION stands for AI Operating Nexus.
 
+**It designs AI-native organisations.**
+- Organisations were built around the human, and most now add AI as a tool inside that human design.
+- 49GAION starts instead from the final output. It builds the organisation first on what AI can do, from [AIOCs](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/WHAT-IS-AN-AIOC.md), [Cells and Pods](https://github.com/49g-holding/49GAION-aioc/blob/main/docs/CELLS-AND-PODS.md), each AIOC led by its [Chief of Staff](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office).
+- It covers the gaps of AI with human seats marked [HOAC](upstream/49GAION-UPSTREAM.md#41-the-hoac), each with its own Chief of Staff, which hold the authority and the accountability.
+- It aims to turn the whole into a successful organisation: one that delivers its output repeatably, at its quality, and without depending on any one person.
+
+The full introduction is in [`49GAION.md`](49GAION.md).
+
 **The product: `[ORG]AION`**, the AI Operating Nexus of one organisation; its one definition is in the Standard, [§1.3, item 1](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
 
 **The Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature (HF-01 to HF-19). Organisations can be more human, never less; the system enforces it.
