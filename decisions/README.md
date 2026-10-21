@@ -37,6 +37,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0029`](DR-0029-the-charter-in-the-library.md) | 2026-10-19 | 49GAION — The Charter in the Library, with three Pods of shared services | in force |
 | [`DR-0030`](DR-0030-five-readings-from-the-charter-mother.md) | 2026-10-19 | 49GAION — Five readings from the Charter mother | in force |
 | [`DR-0031`](DR-0031-ai-native-the-definition-and-the-introduction.md) | 2026-10-21 | 49GAION — AI-native: the definition and the introduction | in force |
+| [`DR-0032`](DR-0032-withdrawn-aion-builder-stages-delivery-test.md) | 2026-10-21 | 49GAION — Withdrawn: the AION Builder, its six stages, the delivery test and two tests at v3 | in force |
 
 ## Reading notes
 
@@ -54,5 +55,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0007 Decision item 11 (c), compensating controls, as far as it makes a control a rule for fewer distinct people than a rule needs: superseded (DR-0015): two positions are two parties; a compensating control is top management's own choice, and no rule, gateway or check reads it.
 - DR-0007 Decision item 7, "a live, phishing-resistant sign-in of one person": read with DR-0015, item 7: the sign-in proves only that the signer is a current occupant of the signing position.
 - DR-0010 Decision item 3, the lines it added that count persons (Standard §4.1, item 13, the load line per person; §4.4, item 16, one person under two seats counts once): superseded (DR-0015): load and coverage are measured per position, and two seats are two parties.
+- DR-0001 Decision item 1, "and the AION Builder": superseded (DR-0032): the AION Builder is withdrawn, and 49GAION has five parts.
+- DR-0007 Decision item 10, the delivery test line D-4: superseded (DR-0032): the delivery test is withdrawn with all its lines; the rules it checked stay in force on their own, and the rule of D-4 is kept in Standard §1.7, item 12.
+- DR-0007 Decision item 11 (c), "and the delivery test result points to those events": superseded (DR-0032), with the delivery test.
 
 Powered by 49GAION
