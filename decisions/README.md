@@ -38,6 +38,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0030`](DR-0030-five-readings-from-the-charter-mother.md) | 2026-10-19 | 49GAION — Five readings from the Charter mother | in force |
 | [`DR-0031`](DR-0031-ai-native-the-definition-and-the-introduction.md) | 2026-10-21 | 49GAION — AI-native: the definition and the introduction | in force |
 | [`DR-0032`](DR-0032-withdrawn-aion-builder-stages-delivery-test.md) | 2026-10-21 | 49GAION — Withdrawn: the AION Builder, its six stages, the delivery test and two tests at v3 | in force |
+| [`DR-0033`](DR-0033-target-ai-operation-named-in-the-library.md) | 2026-10-22 | 49GAION — Target AI Operation named in the Library | in force |
 
 ## Reading notes
 
