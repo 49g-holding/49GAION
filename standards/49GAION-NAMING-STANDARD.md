@@ -73,10 +73,10 @@ An identity migration is a separate governed act. A new asset is born on the R2 
 Outside text names the organisation's `[ORG]AION` or AIOC and adds only "Powered by 49GAION".
 
 ### R12. 49GAION capabilities are named by function
-At the 49GAION level a capability is "49GAION [Function]" or a plain name, with no code (for example **49GAION Self-Improvement**, **AION Builder**). In an `[ORG]AION` it becomes that organisation's AIOC (`[ORG]AIOC-SI`). 49GAION's own instance keeps its 49GAION name.
+At the 49GAION level a capability is "49GAION [Function]" or a plain name, with no code (for example **49GAION Self-Improvement**). In an `[ORG]AION` it becomes that organisation's AIOC (`[ORG]AIOC-SI`). 49GAION's own instance keeps its 49GAION name.
 
 ### R13. The prefix comes from the organisation's brand; HOAC
-1. **Brand-derived prefix.** A code's prefix comes from the brand of the organisation that owns the `[ORG]AION`. Centrally it is written `[ORG]`; the AION Builder fills it. The prefix keeps the brand's registered case; `AION`, `AIOC` and `HOAC` are always upper case. Example for an organisation named Ten: `TenAION`, `TenAIOC-SL`, `TenHOAC-GOV`.
+1. **Brand-derived prefix.** A code's prefix comes from the brand of the organisation that owns the `[ORG]AION`. Centrally it is written `[ORG]`. The prefix keeps the brand's registered case; `AION`, `AIOC` and `HOAC` are always upper case. Example for an organisation named Ten: `TenAION`, `TenAIOC-SL`, `TenHOAC-GOV`.
 2. **Initials of the unit's own name.** "AI" appears in a code only when it is part of the unit's name.
 3. **No hard-coded `49`.** Central texts never use `49` as a code prefix; they write `[ORG]`.
 4. **HOAC.** The 49GAION Human Oversight & Accountability Control label is written `[ORG]HOAC-<TYPE>`: `GOV` (Governing Body), `TM` (Top Management), `ACS` (Accountability Seat). "HOAC" is chosen for symmetry with `AIOC`.
@@ -115,13 +115,14 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 | A set of agents that analyses the reports and performance of other agents and leads them | **Chief of Staff** | `[ORG]AIOC-COS` |
 | What forms when a position needs more than one Chief of Staff | **Office** | `[ORG]AIOC-EO` |
 | A single-function Chief of Staff of the assisting kind | **Executive assistant** | `[ORG]AIOC-EA` |
-| The 49GAION capability that builds `[ORG]AION` products | **AION Builder** | `[ORG]AIOC-EB` |
 | The input check every AIOC has | **Input socket** | `49AIIN`, "External Bridge" |
 | The AIOC's operating face | **Panel** | `[ORG]AIOC-PF` |
 | The role-card template | **Role card** | `[ORG]AIOC-RC` |
 | The register of positions | **Position Register** | `[ORG]AIOC-PR` |
 
 **Reading note (DR-0028).** The short form of "Chief of Staff" is COS (R16). `[ORG]AIOC-COS` stays wrong: COS never names a unit.
+
+**Withdrawn (DR-0032).** The AION Builder is withdrawn, and its row in the table above with it. `[ORG]AIOC-EB` stays retired (§4).
 
 ## 4. Retired codes
 

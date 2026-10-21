@@ -8,13 +8,12 @@
 
 **49GAION designs AI-native organisations.** An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps. Above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, because in 49GAION an AI never accepts accountability.
 
-49GAION consists of six parts (Standard §1.2):
+49GAION consists of five parts (Standard §1.2):
 - the [governing seat (GOV)](upstream/49GAION-UPSTREAM.md#12-the-six-parts-of-49gaion);
 - the [49GAION Standard](upstream/49GAION-UPSTREAM.md);
 - the [49GAION Protocol](https://github.com/49g-holding/49GAION-protocol);
 - the [49GAION Library](https://github.com/49g-holding/49GAION-protocol/blob/main/library/README.md);
-- [49GAION Self-Improvement](upstream/49GAION-UPSTREAM.md#2-self-improvement);
-- the [AION Builder](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
+- [49GAION Self-Improvement](upstream/49GAION-UPSTREAM.md#2-self-improvement).
 
 To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
 
@@ -145,7 +144,7 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 ## 6. The delivery test
 
-Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor, the stop ports of all its AIOCs, Pods and Cells, and its accountability chain are in place (Standard §1.4).
+**Withdrawn (DR-0032).** The delivery test is withdrawn (Standard §1.4). The rules it checked stay in force: each `[ORG]AION` has its own `[ORG]HOAC-GOV`, its Human Floor, a stop door on every AIOC, Pod and Cell, and its accountability chain.
 
 ## 7. How 49GAION is shown
 
