@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v1.6.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v1.7.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -42,7 +42,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.6.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v1.7.0`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -94,6 +94,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 3. **One register, one code.** Every Pod and Cell code is unique in the organisation's unit register and passes the collision check in §5 before first use. Retired codes are never reused (R5).
 4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
+
+**Reading note (DR-0028).** For a Chief of Staff Cell, R16, item 2 governs: the example "Source Lifecycle Chief of Staff" in item 2 reads `[ORG]CELL-COSSL`. The example "Top Management Seat" → `[ORG]CELL-TMS` stands.
 
 **Reading note (DR-0030).** The Cell that carries the unscoped `[ORG]HOAC-GOV` may take the code `[ORG]CELL-GOV`. GOV is the Standard's own short form of the governing seat, as COS is of the Chief of Staff (R16). This is the second exception to the initials of item 2; R16, item 2, "the one exception", reads "one of two exceptions".
 
