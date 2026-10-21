@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.6.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.7.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 ## 1. The definition
 
@@ -41,7 +41,7 @@ For thousands of years, organisations have reached that capability around the hu
 | Memory is short | files, minutes and reports | one complete record that is never forgotten |
 | People tire | shifts, queues, deadlines and hand-offs | continuous work, with no shifts and no hand-offs between tired people |
 | One person holds few skills | specialisation, departments and divisions | one AI unit that holds many skills, with no department for each skill |
-| One person can attend to little at a time | hierarchy, spans of control and reporting layers | AI reads everything; only decisions and exceptions reach a human, through that human's Chief of Staff |
+| One person can attend to little at a time | hierarchy, spans of control and reporting layers | AI reads everything; the human's Chief of Staff brings only the decisions and exceptions, while a report, objection or stop still reaches the human directly, never through any AI (Standard §4.2, item 9) |
 | One person cannot be everywhere | coordination meetings, approvals and chasing | one shared queue of work and its live state, with no meeting to coordinate |
 
 The tools were built for the same human: forms, inboxes, spreadsheets and organisation charts.
@@ -145,7 +145,7 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 ## 6. The delivery test
 
-Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor and the stop ports of all its AIOCs, Pods and Cells are in place (Standard §1.4).
+Every `[ORG]AION` is handed over only when its `[ORG]HOAC-GOV`, its Human Floor, the stop ports of all its AIOCs, Pods and Cells, and its accountability chain are in place (Standard §1.4).
 
 ## 7. How 49GAION is shown
 
