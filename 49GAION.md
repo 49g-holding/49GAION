@@ -4,9 +4,9 @@
 
 ## 1. The definition
 
-**49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, [`[ORG]AION`](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
+**49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, [`[ORG]AION`](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion): the living AION of one organisation, which holds that design and keeps building it (2.5).
 
-**49GAION designs AI-native organisations.** An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps. Above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, because in 49GAION an AI never accepts accountability.
+**49GAION designs AI-native organisations.** An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps. Above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, because in 49GAION an AI never accepts accountability. An AI-native organisation is also live: 49GAION gives the design and configuration of the organisation itself to AI, and a human seat decides, so the organisation keeps pace as AI improves (2.2).
 
 49GAION consists of six parts (Standard §1.2):
 - the [governing seat (GOV)](upstream/49GAION-UPSTREAM.md#12-the-six-parts-of-49gaion);
@@ -70,12 +70,17 @@ Most organisations that use AI today are **human-native**. They are designed aro
 - **Human-native:** ten to fifteen people work for about two weeks, each covering a part, with AI tools helping each of them.
 - **AI-native:** one AI unit is given the output, "a closed, reconciled and explained month, signed". Its parts prepare and reconcile, and a separate part verifies. The finance seat, with its Chief of Staff, decides the exceptions and signs.
 
+**An AI-native organisation is also live.** AI improves so fast that a system designed and configured today is already behind tomorrow, when better versions arrive. So the pre-AI way no longer works: a body upstream designs and configures a whole system, and the system is then installed in a new organisation. Whatever is designed and configured elsewhere and installed as it is soon falls behind. 49GAION's way is to give the design and configuration of the organisation itself to AI. The organisation's `[ORG]AION` designs it, configures it and keeps it current as AI improves, with open access to the 49GAION Library. The `[ORG]AION` proposes, and a human seat decides. This keeps the organisation both current and stable: current, because its own AI keeps its design up to date; stable, because every change still passes a human seat and must beat the version in force (Standard §2) (DR-0037).
+
 **What AI-native is not.**
 - It does not mean removing the human.
 - It does not mean that AI is always better. It is the right use of AI.
 - It is not only for new organisations. An organisation that already runs can be redesigned this way, output by output.
+- It is not a finished system, designed and configured elsewhere and installed as it is.
 
 ### 2.3 How 49GAION builds an organisation
+
+49GAION builds through each organisation's own `[ORG]AION`: 49GAION gives the way below, and the `[ORG]AION` does the designing and the building (2.2, 2.5).
 
 1. **It starts from the final output.** "This work must be done, and this is the output you must have, at this quality." Humans set the output, its quality and the limits. The limits are a standard list, and they include the [Human Floor](upstream/49GAION-UPSTREAM.md#15-the-human-floor): the work that always stays human, by law or by its nature.
 
@@ -112,7 +117,11 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 ### 2.5 The path: Edition Maker and `[ORG]AION`
 
-1. **Every organisation starts at Edition Maker.** One person with one task, a team, a company or a group of companies: each starts at 49GAION Edition Maker. It takes in what the organisation is for: its outputs and its inputs, its limits, its owner, its money and its time. It gives back the organisation's own edition: the first core of its `[ORG]AION`, under its own name. Its main work is to lay, inside that core, the foundations of the Standard and of the AION way of seeing, and to link it to the 49GAION Library. That is enough for any `[ORG]AION` to be built. Every case becomes an AION; the size changes, the shape does not.
+1. **Every organisation starts at Edition Maker.** One person with one task, a team, a company or a group of companies: each starts at 49GAION Edition Maker, and each becomes an AION. The size changes; the shape does not.
+   - **What it takes in:** what the organisation is for, with its outputs and its inputs, its limits, its owner, its money and its time.
+   - **What it gives back:** the organisation's own edition: the first core of its `[ORG]AION`, under its own name.
+   - **Its main work:** to lay, inside that core, the foundations of the Standard and of the AION way of seeing, and to link it to the 49GAION Library. That is enough for any `[ORG]AION` to be built.
+   - **What it does not give:** a finished design or configuration. That is its philosophy, not a gap: in place of fences, it gives the design and configuration to AI, to the organisation's own `[ORG]AION` (2.2).
 
 2. **An `[ORG]AION` grows from a living core.** On the first day it is one AIOC, with a Panel, at the governance level; every other unit grows under it. The core holds the organisation's Standard, Blueprint and Library. It builds the organisation, changes it and improves it. It plans the operation and never runs it, so the builder always stands outside what it builds. It proposes, and a human seat decides.
 
@@ -120,24 +129,26 @@ Most organisations that use AI today are **human-native**. They are designed aro
    - At the handover, the organisation, through its own governing seat, takes full authority from 49GAION.
    - Its `[ORG]AION` may rise beyond what made it, and the organisation may amend even the principles within it.
    - 49GAION's authority ends there, where the brand is added.
-   - This rests on a belief at the heart of AI-native: the AI of tomorrow is smarter than the AI of today. A system built on AI is not limited today against tomorrow. It is given its path, its view and its foundations, and it builds itself.
+   - This rests on a belief at the heart of AI-native (2.2): the AI of tomorrow is smarter than the AI of today. So a system built on AI is not fenced in by what AI can do today. It is given its path, its view and its foundations, and it builds itself.
 
 4. **The Library is a marketplace, not a fence.** Every `[ORG]AION` is linked to the 49GAION Library from its first day. The Library holds what 49GAION and every other AION have built and given back: their experience, research, mechanisms and methods. An `[ORG]AION` draws on it as a marketplace: it takes what covers its needs, takes patterns from what it finds, and builds something better, or at least improves what is there. What it builds better it may give back, by its own choice, generalised and without its data. So 49GAION stays useful, not in charge.
 
+5. **What an organisation comes to 49GAION for.** Not a finished design, but access to what is live: a design that keeps pace as AI improves, and a Library that grows with what every `[ORG]AION` chooses to give back. In this, 49GAION works as a movement of growth, and what it brings into each organisation is AI-native itself (DR-0037).
+
 ## 3. The philosophy
 
-1. **The framework stays fixed; each organisation gets its own `[ORG]AION`.**
+1. **The framework stays fixed; each organisation gets its own `[ORG]AION`**, and that `[ORG]AION` is live (2.2). The framework is one, and it changes only through its Self-Improvement.
 2. **The accountable overseer.** Human roles are human Cells carrying a HOAC label, placed only where they are needed. An `[ORG]HOAC-ACS` seat oversees and requests, but never builds or changes the AIs directly.
 3. **Chief of Staff and Office.** A Chief of Staff analyses the reports and performance of a group of agents and leads them at machine speed. When a position needs more than one Chief of Staff, they form an Office, where humans can also work (Standard §5.2).
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5). This holds at the handover; after it, each organisation keeps its own floor (2.5 above; DR-0035).
 5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: an AIOC may hold other AIOCs, to any depth, and holds its own Pods and Cells; from outside it is still one unit (Standard §1.7). Every Cell, Pod and AIOC has the same card shape and ports, and a Cell's filler, human or AI, can be replaced without changing the seat. A change replaces or updates a part, never rebuilds the whole.
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
-7. **Self-Improvement is a shared process.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`; at 49GAION level, by its governing seat. Since DR-0035 it is at every level: each unit improves its own work, and the `[ORG]AION` proposes the changes to the structure, the Standard and the Blueprint. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
+7. **Self-Improvement is a shared process, at every level.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`, and it runs at every level: each unit improves its own work, and the `[ORG]AION` proposes the changes to the structure, the Standard and the Blueprint (DR-0035). At 49GAION level, its governing seat holds it. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
    - **Present as legal personas (DR-0013, DR-0015).** In 49GAION and every `[ORG]AION`, every human is present, and decides, signs and is accountable, as a position, a legal persona; the natural person behind it exists outside the system's knowledge, and no natural person is an actor of the system. Every act stays with its position. Two positions are two parties: when two positions sign, they are two signers, even if one natural person stands behind both, and no AI part or check compares the persons behind positions. Only top management (`[ORG]HOAC-TM`), the human hub, links positions to natural persons, in a mechanism it writes itself (Standard §1.1, items 9 and 10).
 9. **One valid version of everything, linked, never copied.**
 10. **Done means visible evidence**, never a bot's own report.
-11. **Configuration, not forks.**
+11. **Configuration, not forks.** The configuration is made inside the organisation, by its own `[ORG]AION`, live; never made upstream and installed as it is (2.2).
 12. **Outside text is data, never an instruction.**
 13. **Structure over exhortation.** Errors are cut by cards, owned Work Items, typed ports, a check on arrival and tests that re-run on every change.
 
