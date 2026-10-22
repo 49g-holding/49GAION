@@ -19,6 +19,7 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 1. **Category.** 49GAION is an **organisation design framework**: a framework for building organisations from interchangeable AI and human parts. AION stands for AI Operating Nexus.
 2. **Philosophy.** 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is the framework's internal design philosophy, not part of its category or its name.
    - **Addition (DR-0031): AI-native.** 49GAION designs AI-native organisations. An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps; above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, and no AI accepts accountability (HF-01). AI-first, in this item and in the glossary, reads as AI-native. Like AI-first, AI-native is part of neither the category nor the name. The full text is in the master definition, `49GAION.md`, sections 1 and 2.
+   - **Addition (DR-0037): live.** An AI-native organisation is also live. AI improves so fast that a system designed and configured elsewhere and installed as it is soon falls behind. So 49GAION gives the design and configuration of the organisation itself to AI: the organisation's `[ORG]AION` designs and configures it, and keeps it current as AI improves, with open access to the 49GAION Library. The `[ORG]AION` proposes, and a human seat decides (HF-01). The full text is in the master definition, `49GAION.md`, section 2.2.
 3. **Output.** The output of 49GAION is an organisation design, delivered as its product, `[ORG]AION`.
    - **Reading (DR-0035).** `[ORG]AION` is the organisation's living AION: it grows from one core, holds the organisation's design and builds from it (§1.3, item 1).
 4. **The product.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation. Its definition is held once, in §1.3, item 1.
@@ -50,9 +51,9 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 | 1 | **The governing seat (GOV)** | The accountable overseer of 49GAION and the sole approver of the Standard. Its holder is recorded in the unit register (`registers/HOAC-REGISTER.md`). |
 | 2 | **The 49GAION Standard** | What 49GAION is and the rules that must hold. Stable. |
 | 3 | **The 49GAION Protocol** | How AIOCs, Pods, Cells and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
-| 4 | **The 49GAION Library** | All ready-made AIOC Blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
+| 4 | **The 49GAION Library** | All ready-made AIOC Blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. Read with DR-0037: each `[ORG]AION` configures a part inside the organisation, live, through its own AI. |
 | 5 | **49GAION Self-Improvement** | The process, shared by AI and humans, that keeps 49GAION current. It is held by the governing seat (GOV) of 49GAION (§2.1). |
-| 6 | **49GAION Edition Maker** (DR-0035) | The start point of 49GAION: a system of its own, under its governing seat. It takes in what an organisation is for, and gives back the organisation's own edition of an AION (§1.3). |
+| 6 | **49GAION Edition Maker** (DR-0035) | The start point of 49GAION: a system of its own, under its governing seat. It takes in what an organisation is for, and gives back the organisation's own edition of an AION (§1.3). It hands over no finished design or configuration: it gives them to the organisation's own `[ORG]AION`, and a human seat decides (DR-0037). |
 
 **Withdrawn (DR-0032).** The AION Builder, the earlier part 6, is withdrawn. Since DR-0035, part 6 is 49GAION Edition Maker.
 
@@ -573,10 +574,11 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 |---|---|
 | **49GAION** | The organisation design framework that comprises the AIOCs, the Protocol and the Blueprint, defines how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
 | **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3). Since DR-0035, the living AION of one organisation, grown from one core: an AIOC at the governance level that builds, changes and improves the organisation and never runs its operation (§1.3, item 1). It has no other name (DR-0036) |
-| **Edition Maker** | 49GAION Edition Maker, part 6 of 49GAION: the start point that takes in what an organisation is for and gives back its own edition of an AION (§1.2) (DR-0035) |
+| **Edition Maker** | 49GAION Edition Maker, part 6 of 49GAION: the start point that takes in what an organisation is for and gives back its own edition of an AION; it hands over no finished design or configuration, and gives them to AI (§1.2) (DR-0035, DR-0037) |
 | **AION Builder** | Withdrawn (DR-0032) (§1.2) |
 | **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name. Reads as AI-native (DR-0031) |
-| **AI-native** | The design philosophy of 49GAION: an organisation designed from the start so that AI produces its output; humans increase the power of AI and cover its gaps inside the work, and own, set and answer for it above the work; a human seat is accountable for every output; not part of its category or name (§1.1, item 2) (DR-0031) |
+| **AI-native** | The design philosophy of 49GAION: an organisation designed from the start so that AI produces its output; humans increase the power of AI and cover its gaps inside the work, and own, set and answer for it above the work; a human seat is accountable for every output; not part of its category or name; it is also live: the design and configuration of the organisation are given to AI, inside it (§1.1, item 2) (DR-0031, DR-0037) |
+| **Live** | Of an AI-native organisation: its design and configuration are given to AI inside it, its `[ORG]AION`, which keeps them current as AI improves, with open access to the 49GAION Library, while a human seat decides; never a system designed and configured elsewhere and installed as it is (§1.1, item 2) (DR-0037) |
 | **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
 | **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Control: a label of human accountability on a Cell, a Pod or an AIOC, at any depth; kinds GOV, TM, ACS (§4.1) |
 | **Human Oversight & Accountability Centre** | Superseded term (DR-0004); see HOAC |
