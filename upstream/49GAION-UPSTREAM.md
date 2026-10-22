@@ -20,11 +20,12 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 2. **Philosophy.** 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is the framework's internal design philosophy, not part of its category or its name.
    - **Addition (DR-0031): AI-native.** 49GAION designs AI-native organisations. An AI-native organisation is designed from the start so that AI produces its output. Inside the work, humans increase the power of AI and cover its gaps; above the work, humans own the organisation, set its output, its quality and its limits, and answer for it. A human seat is accountable for every output, and no AI accepts accountability (HF-01). AI-first, in this item and in the glossary, reads as AI-native. Like AI-first, AI-native is part of neither the category nor the name. The full text is in the master definition, `49GAION.md`, sections 1 and 2.
 3. **Output.** The output of 49GAION is an organisation design, delivered as its product, `[ORG]AION`.
+   - **Reading (DR-0035).** The product is the organisation's living core, the branded AION, which holds the organisation's design and builds from it (§1.3, item 1).
 4. **The product.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation. Its definition is held once, in §1.3, item 1.
 5. **Nobody runs on 49GAION directly.** Every organisation runs on its own `[ORG]AION`. Outside text names the organisation's `[ORG]AION` or AIOC and adds only "Powered by 49GAION".
 6. **One kind of unit, composed without limit.** The unit level holds the AIOCs and how they work together. An AIOC may hold other AIOCs, to any depth, with no limit (§1.7). Inside an AIOC, its Blueprint holds its Pods and Cells.
 7. **Generic.** The Standard names no organisation, no person and no tool. Organisation names, holders of seats, tools and exact values belong to registers and to each `[ORG]AION`.
-8. **What the framework comprises.** 49GAION comprises the **AIOCs** (its units), the **Protocol** (how they work together), the **Blueprint** (the one file that defines each AIOC with its Pods and Cells) and the five parts in §1.2 that hold and govern them.
+8. **What the framework comprises.** 49GAION comprises the **AIOCs** (its units), the **Protocol** (how they work together), the **Blueprint** (the one file that defines each AIOC with its Pods and Cells) and the six parts in §1.2 that hold and govern them.
 9. **No natural person (DR-0013).** The direction of GOV of 15 October 2026: "In the AION system the human as a natural person does not exist at all. Every human that exists, exists as a legal persona. Where legal personas are linked to natural persons, that has its place only in top management, belongs to it, has its own mechanism, and has nothing to do with you." (translated)
    - **Only positions.** A human exists in the system only as a position: a legal persona with its own code, carrying a HOAC label (§4.1; §5.2, Position Principle). Every human act in the system (deciding, signing, approving, answering, contributing, being accountable) is the act of a position.
    - **Nowhere a natural person.** No Blueprint, card, Work Item, register entry read by a part, record, prompt, instruction or AI memory names, addresses, describes or reasons about a natural person who acts in the system.
@@ -51,23 +52,29 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 | 3 | **The 49GAION Protocol** | How AIOCs, Pods, Cells and the parts work together, at the general level. Exact values (limits, timings, tools, routes) live in each `[ORG]AION`'s own Protocol. |
 | 4 | **The 49GAION Library** | All ready-made AIOC Blueprints and part cards. Built once, configured per `[ORG]AION`, never rebuilt. |
 | 5 | **49GAION Self-Improvement** | The process, shared by AI and humans, that keeps 49GAION current. It is held by the governing seat (GOV) of 49GAION (§2.1). |
+| 6 | **49GAION Edition Maker** (DR-0035) | The start point of 49GAION: a system of its own, under its governing seat. It takes in what an organisation is for, and gives back the organisation's own edition of an AION (§1.3). |
 
-**Withdrawn (DR-0032).** Part 6, the AION Builder, is withdrawn. 49GAION has five parts, and "the six parts" in the heading reads "the five parts".
+**Withdrawn (DR-0032).** The AION Builder, the earlier part 6, is withdrawn. Since DR-0035, part 6 is 49GAION Edition Maker.
 
 **Addition (DR-0025).** The Library has two sections: **Parts**, everything 49GAION builds with its history, and **Products**, what it offers (§3.1, item 11).
 
-**Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has its own governing seat (`[ORG]HOAC-GOV`), Standard, Protocol and Library. In an `[ORG]AION`, Self-Improvement is not a separate part: it is a process inside its `[ORG]HOAC-TM` (§2.1).
+**Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has its own governing seat (`[ORG]HOAC-GOV`), Standard, Protocol and Library. In an `[ORG]AION`, Self-Improvement is not a separate part: it is a process inside its `[ORG]HOAC-TM` (§2.1). Since DR-0035 it is at every level (§2.1, item 6).
 
 ### 1.3 The product: `[ORG]AION`
 
 1. **The product: `[ORG]AION`.** 49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation: a complete organisation design, built for that organisation alone, from which the organisation is built and which belongs entirely to the customer once delivered.
+   - **Addition (DR-0035), which supersedes the sentence above: the living core.** `[ORG]AION`, the branded AION, is the living AION of one organisation. It grows from one core: an AIOC, with a Panel, at the governance level. On the first day it is that core alone, and every other unit grows under it. The core holds the organisation's Standard, Blueprint and Library; it builds the organisation, changes it and improves it; it plans the operation and never runs it. It proposes, and a human seat decides and is accountable (HF-01). Edition Maker makes the first edition for that organisation alone (§1.2), and it belongs entirely to the organisation once handed over. How the core relates to the root of §1.7, item 13 and to the AI hub of §4.2 is each organisation's own design.
 2. **Not public; its own authority.** Each `[ORG]AION` is built for one organisation and is not public. It has its own `[ORG]HOAC-GOV` from day one, so its top authority is that organisation, not 49GAION, and it stands on its own Human Floor (§1.5). Every AIOC in an `[ORG]AION` has its own runtime, woken from its queue.
 3. **Name.** An `[ORG]AION` is written with the organisation's brand prefix and shown as "`<Brand>` AION, Powered by 49GAION", for example "Ten AION, Powered by 49GAION" (Naming Standard R1).
 4. **Derived from the Standard.** At delivery, the Standard of an `[ORG]AION` is derived from the 49GAION Standard: identical to it or stricter than it, never contradicting it. Its Human Floor can be raised, never lowered.
+   - **Addition (DR-0035): hand over, then let go.** This holds at the handover. After it, the Standard is the organisation's own. The organisation, through its own governing seat, takes full authority from 49GAION. Its branded AION may rise beyond what made it, and the organisation may amend the principles within it, the Human Floor included. 49GAION's authority ends at the handover, where the brand is added.
 5. **Its own parts.** Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`), Standard, Protocol, Library (only what the organisation needs), AIOCs, unit register and Human Floor. Self-Improvement, held inside its `[ORG]HOAC-TM`, keeps that `[ORG]AION` current after delivery (§2).
+   - **Reading (DR-0035).** Self-Improvement is at every level (§2.1, item 6).
 6. **Withdrawn (DR-0032).**
 7. **Library harvest.** During the design of an `[ORG]AION`, any capability that is not already in the 49GAION Library has its blueprint added back to the 49GAION Library, generalised (no organisation data) and tested. How customer ownership and the Library harvest relate is to be written into this Standard before the first `[ORG]AION` is delivered to an outside customer.
+   - **Addition (DR-0035), which supersedes the harvest above: the support line.** Giving back is the organisation's choice. Every branded AION is linked to 49GAION's Library and central repositories from its first day. The Library works as a marketplace: it holds what 49GAION and every branded AION have built and given back, their experience, research, mechanisms and methods, for any branded AION to use, to take patterns from, to improve and to stay in sync with. A branded AION may give back, by its own choice, what it builds better, generalised and without its data.
 8. **Customer ownership.** Once delivered, the `[ORG]AION` belongs entirely to the customer.
+   - **Addition (DR-0035).** It is then independent (item 4). 49GAION's one lever is to be useful, through the support line (item 7).
 9. **Data.** The organisation's own working data stays the organisation's and never enters the 49GAION Library. No `[ORG]AION` sees another `[ORG]AION`'s data.
 10. **Into the Standard.** Lessons enter the 49GAION Standard only through 49GAION Self-Improvement, generalised and re-tested, and only on the decision of the governing seat of 49GAION.
 11. **Tool neutrality.** The Standard names roles only; tool names appear only in an `[ORG]AION`.
@@ -90,6 +97,8 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 Above the floor, nothing is fixed. An organisation can run anywhere from the floor to 100% human, and move freely within that range at any time, even while it is running: by adding human Cells, changing the filler of a Cell from AI to human, or changing it back to AI down to the floor. Its product, its market, its law and its needs decide where it stands. Organisations can be more human, never less.
 
 This is possible because every Cell, Pod and AIOC has the same card shape and the same typed ports, and because a Cell's seat is fixed while its filler, human or AI, is replaceable. Changing a filler is replacing a puzzle piece, not rebuilding the organisation: the work around it does not change.
+
+**Reading (DR-0035).** In each edition, the floor holds as written here at the handover (§1.3, item 4). After it, the floor the organisation keeps is its own.
 
 **The system enforces the floor**, not policy: no change, by anyone, can take a Human Floor task away from a human. Moving toward human is always open; moving below the floor is impossible by design. No `[ORG]AION` is locked into a ratio; this adjustable balance between AI and human is a core design strength of 49GAION.
 
@@ -203,6 +212,7 @@ The full rule is in `standards/49GAION-NAMING-STANDARD.md`.
 4. **Discussion.** A proposal is discussed between its proposer, the human hub and the units it affects, until its text is ready for decision. The discussion records the arguments; it decides nothing.
 5. **Decision.** A proposal takes effect only on approval by the accountable human seat (§2.2), as a new version and a decision record. Decision records are never edited. What is applied must equal what was approved. Human silence is never consent.
 6. **Its place.** Self-Improvement is not a separate part of an `[ORG]AION`. It is a process held inside the human hub, `[ORG]HOAC-TM` (§4.2, item 2), and carried out jointly by humans and by one AIOC held within TM. That AIOC raises proposals of its own and prepares every proposal for decision; TM decides, including on changes to `[ORG]AIOC-OCO`. `[ORG]AIOC-OCO` carries out what is approved.
+   - **Addition (DR-0035), which supersedes this item in part: at every level.** Each unit improves its own work within its scope; Top Management does so for the operation. Any unit or seat may raise a change to the structure, the Standard or the Blueprint (item 2); the branded AION's core prepares it, and a human seat signs it, as the organisation sets. The rest of this item stays.
 7. **Its records.** The Self-Improvement AIOC reads the shared queue, the gateway logs and the test results directly and read-only, never only through a Panel. These records are kept where OCO cannot change or delete them.
    - **Access rule (DR-0007).** The records named in this item are read read-only and pseudonymised: no person is named in what is read. Nothing read is kept in a private store of the process or of a Cell serving it. This access changes only as a Work Item, decided under item 8. It is an access rule, not a signature type.
    - **Correction (DR-0007).** There is no standalone Self-Improvement unit or unit card. "One AIOC held within TM" (item 6) and "the Self-Improvement AIOC" (items 7 and 8; §2.3, item 6) read "the AI Cells serving the Self-Improvement process in TM". The process and its fields are recorded only on the card of the Cell carrying `[ORG]HOAC-TM` (Protocol, `processes` on the unit card).
@@ -379,6 +389,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 
 1. **`[ORG]HOAC-GOV` is the top authority**, above every AIOC, Pod and Cell.
 2. **`[ORG]HOAC-TM` is the human hub** and the highest executive under GOV. It decides and orders: what work the organisation does is decided by humans, through TM, under GOV. It holds Self-Improvement (§2).
+   - **Reading (DR-0035).** TM holds Self-Improvement for the operation; it is at every level (§2.1, item 6).
 3. **`[ORG]AIOC-OCO` (Organization Core Office) is the AI hub.** Every AIOC, at any depth, joins, is fixed, maintained and upgraded through OCO, and new versions of Library blueprints enter the `[ORG]AION` through it. OCO gives no orders on what work is done; it carries out what the human hub approves.
 4. **OCO sits under TM.** TM draws its authority from GOV; OCO draws its authority from GOV through the human hub. GOV appoints the first TM. TM orders OCO, meets its human needs (approvals, live human input, Human Floor steps) and is its accountable seat. Who may stop which unit, including OCO, is set in §4.3, item 2.
 5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
@@ -561,7 +572,9 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | Term | Meaning |
 |---|---|
 | **49GAION** | The organisation design framework that comprises the AIOCs, the Protocol and the Blueprint, defines how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
-| **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3) |
+| **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3); the branded AION, grown from one living core (DR-0035) |
+| **Branded AION** | An organisation's `[ORG]AION`, grown from one living core: an AIOC at the governance level that builds, changes and improves the organisation and never runs its operation (§1.3, item 1) (DR-0035) |
+| **Edition Maker** | 49GAION Edition Maker, part 6 of 49GAION: the start point that takes in what an organisation is for and gives back its own edition of an AION (§1.2) (DR-0035) |
 | **AION Builder** | Withdrawn (DR-0032) (§1.2) |
 | **AI-first** | The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name. Reads as AI-native (DR-0031) |
 | **AI-native** | The design philosophy of 49GAION: an organisation designed from the start so that AI produces its output; humans increase the power of AI and cover its gaps inside the work, and own, set and answer for it above the work; a human seat is accountable for every output; not part of its category or name (§1.1, item 2) (DR-0031) |
@@ -593,7 +606,7 @@ How AIOCs, Pods, Cells and the parts work together is set in the 49GAION Operati
 | **Configuration** | The blueprint section of slots each organisation fills; an AIOC with an empty slot does not join |
 | **Port / Port card** | One of a unit's ports (one input and one output of each kind, AI and HU, plus the stop door) and its card |
 | **Stop port (stop door)** | The mandatory, queue-less HU port that stops a unit and every unit inside it |
-| **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it |
+| **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it. This holds at the handover; after it, each organisation keeps its own floor (§1.3, item 4) (DR-0035) |
 | **Delivery test** | Withdrawn (DR-0032), with its lines D-1 to D-4 (§1.4) |
 | **Unit (in the rules on ports, stop, restart, register and tests)** | Any AIOC, Pod or Cell. "Unit kind" means the AIOC only (DR-0007) |
 | **Part** | Any AIOC, Pod or Cell, seen as a place in the structure (§1.7) (DR-0007) |

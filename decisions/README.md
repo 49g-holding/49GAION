@@ -38,7 +38,9 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0030`](DR-0030-five-readings-from-the-charter-mother.md) | 2026-10-19 | 49GAION — Five readings from the Charter mother | in force |
 | [`DR-0031`](DR-0031-ai-native-the-definition-and-the-introduction.md) | 2026-10-21 | 49GAION — AI-native: the definition and the introduction | in force |
 | [`DR-0032`](DR-0032-withdrawn-aion-builder-stages-delivery-test.md) | 2026-10-21 | 49GAION — Withdrawn: the AION Builder, its six stages, the delivery test and two tests at v3 | in force |
-| [`DR-0033`](DR-0033-target-ai-operation-named-in-the-library.md) | 2026-10-22 | 49GAION — Target AI Operation named in the Library | in force |
+| [`DR-0033`](DR-0033-target-ai-operation-named-in-the-library.md) | 2026-10-22 | 49GAION — Target AI Operation named in the Library | superseded by DR-0034 |
+| [`DR-0034`](DR-0034-target-ai-operation-withdrawn.md) | 2026-10-22 | 49GAION — Target AI Operation withdrawn | in force |
+| [`DR-0035`](DR-0035-edition-maker-and-the-branded-aion.md) | 2026-10-22 | 49GAION — Edition Maker and the branded AION | in force |
 
 ## Reading notes
 
@@ -59,5 +61,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0001 Decision item 1, "and the AION Builder": superseded (DR-0032): the AION Builder is withdrawn, and 49GAION has five parts.
 - DR-0007 Decision item 10, the delivery test line D-4: superseded (DR-0032): the delivery test is withdrawn with all its lines; the rules it checked stay in force on their own, and the rule of D-4 is kept in Standard §1.7, item 12.
 - DR-0007 Decision item 11 (c), "and the delivery test result points to those events": superseded (DR-0032), with the delivery test.
+- DR-0032, "49GAION has five parts": superseded (DR-0035): part 6 is 49GAION Edition Maker, and 49GAION has six parts.
+- DR-0033: withdrawn in full (DR-0034).
+- DR-0002 Decision item 8, "a derived Standard is identical to the 49GAION Standard or stricter, never contradictory": read with DR-0035: it holds at the handover; after it, the organisation's Standard is its own.
 
 Powered by 49GAION
