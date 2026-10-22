@@ -43,7 +43,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0035`](DR-0035-edition-maker-and-the-branded-aion.md) | 2026-10-22 | 49GAION — Edition Maker and the branded AION | in force |
 | [`DR-0036`](DR-0036-one-name-org-aion.md) | 2026-10-22 | 49GAION — One name: `[ORG]AION` | in force |
 | [`DR-0037`](DR-0037-live-design-given-to-ai.md) | 2026-10-22 | 49GAION — Live: the design of an organisation is given to AI | in force |
-| [`DR-0038`](DR-0038-edition-maker-every-request.md) | 2026-10-22 | 49GAION — Edition Maker: every request for an `[ORG]AION`, and the three stages of its work | in force |
+| [`DR-0038`](DR-0038-edition-maker-every-request.md) | 2026-10-22 | 49GAION — Edition Maker: every request, the core it designs, and the three stages of its work | in force |
 
 ## Reading notes
 
@@ -69,6 +69,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0002 Decision item 8, "a derived Standard is identical to the 49GAION Standard or stricter, never contradictory": read with DR-0035: it holds at the handover; after it, the organisation's Standard is its own.
 - DR-0034 item 3 and DR-0035, "branded AION" and "the branded ones": read as `[ORG]AION` (DR-0036). The organisation's AION has no other name.
 - DR-0031 (AI-native) and DR-0035 (Edition Maker): read with DR-0037, which adds that an AI-native organisation is also live: its design and configuration are given to AI, inside it.
-- DR-0035 item 2, "Who starts there": corrected (DR-0038): every request for an `[ORG]AION` starts at Edition Maker, which is 49GAION's own asset and given to no one.
+- DR-0035 item 2, "Who starts there": corrected (DR-0038): every order or request made to 49GAION is processed by Edition Maker, which belongs to 49GAION itself; what an organisation receives is its own `[ORG]AION`.
 
 Powered by 49GAION

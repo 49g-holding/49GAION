@@ -14,7 +14,7 @@
 - the [49GAION Protocol](https://github.com/49g-holding/49GAION-protocol);
 - the [49GAION Library](https://github.com/49g-holding/49GAION-protocol/blob/main/library/README.md);
 - [49GAION Self-Improvement](upstream/49GAION-UPSTREAM.md#2-self-improvement);
-- [49GAION Edition Maker](#25-the-path-edition-maker-and-orgaion), where every request for an `[ORG]AION` starts.
+- [49GAION Edition Maker](#25-the-path-edition-maker-and-orgaion), where every request made to 49GAION starts.
 
 To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
 
@@ -117,10 +117,11 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 ### 2.5 The path: Edition Maker and `[ORG]AION`
 
-1. **Every request for an `[ORG]AION` starts at Edition Maker.** 49GAION Edition Maker is 49GAION's own asset, and it is given to no one. Every request goes into it, whether it comes from one person with one task, a team, a company or a group of companies, and each becomes an AION. The size changes; the shape does not.
-   - **What it takes in:** the request: what the organisation is for, with its outputs and its inputs, its limits, its owner, its money and its time.
-   - **What it gives back:** the organisation's `[ORG]AION`, under its own name: a first AIOC at the level of the governing seat (GOV), delivered as one AI workspace, with its capabilities written in it.
-   - **Its main work:** to instil the 49GAION mindset in that first AIOC, to lay in it the foundations of the Standard and of the AION way of seeing, and to link it directly to the standard Blueprint and the central Library of 49GAION. That is enough for any `[ORG]AION` to be built. From there on, the `[ORG]AION` is ready to build its organisation and keep it under control, by its own standards and principles.
+1. **Every request starts at Edition Maker.** Every order, every request made to 49GAION, is processed by 49GAION Edition Maker, whether it comes from one person with one task, a team, a company or a group of companies. Edition Maker belongs to 49GAION itself: what an organisation receives is not Edition Maker, but its own `[ORG]AION`. Every case becomes an AION; the size changes, the shape does not.
+   - **What it takes in:** what the organisation is for, with its outputs and its inputs, its limits, its owner, its money and its time. It takes these in through its own intake stages, set in its requirements.
+   - **What it gives back:** the organisation's own edition: the first core of its `[ORG]AION`, under its own name, which Edition Maker designs from that intake. The core is a first AIOC at the level of the governing seat (GOV), delivered as one AI workspace, with its capabilities written in it.
+   - **What the core holds:** the first version of the organisation's own Standard and of its Blueprint; a direct link to the central repository of 49GAION, its Standard and its Library; and the mindset of 49GAION, in which it is trained.
+   - **Its main work:** to lay, inside that core, the foundations of the Standard and of the AION way of seeing, and to link it to the 49GAION Library. That is enough for any `[ORG]AION` to be built. From there on, the `[ORG]AION` is trained and ready to build its organisation and keep it under control, by its own standards and principles.
    - **What it does not give:** a finished design or configuration. That is its philosophy, not a gap: in place of fences, it gives the design and configuration to AI, to the organisation's own `[ORG]AION` (2.2).
 
 2. **An `[ORG]AION` grows from a living core.** On the first day it is one AIOC, with a Panel, at the governance level; every other unit grows under it. The core holds the organisation's Standard, Blueprint and Library. It builds the organisation, changes it and improves it. It plans the operation and never runs it, so the builder always stands outside what it builds. It proposes, and a human seat decides. Its work goes in three stages:
