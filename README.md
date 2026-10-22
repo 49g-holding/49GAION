@@ -18,7 +18,7 @@ The full introduction is in [`49GAION.md`](49GAION.md).
 
 **The product: `[ORG]AION`**, the AI Operating Nexus of one organisation; its one definition is in the Standard, [§1.3, item 1](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
 
-**The Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature (HF-01 to HF-19). Organisations can be more human, never less; the system enforces it.
+**The Human Floor.** Every `[ORG]AION` stands on a Human Floor: the work that always stays human, by law or by its nature (HF-01 to HF-19). Organisations can be more human, never less; the system enforces it. This holds at the handover; after it, each organisation keeps its own floor (DR-0035).
 
 <!-- no-org-names:verbatim-start -->
 **First product release.** The first `[ORG]AION` to be released is 49AION, the product of 49G. It is built under 49GAION as its own product, separate from this Standard.
