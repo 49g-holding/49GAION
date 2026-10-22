@@ -41,6 +41,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0033`](DR-0033-target-ai-operation-named-in-the-library.md) | 2026-10-22 | 49GAION — Target AI Operation named in the Library | superseded by DR-0034 |
 | [`DR-0034`](DR-0034-target-ai-operation-withdrawn.md) | 2026-10-22 | 49GAION — Target AI Operation withdrawn | in force |
 | [`DR-0035`](DR-0035-edition-maker-and-the-branded-aion.md) | 2026-10-22 | 49GAION — Edition Maker and the branded AION | in force |
+| [`DR-0036`](DR-0036-one-name-org-aion.md) | 2026-10-22 | 49GAION — One name: `[ORG]AION` | in force |
 
 ## Reading notes
 
@@ -64,5 +65,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0032, "49GAION has five parts": superseded (DR-0035): part 6 is 49GAION Edition Maker, and 49GAION has six parts.
 - DR-0033: withdrawn in full (DR-0034).
 - DR-0002 Decision item 8, "a derived Standard is identical to the 49GAION Standard or stricter, never contradictory": read with DR-0035: it holds at the handover; after it, the organisation's Standard is its own.
+- DR-0034 item 3 and DR-0035, "branded AION" and "the branded ones": read as `[ORG]AION` (DR-0036). The organisation's AION has no other name.
 
 Powered by 49GAION
