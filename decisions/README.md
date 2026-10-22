@@ -44,6 +44,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0036`](DR-0036-one-name-org-aion.md) | 2026-10-22 | 49GAION — One name: `[ORG]AION` | in force |
 | [`DR-0037`](DR-0037-live-design-given-to-ai.md) | 2026-10-22 | 49GAION — Live: the design of an organisation is given to AI | in force |
 | [`DR-0038`](DR-0038-edition-maker-every-request.md) | 2026-10-22 | 49GAION — Edition Maker: every request, the core it designs, and the three stages of its work | in force |
+| [`DR-0039`](DR-0039-edition-maker-requirements-in-the-library.md) | 2026-10-22 | 49GAION — Edition Maker's requirements live in the Library | in force |
 
 ## Reading notes
 
@@ -70,5 +71,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0034 item 3 and DR-0035, "branded AION" and "the branded ones": read as `[ORG]AION` (DR-0036). The organisation's AION has no other name.
 - DR-0031 (AI-native) and DR-0035 (Edition Maker): read with DR-0037, which adds that an AI-native organisation is also live: its design and configuration are given to AI, inside it.
 - DR-0035 item 2, "Who starts there": corrected (DR-0038): every order or request made to 49GAION is processed by Edition Maker, which belongs to 49GAION itself; what an organisation receives is its own `[ORG]AION`.
+- DR-0035 item 2, "Its requirements are kept by the governing seat, outside this repository": corrected (DR-0039): they live in the 49GAION Library, in the Protocol repository, at `library/edition-maker/`.
 
 Powered by 49GAION
