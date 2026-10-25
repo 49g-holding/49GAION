@@ -47,6 +47,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0039`](DR-0039-edition-maker-requirements-in-the-library.md) | 2026-10-22 | 49GAION — Edition Maker's requirements live in the Library | in force |
 | [`DR-0040`](DR-0040-structural-adaptation.md) | 2026-10-25 | 49GAION — `[ORG]AION` capability: Structural Adaptation | in force |
 | [`DR-0041`](DR-0041-complete-definition.md) | 2026-10-25 | 49GAION — the complete definition, approved | in force |
+| [`DR-0042`](DR-0042-clarifications-of-the-complete-definition.md) | 2026-10-25 | 49GAION — clarifications of the complete definition | in force |
 
 ## Reading notes
 
@@ -77,5 +78,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0035, "how the core relates to the root and to the AI hub is each organisation's own design": settled (DR-0041): the core is the root, made from the Library part 49GAION Charter, and the Top Management Group is the hub of the operation, human and AI.
 - DR-0007 and DR-0029, "the Charter holds the human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`": read with DR-0041: the root holds the governance seat; the Top Management position sits in the Top Management Group, the first AIOC under the core.
 - Every record that names `[ORG]AIOC-OCO` as the AI hub through which every AIOC joins: read with DR-0041: the Top Management Group is the hub of the operation; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management.
+- DR-0039, the approval of Edition Maker's requirements: confirmed by the governing seat on 2026-10-25 ("Yes, I set Edition Maker."), recorded in DR-0042, item 8.
+- DR-0041, item 3, and the complete definition, "the few safeguards that always hold" and "one engine writes, two challenge": read with DR-0042, items 1 and 5.
 
 Powered by 49GAION
