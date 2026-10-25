@@ -12,6 +12,8 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 
 > **The complete definition (DR-0041).** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is `49GAION-FRAMEWORK.md`. Where this Standard differs from it, the complete definition governs, and the Standard is read with it. The additions marked DR-0041 below bring the Standard into line; nothing is removed.
 
+> **Clarifications (DR-0042).** The governing seat approved clarifications of the complete definition on 25 October 2026: what "always" means, the live sign-in with a standing approval, the Chief of Staff, the gateway and the stop beside the core, the challenge by other engines, and eight further principles. They are marked DR-0042 in `49GAION-FRAMEWORK.md`; this Standard is read with them.
+
 ---
 
 ## 1. What 49GAION is
@@ -143,6 +145,7 @@ The items of the Human Floor:
 - **HF-08** Physical presence
 - **HF-09** Fully unprecedented situations
 - **HF-10** Identity and sign-in: every approval needs a fresh live sign-in; no stored owner token
+  - **Reading (DR-0042).** A fresh live sign-in is needed for each signature: "every approval" reads "every signature". A standing approval is signed once, with a fresh live sign-in, and not again for each use under it; it covers only changes that can be undone and do not widen access, budget or authority; every widening needs a fresh signature.
 - **HF-11** Granting access, budget or power to AI itself
 - **HF-12** The stop button
 - **HF-13** Tacit knowledge and relationships
@@ -382,6 +385,8 @@ How a change is found, tested and promoted. The loop applies to every process, b
 14. **Verification by a non-author (DR-0010).** Work is verified by a Cell that did not produce it, on a different model provider where one is available, in a fresh context, with the producer's description withheld. The verifier restates the acceptance test and writes its own checks before reading the work, and blocks only with a failing check it wrote. Its verdict is a record bound to the exact version it read; a new version voids it, and tools act only on the record, never on the text of a note. A verdict is never a signature.
 15. **The mechanism register (DR-0010).** Every AIOC keeps one register of its mechanisms (what each does, where it lives, its state today and its target), never deletes a row, and cites the row from every change that builds it. Ideas not adopted go to the Reserve (§2.1, item 13).
 16. **The few safeguards that always hold (DR-0041).** AI acts only within the access and the authority it has been granted; missing or unclear authority means no action. No step runs on one engine: one engine writes and two challenge, and the assurance is fixed tests on real outputs and a human position that signs. AI may write and update the tests; a human position signs each change to them (HF-14). Every unit is ready, by its fixed test, before it runs. The tool gateway fails closed: if it fails, no AI acts; a stop is never blocked, by the gateway or by its failure.
+
+    **Reading (DR-0042).** They hold in every edition 49GAION hands over; after the handover they are the organisation's own, within the law. "One engine writes, two challenge" reads: no result counts without a challenge by another engine, scaled to the risk of the step, with two challengers as the Library's default pattern, mandatory at every step in Edition Maker. Added: changes to the gateway or stop code count as loosening; fresh gateway keys at the handover; tests from the first day; the authority ceiling; the governance seat's own conflict of interest (`49GAION-FRAMEWORK.md`, points 15 and 20).
 
 ## 4. HOAC
 

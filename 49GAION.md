@@ -4,6 +4,8 @@
 
 **Addition (DR-0041): the complete definition.** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md). Where this page or the Standard differs from it, the complete definition governs, and this page is read with it. **The policy:** 49GAION writes principles and the few safeguards that always hold, not procedures; the details and the way of working are decided by AI at the time, and changed by it as AI improves; 49GAION does not limit AI.
 
+**Reading (DR-0042): the order of precedence.** The complete definition first, then the Standard with the Naming Standard, then every other text, this page included. "Where this page and the Standard differ, the Standard governs" holds under the complete definition.
+
 ## 1. The definition
 
 **49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, [`[ORG]AION`](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion): the living AION of one organisation, which holds that design and keeps building it (2.5).
