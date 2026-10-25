@@ -2,6 +2,8 @@
 
 This repository holds the 49GAION Standard, the master definition, the Naming Standard, the unit register form and the decision records.
 
+**The complete definition.** The approved definition of the whole of 49GAION, in one text, is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) (DR-0041). Where any other text differs from it, it governs. 49GAION writes principles and the few safeguards that always hold; the details and the way of working are decided by AI at the time.
+
 ## Overview
 
 ### 1. What 49GAION is
@@ -41,6 +43,8 @@ HOAC (Human Oversight & Accountability Control) is a label of human accountabili
 
 An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a Panel, a Back office and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC, at any depth, joins, is fixed, maintained and upgraded through it; it gives no orders on what work is done. An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells.
 
+**Addition (DR-0041).** The panel is the organisation's own interface, written in code; the back office is the AI chat workspace, an authorised interface that keeps the panel. The hub of the operation, human and AI, is the Top Management Group, the first AIOC under the core; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management.
+
 ### 6. Protocol
 
 The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work together: the card, the Work Item, typed ports and the stop door.
@@ -49,6 +53,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 | What | Where |
 |---|---|
+| 0. The complete definition, approved 25 October 2026 (DR-0041) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
 | 1. What 49GAION is: the master definition | [`49GAION.md`](49GAION.md) |
 | 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
 | 3. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |

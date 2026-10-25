@@ -46,6 +46,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0038`](DR-0038-edition-maker-every-request.md) | 2026-10-22 | 49GAION — Edition Maker: every request, the core it designs, and the three stages of its work | in force |
 | [`DR-0039`](DR-0039-edition-maker-requirements-in-the-library.md) | 2026-10-22 | 49GAION — Edition Maker's requirements live in the Library | in force |
 | [`DR-0040`](DR-0040-structural-adaptation.md) | 2026-10-25 | 49GAION — `[ORG]AION` capability: Structural Adaptation | in force |
+| [`DR-0041`](DR-0041-complete-definition.md) | 2026-10-25 | 49GAION — the complete definition, approved | in force |
 
 ## Reading notes
 
@@ -73,5 +74,8 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0031 (AI-native) and DR-0035 (Edition Maker): read with DR-0037, which adds that an AI-native organisation is also live: its design and configuration are given to AI, inside it.
 - DR-0035 item 2, "Who starts there": corrected (DR-0038): every order or request made to 49GAION is processed by Edition Maker, which belongs to 49GAION itself; what an organisation receives is its own `[ORG]AION`.
 - DR-0035 item 2, "Its requirements are kept by the governing seat, outside this repository": corrected (DR-0039): they live in the 49GAION Library, in the Protocol repository, at `library/edition-maker/`.
+- DR-0035, "how the core relates to the root and to the AI hub is each organisation's own design": settled (DR-0041): the core is the root, made from the Library part 49GAION Charter, and the Top Management Group is the hub of the operation, human and AI.
+- DR-0007 and DR-0029, "the Charter holds the human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`": read with DR-0041: the root holds the governance seat; the Top Management position sits in the Top Management Group, the first AIOC under the core.
+- Every record that names `[ORG]AIOC-OCO` as the AI hub through which every AIOC joins: read with DR-0041: the Top Management Group is the hub of the operation; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management.
 
 Powered by 49GAION
