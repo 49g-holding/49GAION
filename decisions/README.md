@@ -83,5 +83,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - Every record that names `[ORG]AIOC-OCO` as the AI hub through which every AIOC joins: read with DR-0041: the Top Management Group is the hub of the operation; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management.
 - DR-0039, the approval of Edition Maker's requirements: confirmed by the governing seat on 2026-10-25 ("Yes, I set Edition Maker."), recorded in DR-0042, item 8.
 - DR-0041, item 3, and the complete definition, "the few safeguards that always hold" and "one engine writes, two challenge": read with DR-0042, items 1 and 5.
+- DR-0007 (Standard §4.2, item 10, skip and recusal) and the signature list's rule "never removes a type": read with DR-0042, items 6.7 and 1 (26 October 2026): the substitute for a conflicted governance seat; "never removes" holds at the handover, then the list is the organisation's own.
 
 Powered by 49GAION

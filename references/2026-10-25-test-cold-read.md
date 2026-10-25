@@ -41,4 +41,8 @@ Every reader answers questions 1 to 9 from the text; the readers agree in substa
 - **Results.** Every reader answered questions 1 to 9 from the texts, and found the complete definition from every repository. Gemini: no contradiction left unresolved; VERDICT: COMPLETE. OpenAI: no contradiction left unresolved; its two gaps are where a request is submitted and evidence of a running organisation. The fresh Claude: its gaps are the same two, the Records and Work Pods (now read), the safeguards after the handover (scoped by point 7 of the definition: they hold as written at the handover and are then the organisation's own to keep), and one product's pins to mother blueprints held outside the public mother repositories, recorded for a separate proposal. Grok was not asked.
 - **Outcome.** The repositories, read together, pass TEST-COLD-READ v1. Evidence of a running organisation comes from the execution examples that follow.
 
+## Addendum, 26 October 2026
+
+This record is the writer's summary; the readers' raw answers of 25 October were not kept, the readers read the texts at slightly different states (the paragraph "Fixed before the last readings" above), and the texts have changed since (DR-0042 to DR-0045). A review of 26 October 2026 found all three. The test was run again that day on the current entry texts, with the answers kept verbatim and the input by hash: [`2026-10-26-test-cold-read-raw.md`](2026-10-26-test-cold-read-raw.md). Its reading: questions 1 to 9 pass for both readers who answered; one risk on question 10 (the entry point is not built, nothing has run) is carried forward as the gap of the next phase; the third reader is still to answer. Where this summary and the raw record differ, the raw record governs.
+
 Powered by 49GAION

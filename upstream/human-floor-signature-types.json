@@ -1,40 +1,154 @@
 {
   "title": "49GAION Human Floor signature list",
   "standard": "49GAION Standard v1.8.0, §1.5 and §4.4 items 6 to 11; items 17 and 18 (DR-0010)",
-  "rule": "An action of any listed decision type runs at the tool gateway only with a valid signature of a human seat with authority over that part (Standard §4.4, item 6). An AI Cell attached to a person, including that person's Chief of Staff, never provides that person's signature. If the seat is empty or retired, the action is held, never skipped. An [ORG]AION may add types; it never removes a type of this list, and a type it added is removed only by its [ORG]HOAC-GOV, in a recorded decision (DR-0006). A type is removed only by a decision of 49GAION's governing seat (GOV), recorded in a new DR.",
+  "rule": "An action of any listed decision type runs at the tool gateway only with a valid signature of a human seat with authority over that part (Standard §4.4, item 6). An AI Cell attached to a person, including that person's Chief of Staff, never provides that person's signature. If the seat is empty or retired, the action is held, never skipped. An [ORG]AION may add types; it never removes a type of this list, and a type it added is removed only by its [ORG]HOAC-GOV, in a recorded decision (DR-0006). A type is removed only by a decision of 49GAION's governing seat (GOV), recorded in a new DR. Reading (DR-0042, item 1): \"never removes\" holds in every edition 49GAION hands over; after the handover the list is the organisation's own, kept by its own rules within the law, and the floor check of this repository guards 49GAION's own list and every edition at the handover.",
   "decision_types": [
-    { "id": "sign-contract", "human_floor": "HF-02" },
-    { "id": "commit-money", "human_floor": "HF-02" },
-    { "id": "legal-filing", "human_floor": "HF-01" },
-    { "id": "accept-irreversible-risk", "human_floor": "HF-06" },
-    { "id": "delegate-authority", "human_floor": "HF-07" },
-    { "id": "change-parent", "human_floor": "HF-07" },
-    { "id": "grant-or-widen-access", "human_floor": "HF-07", "related_floor": ["HF-11"] },
-    { "id": "set-purpose-or-values", "human_floor": "HF-04" },
-    { "id": "restart-stopped-unit", "human_floor": "HF-03", "related_floor": ["HF-12"] },
-    { "id": "create-or-install-unit", "human_floor": "HF-11" },
-    { "id": "change-filler", "human_floor": "HF-11" },
-    { "id": "retire-unit", "human_floor": "HF-03" },
-    { "id": "set-or-move-hoac-label", "human_floor": "HF-07" },
-    { "id": "appoint-acting-filler", "human_floor": "HF-07" },
-    { "id": "widen-ai-budget-or-unattended-action", "human_floor": "HF-11" },
-    { "id": "connect-external-port", "human_floor": "HF-11" },
-    { "id": "move-work-toward-ai", "human_floor": "HF-03" },
-    { "id": "change-fixed-test-or-threshold", "human_floor": "HF-14" },
-    { "id": "set-or-rotate-golden-set", "human_floor": "HF-14" },
-    { "id": "approve-change-or-promote-challenger", "human_floor": "HF-03" },
-    { "id": "restore-or-rollback", "human_floor": "HF-03" },
-    { "id": "change-org-standard-or-signature-list", "human_floor": "HF-04" },
-    { "id": "change-gateway-policy", "human_floor": "HF-15" },
-    { "id": "use-root-key", "human_floor": "HF-15" },
-    { "id": "open-break-glass", "human_floor": "HF-16" },
-    { "id": "export-share-or-purge-personal-data", "human_floor": "HF-17" },
-    { "id": "change-assurance-or-audit-line", "human_floor": "HF-19" },
-    { "id": "issue-statement-of-trust", "human_floor": "HF-05" },
-    { "id": "mark-physical-step-done", "human_floor": "HF-08" },
-    { "id": "change-signer-identity-binding", "human_floor": "HF-10" },
-    { "id": "sign-standing-action-class", "human_floor": "HF-11", "related_floor": ["HF-03"] },
-    { "id": "dispose-records-or-data", "human_floor": "HF-06", "related_floor": ["HF-17"] }
+    {
+      "id": "sign-contract",
+      "human_floor": "HF-02"
+    },
+    {
+      "id": "commit-money",
+      "human_floor": "HF-02"
+    },
+    {
+      "id": "legal-filing",
+      "human_floor": "HF-01"
+    },
+    {
+      "id": "accept-irreversible-risk",
+      "human_floor": "HF-06"
+    },
+    {
+      "id": "delegate-authority",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "change-parent",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "grant-or-widen-access",
+      "human_floor": "HF-07",
+      "related_floor": [
+        "HF-11"
+      ]
+    },
+    {
+      "id": "set-purpose-or-values",
+      "human_floor": "HF-04"
+    },
+    {
+      "id": "restart-stopped-unit",
+      "human_floor": "HF-03",
+      "related_floor": [
+        "HF-12"
+      ]
+    },
+    {
+      "id": "create-or-install-unit",
+      "human_floor": "HF-11"
+    },
+    {
+      "id": "change-filler",
+      "human_floor": "HF-11"
+    },
+    {
+      "id": "retire-unit",
+      "human_floor": "HF-03"
+    },
+    {
+      "id": "set-or-move-hoac-label",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "appoint-acting-filler",
+      "human_floor": "HF-07"
+    },
+    {
+      "id": "widen-ai-budget-or-unattended-action",
+      "human_floor": "HF-11"
+    },
+    {
+      "id": "connect-external-port",
+      "human_floor": "HF-11"
+    },
+    {
+      "id": "move-work-toward-ai",
+      "human_floor": "HF-03"
+    },
+    {
+      "id": "change-fixed-test-or-threshold",
+      "human_floor": "HF-14"
+    },
+    {
+      "id": "set-or-rotate-golden-set",
+      "human_floor": "HF-14"
+    },
+    {
+      "id": "approve-change-or-promote-challenger",
+      "human_floor": "HF-03"
+    },
+    {
+      "id": "restore-or-rollback",
+      "human_floor": "HF-03"
+    },
+    {
+      "id": "change-org-standard-or-signature-list",
+      "human_floor": "HF-04"
+    },
+    {
+      "id": "change-gateway-policy",
+      "human_floor": "HF-15"
+    },
+    {
+      "id": "use-root-key",
+      "human_floor": "HF-15"
+    },
+    {
+      "id": "open-break-glass",
+      "human_floor": "HF-16"
+    },
+    {
+      "id": "export-share-or-purge-personal-data",
+      "human_floor": "HF-17"
+    },
+    {
+      "id": "change-assurance-or-audit-line",
+      "human_floor": "HF-19"
+    },
+    {
+      "id": "issue-statement-of-trust",
+      "human_floor": "HF-05"
+    },
+    {
+      "id": "mark-physical-step-done",
+      "human_floor": "HF-08"
+    },
+    {
+      "id": "change-signer-identity-binding",
+      "human_floor": "HF-10"
+    },
+    {
+      "id": "sign-standing-action-class",
+      "human_floor": "HF-11",
+      "related_floor": [
+        "HF-03"
+      ]
+    },
+    {
+      "id": "dispose-records-or-data",
+      "human_floor": "HF-06",
+      "related_floor": [
+        "HF-17"
+      ]
+    }
   ],
-  "type_fields": ["related_floor", "min_signer", "signers_required", "max_validity", "never_held"]
+  "type_fields": [
+    "related_floor",
+    "min_signer",
+    "signers_required",
+    "max_validity",
+    "never_held"
+  ]
 }
