@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v1.7.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
+**Version `v1.8.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
 **Addition (DR-0041): the complete definition.** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md). Where this page or the Standard differs from it, the complete definition governs, and this page is read with it. **The policy:** 49GAION writes principles and the few safeguards that always hold, not procedures; the details and the way of working are decided by AI at the time, and changed by it as AI improves; 49GAION does not limit AI.
 
