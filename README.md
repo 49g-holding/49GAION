@@ -58,6 +58,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 | What | Where |
 |---|---|
 | 0. The complete definition, approved 25 October 2026 (DR-0041) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
+| 0, in plain words. The 49GAION Guide, Version 1, approved 25 October 2026 (DR-0043) | [`guide/THE-49GAION-GUIDE-VERSION-1.md`](guide/THE-49GAION-GUIDE-VERSION-1.md) |
 | 1. What 49GAION is: the master definition | [`49GAION.md`](49GAION.md) |
 | 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
 | 3. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |

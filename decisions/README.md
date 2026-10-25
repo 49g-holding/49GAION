@@ -48,6 +48,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0040`](DR-0040-structural-adaptation.md) | 2026-10-25 | 49GAION — `[ORG]AION` capability: Structural Adaptation | in force |
 | [`DR-0041`](DR-0041-complete-definition.md) | 2026-10-25 | 49GAION — the complete definition, approved | in force |
 | [`DR-0042`](DR-0042-clarifications-of-the-complete-definition.md) | 2026-10-25 | 49GAION — clarifications of the complete definition | in force |
+| [`DR-0043`](DR-0043-the-49gaion-guide-version-1.md) | 2026-10-25 | 49GAION — The 49GAION Guide, Version 1 | in force |
 
 ## Reading notes
 
