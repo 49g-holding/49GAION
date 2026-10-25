@@ -2,6 +2,10 @@
 (upstream/human-floor-signature-types.json) and any [ORG]AION signature list kept in this
 repository. Each [ORG]AION runs the same check in its own repositories as part of D-2.
 
+Reading (DR-0042, item 1). The floor guards 49GAION's own Standard and every edition at the
+handover. After the handover an organisation keeps its own floor list by its own rules, within
+the law; the delivery test named above is withdrawn (DR-0032).
+
 Trusted inputs. The workflow runs this script as taken from the base branch, never from the
 head of the pull request, so a change cannot alter the check that judges it.
 Floor. The floor (the set of type IDs nobody may drop) is read with git, never from the
