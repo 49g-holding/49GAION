@@ -435,6 +435,7 @@ How a change is found, tested and promoted. The loop applies to every process, b
 8. **Decisions on 49GAION are its governing seat's.** Decisions on an `[ORG]AION` are its own organisation's, through its `[ORG]HOAC-GOV`.
 9. **The accountability path.** A report, critique, objection or stop reaches the nearest HOAC above it directly, from any level, and never passes through any AI (Protocol §4.8).
 10. **Skip and recusal (DR-0007).** Any report, critique or objection may also go to any HOAC above, up to GOV, and to the independent internal-audit line (HF-19); the nearest HOAC above always also receives it. A report about a seat never has that seat as its only receiver. A seat that is the subject of a listed action, or that benefits from it, recuses; the signature passes up one level.
+    - **Reading (DR-0042, item 6.7).** There is no HOAC above `[ORG]HOAC-GOV`. Where the seat with the conflict of interest, or the seat a report is about, is the governance seat itself, the founding configuration names in advance either an independent position that decides in its place or a second, independent signature the decision also needs; a conflicted governance seat signing alone is refused at the gateway, and each recusal is reported to the independent internal-audit line (HF-19). A signature or a report that would otherwise go "one level up" from GOV goes to that substitute or that line; nothing waits forever.
 
 ### 4.3 Stop
 
