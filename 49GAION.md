@@ -2,6 +2,8 @@
 
 **Version `v1.7.0` · approved by the governing seat (GOV) of 49GAION.** What 49GAION is, why it exists and how it is shown. The rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`); where this page and the Standard differ, the Standard governs.
 
+**Addition (DR-0041): the complete definition.** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md). Where this page or the Standard differs from it, the complete definition governs, and this page is read with it. **The policy:** 49GAION writes principles and the few safeguards that always hold, not procedures; the details and the way of working are decided by AI at the time, and changed by it as AI improves; 49GAION does not limit AI.
+
 ## 1. The definition
 
 **49GAION is an organisation design framework: a framework for building organisations from interchangeable AI and human parts.** AION stands for AI Operating Nexus. Its output is an organisation design, delivered as its product, [`[ORG]AION`](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion): the living AION of one organisation, which holds that design and keeps building it (2.5).
@@ -17,6 +19,8 @@
 - [49GAION Edition Maker](#25-the-path-edition-maker-and-orgaion), where every request made to 49GAION starts.
 
 To the outside world 49GAION appears only as the words **"Powered by 49GAION"**.
+
+**Addition (DR-0041).** 49GAION has its own Standard, Blueprint and Library; so does every organisation it serves, held at its governance level, where its `[ORG]AION` sits. The 49GAION Blueprint is what an AIOC is, the blueprint template, and the mother blueprints and models from which units, cores and panels are made. The 49GAION Library is its greatest asset: patterns and models, AIOCs with their blueprints and operating models, instructions, processes, panels, cores, and the patterns of whole organisations.
 
 ### 1.1 The names
 - **Framework:** `49GAION`, upper case, one word. A bare "AION" is not used for the framework.
@@ -91,11 +95,14 @@ Most organisations that use AI today are **human-native**. They are designed aro
    - **Each AIOC is led by its [Chief of Staff (COS)](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office)**, a Cell that analyses the work of its agents and leads them at machine speed.
    - **When a position needs more than one Chief of Staff, they form an [Office](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office)**, a Pod of Chief of Staff Cells, where humans can also work.
    - **Every AIOC joins through the AI hub, [OCO](upstream/49GAION-UPSTREAM.md#42-authority-and-the-two-hubs)** (Organization Core Office). This holds at any depth. Through OCO every AIOC is fixed, maintained and upgraded, and OCO gives no orders on what work is done.
+   - **Reading (DR-0041).** The panel is the organisation's own interface, written in code, from which every task of the unit can be controlled; the back office is the AI chat workspace where the unit's AI works, an authorised interface too, which keeps the panel and covers it when it fails. The hub of the operation, human and AI, is the **Top Management Group**, the first AIOC under the core: it builds everything in the operation. 49GAION requires no separate AI hub unit; where an organisation has one, `[ORG]AIOC-OCO` serves the operation under Top Management.
 
 3. **It covers the gaps of AI with humans.** Above the AI parts sit the human seats, each marked with a [HOAC](upstream/49GAION-UPSTREAM.md#41-the-hoac) (Human Oversight & Accountability Control) label. A HOAC label sits on a Cell, a Pod or a whole AIOC, and holds what only a human can hold: authority, accountability and the stop. It comes in three kinds:
    - **[GOV](upstream/49GAION-UPSTREAM.md#41-the-hoac)**, the governing seat: the owner;
    - **[TM](upstream/49GAION-UPSTREAM.md#42-authority-and-the-two-hubs)**, the human hub, which decides and orders;
    - **[ACS](upstream/49GAION-UPSTREAM.md#41-the-hoac)**, the accountable seat over a unit.
+
+   **Reading (DR-0041).** The governing seat is a board, a board's representative or the owner, as the organisation's model sets (Standard §4.1). Every seat is a legal position: the owner, through the governance seat, has the final right over who holds any position; one person may hold several, or all, where the law allows, and the positions stay distinct. 49GAION never speaks of a one-person organisation.
 
    Each human seat is a position of the organisation, filled by a real person through the organisation's assignment mechanism. No human seat is left alone with the power of AI. Each has its own [Chief of Staff](upstream/49GAION-UPSTREAM.md#52-chief-of-staff-and-office), which is both a translator and an assistant. It turns the speed and the language of AI into the speed and the language of the human. With the seat's approval, it can do the seat's work.
 
@@ -139,11 +146,15 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 5. **What an organisation comes to 49GAION for.** Not a finished design, but access to what is live: a design that keeps pace as AI improves, and a Library that grows with what every `[ORG]AION` chooses to give back. In this, 49GAION works as a movement of growth, and what it brings into each organisation is AI-native itself (DR-0037).
 
+6. **Addition (DR-0041): not bare, and its first work.** An `[ORG]AION` is not a bare project: its greatest asset is its access to everything in the 49GAION Library. The core is the root of the organisation, made from the Library part 49GAION Charter, with the gateway and the stop; it holds the human position of the governance seat, which its AI serves and never holds, and the organisation's own Standard, Blueprint and Library, which are the organisation's IP. The handover is complete when the governance seat accepts the edition. As soon as the seat is in place, whatever the knowledge of its holder, the core takes the seat's brief and, from 49GAION's patterns, designs a small organisation for approval. An organisation that already runs comes the same way, and moves output by output. The full text is in `49GAION-FRAMEWORK.md`.
+
 ### 2.6 What an `[ORG]AION` can do
 
 Each capability of an `[ORG]AION` is named, so that every organisation knows what its core does. The full rules are in the Standard, §1.3, item 1.
 
 1. **Structural Adaptation.** The `[ORG]AION` keeps the organisation in balance with its resources and its needs at every stage of its life. Many organisations grow out of balance: some push product and users until they cannot operate what they have sold; others build operation, divisions and cost long before they are needed. The `[ORG]AION` starts small, with several processes sharing one AIOC and small, fast teams. It watches the record of the operation all the time. When a process outgrows its home, it proposes to split it into an AIOC of its own; when work shrinks, it proposes to merge. It weighs every option against its cost first, acts on thresholds the organisation sets, and never runs the operation itself: a human seat decides each change (DR-0040).
+
+2. **Governance and Delegation (DR-0041).** It says who decides what, what the governance level keeps, and how it holds Top Management to account without running the operation. Every organisation has one governance level, whose seat is a board, a board's representative or the owner. The `[ORG]AION` prepares the design decisions, and how much it may decide alone is a dial the seat holds. The seat hands the whole operation to Top Management early, by a mandate with its envelope; from the governance level the operation is one counterparty, Top Management's AIOC. Governance keeps the purpose, the strategy, the final right over every position, the risk appetite, capital, and its main work, the balance of capital and resources. What goes beyond the envelope passes the gate; at any time the governance seat may stop or replace a decision of Top Management, or change the envelope. Reports of wrongdoing and stops reach the seat directly, never through any AI.
 
 ## 3. The philosophy
 
@@ -153,6 +164,7 @@ Each capability of an `[ORG]AION` is named, so that every organisation knows wha
 4. **The Human Floor.** Some work always stays human, by law or by its nature. Organisations can be more human, never less; the system enforces it (Standard §1.5). This holds at the handover; after it, each organisation keeps its own floor (2.5 above; DR-0035).
 5. **Built like a puzzle.** 49GAION is assembled from small, specialised parts, and a piece can itself be a puzzle: an AIOC may hold other AIOCs, to any depth, and holds its own Pods and Cells; from outside it is still one unit (Standard §1.7). Every Cell, Pod and AIOC has the same card shape and ports, and a Cell's filler, human or AI, can be replaced without changing the seat. A change replaces or updates a part, never rebuilds the whole.
 6. **Two hubs.** `[ORG]HOAC-TM` is the human hub: it decides and orders. `[ORG]AIOC-OCO` (Organization Core Office) is the AI hub, under TM: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (Standard §4.2).
+   - **Reading (DR-0041).** The Top Management Group, the first AIOC under the core, is the hub of the operation, both the human hub and the AI hub. A separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management.
 7. **Self-Improvement is a shared process, at every level.** Humans and AI both raise needs; AI prepares proposals; a human seat decides. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM`, and it runs at every level: each unit improves its own work, and the `[ORG]AION` proposes the changes to the structure, the Standard and the Blueprint (DR-0035). At 49GAION level, its governing seat holds it. A change must beat the version in force on held-out cases, judged independently, before a human seat promotes it (Standard §2).
 8. **Built on positions, not people.** Requests, approvals and access are addressed to positions; names live only in registers.
    - **Present as legal personas (DR-0013, DR-0015).** In 49GAION and every `[ORG]AION`, every human is present, and decides, signs and is accountable, as a position, a legal persona; the natural person behind it exists outside the system's knowledge, and no natural person is an actor of the system. Every act stays with its position. Two positions are two parties: when two positions sign, they are two signers, even if one natural person stands behind both, and no AI part or check compares the persons behind positions. Only top management (`[ORG]HOAC-TM`), the human hub, links positions to natural persons, in a mechanism it writes itself (Standard §1.1, items 9 and 10).
@@ -177,6 +189,7 @@ Each capability of an `[ORG]AION` is named, so that every organisation knows wha
 1. An `[ORG]AION` may give back to the 49GAION Library, by its own choice, what it builds that the Library lacks, generalised and tested (DR-0035).
 2. Once handed over, the `[ORG]AION` belongs entirely to the organisation, and is independent (2.5 above).
 3. The organisation's working data never enters the 49GAION Library (Standard §1.3).
+4. **Addition (DR-0041).** If an organisation uses even one item of 49GAION, an idea, a Library part, a blueprint or the Standard, all its products are Powered by 49GAION. Only what has nothing from 49GAION may be shown as powered by the organisation itself, which in practice cannot happen. What the organisation has taken from the Library is held in its own Library, so it keeps working if 49GAION is not there.
 
 ## 6. The delivery test
 
@@ -186,11 +199,13 @@ Each capability of an `[ORG]AION` is named, so that every organisation knows wha
 
 1. Outside text names what the reader gets, the organisation's `[ORG]AION` or AIOC, and adds only **"Powered by 49GAION"**.
 2. In text the framework name is always written `49GAION`.
+3. **Addition (DR-0041).** "Powered by 49GAION" follows any use of 49GAION (see Ownership, item 4, above).
 
 ## 8. Where things are
 
 | What | Where |
 |---|---|
+| The complete definition (DR-0041) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
 | The 49GAION Standard | `upstream/49GAION-UPSTREAM.md` |
 | The 49GAION Naming Standard | `standards/49GAION-NAMING-STANDARD.md` |
 | The 49GAION Operating Protocol | [`49g-holding/49GAION-protocol`](https://github.com/49g-holding/49GAION-protocol) |

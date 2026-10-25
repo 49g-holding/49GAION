@@ -15,6 +15,7 @@
 - 49GAION documents and capabilities are "49GAION [Full Name]" ("49GAION Standard", "49GAION Operating Protocol", "49GAION Self-Improvement"). **They take no code.** "49GAION-SL" is wrong.
 - The product of 49GAION is `[ORG]AION`, one per organisation, shown as "`<Brand>` AION, Powered by 49GAION" (for example "Ten AION, Powered by 49GAION").
 - 49GAION is the framework itself, not an `[ORG]AION`.
+- **Addition (DR-0041).** If an organisation uses even one item of 49GAION, an idea, a Library part, a blueprint or the Standard, all its products are shown "Powered by 49GAION". Only what has nothing from 49GAION may be shown as powered by the organisation itself.
 
 ### R2. AIOCs: `[ORG]AIOC-[INITIALS]`
 - An AIOC's code is the organisation's prefix, `AIOC`, a hyphen and the initials of its full name: "Source Lifecycle" → `[ORG]AIOC-SL`; "Self-Improvement" → `[ORG]AIOC-SI`.
@@ -123,6 +124,8 @@ At the 49GAION level a capability is "49GAION [Function]" or a plain name, with 
 **Reading note (DR-0028).** The short form of "Chief of Staff" is COS (R16). `[ORG]AIOC-COS` stays wrong: COS never names a unit.
 
 **Withdrawn (DR-0032).** The AION Builder is withdrawn, and its row in the table above with it. `[ORG]AIOC-EB` stays retired (§4).
+
+**Addition (DR-0041).** These names of the complete definition are plain English and take no code: the core, the governance panel, the Top Management Group, the edition engineer, the back office, the mandate, the mandate envelope, the gate, the governance veto, Governance and Delegation. "One-person organisation" is not used: 49GAION speaks of positions, all assigned to one person.
 
 ## 4. Retired codes
 
