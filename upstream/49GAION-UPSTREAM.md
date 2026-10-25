@@ -65,6 +65,8 @@ Companions: the master definition (`49GAION.md`), the 49GAION Naming Standard (`
 
 **Addition (DR-0041).** 49GAION has its own Standard, Blueprint and Library, and so does every organisation it serves, at its governance level. The 49GAION Blueprint is what an AIOC is, the blueprint template, and the mother blueprints and models from which units, cores and panels are made (in `49g-holding/49GAION-aioc` and the mother repositories). Edition Maker is led by a human edition engineer, a 49GAION position, who supervises every step, and no step runs on one engine: one engine does the work and two other engines challenge it.
 
+**Reading (DR-0041).** The complete definition names the 49GAION Blueprint beside the six parts above (§1.1, item 8).
+
 **Standard and Protocol.** The Standard says what 49GAION is and its rules. The Protocol says how the parts work together. Each `[ORG]AION` has its own governing seat (`[ORG]HOAC-GOV`), Standard, Protocol and Library. In an `[ORG]AION`, Self-Improvement is not a separate part: it is a process inside its `[ORG]HOAC-TM` (§2.1). Since DR-0035 it is at every level (§2.1, item 6).
 
 ### 1.3 The product: `[ORG]AION`

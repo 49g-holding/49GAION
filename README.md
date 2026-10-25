@@ -31,9 +31,13 @@ The full introduction is in [`49GAION.md`](49GAION.md).
 
 Self-Improvement is a process shared by AI and humans. Any human seat or AI unit may raise a proposal; a proposal carries the current text, the proposed text, the reason, the evidence and the parts and tests it affects; it is discussed, and the discussion decides nothing; it takes effect only on approval by the accountable human seat. No unit approves a change to itself. In an `[ORG]AION` it is held inside `[ORG]HOAC-TM` and carried out with an AIOC within TM, and it runs at every level: each unit improves its own work, and the `[ORG]AION` proposes the changes to the structure, the Standard and the Blueprint (DR-0035); at 49GAION level it is held by the governing seat (GOV) of 49GAION (Standard §2). Every change is found and tested in a champion-and-challenger loop: a challenger is judged in pairs against the version in force, must win on a held-out golden set judged by an independent assurance unit, and is promoted only by a human seat (Standard §2.3 and §2.4).
 
+**Reading (DR-0041).** Proposing is open to all. Changes to the organisation's own Standard, Blueprint and Library, its rules at the governance level, are applied by the `[ORG]AION` with the governance seat's approval, or within the dial that seat has signed; a proposal that is not right is rejected with its reason, and the proposer may take it to the seat. Improvement inside the operation is Top Management's, under its mandate, and what it builds and learns is sent to the governance level to be recorded.
+
 ### 3. Library
 
 The 49GAION Library holds all ready-made AIOC blueprints and part cards, built once, configured per `[ORG]AION`, never rebuilt. Every capability has a fixed test. Its register names every part once, with its card, its fixed test and, for an AIOC part, its mother blueprint held by pin: [`library/README.md`](https://github.com/49g-holding/49GAION-protocol/blob/main/library/README.md) in `49GAION-protocol`. The Library is a marketplace: each `[ORG]AION` takes a part as a starting point, configures it inside the organisation through its own live AI, and may improve it and, by its own choice, give it back (DR-0035, DR-0037).
+
+**Reading (DR-0041).** The Library is the greatest asset of every `[ORG]AION`. Beside blueprints and part cards it holds patterns and models, operating models, instructions and processes, panels and cores, and the patterns of whole organisations. An `[ORG]AION` takes from it and personalises it, and what it has taken is held in its own Library.
 
 ### 4. HOAC
 
