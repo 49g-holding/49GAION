@@ -50,6 +50,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0042`](DR-0042-clarifications-of-the-complete-definition.md) | 2026-10-25 | 49GAION — clarifications of the complete definition | in force |
 | [`DR-0043`](DR-0043-the-49gaion-guide-version-1.md) | 2026-10-25 | 49GAION — The 49GAION Guide, Version 1 | in force |
 | [`DR-0044`](DR-0044-three-mothers-in-repositories-of-49gaion.md) | 2026-10-25 | 49GAION — the mothers of the design chain in repositories of 49GAION | in force |
+| [`DR-0045`](DR-0045-the-owner-and-the-licence.md) | 2026-10-26 | 49GAION — the owner and the licence of the public texts | in force |
 
 ## Reading notes
 
