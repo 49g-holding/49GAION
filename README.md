@@ -73,6 +73,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 - **Changes by pull request** with green checks; `main` is protected; tags `v*` are locked.
 - **No organisation-specific names.** Write 49GAION for the framework and `[ORG]AION` for its product.
 - **Decisions** are recorded in [`decisions/`](decisions/).
+- **Owner and licence.** The copyright holder, and the licences of the texts (CC BY 4.0, credit "Powered by 49GAION") and of the code (Apache-2.0), are in [`LICENSE.md`](LICENSE.md).
 
 ## Version
 
