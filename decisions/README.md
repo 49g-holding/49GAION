@@ -45,6 +45,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0037`](DR-0037-live-design-given-to-ai.md) | 2026-10-22 | 49GAION — Live: the design of an organisation is given to AI | in force |
 | [`DR-0038`](DR-0038-edition-maker-every-request.md) | 2026-10-22 | 49GAION — Edition Maker: every request, the core it designs, and the three stages of its work | in force |
 | [`DR-0039`](DR-0039-edition-maker-requirements-in-the-library.md) | 2026-10-22 | 49GAION — Edition Maker's requirements live in the Library | in force |
+| [`DR-0040`](DR-0040-structural-adaptation.md) | 2026-10-25 | 49GAION — `[ORG]AION` capability: Structural Adaptation | in force |
 
 ## Reading notes
 

@@ -139,6 +139,12 @@ Most organisations that use AI today are **human-native**. They are designed aro
 
 5. **What an organisation comes to 49GAION for.** Not a finished design, but access to what is live: a design that keeps pace as AI improves, and a Library that grows with what every `[ORG]AION` chooses to give back. In this, 49GAION works as a movement of growth, and what it brings into each organisation is AI-native itself (DR-0037).
 
+### 2.6 What an `[ORG]AION` can do
+
+Each capability of an `[ORG]AION` is named, so that every organisation knows what its core does. The full rules are in the Standard, §1.3, item 1.
+
+1. **Structural Adaptation.** The `[ORG]AION` keeps the organisation in balance with its resources and its needs at every stage of its life. Many organisations grow out of balance: some push product and users until they cannot operate what they have sold; others build operation, divisions and cost long before they are needed. The `[ORG]AION` starts small, with several processes sharing one AIOC and small, fast teams. It watches the record of the operation all the time. When a process outgrows its home, it proposes to split it into an AIOC of its own; when work shrinks, it proposes to merge. It weighs every option against its cost first, acts on thresholds the organisation sets, and never runs the operation itself: a human seat decides each change (DR-0040).
+
 ## 3. The philosophy
 
 1. **The framework stays fixed; each organisation gets its own `[ORG]AION`**, and that `[ORG]AION` is live (2.2). The framework is one, and it changes only through its Self-Improvement.
