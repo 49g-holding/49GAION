@@ -88,11 +88,13 @@ dr_case("unreadable index fails closed", lambda d: idx(d).unlink(), "failing clo
 # ---------- no-removal ----------
 def nr_case(name, mutate, code=None, script=S / "check_no_removal.py"):
     d = pathlib.Path(tempfile.mkdtemp())
-    for p in ("49GAION.md", "AGENTS.md", "README.md", "STATE.md", "decisions", "references", "registers", "standards", "upstream"):
+    for p in ("49GAION.md", "49GAION-FRAMEWORK.md", "AGENTS.md", "README.md", "STATE.md", "state.json", "decisions", "references", "registers", "standards", "upstream"):
         src = HUB / p
-        (shutil.copytree if src.is_dir() else shutil.copy)(src, d / p)
+        if src.exists():
+            (shutil.copytree if src.is_dir() else shutil.copy)(src, d / p)
     mutate(d)
-    env = {"NO_REMOVAL_ROOT": str(d), "NO_REMOVAL_BASELINE": str(HUB / ".github/no-removal/v1.4-baseline.tsv")}
+    # The check picks the baseline of the release the texts are at (state.json): v2.0 from v2.0.0 on, v1.4 before.
+    env = {"NO_REMOVAL_ROOT": str(d), "NO_REMOVAL_DIR": str(HUB / ".github/no-removal")}
     expect("no-removal: " + name, sh(d, sys.executable, str(script), env=env, check=False), code)
 
 def drop_hoac_lead(d):
