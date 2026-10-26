@@ -12,6 +12,8 @@ HUB = pathlib.Path(os.environ.get("HUB_DIR", "."))
 PRO = pathlib.Path(os.environ.get("PROTOCOL_DIR", "."))
 AIO = pathlib.Path(os.environ.get("AIOC_DIR", "."))
 DOCS = {
+    "complete definition": HUB / "49GAION-FRAMEWORK.md",
+    "master definition": HUB / "49GAION.md",
     "Naming Standard": HUB / "standards/49GAION-NAMING-STANDARD.md",
     "Standard": HUB / "upstream/49GAION-UPSTREAM.md",
     "Protocol": PRO / "spec/49GAION-OPERATING-PROTOCOL.md",
