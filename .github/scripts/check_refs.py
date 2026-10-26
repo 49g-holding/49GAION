@@ -13,7 +13,6 @@ PRO = pathlib.Path(os.environ.get("PROTOCOL_DIR", "."))
 AIO = pathlib.Path(os.environ.get("AIOC_DIR", "."))
 DOCS = {
     "complete definition": HUB / "49GAION-FRAMEWORK.md",
-    "master definition": HUB / "49GAION.md",
     "Naming Standard": HUB / "standards/49GAION-NAMING-STANDARD.md",
     "Standard": HUB / "upstream/49GAION-UPSTREAM.md",
     "Protocol": PRO / "spec/49GAION-OPERATING-PROTOCOL.md",
@@ -63,6 +62,7 @@ if base:  # pull request: check the files it changes; push to main checks every 
     files = [f for f in files if f in changed]
 files = [f for f in files if not re.match(r"(\.github|tests/fixtures|references)/", f)]
 KEYS = sorted(DOCS, key=len, reverse=True)
+TIGHT = {"complete definition"}  # "the complete definition, section 8"; not "the complete definition names … (§1.1)"
 SEC = re.compile(r"(?:§\s?|\bsection )([0-9]+(?:\.[0-9]+)*)")
 errors = []
 for f in files:
@@ -75,6 +75,8 @@ for f in files:
             best, pos = None, -1
             for k in KEYS:
                 i = before.rfind(k)
+                if k in TIGHT and i >= 0 and not re.fullmatch(r"[,\s]*(?:its\s+)?", before[i + len(k):]):
+                    continue  # a definition key counts only when it stands right before the section token
                 if i > pos or (i == pos and i >= 0 and best and len(k) > len(best)):
                     best, pos = k, i
             if best == "Standard" and before.rfind("Naming Standard") >= 0 and before.rfind("Naming Standard") + 7 == pos:
