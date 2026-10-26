@@ -9,12 +9,13 @@ The cold-read test run again on the clean texts of `v2.0.0` (DR-0047), before th
 - Reader 2 (OpenAI): the hub's three entry texts only (README, the complete definition, the master definition), with the questions, each answer asked to be short. SHA-256 of the input text: `7b469cbcfcc27d3f5736cfd301c2e688f8ce65828bfcdc4d5865200db092a2c6`. The full input could not be carried to the relay: the relay that passes a prompt inline was stopped when it carried the 106 KB text, and the reviewer tools take no file. A third reader (Grok) was not reached for the same reason.
 - Date: 26 October 2026, 18:30 to 19:10 UTC+4.
 
-The answers below are verbatim and unedited. Each reader names its model in its first line.
+The answers below are verbatim and unedited, and are marked as verbatim for the `no-org-names` check, since a reader may repeat the name of the first product release that the hub README states under the same mark. Each reader names its model in its first line.
 
 ---
 
 ## Reader 1 · the writer's engine, a fresh instance · model reported in the first line
 
+<!-- no-org-names:verbatim-start -->
 [claude-fable-5-1]
 
 # Cold read of 49GAION v2.0.0 · answers to the eleven questions
@@ -187,11 +188,13 @@ Yes, by the text's own claim: "Every order, every request made to 49GAION, from 
 - **Integration with what the organisation already has:** how existing systems become "every surface the organisation connects" (49GAION-operations-event-register README.md), how a running organisation's documents enter Source Lifecycle, and how long "output by output" takes.
 - **Leaving:** how to migrate away, what the credit "Powered by 49GAION" obliges in practice and for how long, whether it is a registered mark, and what happens if 49GAION changes its licence.
 - **Assurance at small scale:** who the "independent assurance unit" and the "held-out golden set" are when there is one person and one task (49GAION README.md, Overview §2).
+<!-- no-org-names:verbatim-end -->
 
 ---
 
 ## Reader 2 · OpenAI · model reported in the first line
 
+<!-- no-org-names:verbatim-start -->
 [openai / gpt-6-astra]
 
 [ChatGPT]
@@ -277,6 +280,7 @@ Its three strongest supports are **clear delivery and responsibility boundaries*
 “Which working Library parts, integrations, engines and hosting options are available today?”—**NOT IN THE TEXT**; the texts describe these categories and point to other repositories without supplying an implementation inventory (`49GAION-FRAMEWORK.md`, Part B §9; Part D §17; `49GAION.md`, §8).
 “Who specifically implements and independently verifies our gateway, security, tests and legal compliance?”—**NOT IN THE TEXT** beyond general responsibilities and separation requirements (`49GAION-FRAMEWORK.md`, Part B §10; Part D §§19–20).
 “What operational results demonstrate reliability, savings and successful migration, and what are our detailed recovery procedures?”—**NOT IN THE TEXT**; success criteria and some fallback mechanisms are defined, but case evidence and full operational procedures are not supplied (`49GAION-FRAMEWORK.md`, Part C §13.3; Part D §§17, 20; Part E).
+<!-- no-org-names:verbatim-end -->
 
 ---
 
