@@ -1,14 +1,26 @@
 """no-removal: every heading, section/rule/decision id, term and key concept of the 49GAION
 hub baseline is still present. Presence only, never definition text.
 
-Baseline: the file named by NO_REMOVAL_BASELINE (default .github/no-removal/v1.4-baseline.tsv,
-taken from v1.4.0 and carrying every v1.2.0 entry). A term that holds the token HOAC must
+Baseline: the file named by NO_REMOVAL_BASELINE; by default the baseline of the release the texts
+are at (state.json): .github/no-removal/v2.0-baseline.tsv from v2.0.0 on, generated from the clean
+texts (DR-0047), and v1.4-baseline.tsv before it (taken from v1.4.0, carrying every v1.2.0 entry). A term that holds the token HOAC must
 stand on its own place: a heading, the first cell of a table row (a glossary row) or the
 bold lead of a definition line. The token anywhere else in the file does not count, so its
 expansion may still change by decision while the term itself cannot be dropped."""
 import os, re, sys, pathlib
 root = pathlib.Path(os.environ.get("NO_REMOVAL_ROOT", "."))
-lst = pathlib.Path(os.environ.get("NO_REMOVAL_BASELINE", root / ".github/no-removal/v1.4-baseline.tsv"))
+def default_baseline():
+    """The baseline of the release the texts are at: v2.0 from the clean version on (DR-0047),
+    v1.4 before it. Read from state.json; v1.4 if it cannot be read."""
+    d = pathlib.Path(os.environ.get("NO_REMOVAL_DIR", root / ".github/no-removal"))
+    try:
+        import json
+        v = json.load(open(root / "state.json"))["version"].lstrip("v")
+        major = int(v.split(".")[0])
+    except Exception:
+        major = 1
+    return d / ("v2.0-baseline.tsv" if major >= 2 else "v1.4-baseline.tsv")
+lst = pathlib.Path(os.environ["NO_REMOVAL_BASELINE"]) if os.environ.get("NO_REMOVAL_BASELINE") else default_baseline()
 cache = {}
 def text(p):
     if p not in cache:

@@ -1,6 +1,7 @@
-# Required check on main. 49GAION changes only additively: every heading, section/rule/
-# decision id, term and key concept of the hub baseline (.github/no-removal/v1.4-baseline.tsv,
-# taken at the v1.4.0 release and carrying every v1.2.0 entry) must still be present.
+# Required check on main. Every heading, section/rule/decision id, term and key concept of
+# the hub baseline must still be present: .github/no-removal/v2.0-baseline.tsv from v2.0.0 on
+# (generated from the clean texts, DR-0047), v1.4-baseline.tsv before it; the check picks the
+# baseline of the release the texts are at (state.json).
 # Presence only, never definition text. A HOAC term must stand on its own heading, glossary
 # row or bold definition lead; the token anywhere else in the file does not count.
 # Script and baseline are the copies on the base branch (trusted code).
@@ -25,7 +26,7 @@ jobs:
           TRUSTED: ${{ github.event.pull_request.base.sha || github.sha }}
           EVENT: ${{ github.event_name }}
           BASE: ${{ github.event.pull_request.base.sha }}
-          FILES: ".github/scripts/check_no_removal.py .github/no-removal/v1.4-baseline.tsv"
+          FILES: ".github/scripts/check_no_removal.py .github/no-removal/v1.4-baseline.tsv .github/no-removal/v2.0-baseline.tsv"
         run: |
           # The check that judges a change is always the copy on the base branch (main),
           # read with git show, never the working tree of the pull request.
@@ -44,5 +45,5 @@ jobs:
           done
       - name: Check the baseline is present
         env:
-          NO_REMOVAL_BASELINE: ${{ runner.temp }}/trusted/v1.4-baseline.tsv
+          NO_REMOVAL_DIR: ${{ runner.temp }}/trusted
         run: python3 "$RUNNER_TEMP/trusted/check_no_removal.py"
