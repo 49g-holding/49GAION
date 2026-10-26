@@ -37,6 +37,13 @@ for f in files:
                 m = re.match(r"^\*\*(.+?)\*\*", raw)
                 cell = norm(m.group(1) if m else raw.replace("**", ""))
                 if cell and cell.lower() != "term": add("term", cell)
+# Terms of the previous baseline for regenerated files are carried as long as they still stand in the file.
+prev_rows = [l.split("\t") for l in pathlib.Path(prev).read_text(encoding="utf-8").splitlines() if l and not l.startswith("#")]
+for f in files:
+    t = pathlib.Path(f).read_text(encoding="utf-8")
+    for r in prev_rows:
+        if r[0] == f and r[1] == "term" and r[2] in t and f"{f}\tterm\t{r[2]}" not in rows:
+            rows.append(f"{f}\tterm\t{r[2]}" + (f"\t{r[3]}" if len(r) > 3 else ""))
 header = ["# no-removal baseline of v2.0.0, generated from the clean texts by .github/scripts/make_no_removal_baseline.py (DR-0047).",
           "# Columns: path, kind (heading | id | term | concept), value, note. Presence only, never definition text.",
           "# Entries for files not regenerated are carried from the previous baseline."]
