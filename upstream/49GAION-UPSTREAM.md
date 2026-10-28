@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v2.0.0` · approved by the governing seat (GOV) of 49GAION.** Decisions are recorded in `decisions/README.md`. The complete definition of 49GAION, approved by its governing seat on 25 October 2026 with its clarifications (DR-0041, DR-0042), and brought to `v2.1.0` (DR-0048), is `49GAION-FRAMEWORK.md`; this Standard is brought into line with it by DR-0049. Where any text differs, the complete definition governs, then this Standard with the Naming Standard, then every other text (DR-0042, the order of precedence).
+**Version `v2.1.0` · approved by the governing seat (GOV) of 49GAION.** Decisions are recorded in `decisions/README.md`. The complete definition of 49GAION, approved by its governing seat on 25 October 2026 with its clarifications (DR-0041, DR-0042), and brought to `v2.1.0` (DR-0048), is `49GAION-FRAMEWORK.md`; this Standard is brought into line with it by DR-0049. Where any text differs, the complete definition governs, then this Standard with the Naming Standard, then every other text (DR-0042, the order of precedence).
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 

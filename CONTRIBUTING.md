@@ -1,6 +1,6 @@
 # Contributing
 
-**49GAION, the hub · `v2.0.0`.**
+**49GAION, the hub · `v2.1.0`.**
 
 1. **Read first:** the complete definition (`49GAION-FRAMEWORK.md`), which governs where any other text differs; then `49GAION.md` and the Standard (`upstream/49GAION-UPSTREAM.md`).
 2. **One change, one pull request,** with every required check green, reviewed by a party other than its writer, and merged by the governing seat (GOV) of 49GAION. `main` is protected; tags `v*` are locked; nothing is ever force-pushed.
