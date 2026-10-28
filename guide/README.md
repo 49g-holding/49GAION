@@ -9,7 +9,11 @@ The plain-language text of 49GAION: what it is, how it works, and how an organis
 
 ## The PDF
 
-Binary files are kept outside this repository (the `no-binaries` check). The PDF of Version 2 is published on the hub's release page with the release `v2.1.0`, under the name `The-49GAION-Guide-Version-2.pdf`, set the same way as Version 1; its SHA-256 is recorded here at that release.
+Binary files are kept outside this repository (the `no-binaries` check). The PDF of Version 2 is published on the hub's release page, as an asset of the release `v2.1.0`, under the name `The-49GAION-Guide-Version-2.pdf`. It is the Markdown above, set in the typeface Inter on A4, twelve pages, with no organisation's mark. Its SHA-256:
+
+```
+cc534fda40873f526dc54cac97c576e482853b58ed9ce2db96da17e32234e710
+```
 
 The PDF of Version 1 is published on the hub's release page, as an asset of the release `v1.8.0`, under the name `The-49GAION-Guide-Version-1.pdf`. It is the Markdown above, set in the typeface Inter on A4, eleven pages, with no organisation's mark. Its SHA-256:
 
