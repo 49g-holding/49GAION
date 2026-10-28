@@ -37,11 +37,11 @@ The 49GAION Library is the greatest asset of every `[ORG]AION`. It holds all rea
 
 ### 4. HOAC
 
-HOAC (Human Oversight & Accountability Control) is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with three kinds: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop. A report, critique, objection or stop reaches the nearest HOAC directly, never through any AI. The governance seat holds the final right over every position; the Top Management position sits in the Top Management Group, the first AIOC under the core, which is the hub of the operation.
+HOAC (Human Oversight & Accountability Control) is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with three kinds: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop. A report, critique, objection or stop reaches the nearest HOAC directly, never through any AI. The governance seat keeps ultimate authority over the organisation's own mechanism for its human side, which decides who holds each position, outside the system (DR-0048); the Top Management position sits in the Top Management Group, the first AIOC under the core, which is the hub of the operation.
 
 ### 5. AIOC
 
-An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a panel, the organisation's own interface written in code, from which every task of the unit can be controlled; a back office, the AI chat workspace where its AI works, an authorised interface too, which keeps the panel; and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells. The hub of the operation, human and AI, is the Top Management Group; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (DR-0041).
+An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a panel, the organisation's own interface written in code, from which every task of the unit can be controlled; a back office, the AI chat workspace where its AI works, an authorised interface too, which keeps the panel; and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat filled by AI or held as a human position) and its Pods (groups of Cells). An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells. The hub of the operation, human and AI, is the Top Management Group; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (DR-0041).
 
 ### 6. Protocol
 
@@ -72,5 +72,16 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 ## Version
 
 `v2.0.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
+
+---
+
+## Superseded wording, by version
+
+**`v2.1.0` (DR-0049).**
+
+- **HOAC, the governance seat's right** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
+  The governance seat holds the final right over every position;
+- **AIOC, the Cells** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
+  Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler)
 
 Powered by 49GAION

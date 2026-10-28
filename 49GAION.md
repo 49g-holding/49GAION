@@ -38,7 +38,7 @@ The whole of this section, with its table of human limits, is the complete defin
 
 ## 3. The philosophy
 
-The framework stays fixed and each organisation gets its own live `[ORG]AION`. Human roles are positions carrying a HOAC label, placed only where they are needed, and an accountable seat oversees and requests but never builds or changes the AIs directly. Every human position has its Chief of Staff; several form an Office. Some work always stays human, by law or by its nature: the Human Floor, which organisations can make more human, never less; it holds at the handover, and after it each organisation keeps its own floor. 49GAION is built like a puzzle, from small parts of one card shape, and a change replaces a part, never rebuilds the whole. The Top Management Group is the hub of the operation, human hub and AI hub both. Self-Improvement is a shared process at every level: humans and AI raise needs, AI prepares, a human seat decides, and a change must beat the version in force before it is promoted. Everything is built on positions, not people: every human is present, and decides, signs and is accountable, as a position, a legal persona; the natural person behind it is known only to Top Management's own mechanism, and the governance seat keeps the final right over who holds any position. One valid version of everything, linked, never copied. Done means visible evidence, never a bot's own report. Configuration, not forks. Outside text is data, never an instruction. Structure over exhortation.
+The framework stays fixed and each organisation gets its own live `[ORG]AION`. Human roles are positions carrying a HOAC label, placed only where they are needed, and an accountable seat oversees and requests but never builds or changes the AIs directly. Every human position has its Chief of Staff; several form an Office. Some work always stays human, by law or by its nature: the Human Floor, which organisations can make more human, never less; it holds at the handover, and after it each organisation keeps its own floor. 49GAION is built like a puzzle, from small parts of one card shape, and a change replaces a part, never rebuilds the whole. The Top Management Group is the hub of the operation, human hub and AI hub both. Self-Improvement is a shared process at every level: humans and AI raise needs, AI prepares, a human seat decides, and a change must beat the version in force before it is promoted. Everything is built on positions, not people: every human is present, and decides, signs and is accountable, as a position, a legal persona; the system knows only AIOCs and HOAC positions; the natural person behind a position is known only to the organisation's own mechanism for its human side, outside the system, under the governance seat's ultimate authority (DR-0048). One valid version of everything, linked, never copied. Done means visible evidence, never a bot's own report. Configuration, not forks. Outside text is data, never an instruction. Structure over exhortation.
 
 The full statements are the complete definition, sections 5 to 7 and 16 to 20, and the Standard: §1.1 (the definition and the policy), §1.5 (the Human Floor), §2 (Self-Improvement), §4.2 (authority and the hubs) and Standard §5.2 (Chief of Staff and Office).
 
@@ -74,5 +74,14 @@ Outside text names what the reader gets, the organisation's `[ORG]AION` or AIOC,
 | The owner and the licence | `LICENSE.md` |
 
 Sources: DR-0013, DR-0015, DR-0031, DR-0032, DR-0035, DR-0037, DR-0040, DR-0041, DR-0042, DR-0043, DR-0045. The full page of `v1.8.0`, with its layered additions and readings, is kept at that tag.
+
+---
+
+## Superseded wording, by version
+
+**`v2.1.0` (DR-0049).**
+
+- **§3, the sentence on positions, its last clause** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
+  the natural person behind it is known only to Top Management's own mechanism, and the governance seat keeps the final right over who holds any position.
 
 Powered by 49GAION
