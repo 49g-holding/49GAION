@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v2.0.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v2.1.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -48,7 +48,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.0.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.1.0`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -99,7 +99,7 @@ Sources: DR-0004.
 1. **Pod.** A Pod's code is the organisation's prefix, `POD`, a hyphen and the initials of the Pod's own name, 2 to 8 upper-case letters or digits: "Review" → `[ORG]POD-RV`.
 2. **Cell.** A Cell's code is the organisation's prefix, `CELL`, a hyphen and the initials of the Cell's own name, 2 to 8 upper-case letters or digits: "Top Management Seat" → `[ORG]CELL-TMS`. There are two exceptions to these initials. For a Chief of Staff Cell, R16, item 2 governs: "Source Lifecycle Chief of Staff" → `[ORG]CELL-COSSL`. The Cell that carries the unscoped `[ORG]HOAC-GOV` may take the code `[ORG]CELL-GOV`: GOV is the Standard's own short form of the governing seat, as COS is of the Chief of Staff (R16).
 3. **One register, one code.** Every Pod and Cell code is unique in the organisation's unit register and passes the collision check in §5 before first use. Retired codes are never reused (R5).
-4. **Not the filler.** A Cell's code names the seat, never its filler: a person's name or an agent's name never appears in a code. A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
+4. **Not the filler.** A Cell's code names the seat, never what fills it: a person's name or an agent's name never appears in a code. A human position's AI assistants are separate AI Cells, each with its own code, attached to that position's Cell (DR-0049).
 5. **Prefix.** Central text writes `[ORG]`; the prefix is filled in each organisation's own `[ORG]AION` (R13).
 
 Sources: DR-0028, DR-0030.
@@ -159,3 +159,8 @@ The wording below left the body of this text when it was written clean at `v2.0.
   A single-function Chief of Staff of the assisting kind
 - **§3, withdrawal notice under the table (the AION Builder's row)** · superseded by DR-0032, v1.8.0 (the AION Builder withdrawn; its row removed from the table):
   **Withdrawn (DR-0032).** The AION Builder is withdrawn, and its row in the table above with it. `[ORG]AIOC-EB` stays retired (§4).
+
+**`v2.1.0` (DR-0049).**
+
+- **R14, item 4 (Not the filler), second sentence** · superseded by DR-0049 (positions only; the complete definition, §1 item 5):
+  A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.

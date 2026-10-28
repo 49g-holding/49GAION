@@ -17,7 +17,7 @@ This repository holds the complete definition of 49GAION, the master definition,
 - It is live: it gives the design and configuration of the organisation itself to AI, and a human seat decides, so the organisation keeps pace as AI improves, with open access to the 49GAION Library.
 - It aims to turn the whole into a successful organisation: one that delivers its output repeatably, at its quality, and without depending on any one person.
 
-The short entry is [`49GAION.md`](49GAION.md); the plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-1.md).
+The short entry is [`49GAION.md`](49GAION.md); the plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-2.md).
 
 **The product: `[ORG]AION`**, the living AION of one organisation, which grows from one core, holds the organisation's design and builds from it, and never runs the operation; its one definition is in the Standard, [§1.3, item 1](upstream/49GAION-UPSTREAM.md#13-the-product-orgaion).
 
@@ -37,11 +37,11 @@ The 49GAION Library is the greatest asset of every `[ORG]AION`. It holds all rea
 
 ### 4. HOAC
 
-HOAC (Human Oversight & Accountability Control) is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with three kinds: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop. A report, critique, objection or stop reaches the nearest HOAC directly, never through any AI. The governance seat holds the final right over every position; the Top Management position sits in the Top Management Group, the first AIOC under the core, which is the hub of the operation.
+HOAC (Human Oversight & Accountability Control) is a label of human accountability, not a unit. It sits on a Cell, a Pod or a whole AIOC, at any depth, with three kinds: `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`. It holds what only a human can hold: authority, accountability and the stop. A report, critique, objection or stop reaches the nearest HOAC directly, never through any AI. The governance seat keeps ultimate authority over the organisation's own mechanism for its human side, which decides who holds each position, outside the system (DR-0048); the Top Management position sits in the Top Management Group, the first AIOC under the core, which is the hub of the operation.
 
 ### 5. AIOC
 
-An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a panel, the organisation's own interface written in code, from which every task of the unit can be controlled; a back office, the AI chat workspace where its AI works, an authorised interface too, which keeps the panel; and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler) and its Pods (groups of Cells). An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells. The hub of the operation, human and AI, is the Top Management Group; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (DR-0041).
+An AIOC (AI Operating Core) is an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`: a panel, the organisation's own interface written in code, from which every task of the unit can be controlled; a back office, the AI chat workspace where its AI works, an authorised interface too, which keeps the panel; and one versioned blueprint, led by its Chief of Staff. The AIOC is the only unit kind. Its Blueprint holds its Cells (the smallest parts, each a fixed seat filled by AI or held as a human position) and its Pods (groups of Cells). An AIOC may hold other AIOCs, to any depth, and its own Pods and Cells. The hub of the operation, human and AI, is the Top Management Group; a separate `[ORG]AIOC-OCO`, where an organisation has one, serves the operation under Top Management: every AIOC joins, is fixed, maintained and upgraded through it, and it gives no orders on what work is done (DR-0041).
 
 ### 6. Protocol
 
@@ -51,8 +51,8 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 | What | Where |
 |---|---|
-| 0. The complete definition, approved 25 October 2026 (DR-0041, DR-0042) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
-| 0, in plain words. The 49GAION Guide, Version 1, approved 25 October 2026 (DR-0043) | [`guide/THE-49GAION-GUIDE-VERSION-1.md`](guide/THE-49GAION-GUIDE-VERSION-1.md) |
+| 0. The complete definition, approved 25 October 2026 and brought to `v2.1.0` on 28 October 2026 (DR-0041, DR-0042, DR-0048) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
+| 0, in plain words. The 49GAION Guide, Version 2, approved 28 October 2026 (DR-0050) | [`guide/THE-49GAION-GUIDE-VERSION-2.md`](guide/THE-49GAION-GUIDE-VERSION-2.md) |
 | 1. The short entry: the master definition | [`49GAION.md`](49GAION.md) |
 | 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
 | 3. Unit register (form) | [`registers/HOAC-REGISTER.md`](registers/HOAC-REGISTER.md) |
@@ -71,6 +71,21 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 ## Version
 
-`v2.0.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
+`v2.1.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
+
+---
+
+## Superseded wording, by version
+
+**`v2.1.0` (DR-0049, DR-0050).**
+
+- **HOAC, the governance seat's right** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
+  The governance seat holds the final right over every position;
+- **AIOC, the Cells** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
+  Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler)
+- **Start here, row 0, the complete definition** · superseded by DR-0050 (the complete definition `v2.1.0`, DR-0048):
+  | 0. The complete definition, approved 25 October 2026 (DR-0041, DR-0042) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
+- **Start here, the guide** · superseded by DR-0050 (the Guide, Version 2):
+  | 0, in plain words. The 49GAION Guide, Version 1, approved 25 October 2026 (DR-0043) | [`guide/THE-49GAION-GUIDE-VERSION-1.md`](guide/THE-49GAION-GUIDE-VERSION-1.md) |
 
 Powered by 49GAION
