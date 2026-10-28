@@ -53,6 +53,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0045`](DR-0045-the-owner-and-the-licence.md) | 2026-10-26 | 49GAION — the owner and the licence of the public texts | in force |
 | [`DR-0046`](DR-0046-the-governing-seats-confirmation-of-the-licence.md) | 2026-10-26 | 49GAION — the governing seat's confirmation of the licence | in force |
 | [`DR-0047`](DR-0047-the-clean-version.md) | 2026-10-26 | 49GAION — the clean version: `v2.0.0`, and every release written clean from now on | in force |
+| [`DR-0048`](DR-0048-only-aiocs-and-hoac-positions.md) | 2026-10-28 | 49GAION — the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence | in force |
 
 ## Reading notes
 
