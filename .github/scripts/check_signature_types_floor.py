@@ -22,10 +22,13 @@ Rules, each failing with the code shown:
   SIG-FLOOR-ID-OUTSIDE-ALLOWED-PATH  a .json/.yaml/.yml/.toml file holding even one floor ID
                                   sits outside the allowed paths
 Removal (DR-0049). A type leaves the floor only when the trusted removal list
-.github/signature-types-floor-removals.json names it with the decision record that removes it, and
+.github/signature-types-floor-removals.tsv names it with the decision record that removes it, and
 that record exists in the tree under test. The list is read with git: on a pull request from its
 base commit, so it must reach main first, in a .github pull request of its own; otherwise from
-HEAD. A listed removal whose record is not yet in the tree waits, with a warning.
+HEAD. A listed removal whose record is not yet in the tree waits, with a warning. The list is
+tab-separated text, not a .json/.yaml/.yml/.toml file, so a copy of this check that predates it does
+not read it as a signature list: lines starting with # are notes; the first other line is the header
+id<TAB>dr<TAB>reason; each further line is one removal.
 Lists sit under org-aion-signature-types/ or are named *.signature-types.(json|yaml|yml|toml).
 Allowed paths where a file may cite a floor ID without being a list: ALLOWED_CITE below.
 Key allowlist: top level TOP_KEYS; per type ENTRY_KEYS, widened only by the policy fields the
@@ -40,7 +43,7 @@ except ImportError:
 STD = "upstream/human-floor-signature-types.json"
 EXT = (".json", ".yaml", ".yml", ".toml")
 LIST_RE = re.compile(r"^(org-aion-signature-types/.+|(.*/)?[^/]+\.signature-types)\.(json|ya?ml|toml)$")
-ALLOWED_CITE = ("tests/", ".github/tests/", "library/cards/", "registers/", ".github/signature-types-floor-removals.json")
+ALLOWED_CITE = ("tests/", ".github/tests/", "library/cards/", "registers/")
 TOP_KEYS = {"decision_types", "title", "standard", "rule", "note", "type_fields"}
 ENTRY_KEYS = {"id", "human_floor", "label", "note"}
 POLICY_VOCAB = {"related_floor", "min_signer", "signers_required", "max_validity", "never_held"}
@@ -85,7 +88,7 @@ except (ValueError, KeyError, TypeError):
 if not floor: fail_closed(f"{rev}:{STD} holds no types")
 declared = set(base_doc.get("type_fields") or []) & POLICY_VOCAB
 
-REMOVALS = ".github/signature-types-floor-removals.json"
+REMOVALS = ".github/signature-types-floor-removals.tsv"
 def removals_rev():
     if os.environ.get("EVENT") == "pull_request":
         return os.environ.get("BASE_SHA") or ""
@@ -94,13 +97,11 @@ removed = set()
 rrev = removals_rev()
 rc, rtext = git("show", f"{rrev}:{REMOVALS}") if rrev else (1, "")
 if rc == 0:
-    try:
-        entries = json.loads(rtext)["removals"]
-        assert isinstance(entries, list)
-    except (ValueError, KeyError, TypeError, AssertionError):
-        fail_closed(f"{rrev}:{REMOVALS} is not a removal list")
-    for e in entries:
-        tid, dr = (e.get("id"), e.get("dr")) if isinstance(e, dict) else (None, None)
+    rows = [ln.split("\t") for ln in rtext.splitlines() if ln.strip() and not ln.startswith("#")]
+    if not rows or rows[0][:2] != ["id", "dr"]:
+        fail_closed(f"{rrev}:{REMOVALS} is not a removal list (no header id, dr, reason)")
+    for e in rows[1:]:
+        tid, dr = (e[0].strip(), e[1].strip()) if len(e) >= 2 else (None, None)
         if not (isinstance(tid, str) and isinstance(dr, str) and re.fullmatch(r"DR-\d{4}", dr)):
             fail_closed(f"{rrev}:{REMOVALS} holds a malformed entry: {e!r}")
         _, tracked_recs = git("ls-files", "-s", "--", "decisions/")
