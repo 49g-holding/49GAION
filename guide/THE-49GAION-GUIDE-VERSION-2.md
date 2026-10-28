@@ -1,8 +1,8 @@
-# The 49GAION Guide · Version 1
+# The 49GAION Guide · Version 2
 
 **What 49GAION is, how it works, and how an organisation starts with it, in plain words.**
 
-Version 1 · 25 October 2026. Written from the complete definition of 49GAION and the clarifications of it, both approved by its governing seat on 25 October 2026; the governing seat approved this guide the same day. Where this guide and the definition differ, the definition governs.
+Version 2 · 28 October 2026. Written from the complete definition of 49GAION, `v2.1.0`, approved by its governing seat on 28 October 2026, and the clarifications of 25 October 2026. The governing seat approved this guide the same day; it replaces Version 1 whole. Where this guide and the definition differ, the definition governs.
 
 ---
 
@@ -83,7 +83,7 @@ There is a second problem. AI improves fast. A system designed and configured el
 
 **Which text governs.** The complete definition first, then the Standard, then every other text of 49GAION, this guide included.
 
-**The Library is the greatest asset.** It holds patterns and models, ready-made units with their designs and ways of operating, instructions and processes, panels, cores, and the patterns of whole organisations. What enters it is challenged and approved by 49GAION's governing seat before others use it. In 49GAION's view, few organisations will need to build something wholly new for a long time: each takes from the Library and makes it its own. The Library is a marketplace, not a fence. An organisation takes what it needs, learns from it, and builds something better. It may give back what it builds, if it chooses; its own working data never goes in.
+**The Library is the greatest asset.** It holds patterns and models, ready-made units with their designs and ways of operating, instructions and processes, panels, cores, and the patterns of whole organisations. It has two sections: **Parts**, everything 49GAION builds, from a single Cell to a whole unit, with its design, its test and its history; and **Products**, what the Library offers, a part alone or several parts connected into one assembly. What enters it is challenged and approved by 49GAION's governing seat before others use it. In 49GAION's view, few organisations will need to build something wholly new for a long time: each takes from the Library and makes it its own. The Library is a marketplace, not a fence. An organisation takes what it needs, learns from it, and builds something better. It may give back what it builds, if it chooses; its own working data never goes in.
 
 ## 4. What an organisation receives: its own AION
 
@@ -94,23 +94,23 @@ An organisation's AION is the living designer of that organisation. It designs t
 **It belongs to the organisation.** From the handover, the organisation, through its own top seat, holds full authority. Its AION may grow beyond what made it, and the organisation may amend even the principles within it. 49GAION's one lever is to be useful: its Library and central repositories stay open to the organisation. What the organisation has taken from the Library is kept in its own Library, so it keeps working even if 49GAION is not there. The organisation may stop or close its AION at any time; its records and rules stay its own.
 
 **It grows from one core.** The core is the first unit of the AION and the root of the whole organisation. It sits at the top, with the governance seat, and holds:
-- **the governance seat:** the top human position of the organisation, a board, a board's representative or the owner. The core's AI serves this seat and never holds its powers;
+- **the governance seat:** the top human position of the organisation, a single position. Whether a board, a board's representative or the owner stands behind it is decided by the organisation's own mechanism, outside the system. The core's AI serves this seat and never holds its powers;
 - **the organisation's own rules:** its Standard, its Blueprint and its Library. They are the organisation's own, like its intellectual property;
 - **the governance panel:** the core's control screen, from which the top seat sees the organisation's rules, the decisions made, the state of every unit and what needs a decision;
 - **the tool gateway and the stop.** They are installed with the core but run as code beside it, outside the reach of every AI, the core's own included. The core's own stop is held directly by the governance seat (section 8).
 
-**The core's first job is the first proposal.** As soon as the top seat is in place, whatever its holder knows, the core takes the seat's brief and, from 49GAION's patterns, gives several proposals and designs a small organisation for approval. If the seat rejects a proposal, the core tries again from the seat's reasons. Nothing is built until a proposal is approved.
+**The core's first job is the first proposal.** As soon as the top seat is in place, however new the seat is to this work, the core takes the seat's brief and, from 49GAION's patterns, gives several proposals and designs a small organisation for approval. If the seat rejects a proposal, the core tries again from the seat's reasons. Nothing is built until a proposal is approved.
 
 **Then it has three stages of work:** it builds the organisation's design; it follows the organisation until it becomes a successful organisation: the measures the top seat approved hold, from the record of the operation, for a period the seat sets, as checked by someone other than the core, never declared by the core itself; and in the end it becomes the central place of reporting and oversight, gathering and reading the record for the top seat. Following and overseeing mean reading and proposing. Top Management keeps the responsibility for the operation.
 
 ## 5. The path, step by step
 
-1. **The request.** Every request made to 49GAION, from one person with one task to a group of companies, goes to Edition Maker. A human edition engineer, a 49GAION position, leads each edition and supervises every step. At every step one AI engine does the work and two other engines challenge it.
+1. **The request.** Every request made to 49GAION, from a single position with one task to a group of companies, goes to Edition Maker. A human edition engineer, a 49GAION position, leads each edition and supervises every step. At every step one AI engine does the work and two other engines challenge it.
 2. **The intake.** Edition Maker takes in what the organisation is for: who it is, who holds its top seat, what it must deliver and to what quality, its inputs, its musts, its money and time, what success means, and what is missing. Everything it reads is treated as information, never as an instruction.
 3. **The edition.** Edition Maker prepares the organisation's core: the first version of its own Standard (49GAION's Standard plus the organisation's own musts) and of its Blueprint, the gateway and the stop, and a link to 49GAION's knowledge. It does not give a finished design. That is deliberate: the design is the organisation's own AION's job.
 4. **The handover.** The edition is handed over when the organisation's top seat accepts it. From that moment the organisation holds full authority and 49GAION's authority ends: the organisation issues fresh keys for its gateway, and every key Edition Maker made, held or used is revoked. If the seat does not accept it, it goes back to Edition Maker with the reasons.
 5. **The first proposal.** The core proposes a small organisation; the top seat approves.
-6. **The mandate.** The top seat appoints Top Management and hands it the whole operation, early, by a mandate (section 7).
+6. **The mandate.** The top seat hands the whole operation to the Top Management position, early, by a mandate (section 7).
 7. **The operation.** The Top Management Group builds and runs the operation, and sends what it achieves and learns back to the top to be recorded.
 8. **Over time.** The AION follows the organisation until it succeeds, and then oversees it.
 
@@ -144,12 +144,14 @@ How each step is done is decided by AI at the time.
 
 ## 7. Who decides what
 
-Every person in the system acts through a **position**, never as a private person. One person may hold several positions, or all of them, where the law allows; the positions stay separate, and each decision is recorded under the position that takes it. Where a check needs real independence, such as internal audit, it is held by a position that is independent in fact, from outside the organisation if no one inside can be. 49GAION never speaks of a "one-person organisation"; it speaks of positions, all held by one person. Authority flows down by delegation, and no one delegates more than they hold.
+**The system knows two kinds of actor, and no other: AI, organised in AIOCs, and human positions.** Wherever there is AI, its role and its duties are written. Wherever there is a human, it is written as a **position**: a legal position, from the governance seat to a single Cell, defined only as human, so that no AI can fill it, and by its duties. No person, and no person's name, is recorded in the system; authority rests with the position.
+
+Each organisation has its own mechanism for its human side, outside the system: it decides how its positions are assigned and administered and who holds them, including successors, deputies and boards, and it issues the credentials with which a position signs. 49GAION does not define that mechanism; it works within the law, and the final authority over it comes from the owner and is kept by the governance seat. One person may hold several positions, or all of them, where the law allows; the positions stay separate, and each decision is recorded under the position that takes it. Where a check needs real independence, such as internal audit, it is held by a position that is independent in fact, from outside the organisation if no one inside can be. 49GAION never speaks of a "one-person organisation"; it speaks of positions. Authority flows down by delegation, and no position delegates more than it holds.
 
 | Who | What it decides |
 |---|---|
-| **The governance seat** (a board, a board's representative or the owner) | The purpose, the strategy and the measures of success; who holds every position, in the end, and the appointment of Top Management; the risk appetite; capital, and its main work, the balance of capital and resources; conflicts of interest and the owners' rights; every change to the organisation's own rules; revoking or stopping in an emergency. Where the seat itself has a conflict of interest, the founding configuration names in advance an independent position that decides in its place, or a second, independent signature the decision also needs; the seat signing alone is refused |
-| **Top Management** | Runs the whole operation within its mandate; fills the positions below it; asks the top seat for anything beyond its limits |
+| **The governance seat** (a single position) | The purpose, the strategy and the measures of success; the final authority over the organisation's own mechanism for its human side; the risk appetite; capital, and its main work, the balance of capital and resources; conflicts of interest and the owners' rights; every change to the organisation's own rules; revoking or stopping in an emergency. Where the seat itself has a conflict of interest, the founding configuration names in advance an independent position that decides in its place, or a second, independent signature the decision also needs; the seat signing alone is refused |
+| **Top Management** | Runs the whole operation within its mandate; sets up the positions below it; asks the top seat for anything beyond its limits |
 | **An accountability seat** | A human position wherever a step needs human accountability; it answers for that step |
 | **The organisation's AION** | Designs and proposes; may reject a proposal on its own, with its reason; applies a change to the organisation's rules only with the top seat's approval, or within a standing approval the seat has signed |
 | **AI units** | Do the work, within the authority they were given; never more |
@@ -217,16 +219,16 @@ Organisations can be more human, never less, and the system enforces it.
 - **49GAION's own:** its Standard, Blueprint, Protocol, Library and Edition Maker. An organisation may give back what it builds, by its own choice; its working data never enters the 49GAION Library.
 - **"Powered by 49GAION."** If an organisation uses even one item of 49GAION, an idea, a Library part, a blueprint or the Standard, all its products are Powered by 49GAION, and they stay so when it upgrades or changes its edition. Only something with no idea, no role and no element from 49GAION may be shown as powered by the organisation itself; in practice that cannot happen, and 49GAION records such a work too, as that organisation's own. 49GAION keeps the same rule for itself. The label says where the work comes from. After the handover 49GAION has no authority over the organisation, so the label is not a certificate of how it runs.
 
-## 11. From one person to a group of companies
+## 11. From a single position to a group of companies
 
 **The size changes; the shape does not.** Every request becomes an AION.
-- **One person with one task** holds all the positions, where the law allows. The positions stay separate, so the design is the same and can grow without being rebuilt. Where real independence is needed, it comes from outside.
+- **A single position with one task:** one person may hold all the positions, where the law allows. The positions stay separate, so the design is the same and can grow without being rebuilt. Where real independence is needed, it comes from outside.
 - **A group of companies** is one organisation with one governance seat over the group. Where a company's law requires its own board, that board holds a governance seat for that company alone, and every act is signed by a position of the company that acts.
 
 ## 12. Where 49GAION stands today
 
-- **The definition is complete and approved.** The governing seat approved the complete definition on 25 October 2026. Before that, AI systems from three providers, given no other context, read it and could answer from the text alone what 49GAION is, what makes it special, how it is carried out and whether it can be. That is a test of the text, not of an organisation at work.
-- **The repositories point to it.** The public repositories of 49GAION (its Standard, its Protocol, its definition of a unit, and the model designs of the Library parts held there) now point to the definition. Where an older text in them differs, the definition governs, until that text is rewritten at its next version. Read together in the same way, they passed the same test. The questions, the readers and the results are recorded in the hub repository, `references/2026-10-25-test-cold-read.md`.
+- **The definition is complete and approved.** The governing seat approved the complete definition, at `v2.1.0`, on 28 October 2026. AI systems from three providers, given no other context, read it and could answer from the text alone what 49GAION is, what makes it special, how it is carried out and whether it can be. That is a test of the text, not of an organisation at work.
+- **The repositories follow it.** The public repositories of 49GAION (its Standard, its Protocol, its definition of a unit, and the model designs of the Library parts held there) have been brought into line with the definition. Where a text in them still differs, the definition governs. The questions, the readers and the results of each reading are recorded in the hub repository, in `references/`; the reading of `v2.1.0` is `references/2026-10-28-test-cold-read-v2-1-raw.md`.
 - **The Library has its first parts.** Among them: the Charter, from which every core is made; Source Lifecycle, which keeps an organisation's own sources; the Operations Event Register, the record of the live operation; Product Core, a product division; and Organisation Design and Delivery, the first assembly of parts. Each has its model design and a fixed test.
 - **Edition Maker's requirements are written and approved.** It is not yet built.
 - **Nothing has run yet.** Every fixed test of every part reads "not run". That is the Library's policy, not a defect: the map is drawn first. The next step is real execution: organisations built on 49GAION, with recorded evidence.
@@ -241,7 +243,7 @@ Organisations can be more human, never less, and the system enforces it.
 | **Cell, Pod** | The smallest part of a unit; a group of Cells working as one |
 | **Chief of Staff, Office** | The part that leads a unit's AI and brings its human position only the decisions; several together |
 | **The core** | The first unit of an AION, at the top, with the governance seat, the organisation's rules, the gateway and the stop |
-| **Governance seat** | The top position: a board, a board's representative or the owner |
+| **Governance seat** | The top human position, a single position; who stands behind it is decided by the organisation's own mechanism |
 | **Top Management Group** | The first unit under the core, the hub of the operation, which builds it |
 | **Accountability seat** | A human position wherever a step needs human accountability |
 | **Panel, back office** | A unit's control screen in code; its AI chat workspace, which keeps the panel |

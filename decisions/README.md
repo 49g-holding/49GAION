@@ -55,6 +55,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0047`](DR-0047-the-clean-version.md) | 2026-10-26 | 49GAION — the clean version: `v2.0.0`, and every release written clean from now on | in force |
 | [`DR-0048`](DR-0048-only-aiocs-and-hoac-positions.md) | 2026-10-28 | 49GAION — the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence | in force |
 | [`DR-0049`](DR-0049-positions-only-the-texts-brought-into-line.md) | 2026-10-28 | 49GAION — positions only: the texts brought into line with the complete definition `v2.1.0` | in force |
+| [`DR-0050`](DR-0050-the-49gaion-guide-version-2.md) | 2026-10-28 | 49GAION — The 49GAION Guide, Version 2 | in force |
 
 ## Reading notes
 
