@@ -165,8 +165,8 @@ sig_case("push to main reads the floor from the release tag, not from head", {},
          "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, event="push")
 sig_case("push to main with no release tag fails closed", {}, "SIG-FLOOR-UNREADABLE", event="push", tag=False)
 # Removal by the trusted removal list (DR-0049): the list on base names the type and its record.
-RML = ".github/signature-types-floor-removals.json"
-rml = {"removals": [{"id": "restart-stopped-unit", "dr": "DR-9001"}]}
+RML = ".github/signature-types-floor-removals.tsv"
+rml = "# note\nid\tdr\treason\nrestart-stopped-unit\tDR-9001\ttest\n"
 sig_case("a type named on base's removal list, with its record in the tree, leaves the floor",
          {"decisions/DR-9001-removal.md": "x"}, None, head_std=nostd, base_files={RML: rml})
 sig_case("a type named on base's removal list without its record in the tree stays in the floor",
@@ -182,7 +182,11 @@ sig_case("with the record present but the type still in the Standard, an [ORG]AI
           "org-aion-signature-types/acme.json": {"title": "x", "decision_types": [{"id": i} for i in FLOOR if i != "restart-stopped-unit"]}},
          "SIG-LIST-MISSING-TYPE", base_files={RML: rml})
 sig_case("a malformed removal list fails closed", {}, "SIG-FLOOR-UNREADABLE",
-         base_files={RML: {"removals": [{"id": "restart-stopped-unit"}]}})
+         base_files={RML: "id\tdr\treason\nrestart-stopped-unit\n"})
+sig_case("a removal list without its header fails closed", {}, "SIG-FLOOR-UNREADABLE",
+         base_files={RML: "restart-stopped-unit\tDR-9001\ttest\n"})
+sig_case("a removal list in the tree is not a signature list and cites no floor ID out of place",
+         {RML: rml}, None)
 pol = dict(STD, type_fields=["related_floor"], decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
 sig_case("the Standard declaring a policy field in the same change passes", {}, None, head_std=pol)
 # A base Standard with no declared policy fields, whatever the tree under test declares.
