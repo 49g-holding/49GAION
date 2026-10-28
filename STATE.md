@@ -4,6 +4,6 @@
 
 **`v2.0.0` is the clean version** (DR-0047): every text states its current meaning in its body; the additions and readings of `v1.4.0` to `v1.8.0` are folded in, and the wording they superseded is listed at the end of each text and kept at the earlier tags.
 
-**Since `v2.0.0`, on `main` and in force, unreleased:** `49GAION/DR-0048` (the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence) and `49GAION/DR-0049` (positions only: the texts brought into line). They ship with the next release.
+**Since `v2.0.0`, on `main` and in force, unreleased:** `49GAION/DR-0048` (the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence), `49GAION/DR-0049` (positions only: the texts brought into line) and `49GAION/DR-0050` (the 49GAION Guide, Version 2). They ship with the next release.
 
 Powered by 49GAION
