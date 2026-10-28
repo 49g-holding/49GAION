@@ -112,10 +112,13 @@ FLOOR = [t["id"] for t in STD["decision_types"]]
 def full(extra=(), **kw):
     return {"title": "x", "decision_types": [dict({"id": i}, **kw) for i in FLOOR] + [{"id": e} for e in extra]}
 
-def sig_case(name, files, code=None, std=None, event="pull_request", tag=True, head_std=None, head_script=None):
+def sig_case(name, files, code=None, std=None, event="pull_request", tag=True, head_std=None, head_script=None, base_files=None):
     d = repo()
     (d / "upstream").mkdir()
     (d / "upstream/human-floor-signature-types.json").write_text(json.dumps(std or STD, indent=1))
+    for p, body in (base_files or {}).items():
+        (d / p).parent.mkdir(parents=True, exist_ok=True)
+        (d / p).write_text(body if isinstance(body, str) else json.dumps(body, indent=1))
     base = commit(d, "base")
     if tag:
         sh(d, "git", "tag", "v1.4.0"); sh(d, "git", "tag", "vtest")
@@ -161,6 +164,29 @@ sig_case("a change that edits the script and removes a type fails (base copy jud
 sig_case("push to main reads the floor from the release tag, not from head", {},
          "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, event="push")
 sig_case("push to main with no release tag fails closed", {}, "SIG-FLOOR-UNREADABLE", event="push", tag=False)
+# Removal by the trusted removal list (DR-0049): the list on base names the type and its record.
+RML = ".github/signature-types-floor-removals.tsv"
+rml = "# note\nid\tdr\treason\nrestart-stopped-unit\tDR-9001\ttest\n"
+sig_case("a type named on base's removal list, with its record in the tree, leaves the floor",
+         {"decisions/DR-9001-removal.md": "x"}, None, head_std=nostd, base_files={RML: rml})
+sig_case("a type named on base's removal list without its record in the tree stays in the floor",
+         {}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, base_files={RML: rml})
+sig_case("a removal list added in the same change does not count (base judges)",
+         {RML: rml, "decisions/DR-9001-removal.md": "x"}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd)
+sig_case("push to main with the removal list and its record passes",
+         {"decisions/DR-9001-removal.md": "x"}, None, head_std=nostd, event="push", base_files={RML: rml})
+sig_case("a directory named like the record does not count as the record",
+         {"decisions/DR-9001-removal.md/keep": "x"}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, base_files={RML: rml})
+sig_case("with the record present but the type still in the Standard, an [ORG]AION list must keep it",
+         {"decisions/DR-9001-removal.md": "x",
+          "org-aion-signature-types/acme.json": {"title": "x", "decision_types": [{"id": i} for i in FLOOR if i != "restart-stopped-unit"]}},
+         "SIG-LIST-MISSING-TYPE", base_files={RML: rml})
+sig_case("a malformed removal list fails closed", {}, "SIG-FLOOR-UNREADABLE",
+         base_files={RML: "id\tdr\treason\nrestart-stopped-unit\n"})
+sig_case("a removal list without its header fails closed", {}, "SIG-FLOOR-UNREADABLE",
+         base_files={RML: "restart-stopped-unit\tDR-9001\ttest\n"})
+sig_case("a removal list in the tree is not a signature list and cites no floor ID out of place",
+         {RML: rml}, None)
 pol = dict(STD, type_fields=["related_floor"], decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
 sig_case("the Standard declaring a policy field in the same change passes", {}, None, head_std=pol)
 # A base Standard with no declared policy fields, whatever the tree under test declares.
