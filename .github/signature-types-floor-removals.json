@@ -1,0 +1,10 @@
+{
+  "note": "Types that leave the Human Floor signature list's floor, each with the decision record of 49GAION's governing seat that removes it (Standard §4.4, item 6). Read by signature-types-floor from main, so an entry lands here, in a .github pull request of its own, before the content change that removes the type.",
+  "removals": [
+    {
+      "id": "appoint-acting-filler",
+      "dr": "DR-0049",
+      "reason": "Who acts in a human position, and for how long, is the organisation's own mechanism, outside the system (the complete definition, §6; DR-0048, DR-0049)."
+    }
+  ]
+}

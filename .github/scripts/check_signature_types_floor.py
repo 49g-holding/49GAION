@@ -21,6 +21,11 @@ Rules, each failing with the code shown:
                                   raising a matter to a human appears as a listed type
   SIG-FLOOR-ID-OUTSIDE-ALLOWED-PATH  a .json/.yaml/.yml/.toml file holding even one floor ID
                                   sits outside the allowed paths
+Removal (DR-0049). A type leaves the floor only when the trusted removal list
+.github/signature-types-floor-removals.json names it with the decision record that removes it, and
+that record exists in the tree under test. The list is read with git: on a pull request from its
+base commit, so it must reach main first, in a .github pull request of its own; otherwise from
+HEAD. A listed removal whose record is not yet in the tree waits, with a warning.
 Lists sit under org-aion-signature-types/ or are named *.signature-types.(json|yaml|yml|toml).
 Allowed paths where a file may cite a floor ID without being a list: ALLOWED_CITE below.
 Key allowlist: top level TOP_KEYS; per type ENTRY_KEYS, widened only by the policy fields the
@@ -35,7 +40,7 @@ except ImportError:
 STD = "upstream/human-floor-signature-types.json"
 EXT = (".json", ".yaml", ".yml", ".toml")
 LIST_RE = re.compile(r"^(org-aion-signature-types/.+|(.*/)?[^/]+\.signature-types)\.(json|ya?ml|toml)$")
-ALLOWED_CITE = ("tests/", ".github/tests/", "library/cards/", "registers/")
+ALLOWED_CITE = ("tests/", ".github/tests/", "library/cards/", "registers/", ".github/signature-types-floor-removals.json")
 TOP_KEYS = {"decision_types", "title", "standard", "rule", "note", "type_fields"}
 ENTRY_KEYS = {"id", "human_floor", "label", "note"}
 POLICY_VOCAB = {"related_floor", "min_signer", "signers_required", "max_validity", "never_held"}
@@ -79,6 +84,34 @@ except (ValueError, KeyError, TypeError):
     fail_closed(f"{rev}:{STD} is not a signature-type list")
 if not floor: fail_closed(f"{rev}:{STD} holds no types")
 declared = set(base_doc.get("type_fields") or []) & POLICY_VOCAB
+
+REMOVALS = ".github/signature-types-floor-removals.json"
+def removals_rev():
+    if os.environ.get("EVENT") == "pull_request":
+        return os.environ.get("BASE_SHA") or ""
+    return "HEAD"
+removed = set()
+rrev = removals_rev()
+rc, rtext = git("show", f"{rrev}:{REMOVALS}") if rrev else (1, "")
+if rc == 0:
+    try:
+        entries = json.loads(rtext)["removals"]
+        assert isinstance(entries, list)
+    except (ValueError, KeyError, TypeError, AssertionError):
+        fail_closed(f"{rrev}:{REMOVALS} is not a removal list")
+    for e in entries:
+        tid, dr = (e.get("id"), e.get("dr")) if isinstance(e, dict) else (None, None)
+        if not (isinstance(tid, str) and isinstance(dr, str) and re.fullmatch(r"DR-\d{4}", dr)):
+            fail_closed(f"{rrev}:{REMOVALS} holds a malformed entry: {e!r}")
+        _, tracked_recs = git("ls-files", "-s", "--", "decisions/")
+        recs = [ln.split("\t", 1)[1] for ln in tracked_recs.splitlines()
+                if ln.startswith("100644 ") and re.fullmatch(r"decisions/" + re.escape(dr) + r"-[^/]+\.md", ln.split("\t", 1)[1])]
+        if tid not in floor:
+            continue
+        if recs:
+            removed.add(tid); print(f"floor: {tid} may leave the Standard's list, by {dr} ({recs[0]})")
+        else:
+            print(f"::warning::the removal of {tid} waits for its record {dr}, which is not in this tree")
 print(f"floor from {rev}: {sorted(floor)}")
 
 def check_list(path, doc, extra_fields=frozenset()):
@@ -107,8 +140,12 @@ except (OSError, ValueError):
     err("SIG-LIST-UNPARSEABLE", STD, "cannot read the Standard's list"); std_doc = None
 if std_doc is not None:
     have = check_list(STD, std_doc, frozenset(std_doc.get("type_fields") or []) if isinstance(std_doc, dict) else frozenset())
-    for m in sorted(floor - have):
+    for m in sorted((floor - removed) - have):
         err("SIG-TYPE-REMOVED-FROM-STANDARD", STD, f"type ID removed from the Standard's list: {m}")
+
+# A removed type that the Standard's file still lists keeps its full protection below.
+std_have = have if std_doc is not None else set()
+floor = (floor - removed) | (removed & std_have)
 
 # 2. Every tracked machine-readable file
 rc, out = git("ls-files", "-z")
