@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v2.1.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v2.1.1` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -48,7 +48,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.1.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.1.1`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -162,3 +162,10 @@ The wording below left the body of this text when it was written clean at `v2.0.
 
 - **R14, item 4 (Not the filler), second sentence** · superseded by DR-0049 (positions only; the complete definition, §1 item 5):
   A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
+
+**`v2.1.1` (DR-0051).**
+
+- **§3, the line on the withdrawn AION Builder** · superseded by DR-0051 (DR-0032 stays in force; `[ORG]AIOC-EB` stays retired, §4):
+  The AION Builder is withdrawn (DR-0032), and its row in the table above with it; `[ORG]AIOC-EB` stays retired (§4).
+- **§3, the sentence on "one-person organisation"** · superseded by DR-0051 (the HOAC Assignment Model; one person may hold every position):
+  "One-person organisation" is not used: 49GAION speaks of positions, all assigned to one person.
