@@ -21,9 +21,18 @@ Rules, each failing with the code shown:
                                   raising a matter to a human appears as a listed type
   SIG-FLOOR-ID-OUTSIDE-ALLOWED-PATH  a .json/.yaml/.yml/.toml file holding even one floor ID
                                   sits outside the allowed paths
+  SIG-REMOVAL-RECORD-MISMATCH     a removal row cites a record that does not name the type, or
+                                  that is not a decision of the governing seat (DR-0052)
+  SIG-FLOOR-VALUE                 a type's floor is not fixed or org-choice, or its quorum is not a
+                                  whole number of at least 1 (DR-0053)
+  SIG-STD-FLOOR-NOT-FIXED         a type of the Standard's own list is not fixed, once the Standard
+                                  declares floor (DR-0053)
 Removal (DR-0049). A type leaves the floor only when the trusted removal list
 .github/signature-types-floor-removals.tsv names it with the decision record that removes it, and
-that record exists in the tree under test. The list is read with git: on a pull request from its
+that record exists in the tree under test, is a decision of the governing seat (its "Decided by"
+line names the governing seat (GOV)) and names the type's ID (DR-0005, item 1; DR-0052). A row
+whose record exists but does not name the type, or is not the governing seat's, fails, and the
+type stays in the floor. The list is read with git: on a pull request from its
 base commit, so it must reach main first, in a .github pull request of its own; otherwise from
 HEAD. A listed removal whose record is not yet in the tree waits, with a warning. The list is
 tab-separated text, not a .json/.yaml/.yml/.toml file, so a copy of this check that predates it does
@@ -46,7 +55,7 @@ LIST_RE = re.compile(r"^(org-aion-signature-types/.+|(.*/)?[^/]+\.signature-type
 ALLOWED_CITE = ("tests/", ".github/tests/", "library/cards/", "registers/")
 TOP_KEYS = {"decision_types", "title", "standard", "rule", "note", "type_fields"}
 ENTRY_KEYS = {"id", "human_floor", "label", "note"}
-POLICY_VOCAB = {"related_floor", "min_signer", "signers_required", "max_validity", "never_held"}
+POLICY_VOCAB = {"related_floor", "min_signer", "signers_required", "max_validity", "never_held", "floor", "quorum"}
 NEVER_HELD = re.compile(r"(^|-)(stop|halt|disconnect|disconnection)(-|$)|(^|-)(narrow|revoke|reduce)(-.*)?-access(-|$)|(^|-)(raise|escalate)(-.*)?-(to-)?human(-|$)")
 
 errs = []
@@ -110,7 +119,14 @@ if rc == 0:
         if tid not in floor:
             continue
         if recs:
-            removed.add(tid); print(f"floor: {tid} may leave the Standard's list, by {dr} ({recs[0]})")
+            body = open(recs[0], encoding="utf-8", errors="replace").read()
+            names = re.search(r"(?<![\w-])" + re.escape(tid) + r"(?![\w-])", body)
+            by_gov = re.search(r"^\s*-\s*\*\*Decided by:\*\*[^\n]*governing seat \(GOV\)", body, re.M)
+            if names and by_gov:
+                removed.add(tid); print(f"floor: {tid} may leave the Standard's list, by {dr} ({recs[0]})")
+            else:
+                why = "does not name the type" if not names else "is not a decision of the governing seat (GOV)"
+                err("SIG-REMOVAL-RECORD-MISMATCH", REMOVALS, f"the removal of {tid} cites {dr} ({recs[0]}), which {why}; {tid} stays in the floor")
         else:
             print(f"::warning::the removal of {tid} waits for its record {dr}, which is not in this tree")
 print(f"floor from {rev}: {sorted(floor)}")
@@ -130,6 +146,12 @@ def check_list(path, doc, extra_fields=frozenset()):
         ids.add(t["id"])
         for k in sorted(set(t) - allowed):
             err("SIG-KEY-NOT-ALLOWED", path, f"key '{k}' on type '{t['id']}' is not allowed")
+        if "floor" in t and t["floor"] not in ("fixed", "org-choice"):
+            err("SIG-FLOOR-VALUE", path, f"type '{t['id']}': floor must be fixed or org-choice, not {t['floor']!r}")
+        if "quorum" in t and not (isinstance(t["quorum"], int) and not isinstance(t["quorum"], bool) and t["quorum"] >= 1):
+            err("SIG-FLOOR-VALUE", path, f"type '{t['id']}': quorum must be a whole number of at least 1, not {t['quorum']!r}")
+        if path == STD and "floor" in (doc.get("type_fields") or []) and t.get("floor") != "fixed":
+            err("SIG-STD-FLOOR-NOT-FIXED", path, f"type '{t['id']}' of the Standard's own list must be floor: fixed (DR-0053)")
         if NEVER_HELD.search(t["id"]):
             err("SIG-NEVER-HELD-TYPE-LISTED", path, f"'{t['id']}' is never listed and never held (a stop, a disconnection, narrowing or revoking AI access, raising to a human)")
     return ids
