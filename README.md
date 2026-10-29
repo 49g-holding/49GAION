@@ -52,6 +52,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 | What | Where |
 |---|---|
 | 0. The complete definition, approved 25 October 2026 and brought to `v2.1.0` on 28 October 2026 (DR-0041, DR-0042, DR-0048) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
+| 0, to adopt it: what an organisation does first, in ten steps (DR-0053) | [`ADOPTING.md`](ADOPTING.md) |
 | 0, in plain words. The 49GAION Guide, Version 2, approved 28 October 2026 (DR-0050) | [`guide/THE-49GAION-GUIDE-VERSION-2.md`](guide/THE-49GAION-GUIDE-VERSION-2.md) |
 | 1. The short entry: the master definition | [`49GAION.md`](49GAION.md) |
 | 2. The 49GAION Standard (§1 What 49GAION is, §2 Self-Improvement, §3 Library, §4 HOAC, §5 AIOC, §6 Protocol) | [`upstream/49GAION-UPSTREAM.md`](upstream/49GAION-UPSTREAM.md) |
@@ -71,7 +72,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 ## Version
 
-`v2.1.1`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
+`v2.2.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
 
 ---
 
