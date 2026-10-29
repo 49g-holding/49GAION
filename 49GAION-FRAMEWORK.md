@@ -54,7 +54,7 @@ Sources: DR-0042.
 1. **Everything is defined by legal positions.** Every human in the system is present, and decides, signs and is accountable, as a position: a legal persona whose nature is human. No natural person is an actor of the system. Every human role is recorded by its legal position, never as an individual. Within the system, a human position is defined only by its nature, human, so that no AI fills it, and by its stated duties. **The `[ORG]AION` deals with the position, never with the person who holds it.**
 2. **The organisation's own mechanism for its human side.** Each organisation maintains, for its human side, an organisational mechanism of its own that determines how its legal positions are assigned and administered and which positions natural persons hold, including successors, deputies and boards. It also issues the credentials with which a position's signatures are made; the system verifies the credential for the position, never the person. The mechanism operates within the law and outside the system, and 49GAION does not define it; ultimate authority over it derives from the owner.
 3. **One person, many positions.** Under that mechanism, one person may hold several positions, or all of them, where the law allows. The positions stay distinct: two positions are two parties, and each decision is recorded under the position that takes it. Distinct positions are not, by themselves, independent: where the law or a check needs independence, such as the internal audit, it is held by a position that is independent in fact, from outside the organisation where no holder inside can be.
-4. **Never a "one-person organisation".** 49GAION never introduces it as a kind; it speaks of positions, all assigned to one person.
+4. **The HOAC Assignment Model.** Each organisation has its own model for assigning its HOAC positions to real people, set per edition; 49GAION does not prescribe it. A position may be held by one person, by several people, or by a human body with its own quorum or voting rule. One person may hold every position: the one-person company, which 49GAION introduces and promotes. The structure never has a single HOAC position that covers everything: the positions stay separate, even when one person holds all of them. 49GAION fixes only three invariants: every HOAC position is held by humans; the engine reads, for each position, who holds it now and the quorum or approvals it requires; and every change of assignment is recorded.
 
 Sources: DR-0041, DR-0048.
 
@@ -242,7 +242,7 @@ How each step is done is decided by AI at the time.
 - **AIOC** `[ORG]AIOC-[INITIALS]`; **Pod** `[ORG]POD-[INITIALS]`; **Cell** `[ORG]CELL-[INITIALS]`.
 - **HOAC** labels `[ORG]HOAC-GOV`, `-TM`, `-ACS`: labels, never codes.
 - Plain English, no code: the core, the governance panel, the Top Management Group, the edition engineer, Chief of Staff, Office, panel, back office, the mandate, the envelope, the gate, the governance veto, Structural Adaptation, Governance and Delegation.
-- Not used: "one-person organisation". Withdrawn: the AION Builder, its six stages, Ionize, the delivery test.
+- **HOAC Assignment Model:** the organisation's own model for assigning HOAC positions to real people (see 6, item 4). Never a single HOAC position that covers everything; one person may hold every position, the one-person company.
 
 Sources: DR-0048.
 
