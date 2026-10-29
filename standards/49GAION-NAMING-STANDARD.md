@@ -127,11 +127,9 @@ Sources: DR-0028, DR-0030.
 
 The short form of "Chief of Staff" is COS (R16). `[ORG]AIOC-COS` stays wrong: COS never names a unit.
 
-The AION Builder is withdrawn (DR-0032), and its row in the table above with it; `[ORG]AIOC-EB` stays retired (§4).
+These names of the complete definition are plain English and take no code: the core, the governance panel, the Top Management Group, the edition engineer, the back office, the mandate, the mandate envelope, the gate, the governance veto, Governance and Delegation. How HOAC positions are assigned to people is the HOAC Assignment Model, a feature of the organisation's Top Management Group, defined and recorded only there (the complete definition, 6, item 4). The structure never has one single HOAC position that covers everything; one person may hold every position.
 
-These names of the complete definition are plain English and take no code: the core, the governance panel, the Top Management Group, the edition engineer, the back office, the mandate, the mandate envelope, the gate, the governance veto, Governance and Delegation. "One-person organisation" is not used: 49GAION speaks of positions, all assigned to one person.
-
-Sources: DR-0007, DR-0028, DR-0032, DR-0041.
+Sources: DR-0007, DR-0028, DR-0032, DR-0041, DR-0051.
 
 ## 4. Retired codes
 

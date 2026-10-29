@@ -4,6 +4,6 @@
 
 **`v2.1.0` is the complete definition brought to positions only** (DR-0048): the system knows two kinds of actor, AI in AIOCs and human positions carrying a HOAC label; no person and no person's name is recorded in it, and who holds a position, and how, is the organisation's own mechanism, outside the system. Every text of 49GAION is brought into line with it (DR-0049), and the Guide follows at its Version 2 (DR-0050). Each text is written clean, as from `v2.0.0` (DR-0047): it states its current meaning in its body, and the wording it superseded is listed at its end and kept at the earlier tags.
 
-**Since `v2.1.0`, on `main` and in force, unreleased:** none.
+**Since `v2.1.0`, on `main` and in force, unreleased:** DR-0051: how positions are assigned to people is kept only in the Top Management Group.
 
 Powered by 49GAION

@@ -56,6 +56,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0048`](DR-0048-only-aiocs-and-hoac-positions.md) | 2026-10-28 | 49GAION — the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence | in force |
 | [`DR-0049`](DR-0049-positions-only-the-texts-brought-into-line.md) | 2026-10-28 | 49GAION — positions only: the texts brought into line with the complete definition `v2.1.0` | in force |
 | [`DR-0050`](DR-0050-the-49gaion-guide-version-2.md) | 2026-10-28 | 49GAION — The 49GAION Guide, Version 2 | in force |
+| [`DR-0051`](DR-0051-hoac-assignment-model-in-the-top-management-group.md) | 2026-10-29 | 49GAION — the HOAC Assignment Model, kept only in the Top Management Group | in force |
 
 ## Reading notes
 
@@ -73,7 +74,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0007 Decision item 11 (c), compensating controls, as far as it makes a control a rule for fewer distinct people than a rule needs: superseded (DR-0015): two positions are two parties; a compensating control is top management's own choice, and no rule, gateway or check reads it.
 - DR-0007 Decision item 7, "a live, phishing-resistant sign-in of one person": read with DR-0015, item 7: the sign-in proves only that the signer is a current occupant of the signing position.
 - DR-0010 Decision item 3, the lines it added that count persons (Standard §4.1, item 13, the load line per person; §4.4, item 16, one person under two seats counts once): superseded (DR-0015): load and coverage are measured per position, and two seats are two parties.
-- DR-0001 Decision item 1, "and the AION Builder": superseded (DR-0032): the AION Builder is withdrawn, and 49GAION has five parts.
+- DR-0001 Decision item 1, its sixth part: superseded (DR-0032, DR-0035): part 6 is 49GAION Edition Maker, and 49GAION has six parts.
 - DR-0007 Decision item 10, the delivery test line D-4: superseded (DR-0032): the delivery test is withdrawn with all its lines; the rules it checked stay in force on their own, and the rule of D-4 is kept in Standard §1.7, item 12.
 - DR-0007 Decision item 11 (c), "and the delivery test result points to those events": superseded (DR-0032), with the delivery test.
 - DR-0032, "49GAION has five parts": superseded (DR-0035): part 6 is 49GAION Edition Maker, and 49GAION has six parts.
@@ -89,5 +90,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0039, the approval of Edition Maker's requirements: confirmed by the governing seat on 2026-10-25 ("Yes, I set Edition Maker."), recorded in DR-0042, item 8.
 - DR-0041, item 3, and the complete definition, "the few safeguards that always hold" and "one engine writes, two challenge": read with DR-0042, items 1 and 5.
 - DR-0007 (Standard §4.2, item 10, skip and recusal) and the signature list's rule "never removes a type": read with DR-0042, items 6.7 and 1 (26 October 2026): the substitute for a conflicted governance seat; "never removes" holds at the handover, then the list is the organisation's own.
+- DR-0048 item 2, the organisation's own mechanism, as far as where the link between positions and people is kept: amended (DR-0051): it is kept only in the Top Management Group, as the HOAC Assignment Model; no other AIOC, no AI and no part of 49GAION reads it.
+- DR-0041 item 3.1, "never a one-person organisation": superseded (DR-0051): one person holding every position is a model 49GAION introduces and promotes; the positions stay separate, and no single HOAC position covers everything.
 
 Powered by 49GAION
