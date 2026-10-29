@@ -1,0 +1,30 @@
+# Required check on main (DR-0053). Every decision record a change adds names its source: the
+# deciding seat's words, quoted (translated where they were not English), or the list it approves
+# by path and commit, and a date. The script is the copy on the base branch (trusted code).
+name: dr-source
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dr-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Every added record names its source
+        shell: bash
+        env:
+          TRUSTED: ${{ github.event.pull_request.base.sha || github.sha }}
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          f=.github/scripts/check_dr_source.py
+          mkdir -p "$RUNNER_TEMP/trusted"
+          if git cat-file -e "$TRUSTED:$f" 2>/dev/null; then git show "$TRUSTED:$f" > "$RUNNER_TEMP/trusted/s.py"; else cp "$f" "$RUNNER_TEMP/trusted/s.py"; fi
+          B="$BASE"
+          if [ -z "$B" ] || ! git cat-file -e "$B^{commit}" 2>/dev/null; then B=$(git rev-parse HEAD^); fi
+          python3 "$RUNNER_TEMP/trusted/s.py" "$B" HEAD
