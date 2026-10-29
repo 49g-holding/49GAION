@@ -58,6 +58,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0050`](DR-0050-the-49gaion-guide-version-2.md) | 2026-10-28 | 49GAION — The 49GAION Guide, Version 2 | in force |
 | [`DR-0051`](DR-0051-hoac-assignment-model-in-the-top-management-group.md) | 2026-10-29 | 49GAION — the HOAC Assignment Model, kept only in the Top Management Group | in force |
 | [`DR-0052`](DR-0052-two-reviews-of-v2-1-0-corrected.md) | 2026-10-29 | 49GAION — two reviews of `v2.1.0` corrected: `v2.1.1` | in force |
+| [`DR-0053`](DR-0053-the-review-rooms-designs-v2-2-0.md) | 2026-10-29 | 49GAION — the review room's designs: `v2.2.0` | in force |
 
 ## Reading notes
 
