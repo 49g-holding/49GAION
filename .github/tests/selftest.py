@@ -88,7 +88,7 @@ dr_case("unreadable index fails closed", lambda d: idx(d).unlink(), "failing clo
 # ---------- no-removal ----------
 def nr_case(name, mutate, code=None, script=S / "check_no_removal.py"):
     d = pathlib.Path(tempfile.mkdtemp())
-    for p in ("49GAION.md", "49GAION-FRAMEWORK.md", "AGENTS.md", "README.md", "STATE.md", "state.json", "decisions", "references", "registers", "standards", "upstream"):
+    for p in ("49GAION.md", "49GAION-FRAMEWORK.md", "AGENTS.md", "README.md", "STATE.md", "state.json", "decisions", "guide", "references", "registers", "standards", "upstream"):
         src = HUB / p
         if src.exists():
             (shutil.copytree if src.is_dir() else shutil.copy)(src, d / p)
@@ -105,6 +105,15 @@ nr_case("HOAC term taken off its definition lead (token left elsewhere) fails", 
 nr_case("HOAC glossary row renamed (token left elsewhere) fails",
         lambda d: sub(d / "upstream/49GAION-UPSTREAM.md", "| **Human hub / `[ORG]HOAC-TM`** |", "| **Human hub** |"), "HOAC-TERM-NOT-ON-HEADING-OR-GLOSSARY-ROW")
 nr_case("heading of v1.4.0 removed fails", lambda d: sub(d / "upstream/49GAION-UPSTREAM.md", "### 4.1 The HOAC", "### 4.1 The label"), "4.1 The HOAC")
+nr_case("the stop line of the Human Floor deleted fails (review PA2)",
+        lambda d: sub(d / "upstream/49GAION-UPSTREAM.md", "- **HF-12** The stop button\n", ""), "clause **HF-12** The stop button")
+nr_case("'more human, never less' reworded in the guide fails (review PA2)",
+        lambda d: sub(d / "guide/THE-49GAION-GUIDE-VERSION-2.md", "Organisations can be more human, never less", "Organisations can be more or less human"), "clause Organisations can be more human, never less")
+def move_to_annex(d):
+    p = d / "49GAION-FRAMEWORK.md"; t = p.read_text(encoding="utf-8")
+    t = t.replace("HF-12 the stop; ", "", 1); t = t.replace("\nPowered by 49GAION", "\n- HF-12 the stop; \n\nPowered by 49GAION")
+    p.write_text(t, encoding="utf-8")
+nr_case("a protected clause moved to the list of superseded wording fails", move_to_annex, "clause HF-12 the stop")
 
 # ---------- signature-types-floor ----------
 STD = json.loads((HUB / "upstream/human-floor-signature-types.json").read_text())
@@ -167,18 +176,19 @@ sig_case("push to main with no release tag fails closed", {}, "SIG-FLOOR-UNREADA
 # Removal by the trusted removal list (DR-0049): the list on base names the type and its record.
 RML = ".github/signature-types-floor-removals.tsv"
 rml = "# note\nid\tdr\treason\nrestart-stopped-unit\tDR-9001\ttest\n"
+REC = "# DR-9001 · removal\n\n- **Decided by:** the governing seat (GOV) of 49GAION.\n\n1. `restart-stopped-unit` leaves the list.\n"
 sig_case("a type named on base's removal list, with its record in the tree, leaves the floor",
-         {"decisions/DR-9001-removal.md": "x"}, None, head_std=nostd, base_files={RML: rml})
+         {"decisions/DR-9001-removal.md": REC}, None, head_std=nostd, base_files={RML: rml})
 sig_case("a type named on base's removal list without its record in the tree stays in the floor",
          {}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, base_files={RML: rml})
 sig_case("a removal list added in the same change does not count (base judges)",
-         {RML: rml, "decisions/DR-9001-removal.md": "x"}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd)
+         {RML: rml, "decisions/DR-9001-removal.md": REC}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd)
 sig_case("push to main with the removal list and its record passes",
-         {"decisions/DR-9001-removal.md": "x"}, None, head_std=nostd, event="push", base_files={RML: rml})
+         {"decisions/DR-9001-removal.md": REC}, None, head_std=nostd, event="push", base_files={RML: rml})
 sig_case("a directory named like the record does not count as the record",
          {"decisions/DR-9001-removal.md/keep": "x"}, "SIG-TYPE-REMOVED-FROM-STANDARD", head_std=nostd, base_files={RML: rml})
 sig_case("with the record present but the type still in the Standard, an [ORG]AION list must keep it",
-         {"decisions/DR-9001-removal.md": "x",
+         {"decisions/DR-9001-removal.md": REC,
           "org-aion-signature-types/acme.json": {"title": "x", "decision_types": [{"id": i} for i in FLOOR if i != "restart-stopped-unit"]}},
          "SIG-LIST-MISSING-TYPE", base_files={RML: rml})
 sig_case("a malformed removal list fails closed", {}, "SIG-FLOOR-UNREADABLE",
@@ -187,6 +197,16 @@ sig_case("a removal list without its header fails closed", {}, "SIG-FLOOR-UNREAD
          base_files={RML: "restart-stopped-unit\tDR-9001\ttest\n"})
 sig_case("a removal list in the tree is not a signature list and cites no floor ID out of place",
          {RML: rml}, None)
+sig_case("a removal row citing a record that does not name the type fails, and the type stays (DR-0052)",
+         {"decisions/DR-9001-removal.md": REC.replace("restart-stopped-unit", "some-other-type")}, "SIG-REMOVAL-RECORD-MISMATCH",
+         head_std=nostd, base_files={RML: rml})
+sig_case("a removal row citing a record that is not the governing seat's fails (DR-0052)",
+         {"decisions/DR-9001-removal.md": REC.replace("the governing seat (GOV) of 49GAION", "the AI hub")}, "SIG-REMOVAL-RECORD-MISMATCH",
+         head_std=nostd, base_files={RML: rml})
+sig_case("a removal row citing an unrelated older record fails (review PA1)",
+         {"decisions/DR-0001-day-zero.md": "# DR-0001\n\n- **Decided by:** the governing seat (GOV) of 49GAION.\n\n1. The starting point.\n"},
+         "SIG-REMOVAL-RECORD-MISMATCH", head_std=nostd,
+         base_files={RML: "id\tdr\treason\nrestart-stopped-unit\tDR-0001\tplanted\n"})
 pol = dict(STD, type_fields=["related_floor"], decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
 sig_case("the Standard declaring a policy field in the same change passes", {}, None, head_std=pol)
 # A base Standard with no declared policy fields, whatever the tree under test declares.
@@ -199,7 +219,10 @@ sig_case("a list using a policy field the base Standard declares passes",
 
 # ---------- ref-check: escaped section sign in schema text ----------
 deps = os.environ.get("REF_DEPS")
-if deps:
+if not deps or not pathlib.Path(deps, "protocol").is_dir() or not pathlib.Path(deps, "aioc").is_dir():
+    results.append(("ref-check: the reference inputs (REF_DEPS) are present", False, "REF_DEPS"))
+    print("FAIL ref-check: REF_DEPS is missing; the selftest fails, it never skips (DR-0052)")
+else:
     for name, body, code in (("a valid escaped reference passes", "see Standard \\u00a74.4", None),
                              ("a broken escaped reference fails", "see Standard \\u00a799.9", "§99.9 does not exist")):
         d = pathlib.Path(tempfile.mkdtemp())
@@ -208,6 +231,45 @@ if deps:
         sh(d / "hub", "git", "add", "-A")
         env = {"HUB_DIR": ".", "PROTOCOL_DIR": f"{deps}/protocol", "AIOC_DIR": f"{deps}/aioc", "BASE_SHA": ""}
         expect("ref-check: " + name, sh(d / "hub", sys.executable, str(S / "check_refs.py"), env=env, check=False), code)
+
+# ---------- no-persian (DR-0052) ----------
+def np_case(name, files, code=None, msg="c", env=None):
+    d = repo(); (d / "a.md").write_text("clean\n"); base = commit(d, "base")
+    for p, body in files.items():
+        (d / p).parent.mkdir(parents=True, exist_ok=True); (d / p).write_text(body, encoding="utf-8")
+    commit(d, msg)
+    expect("no-persian: " + name, sh(d, sys.executable, str(S / "no_persian.py"), env={"BASE": base, **(env or {})}, check=False), code)
+np_case("a clean tree passes", {"b.md": "plain English\n"})
+np_case("one letter of the Arabic block fails", {"b.md": "x \u0627 y\n"}, "PERSIAN-SCRIPT file: b.md:1")
+np_case("one presentation-form letter fails", {"b.md": "x \ufb50 y\n"}, "PERSIAN-SCRIPT file: b.md:1")
+np_case("one letter of Arabic Supplement fails", {"b.md": "x \u0750 y\n"}, "PERSIAN-SCRIPT file: b.md:1")
+np_case("one letter of Arabic Extended-A fails", {"b.md": "x \u08a0 y\n"}, "PERSIAN-SCRIPT file: b.md:1")
+np_case("a file name with one letter fails", {"\u0627.md": "plain\n"}, "PERSIAN-SCRIPT file name")
+np_case("a new commit message with one letter fails", {"b.md": "plain\n"}, "PERSIAN-SCRIPT commit", msg="note \u0627")
+np_case("a pull request title with one letter fails", {"b.md": "plain\n"}, "PERSIAN-SCRIPT pull request title", env={"PR_TITLE": "t \u0627"})
+np_case("a branch name with one letter fails", {"b.md": "plain\n"}, "PERSIAN-SCRIPT branch name", env={"HEAD_REF": "oco/\u0627"})
+
+# ---------- no-org-names: written variants (DR-0052) ----------
+_v = pathlib.Path(tempfile.mkdtemp()) / "variants.md"
+_v.write_text("a 49 G b\nFO\u200b49G\nForty Nine Group\nthe Founder\u2019s Office\nF049G\n49-G\n", encoding="utf-8")
+_r = sh(HUB, "bash", str(S / "no-org-names.sh"), "--lines", str(_v), check=False)
+results.append(("no-org-names: six written variants are flagged", len(_r.stdout.splitlines()) == 6, "6"))
+print(f"{'ok  ' if len(_r.stdout.splitlines()) == 6 else 'FAIL'} no-org-names: six written variants are flagged ({len(_r.stdout.splitlines())})")
+_g = pathlib.Path(tempfile.mkdtemp()) / "good.md"; _g.write_text("a disk of 49 GB\n", encoding="utf-8")
+_r = sh(HUB, "bash", str(S / "no-org-names.sh"), "--lines", str(_g), check=False)
+results.append(("no-org-names: a size in GB is not flagged", _r.stdout.strip() == "", "pass"))
+
+# ---------- links (DR-0052) ----------
+def ln_case(name, files, code=None):
+    d = repo()
+    for p, body in files.items():
+        (d / p).parent.mkdir(parents=True, exist_ok=True); (d / p).write_text(body, encoding="utf-8")
+    commit(d)
+    expect("links: " + name, sh(d, sys.executable, str(S / "check_links.py"), check=False), code)
+ln_case("a link to a file of the repository passes", {"a.md": "see [b](docs/b.md#x)\n", "docs/b.md": "b\n"})
+ln_case("a link to a missing file fails", {"a.md": "see [the guide](guide/OLD.md)\n"}, "LINK-DEAD guide/OLD.md")
+ln_case("a link in the list of superseded wording is not followed",
+        {"a.md": "body\n\n## Superseded wording, by version\n\n- [old](guide/OLD.md)\n"})
 
 # ---------- person-names (fictional name; the real list is never used here) ----------
 expect("person-names: selftest cases", subprocess.run([sys.executable, str(pathlib.Path(__file__).resolve().parent / "person_names_selftest.py")], capture_output=True, text=True))
