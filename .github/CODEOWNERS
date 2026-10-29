@@ -1,7 +1,10 @@
 # Code owners of 49GAION (hub). Documentation of who decides each path: the governing seat
 # (GOV) of 49GAION. Required code-owner review is not switched on, because the account that
-# opens pull requests is the account GOV merges with; the gate on main is GOV's recorded
-# approval plus the required checks, with no bypass actors on the main-protection ruleset.
+# opens pull requests is the account GOV merges with. The gate on main is GOV's merge of a
+# pull request whose required checks are green, with no bypass actors on the main-protection
+# ruleset. The checks that guard GOV's decisions are dr-frozen (a record never changes),
+# signature-types-floor (a type leaves the Human Floor list only by a record of GOV that names
+# it) and no-removal (the Human Floor's own sentences stay in the body) (DR-0052).
 /upstream/   @imanlab49
 /standards/  @imanlab49
 /decisions/  @imanlab49
