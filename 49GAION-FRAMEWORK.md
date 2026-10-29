@@ -1,8 +1,8 @@
 # 49GAION · the complete definition
 
-**Approved by the governing seat (GOV) of 49GAION on 25 October 2026 (DR-0041), clarified the same day (DR-0042) and written clean in `v2.0.0` (DR-0047); this is the text of `v2.1.0` (DR-0048).** This text brings the whole of 49GAION into one place, at the level of definition. Where any other text of 49GAION differs from it, this definition governs, and that text is read with it until it is brought into line. **The order of precedence:** this definition first, then the Standard with the Naming Standard, then every other text of 49GAION. The rules in detail stay in the Standard (`upstream/49GAION-UPSTREAM.md`), the Naming Standard, the Operating Protocol and the AIOC definition.
+**Approved by the governing seat (GOV) of 49GAION on 25 October 2026 (DR-0041), clarified the same day (DR-0042) and written clean in `v2.0.0` (DR-0047); this is the text of `v2.1.0` (DR-0048), with its test record brought up to date, and the Chief of Staff's grant written in, in `v2.1.1` (DR-0051).** This text brings the whole of 49GAION into one place, at the level of definition. Where any other text of 49GAION differs from it, this definition governs, and that text is read with it until it is brought into line. **The order of precedence:** this definition first, then the Standard with the Naming Standard, then every other text of 49GAION. The rules in detail stay in the Standard (`upstream/49GAION-UPSTREAM.md`), the Naming Standard, the Operating Protocol and the AIOC definition.
 
-**Its test.** The definition is complete when engines that read it cold, with no other context, can answer from it alone what 49GAION is, what makes it special, how it is carried out and whether it can be carried out (`references/2026-10-25-test-cold-read.md`). It passed on 25 October 2026; the test was run again on 26 October 2026 on the layered texts (raw record in `references/2026-10-26-test-cold-read-raw.md`) and on the clean text of `v2.0.0` (`references/2026-10-26-test-cold-read-v2-raw.md`). It is run again on this text before its release.
+**Its test.** The definition is complete when engines that read it cold, with no other context, can answer from it alone what 49GAION is, what makes it special, how it is carried out and whether it can be carried out (`references/2026-10-25-test-cold-read.md`). It passed on 25 October 2026; the test was run again on 26 October 2026 on the layered texts (raw record in `references/2026-10-26-test-cold-read-raw.md`) and on the clean text of `v2.0.0` (`references/2026-10-26-test-cold-read-v2-raw.md`). It was run again on this text on 28 October 2026, before its release, and passed (`references/2026-10-28-test-cold-read-v2-1-raw.md`, which records one deviation from rule 1: one reader was given a condensed copy).
 
 Sources: DR-0041, DR-0042, DR-0047, DR-0048.
 
@@ -174,7 +174,7 @@ These are 49GAION's names for the parts of an organisation. How many there are, 
 
 - **The AIOC (AI Operating Core) is the only unit kind:** an AI unit of one organisation, `[ORG]AIOC-[INITIALS]`. It may hold other AIOCs, to any depth; from outside it is one piece.
 - **Inside an AIOC:** a **Cell** is its smallest part, a fixed seat filled by AI or held as a human position, and what fills it can change; a **Pod** is a group of Cells that works as one. A human position is a Cell of human nature, carrying a HOAC label (see 18); who holds it is determined by the organisation's own mechanism (see 6).
-- **The Chief of Staff** is the part that leads an AIOC's agents and brings its human position what needs a decision; where one is not enough, several form an **Office**. Every human position has its own Chief of Staff. A Chief of Staff may order and summarise what reaches its human position; it never drops or delays any of it, and the raw record is always open to that position. The protected route of a report, an objection or a stop never passes through any AI, the core included (see 18).
+- **The Chief of Staff** is the part that leads an AIOC's agents and brings its human position what needs a decision; where one is not enough, several form an **Office**. Every human position has its own Chief of Staff, which the position sets up itself: it may grant it authority up to the right to sign for it, while the work the Human Floor keeps human stays with the position (DR-0051). A Chief of Staff may order and summarise what reaches its human position; it never drops or delays any of it, and the raw record is always open to that position. The protected route of a report, an objection or a stop never passes through any AI, the core included (see 18).
 - **Built like a puzzle:** every part has the same card shape and typed ports; any part can move from AI to a human position or back, and the Human Floor sets what must stay human.
 
 Sources: DR-0042, DR-0048.
@@ -267,5 +267,8 @@ Sources: DR-0048.
 - 18, the table: "**The governance seat:** a board, a board's representative or the owner; the top authority"
 - 18: "Authority flows down by delegation, and no one delegates more than they hold."
 - 20, item 8: "and it is made by someone other than the AI it constrains."
+
+**`v2.1.0`, superseded in `v2.1.1` (DR-0051):**
+- Its test: "It is run again on this text before its release."
 
 Powered by 49GAION

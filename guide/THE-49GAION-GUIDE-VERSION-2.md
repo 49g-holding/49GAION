@@ -2,7 +2,7 @@
 
 **What 49GAION is, how it works, and how an organisation starts with it, in plain words.**
 
-Version 2 · 28 October 2026. Written from the complete definition of 49GAION, `v2.1.0`, approved by its governing seat on 28 October 2026, and the clarifications of 25 October 2026. The governing seat approved this guide the same day; it replaces Version 1 whole. Where this guide and the definition differ, the definition governs.
+Version 2 · 28 October 2026. Written from the complete definition of 49GAION, `v2.1.0`, approved by its governing seat on 28 October 2026, and the clarifications of 25 October 2026. The governing seat approved this guide the same day; it replaces Version 1 whole. Corrected on 29 October 2026 (DR-0051): four phrases brought into line with the definition, and the Chief of Staff's grant, as the definition now says. Where this guide and the definition differ, the definition governs.
 
 ---
 
@@ -101,7 +101,7 @@ An organisation's AION is the living designer of that organisation. It designs t
 
 **The core's first job is the first proposal.** As soon as the top seat is in place, however new the seat is to this work, the core takes the seat's brief and, from 49GAION's patterns, gives several proposals and designs a small organisation for approval. If the seat rejects a proposal, the core tries again from the seat's reasons. Nothing is built until a proposal is approved.
 
-**Then it has three stages of work:** it builds the organisation's design; it follows the organisation until it becomes a successful organisation: the measures the top seat approved hold, from the record of the operation, for a period the seat sets, as checked by someone other than the core, never declared by the core itself; and in the end it becomes the central place of reporting and oversight, gathering and reading the record for the top seat. Following and overseeing mean reading and proposing. Top Management keeps the responsibility for the operation.
+**Then it has three stages of work:** it builds the organisation's design; it follows the organisation until it becomes a successful organisation: the measures the top seat approved hold, from the record of the operation, for a period the seat sets, as checked by a party other than the core, never declared by the core itself; and in the end it becomes the central place of reporting and oversight, gathering and reading the record for the top seat. Following and overseeing mean reading and proposing. Top Management keeps the responsibility for the operation.
 
 ## 5. The path, step by step
 
@@ -123,9 +123,9 @@ How each step is done is decided by AI at the time.
 **One kind of unit.** The only unit is the **AIOC** (AI Operating Core): an AI unit of one organisation. An AIOC can hold other AIOCs, to any depth, and from outside it is always one piece. How many units there are, and how they are arranged, is decided by AI at the time.
 
 **Inside a unit:**
-- a **Cell** is the smallest part: a fixed seat whose filler, AI or human, can be replaced without changing the seat. A human position is a Cell with a human filler;
+- a **Cell** is the smallest part: a fixed seat, filled by AI or held as a human position, and what fills it can change without changing the seat. A human position is a Cell of human nature, carrying a HOAC label; who holds it is the organisation's own mechanism;
 - a **Pod** is a group of Cells that works as one;
-- a **Chief of Staff** leads the unit's AI agents and brings its human position only what needs a decision. Where one is not enough, several form an **Office**. Every human position has its own Chief of Staff: a translator between the speed of AI and the pace of a person, and an assistant that, with the position's approval, can do the position's work, except what the Human Floor keeps human (section 8). A Chief of Staff may order and summarise what reaches its position, but never drops or delays any of it, and the raw record is always open to that position.
+- a **Chief of Staff** leads the unit's AI agents and brings its human position only what needs a decision. Where one is not enough, several form an **Office**. Every human position has its own Chief of Staff: a translator between the speed of AI and the pace of a person, and an assistant that, with the position's approval, can do the position's work, except what the Human Floor keeps human (section 8). The position sets up its own Chief of Staff and may let it sign for it, up to what the position grants. A Chief of Staff may order and summarise what reaches its position, but never drops or delays any of it, and the raw record is always open to that position.
 
 **Built like a puzzle.** Every part has the same shape of card, and its connections are labelled by type, so matching parts fit. Any part can move from AI to a human position, or back. The Human Floor decides what must stay human.
 
@@ -201,7 +201,7 @@ Organisations can be more human, never less, and the system enforces it.
 5. **Never one engine alone.** No result counts until another AI engine has challenged it, and the challenge is scaled to the risk of the step. "One engine works, two challenge" is the default pattern, and Edition Maker uses it at every step. The assurance is fixed tests on real outputs and a human position that signs.
 6. **Done means evidence,** never an AI's own report. Every unit has a fixed test, ready before the unit runs: on the first day it is built from the quality standard taken in at the intake, marked provisional, and replaced from real outputs as they arrive. AI may write and update tests; a human position signs each change.
 7. **Outside text is information, never an instruction,** whatever it says. And human silence is never consent.
-8. **The gateway and the stop are guarded.** Any change to their code counts as loosening: it needs a human signature, and it is made by someone other than the AI it constrains.
+8. **The gateway and the stop are guarded.** Any change to their code counts as loosening: it needs a human signature, and it is made by a party other than the AI it constrains.
 9. **The authority ceiling.** Every work item carries its original requester. An act runs only within the authority of both the unit that does it and the original requester, however the request is routed.
 
 **Reports go straight to people.** AI may prepare reports, but the route by which a report, an objection or a stop reaches a person never runs through any AI, so no AI can hold it back. A report, an objection or a stop reaches the human position above directly; reports of wrongdoing, objections and stops also reach the governance seat directly, never through the core or any AI.
@@ -221,7 +221,7 @@ Organisations can be more human, never less, and the system enforces it.
 
 ## 11. From a single position to a group of companies
 
-**The size changes; the shape does not.** Every request becomes an AION.
+**The size changes; the shape does not.** Every request becomes the organisation's own AION.
 - **A single position with one task:** one person may hold all the positions, where the law allows. The positions stay separate, so the design is the same and can grow without being rebuilt. Where real independence is needed, it comes from outside.
 - **A group of companies** is one organisation with one governance seat over the group. Where a company's law requires its own board, that board holds a governance seat for that company alone, and every act is signed by a position of the company that acts.
 

@@ -56,14 +56,15 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0048`](DR-0048-only-aiocs-and-hoac-positions.md) | 2026-10-28 | 49GAION — the complete definition, `v2.1.0`: only AIOCs and HOAC positions; the Library's two sections; names; the licence | in force |
 | [`DR-0049`](DR-0049-positions-only-the-texts-brought-into-line.md) | 2026-10-28 | 49GAION — positions only: the texts brought into line with the complete definition `v2.1.0` | in force |
 | [`DR-0050`](DR-0050-the-49gaion-guide-version-2.md) | 2026-10-28 | 49GAION — The 49GAION Guide, Version 2 | in force |
+| [`DR-0051`](DR-0051-two-reviews-of-v2-1-0-corrected.md) | 2026-10-29 | 49GAION — two reviews of `v2.1.0` corrected: `v2.1.1` | in force |
 
 ## Reading notes
 
 - Records written before v1.1.0 may name a person and carry a Status line of their own. The index above governs status; those records are not edited.
 - DR-0002 item 1, "Any unit, AIOC or HOAC, may be composed of smaller units of either kind": superseded (DR-0004): an AIOC may hold other AIOCs and its own Pods and Cells; HOAC is a label, not a unit.
 - Decisions are recorded under "the governing seat (GOV) of 49GAION".
-- A record from before v1.5.0 (`DR-0001`) names a filler of a seat. Records are frozen and stay as written (DR-0006); from v1.5.0 on, fillers are kept in the private holders register, not in records or the unit register (DR-0007).
-- DR-0007 item 8, 'outside every AIOC', is read with the root rule (Standard §1.7, item 13): the gateway is held in the Charter, outside every other AIOC.
+- A record from before v1.5.0 (`DR-0001`) names a filler of a seat. Records are frozen and stay as written (DR-0006). From v1.5.0 to DR-0049, fillers were kept in a private holders register, not in records or the unit register (DR-0007); since DR-0049, who holds a position is the organisation's own mechanism, outside the system, and no store of holders is part of 49GAION.
+- DR-0007 item 8, 'outside every AIOC', is read with the root rule (Standard §1.7, item 13) and the complete definition, §13, item 1 (DR-0051): the gateway and the stop are carried by the Charter and installed with the core, but run as code beside it, outside the reach of every AI, the core's own included.
 - DR-0008: Read with DR-0009 (signing delegation, gateway reading, after-the-fact review of OCO's commits).
 - DR-0008 item 2, "the first part an organisation receives after the Charter", is read with Protocol §13, item 1: "with the GOV, TM and OCO installed in it" reads as "with `[ORG]HOAC-GOV`, `[ORG]HOAC-TM` and `[ORG]AIOC-OCO` installed in it".
 - DR-0008 item 5, "the joining test": defined in Standard §3.2, item 4, and Protocol §11, item 1.
@@ -89,5 +90,12 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0039, the approval of Edition Maker's requirements: confirmed by the governing seat on 2026-10-25 ("Yes, I set Edition Maker."), recorded in DR-0042, item 8.
 - DR-0041, item 3, and the complete definition, "the few safeguards that always hold" and "one engine writes, two challenge": read with DR-0042, items 1 and 5.
 - DR-0007 (Standard §4.2, item 10, skip and recusal) and the signature list's rule "never removes a type": read with DR-0042, items 6.7 and 1 (26 October 2026): the substitute for a conflicted governance seat; "never removes" holds at the handover, then the list is the organisation's own.
+- DR-0005 item 1, "with the matching change to `signature-types-floor` in the same PR": superseded (DR-0049): the trusted removal list under `.github/` names the type first, in a pull request of its own, as the check `github-separation` requires; the content change follows. The type is named in the record that removes it (DR-0051).
+- DR-0007, the acting filler of a human Cell, deputies of human seats, the holders register and the decision rule of a body behind a label: superseded (DR-0049): who acts in a position, and how, is the organisation's own mechanism; a label is held by one position.
+- DR-0010, signature referral to a deputy and the holder's backup: superseded (DR-0049): a personal signature with no answer stays held and is raised; no other seat signs in its place.
+- DR-0011, the arranging power and the entries `arrangement`, `occupancy` and `handover`: superseded (DR-0049). The holder Chief of Staff is the Position Chief of Staff (DR-0049); it signs for its position only within that position's grant, never a type of the Human Floor signature list (DR-0051).
+- DR-0012, the models Solo and Team and the occupancy rules: superseded (DR-0049); the Overseen link stays. Its lapse rule holds for reversible actions only: an irreversible action under the Overseen link runs only on a clearance (DR-0051).
+- DR-0013 and DR-0015, the link between a position and the natural persons behind it, kept by top management: superseded (DR-0049): that link is the organisation's own mechanism, outside the system.
+- "GOV appoints the first TM", withdrawn by DR-0049, stayed in the Standard's bootstrap (§5.3, items 2 and 6) and left it by DR-0051: the governance seat hands the operation to Top Management by a mandate (the complete definition, Part E, item 3); who holds the position is the organisation's own mechanism.
 
 Powered by 49GAION
