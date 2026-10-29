@@ -568,6 +568,7 @@ Sources: DR-0007, DR-0041.
 | **Live** | Of an AI-native organisation: its design and configuration are given to AI inside it, its `[ORG]AION`, which keeps them current as AI improves, with open access to the 49GAION Library, while a human seat decides; never a system designed and configured elsewhere and installed as it is (§1.1, item 2) (DR-0037) |
 | **AIOC / `[ORG]AIOC-*`** | AI Operating Core: an AI unit of one organisation; its code carries the organisation's brand prefix |
 | **HOAC / `[ORG]HOAC-*`** | Human Oversight & Accountability Control: a label of human accountability on a Cell, a Pod or an AIOC, at any depth; kinds GOV, TM, ACS (§4.1) |
+| **HOAC Assignment Model** | How an organisation assigns its HOAC positions to people: a feature of its Top Management Group, defined, recorded and kept only there, and set by each organisation; no other AIOC, no AI and no part of 49GAION reads it or depends on it (DR-0051) |
 | **Human Oversight & Accountability Centre** | Superseded by DR-0004; see HOAC |
 | **Cell / `[ORG]CELL-*`** | The smallest part of an AIOC's Blueprint; nothing sits inside it; a fixed seat filled by AI or held as a human position (§1.7) (DR-0049) |
 | **Pod / `[ORG]POD-*`** | A group of Cells inside an AIOC's Blueprint; never holds a Pod; seen from outside like a Cell (§1.7) |
