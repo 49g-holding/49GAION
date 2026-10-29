@@ -22,6 +22,8 @@ An empty seat returns accountability to whoever delegated it, suspends any AI au
 
 **Correction (2026-10-13, DR-0007).** The GOV row above was corrected to seat only under DR-0007: it names the seat, the governing seat (GOV) of 49GAION, and no filler. Fillers are kept in the private holders register (see Holders below).
 
+**Correction (2026-10-29, DR-0052).** The GOV row and the correction note above name the private holders register, which DR-0049 withdrew. They stay as written (append-only). From DR-0049 on, they read: the GOV row names the seat, and who holds it is the organisation's own mechanism, outside the system and outside every repository (Standard §4.4, item 3); its Filler cell reads "held".
+
 ## Events
 
 | Code or seat | Event (filler change, parent change, retirement; `connected` or `disconnected` for an external port) | From | To | Approved by | Date | Record |
@@ -57,7 +59,7 @@ The register records these events (DR-0007), each with its date, the signature I
 
 ## Holders
 
-Who holds a human Cell is kept by the organisation's own mechanism, outside the system and outside every repository; the unit register carries structure only (Standard §4.4, item 3; DR-0049). Until DR-0049, names of fillers were kept in a separate holders register keyed by Cell code, in a private store outside this repository. The GOV row was corrected to seat only on 2026-10-13 (DR-0007); its filler is kept in the holders register.
+Who holds a human Cell is kept by the organisation's own mechanism, outside the system and outside every repository; the unit register carries structure only (Standard §4.4, item 3; DR-0049). Until DR-0049, names of fillers were kept in a separate holders register keyed by Cell code, in a private store outside this repository. The GOV row was corrected to seat only on 2026-10-13 (DR-0007) and is read by position since DR-0049 (correction of 2026-10-29, DR-0052).
 
 Columns: **Seat** (name of the seat), **Code** (the fixed code of the AIOC, Pod or Cell; Naming Standard R14, R15), **Kind** (AIOC, POD, CELL), **Type** (the card type, from the organisation's open list), **HOAC** (GOV, TM, ACS or none), **Parent** (the code of the part that holds it, or `none` at the top), **Filler** (for an AI Cell, the agent; for a human Cell, "held" or "empty", never a person; for a Pod or AIOC, "none"; DR-0049), **Filler kind** (human or AI), **Delegated by** (the seat that delegated it, and what was delegated), **Date** (from), **Record** (decision record and quote ID), **Status** (Filled, Empty, Active, Retired; Ended, the earlier name, equals Retired).
 
@@ -75,3 +77,8 @@ Columns: **Seat** (name of the seat), **Code** (the fixed code of the AIOC, Pod 
   For every entry added from v1.5.0 on, names of fillers are kept in a separate holders register keyed by Cell code, in a private store outside this repository; the unit register carries structure only, and points to that store by its location (Standard §4.4, item 3).
 - **Columns, Filler** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
   **Filler** (person, agent, or "empty"; for a Pod or AIOC, "none")
+
+**`v2.1.1` (DR-0052).**
+
+- **Holders, the GOV row** · superseded by DR-0052 (a correction to DR-0049; the complete definition, §6):
+  The GOV row was corrected to seat only on 2026-10-13 (DR-0007); its filler is kept in the holders register.

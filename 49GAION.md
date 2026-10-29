@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v2.1.0` · approved by the governing seat (GOV) of 49GAION.** This page is the short entry to 49GAION: what it is, why it exists and how it is shown, in a few lines each, with the way to the full texts. The complete definition is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md); the rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`) with the Naming Standard. Where texts differ, the order of precedence is the complete definition, then the Standard with the Naming Standard, then every other text, this page included (DR-0041, DR-0042). The plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-1.md) (DR-0043).
+**Version `v2.1.1` · approved by the governing seat (GOV) of 49GAION.** This page is the short entry to 49GAION: what it is, why it exists and how it is shown, in a few lines each, with the way to the full texts. The complete definition is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md); the rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`) with the Naming Standard. Where texts differ, the order of precedence is the complete definition, then the Standard with the Naming Standard, then every other text, this page included (DR-0041, DR-0042). The plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-2.md) (DR-0050).
 
 ## 1. The definition
 
