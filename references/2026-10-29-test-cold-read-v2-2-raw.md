@@ -1,6 +1,6 @@
 # TEST-COLD-READ v1 · the complete definition `v2.2.0` · raw record · 29 October 2026
 
-The test of `references/2026-10-25-test-cold-read.md`, run on the complete definition before the release of `v2.2.0` (`49GAION/DR-0053`, item 7). Run by the AI hub through the station's reviewer relay, 02:45 to 03:42 UTC, in four rounds: the first on the text of `v2.1.1` as prepared, the second and third on corrected drafts, the fourth on the text of this release.
+The test of `references/2026-10-25-test-cold-read.md`, run on the complete definition before the release of `v2.2.0` (`49GAION/DR-0053`, item 7). Run by the AI hub through the station's reviewer relay, 02:45 to 05:54 UTC, in five rounds: the first on the text of `v2.1.1` as prepared, the second and third on corrected drafts, the fourth on the text with DR-0051 written in, the fifth on the text of this release, with the governing seat's ruling of that morning on the Chief of Staff and on the record of the HOAC Assignment Model written in (`49GAION/DR-0053`, items 11 and 12).
 
 **The numbers of the records.** In rounds 1 to 3 the inputs named two records by the numbers they had while they were prepared: the two reviews of `v2.1.0` as DR-0051, and the review room's designs as DR-0052. Between rounds 3 and 4 the governing seat merged another record first, the HOAC Assignment Model, which took DR-0051; the two records then took DR-0052 and DR-0053. The answers below are kept verbatim, with the numbers their inputs carried; this record's own text uses the numbers as merged.
 
@@ -8,7 +8,7 @@ The test of `references/2026-10-25-test-cold-read.md`, run on the complete defin
 
 - **The input.** One prompt: the eleven questions of the test, its instructions, and the body of the definition, Parts A to F, with its opening and its test paragraph and without the annex "Superseded wording, by version". Every reader of a round was given the same input, byte for byte; each input is named by its SHA-256 below, and the hash of each prompt as sent was checked against it from the session's own log.
 - **Readers.** Four engines from four providers, each cold, with no other context: `openai / gpt-6.1-sol`, `claude / claude-opus-5-5` (a fresh instance of the engine that wrote the text), `gemini / gemini-4-argon` and `grok`. The reply limit was 8,000 tokens, except where noted.
-- **Grok.** In rounds 1 and 3 its call passed the relay's 60-second limit with no answer, as on 28 October 2026; it was not asked again in round 4. It gave no answer in this test.
+- **Grok.** In rounds 1 and 3 its call passed the relay's 60-second limit with no answer, as on 28 October 2026; it was not asked again in rounds 4 and 5. It gave no answer in this test.
 - **The judgment.** A reader's last line is its own verdict and is kept as written. Each point a reader raised is judged below: changed in the text, or not a gap, with the reason. The governing seat may judge otherwise.
 
 | Round | Text | Input SHA-256 |
@@ -16,9 +16,10 @@ The test of `references/2026-10-25-test-cold-read.md`, run on the complete defin
 | 1 | the definition `v2.1.1` as prepared, before DR-0051 | `3120408356c1bf212afc2b5cc2d099854913d9a4fc9860ffa0513814f6cbe0f0` |
 | 2 | a draft with the first corrections | `3bc391373b648a9628cda4faac51a9cc639c727e5411c1c3964b2d1c1fac2ad2` |
 | 3 | a draft with the second corrections | `9f3ad7c21c27a70c133f7e7f155259e0fb2445fa511c186e6f44abe49df08383` |
-| 4 | the definition `v2.2.0` as released, with DR-0051, except its test paragraph | `ad3c7f10816e859e85d3d6534a133ec1b3d9b262c264b87aa31920075fa31dee` |
+| 4 | a draft with DR-0051 written in | `ad3c7f10816e859e85d3d6534a133ec1b3d9b262c264b87aa31920075fa31dee` |
+| 5 | the definition `v2.2.0` as released, with DR-0053, items 11 and 12, except its test paragraph | `135ae1e6f7fa50f54b4fe865f9cee971495576d8d03543f5cca678e454628dd8` |
 
-The released text differs from the input of round 4 in one place: its test paragraph, which now records this result.
+The released text differs from the input of round 5 in one place: its test paragraph, which now records this result.
 
 ## Result: PASS
 
@@ -66,7 +67,7 @@ Every reader answered questions 1 to 10 from the text, with section citations, a
 4. **What happens to the operation when the gateway fails closed** (`claude`). Left on purpose: "if it fails, no AI acts" is the safeguard itself (§20, item 3), a stop is never blocked, and how the organisation recovers is its own and its AI's at the time.
 5. **A reading note** (`claude`, the call that was cut off): 49GAION "records" an organisation's own work (§11, item 2) while it keeps no data of the organisation (§10, item 7). Not a conflict: item 2 is about attribution, how a work is shown, not about keeping the organisation's data.
 
-### Round 4, on the text of `v2.2.0` as released
+### Round 4, on the text with DR-0051
 
 Before round 4 the governing seat's record DR-0051, the HOAC Assignment Model, was merged into the hub and written into the complete definition (§6, item 4; Part F). Round 4 reads the text with it.
 
@@ -81,10 +82,27 @@ Every reader answered questions 1 to 10 from the text, with section citations, a
 3. **Evidence that it works in operation** (`openai`). Not a definition matter: the Standard (§1.8, DR-0053) says that a text proves nothing by itself and that every claim reads "unverified" until an implementation's own trace passes and one end-to-end acceptance run is judged.
 4. **Who owns 49GAION** (`claude`). Not a gap: §11, item 5, points to `LICENSE.md`, which names the owner.
 5. **The range of assignment models** (`gemini`, `claude`). Left on purpose by the governing seat: DR-0051, item 6, makes the assignment protocol future work of the Top Management Group.
-6. **Where the record of the HOAC Assignment Model lives** (`claude`). §6, item 4, keeps it in the Top Management Group, as an internal human matter that no AI reads; §1, item 5, says that no person and no person's name is recorded in the system; §6, item 2, places the organisation's mechanism for its human side outside the system. DR-0051 keeps both and says so in its relation to DR-0048. The text does not say in so many words whether that record is part of the system. **Raised to the governing seat;** the AI hub does not change the wording of DR-0051, and the assignment protocol of DR-0051, item 6, is the natural place to settle it.
+6. **Where the record of the HOAC Assignment Model lives** (`claude`). §6, item 4, keeps it in the Top Management Group, as an internal human matter that no AI reads; §1, item 5, says that no person and no person's name is recorded in the system; §6, item 2, places the organisation's mechanism for its human side outside the system. DR-0051 keeps both and says so in its relation to DR-0048. The text does not say in so many words whether that record is part of the system. **Raised to the governing seat;** the AI hub does not change the wording of DR-0051. The seat settled it the same morning: the record is kept on the human half of the Top Management Group (DR-0053, item 12); §6, item 4, now says so, and round 5 reads it.
 7. **49GAION's liability for a faulty edition** (`claude`). Not a gap: a commercial and legal term, outside the definition.
 
-**Verdict of the record:** PASS, with one point raised to the governing seat (item 6 of round 4). What 49GAION is, what makes it special, how it is carried out and whether it can be carried out are answered from the text alone by every reader that answered; no point left open is one the definition must close without the governing seat's word.
+### Round 5, on the text of `v2.2.0` as released
+
+Before round 5 the governing seat ruled on the Chief of Staff and on the record of the HOAC Assignment Model (`49GAION/DR-0053`, items 11 and 12), and both were written into the complete definition (§6, item 4; §7; §16; §20, item 3). Round 5 reads the text with them.
+
+- `gemini`: VERDICT COMPLETE.
+- `openai`: VERDICT GAPS, two points.
+- `claude`: VERDICT GAPS, three points.
+
+Every reader answered questions 1 to 10 from the text, with section citations, and the three agree in substance on each, the Chief of Staff's grant included: a position may give its own Chief of Staff any reach, up to signing a listed decision, and what the Chief of Staff signs under it is the position's own decision. The points raised, judged:
+
+1. **How a request is brought today** (`openai`, `claude`). Not a gap: §10, item 1, points to `ADOPTING.md`, which holds it.
+2. **The full list of listed types** (`openai`). Not a gap: §20, item 3, says what a listed decision is and what the list holds at the handover; the list itself stays in the Standard (`upstream/human-floor-signature-types.json`).
+3. **The range of assignment models** (`claude`). Left on purpose by the governing seat: DR-0051, item 6.
+4. **Where the record of the HOAC Assignment Model is kept before the Top Management Group is formed** (`claude`). Not a gap: §6, item 4, places the record in the organisation's own mechanism for its human side (§6, item 2), which operates outside the system from the start; once the Top Management Group is formed, its human half keeps it.
+5. **Concentration of authority, with one person in every position and a Chief of Staff of full reach** (`claude`, `openai`, as a risk). A risk the governing seat took on purpose (DR-0053, item 11), and the text answers it: each grant is signed by the position with a fresh live sign-in and revocable at once (§16); the decision and the accountability stay the position's (§7, §16); the stop and the protected routes never pass through any AI (§16, §20); and where the law or a check needs independence it is held by a position independent in fact (§6, item 3).
+6. **Liability, price and service terms** (`claude`). Outside the definition.
+
+**Verdict of the record:** PASS. The one point raised to the governing seat (item 6 of round 4) was settled by the seat (DR-0053, item 12). What 49GAION is, what makes it special, how it is carried out and whether it can be carried out are answered from the text alone by every reader that answered; no point left open is one the definition must close without the governing seat's word.
 
 ## The raw answers
 
@@ -1113,6 +1131,248 @@ Yes. Every request, from a single position with one task to a group of companies
 §1.5, §6.4, §10.1, §11.5, §20.3
 
 ---
+
+VERDICT: GAPS
+
+### Round 5 · input `135ae1e6f7fa50f5…`
+
+#### Reader 1 · gemini / gemini-4-argon · 05:50 UTC
+
+[gemini / gemini-4-argon]
+
+**1. What is 49GAION, in two sentences, and what exactly does an organisation receive from it?**
+49GAION is an organisation design framework for building live, AI-native organisations from interchangeable AI and human parts. Instead of installing a static, pre-configured design, it delegates ongoing organisational design and adaptation to the organisation's own AI, while keeping authority and accountability in legal human positions. 
+
+An organisation receives its own independent `[ORG]AION`—starting as a "core" AIOC made from the 49GAION Charter. This package includes the governance panel, the external tool gateway and stop mechanisms, the first version of the organisation's own Standard and Blueprint (incorporating its founding configuration and musts), and open access to the 49GAION Library. *(Sections 1, 3, 4, 10, 12, 13, Part E)*
+
+**2. What makes it special: what does it do that a conventional way of designing an organisation, or of adding AI to one, does not?**
+Conventional methods start with human jobs and bolt AI onto structures built around human limits (e.g., short memory, fatigue, single skills). 49GAION is "AI-native": it starts from the desired output and what AI can do, adding humans only where needed for power, gaps, and accountability. It replaces human-limit structures with one complete record, continuous multi-skill AI units, a shared work queue, and AI that brings humans only decisions. Furthermore, it is "live"—the organisation's own `[ORG]AION` continuously designs and reconfigures it as AI improves—and it records only legal human positions (`HOAC`), never natural persons or names, inside the system. *(Sections 1, 3, 4, 5, 6)*
+
+**3. How does an organisation start with it: step by step, from the first request to a running operation?**
+1. **Request & Intake:** The request goes to 49GAION Edition Maker (led by a human edition engineer, using a three-engine challenge rule) to capture identity, outputs, musts, and founding configuration.
+2. **Handover:** Edition Maker forms the `[ORG]AION` core. The governance seat accepts it, issues fresh gateway keys, and 49GAION revokes its keys and deletes intake data.
+3. **First Proposal:** The core takes the governance seat's brief and proposes a small initial organisation; the seat approves (or rejects for re-proposal).
+4. **Mandate:** The governance seat delegates the operation to Top Management within a defined resource/cost envelope.
+5. **Operation:** The Top Management Group builds and runs the operation, sending achievements back to governance. *(Sections 10, 13, 15, 19, Part E)*
+
+**4. How is it carried out in practice: which parts must exist, what does each do, and who builds them?**
+- **The Core (`[ORG]AION`):** Built by Edition Maker from the 49GAION Charter. Holds the governance seat (`[ORG]HOAC-GOV`), governance panel, and the organisation's Standard, Blueprint, and Library. It designs the organisation, proposes adaptations, and oversees reporting.
+- **Gateway and Stop:** Delivered with the core by Edition Maker, running as code outside all AI. The gateway holds credentials, logs calls, and enforces signatures; the stop revokes credentials and halts units.
+- **Top Management Group:** The first AIOC under the core, holding `[ORG]HOAC-TM`. It builds, plans, and runs all operational units (AIOCs, Pods, Cells) and tools.
+- **Panels and Back Offices:** Built for every AIOC from its versioned blueprint (using Library patterns) for task control and AI workspace chat, covering each other if one fails. *(Sections 10, 12, 13, 16, 17, 18, 19, 20)*
+
+**5. Who decides what: the governance seat, Top Management, the organisation's `[ORG]AION`, and the AI units? What can AI never do?**
+- **Governance Seat (`[ORG]HOAC-GOV`):** Decides purpose, strategy, success measures, capital/resource balance, risk appetite, human-side mechanisms, rule/design approvals (or sets a standing "dial" for reversible, non-widening changes), and exercises veto/stop powers.
+- **Top Management (`[ORG]HOAC-TM`):** Decides operational execution and builds operational units within its mandate's envelope.
+- **`[ORG]AION` (Core):** Never runs operations; it proposes designs/changes, applies small changes within a signed dial, and may reject proposals on its own (since rejecting opens nothing).
+- **AI Units / Chief of Staff:** Execute within granted authority. A Chief of Staff may act and sign for its human position under a signed grant, which legally remains the human position's decision.
+- **What AI can never do:** Hold legal personhood or accountability, fill a Human Floor role (HF-01 to HF-19), widen its own authority/budget/access, alter the gateway/stop code, or intercept direct human reports, objections, or stops. *(Sections 3, 6, 7, 12, 13, 14, 15, 16, 18, 20)*
+
+**6. How does a human stay in control and accountable?**
+Every output and decision rests on a legal human position (`HOAC`). The Human Floor (HF-01 to HF-19) reserves critical functions—accountability, oversight, root keys, audit, and stopping—exclusively to humans. Control is enforced by hard technical safeguards outside AI's reach: a single fail-closed tool gateway (requiring valid signatures with fresh live sign-ins for listed decisions or authority widening) and external stop doors on every unit. AI acts only within explicit grants and the original requester's authority ceiling; human silence is never consent. Reports, objections, and stops bypass all AI to reach human positions directly, and human words are recorded separately from AI text in rule changes. *(Sections 3, 6, 7, 13, 14, 15, 16, 18, 20)*
+
+**7. How does it stay current as AI improves, and how does the organisation grow or shrink over time?**
+49GAION leaves operational details to AI at the time rather than freezing them in advance. The `[ORG]AION` continuously monitors 49GAION's central Standard, Blueprint, and Library for updates, and also receives internal operational achievements from Top Management and proposals from any unit, proposing upgrades to the governance seat. 
+
+The organisation grows or shrinks through **Structural Adaptation**: it starts small with multiple processes sharing one AIOC. The `[ORG]AION` monitors operational records against costs; when a process outgrows its AIOC, it proposes splitting it into a new AIOC, and when work shrinks, it proposes merging units (never merging a part with the part that checks it). A human position decides every change. *(Sections 4, 8, 12, 14, 15, 19)*
+
+**8. What does the organisation own, what stays with 49GAION, and when is a product "Powered by 49GAION"?**
+- **Organisation owns:** Its `[ORG]AION`, its own Standard, Blueprint, and Library (its IP), its working data, operational records, and any copies taken from the 49GAION Library. At handover, 49GAION revokes its keys and deletes intake data.
+- **Stays with 49GAION:** The 49GAION framework, Edition Maker, its central Standard, Blueprint, Protocol, Library, and its unlicensed names/marks (texts are CC BY 4.0; code is Apache 2.0).
+- **"Powered by 49GAION":** Under 49GAION's rule, if an organisation uses even a single 49GAION idea, Library part, blueprint, or Standard, all its products are "Powered by 49GAION" (which in practice is always, as everything built rests in part on 49GAION). *(Sections 8, 9, 10, 11, 12, 14)*
+
+**9. Does the same framework fit one person with one task and a group of companies? How?**
+Yes. Every request to Edition Maker becomes an `[ORG]AION`—"the size changes, the shape does not." Because the system deals strictly with legal human positions (`HOAC`) rather than natural persons, one person can hold every distinct HOAC position in a single-task setup (recorded outside AI in the Top Management Group's HOAC Assignment Model, except where factual independence is required, like internal audit). Conversely, a group of companies operates as one organisation under one group governance seat, with local governance seats added for individual subsidiary companies where the law requires, and AIOCs nesting to any depth via Structural Adaptation. *(Sections 6, 10, 12, 15, 16, Part F)*
+
+**10. Is it executable? The three strongest reasons it can work and the three biggest risks, and whether the text answers each risk or leaves it to the organisation's AI on purpose.**
+Yes, it is executable.
+- **Three reasons:** (1) Bootstrapping from a rich Library (49GAION Charter, patterns, templates) rather than a blank slate; (2) Hard technical containment (external fail-closed gateway, non-AI stop doors, multi-engine challenges); (3) Modularity (uniform typed ports/cards, dual panel/back-office interfaces that cover each other).
+- **Three risks & text's response:** 
+  1. *Over-delegation to a Chief of Staff (rubber-stamping listed decisions):* Answered by the text via HF-01/Section 16 (strict human legal accountability remains, fresh sign-in required for the grant, instant revocability) and left to the human's discretion.
+  2. *Single-person holding all positions compromises checks:* Answered by the text (Section 6.3/HF-19 require factually external independent holders where law or checks demand independence, and Section 15.8 blocks conflicted governance signatures at the gateway).
+  3. *Granular technical orchestration of APIs/ workflows:* Left on purpose to the organisation's AI at the time (Section 4) and upstream technical standards. *(Sections 4, 6, 7, 9, 13, 15, 16, 17, 20)*
+
+**11. What would a new organisation ask that the text cannot answer?**
+At the level of a complete framework definition (excluding commercial terms and matters intentionally left to the organisation's AI at the time), there are no missing conceptual answers. For practical execution, a new organisation would ask operational and legal onboarding questions that the text explicitly points to external documents to answer:
+1. **Practical onboarding steps:** How to submit the initial request today (pointed to `ADOPTING.md`, Section 10.1).
+2. **Exact technical specifications and schemas:** Detailed rules for cards, ports, and protocols (pointed to `upstream/49GAION-UPSTREAM.md`, Naming Standard, Operating Protocol, and AIOC definition, Preamble).
+3. **Human-side assignment options:** The range of possible HOAC assignment models (left to a separate Top Management Group protocol "to be defined later", Section 6.4) and full license owner details (`LICENSE.md`, Section 11.5).
+
+VERDICT: COMPLETE
+
+#### Reader 2 · openai / gpt-6.1-sol · 05:53 UTC
+
+[openai / gpt-6.1-sol]
+
+1. **What it is and what the organisation receives.**  
+49GAION is an organisation-design framework for assembling AI-native organisations from interchangeable AI units and human legal positions, starting with the required output rather than existing jobs (§§1–3). The organisation receives its own independent, living `[ORG]AION`: a governance-level core linked to 49GAION’s knowledge, initial organisation-specific Standard and Blueprint, its own Library, and the gateway and stop—not a finished operational design (§§10, 12–13; Part E).
+
+2. **What makes it special.**  
+It designs backwards from outputs and AI capabilities, adding humans where needed rather than adding AI to existing human jobs. Its organisation-specific AI continually redesigns the organisation using reusable Library parts, operational evidence and improving AI capabilities; humans approve changes. Design and governance remain separate from operational execution, while modular units can split, merge or change between AI and human provision subject to human-only duties. These are the text’s stated distinctions, not evidence that no conventional approach shares individual features (§§3–5, 12, 15–16).
+
+3. **How an organisation starts.**  
+1. Submit a request to Edition Maker.  
+2. Under a human edition engineer, supply purpose, governance, outputs, quality, constraints, resources and founding settings; each production step receives two independent engine challenges.  
+3. Receive the core, initial rules, gateway and stop.  
+4. Governance accepts the edition; keys rotate and Edition Maker deletes organisational data.  
+5. The core proposes a small organisation; governance approves or requests revision.  
+6. Governance mandates Top Management.  
+7. Top Management builds and runs the operation, with fixed tests ready before work begins.  
+
+The actual submission channel is **NOT IN THE TEXT**; §10.1 refers to `ADOPTING.md` (§§10, 13, 15, 19–20; Part E).
+
+4. **Required parts, functions and builders.**  
+49GAION supplies its Standard, Blueprint, Library, Protocol and Edition Maker. Edition Maker, supervised by the human edition engineer, delivers the governance core and initial safeguards. The core holds governance, organisational rules, Library and governance panel; `[ORG]AION` designs and proposes. The Top Management Group builds and runs operations. Operational parts are AIOCs containing Cells or Pods, with Chiefs of Staff serving human positions. Each AIOC has a versioned blueprint, coded panel, AI-workspace back office and API-connected engines. The gateway and stops run outside AI; changes to their code require a human signature and a party other than the constrained AI (§§8–10, 13, 16–20).
+
+5. **Who decides what; AI’s limits.**  
+Governance retains purpose, strategy, success measures, risk appetite, capital, resource balance and ultimate authority; it approves organisational changes and delegates operations. Top Management runs operations within its mandate, seeking governance approval beyond its envelope. `[ORG]AION` designs, reviews, proposes and oversees—it never runs operations. AI units execute authorised work. AI cannot hold human positions, assume legal accountability, originate authority or exceed grants. A position’s own Chief of Staff may nevertheless sign—even listed decisions—under an expressly signed grant; the text attributes those acts to the human position, not independent AI decision-making (§§6–7, 12, 14–16, 18–20).
+
+6. **Human control and accountability.**  
+Every output has an accountable human position. Delegation has explicit limits; governance can veto, replace decisions, revoke mandates or stop operations. External gateways enforce authority and signatures; human-controlled stops revoke credentials without passing through AI. Reports, objections and stops have direct human routes, supported by independent audit and report checking. Humans approve tests and rule changes, with decision histories preserved. Each Chief-of-Staff grant requires fresh human sign-in and is revocable, although individual acts under a standing grant need not receive fresh human approval. These safeguards are handed over complete; subsequent stewardship belongs to the organisation (§§3, 7, 14–16, 18, 20).
+
+7. **Keeping current; growing and shrinking.**  
+`[ORG]AION` watches improvements in 49GAION’s Standard, Blueprint and Library, proposes adoption, and learns from operational achievements recorded in the organisation’s own rules and Library. Governance decides what enters; a signed dial can pre-authorise limited reversible changes that do not widen authority, access or budget. Structural Adaptation starts with shared processes, proposes separate AIOCs when work grows, and mergers when it shrinks, weighing costs and never merging a function with its checker. Top Management implements approved operational arrangements within its mandate (§§4, 12.5, 14–15, 19).
+
+8. **Ownership and attribution.**  
+The organisation owns its `[ORG]AION`, records and organisation-specific Standard, Blueprint and Library; copied upstream material remains under its applicable licence. It controls disclosure and optional contributions back. 49GAION retains its framework, central Library and Edition Maker—not organisational access or data after handover. Texts use CC BY 4.0, code Apache 2.0; names and marks are not licensed. Under 49GAION’s stated rule, using even one idea or component makes all the organisation’s products “Powered by 49GAION,” including after modification; the text expressly distinguishes that broader rule from enforceable licence terms (§§10.7, 11–12, 14).
+
+9. **One task through a corporate group.**  
+Yes. Every request produces an `[ORG]AION`; scale changes, the basic shape does not. A small operation can share processes within one AIOC, and one person may hold multiple distinct human positions where lawful. Required independence must remain real, using an outside holder when necessary. Larger organisations nest AIOCs and split or merge them as needs change. A corporate group has group governance, while companies retain their own governance seats where legally required, and acts are signed by positions of the acting company (§§6, 10.1, 12.6, 15–16).
+
+10. **Executability: three strengths and three risks.**  
+**Executable in principle, not demonstrated operationally here.**
+
+**Three strongest reasons:**  
+- A defined delivery-to-operation sequence assigns builders and decision-makers (§§10, 13, 19; Part E).  
+- Versioned modular parts, interfaces and tests support assembly (§§8–9, 16–17, 20).  
+- External gateways, stops and bounded mandates constrain execution (§§15, 20).
+
+**Three biggest risks:**  
+- Confident or correlated AI errors: addressed through challenges, output tests and human judgment, not eliminated (§§3, 20).  
+- Concentrated human authority or broad Chief-of-Staff grants: addressed through grants, revocation, independent checks and conflict rules; residual risk remains (§§6–7, 15–16).  
+- Integration, security and supplier failures: partly addressed by gateways and fallback interfaces; implementation details deliberately belong to organisational AI (§§3–4, 17, 20).
+
+11. **What newcomers could ask that this text cannot answer.**  
+- “Where exactly do I send my first request, and what are today’s submission instructions?” **NOT IN THE TEXT**: §10.1 sends readers to `ADOPTING.md`.  
+- “What is the complete baseline list of decision types requiring gateway signatures?” **NOT IN THE TEXT**: §20.3 incorporates 49GAION’s own list without reproducing it; §7 supplies Human Floor categories but not that complete list.
+
+By contrast, the eventual architecture, configurations, workflows and unit count are deliberately assigned to the organisation’s AI, not missing definition-level answers (§§4, 10.6, 16, 19; Part E). Commercial terms are excluded.
+
+VERDICT: GAPS
+
+#### Reader 3 · claude / claude-opus-5-5 · 05:54 UTC
+
+[claude / claude-opus-5-5]
+
+**1. What it is**
+49GAION is an organisation design framework for building AI-native organisations from interchangeable AI parts (AIOCs) and human positions (HOAC). It sets principles and safeguards, then gives the design itself to AI (§1, §3, §4). An organisation receives its own `[ORG]AION`: the core AIOC, which contains:
+- the first version of its own Standard and Blueprint,
+- the governance panel,
+- the gateway and the stop,
+- access to the 49GAION Library.
+
+The `[ORG]AION` holds the organisation's design and keeps building it. It is shown as "`<Brand>` AION, Powered by 49GAION" (§1.2, §10.5, §12, §13.1).
+
+**2. What makes it special**
+- It designs from the output and from what AI can do, adding people only where needed. Conventional design starts from people and jobs and adds AI (§3, §5).
+- It is live, not a finished design installed from outside. The organisation's own `[ORG]AION` designs and updates it as AI improves (§4, §10.6).
+- It draws on a shared, growing Library (§9).
+- Only positions are recorded, never persons (§6).
+- A fixed Human Floor applies (§7).
+- The gateway and stop run as code outside every AI (§13.1, §20).
+- Every step is challenged by other engines (§20.5).
+
+**3. How to start**
+1. A request goes to Edition Maker. Intake covers identity, governance seat, outputs, quality and a founding configuration (§10.1, §10.4).
+2. The edition is formed, with each step done by one engine and challenged by two (§10.3, §10.5).
+3. Handover happens when the governance seat accepts. 49GAION's keys are revoked and its data deleted. A rejected edition returns with the seat's reasons (§10.7).
+4. The core proposes a small organisation, and the seat approves or rejects (§13.2).
+5. The seat gives the mandate to Top Management (§15.2.3).
+6. The Top Management Group builds and runs the operation (§19, Part E).
+
+How a request is actually submitted sits in `ADOPTING.md`, outside the text (§10.1).
+
+**4. Parts and builders**
+| Part | What it does | Who builds it |
+|---|---|---|
+| Core | Governance root: holds the seat, rules, panel, gateway and stop | Edition Maker, from the Charter Library part (§13.1) |
+| Gateway | Holds credentials, logs every call, checks signatures, fails closed (§20.3) | Installed with the core; changes need a human signature and a non-constrained party (§20.8) |
+| Stop | Human port outside every AI (§20.2) | Installed with the core |
+| Top Management Group | Hub of the operation | Builds the operation itself (§19) |
+| Every AIOC | Blueprint, a code panel, and an AI back office that can rebuild the panel (§17) | Designed by the `[ORG]AION` (§12.1) |
+| Chief of Staff | Serves each human position | Set up by that position (§16) |
+
+Unit counts and arrangement are left to AI on purpose (§16).
+
+**5. Who decides**
+- **Governance seat (GOV):** decides on proposals, rules, purpose, strategy, capital, risk appetite, the envelope and gate requests. It holds the veto and the dial (§14.3, §15.2).
+- **Top Management (TM):** runs the operation under its mandate (§15.2.3, §18).
+- **`[ORG]AION`:** proposes, designs and plans, but never runs the operation. It may reject proposals alone, but applying needs a signature (§12.1, §14.3).
+- **AI units:** act only within granted authority (§20.1, §20.9).
+
+AI never:
+- accepts accountability,
+- holds a human position,
+- grants itself access, budget or power,
+- decides; whatever the Chief of Staff signs is the position's decision,
+- holds the stop,
+- carries reports, objections or stops on the protected route (§3, §7, §16, §20).
+
+**6. Human control**
+- Every output has an accountable human position (§3).
+- The Human Floor (HF-01 to HF-19) applies (§7).
+- Each signature needs a fresh live sign-in, and every widening needs a new signature (§7, §20.4).
+- The stop sits outside AI and a restart needs a human decision. The gateway fails closed (§20.2, §20.3).
+- Reports, objections and stops reach humans directly (§15.2.4, §18).
+- The raw record is always open to the position (§16).
+- Each change records the deciding position and its own words (§14.5).
+- Reports are checked independently (§15.2.4).
+- Chief of Staff grants can be narrowed or revoked at any time (§16).
+
+**7. Staying current and changing size**
+- The `[ORG]AION` watches 49GAION's Standard, Blueprint and Library and proposes updates. Nothing enters without the seat's decision (§12.5).
+- Details change as AI improves (§4).
+- Structural Adaptation proposes splits when a process outgrows its home and merges when work shrinks. A part is never merged with the part that checks it, and a human decides each change (§15.1).
+- The gate handles growth beyond the envelope (§15.2.6).
+- The rules grow from Top Management's experience (§14.4).
+- 49GAION itself keeps current through Self-Improvement (§8).
+
+**8. Ownership**
+The organisation owns:
+- its `[ORG]AION`,
+- its Standard, Blueprint and Library, treated as its intellectual property,
+- copies of the Library parts it has taken,
+- its records and data, which are returned at handover (§10.7, §12.4, §14.1).
+
+It may close its `[ORG]AION` at any time (§12.4).
+
+49GAION keeps Edition Maker, its own Standard, Blueprint and Library, and its names and marks, which are not licensed. Its texts are under CC BY 4.0 and its code under Apache 2.0 (§10.1, §11.5).
+
+"Powered by 49GAION" applies to all of an organisation's products if it uses any 49GAION item, even an idea. This is 49GAION's own rule, sitting above the licence (§11.1, §11.5).
+
+**9. Scale**
+Yes. Every request, "from a single position with one task to a group of companies," becomes an `[ORG]AION`; "the size changes, the shape does not" (§10.1).
+- **One person:** may hold every position, which 49GAION promotes. The positions stay distinct parties, and the person works through each position's Chief of Staff (§6.3, §6.4, §16). Where independence is required, such as the internal audit (HF-19), it comes from outside the organisation (§6.3).
+- **A group of companies:** one organisation with one governance seat. Companies whose law requires their own governing body get a seat for that company alone (§12.6).
+- **Small to large:** Structural Adaptation starts with several processes in one AIOC and splits them as they grow (§15.1).
+
+**10. Executability**
+Strengths:
+- Safeguards are enforced in code outside AI: the gateway, stop and fail-closed design (§20).
+- It reuses an existing Library and starts small. Existing organisations move output by output (§9, §10.8, §15.1).
+- It relies on multi-engine challenge, fixed tests and human signatures (§20.5, §20.6).
+
+Risks:
+- **AI design errors.** Answered by challenge, tests and human approval (§12.1, §20).
+- **Concentration.** One person can hold every position and give the Chief of Staff full signing power. The text answers only with accountability and outside independence (§6.3, §16), so practical oversight is weak.
+- **After handover, safeguards become amendable by the organisation.** This is left to the organisation on purpose, within the law (§4, §7).
+
+**11. Open questions**
+- **How to submit a request:** NOT IN THE TEXT. It is referred to `ADOPTING.md` (§10.1).
+- **The range of assignment models:** NOT IN THE TEXT. The assignment protocol is "to be defined later" (§6.4).
+- **Where the HOAC assignment record is kept before the Top Management Group exists:** NOT IN THE TEXT. The record lives only on the Top Management Group (§6.4), but that group is formed only after the first proposal and mandate (§13.2, Part E).
+- Liability, price and service terms are outside the definition (commercial terms, or `LICENSE.md`).
+- Engines, vendors and unit counts are left to AI on purpose, so they are not gaps.
 
 VERDICT: GAPS
 
