@@ -207,7 +207,7 @@ sig_case("a removal row citing an unrelated older record fails (review PA1)",
          {"decisions/DR-0001-day-zero.md": "# DR-0001\n\n- **Decided by:** the governing seat (GOV) of 49GAION.\n\n1. The starting point.\n"},
          "SIG-REMOVAL-RECORD-MISMATCH", head_std=nostd,
          base_files={RML: "id\tdr\treason\nrestart-stopped-unit\tDR-0001\tplanted\n"})
-pol = dict(STD, type_fields=["related_floor"], decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
+pol = dict(STD, type_fields=sorted(set(STD.get("type_fields", [])) | {"related_floor"}), decision_types=[dict(t, related_floor=["HF-12"]) if t["id"] == "restart-stopped-unit" else t for t in STD["decision_types"]])
 sig_case("the Standard declaring a policy field in the same change passes", {}, None, head_std=pol)
 # A base Standard with no declared policy fields, whatever the tree under test declares.
 nodecl = dict({k: v for k, v in STD.items() if k != "type_fields"},
@@ -270,6 +270,58 @@ ln_case("a link to a file of the repository passes", {"a.md": "see [b](docs/b.md
 ln_case("a link to a missing file fails", {"a.md": "see [the guide](guide/OLD.md)\n"}, "LINK-DEAD guide/OLD.md")
 ln_case("a link in the list of superseded wording is not followed",
         {"a.md": "body\n\n## Superseded wording, by version\n\n- [old](guide/OLD.md)\n"})
+
+# ---------- human-floor-gate, the detector (DR-0053) ----------
+def fg_case(name, mutate, needed, base_mutate=None):
+    d = repo()
+    (d / "upstream").mkdir(); (d / ".github/no-removal").mkdir(parents=True)
+    std = json.loads(json.dumps(STD)); std["type_fields"] = list(std.get("type_fields", [])) + ["floor", "quorum"]
+    for t in std["decision_types"]: t["floor"] = "fixed"
+    if base_mutate: base_mutate(std)
+    (d / "upstream/human-floor-signature-types.json").write_text(json.dumps(std, indent=1))
+    (d / ".github/no-removal/v2.0-baseline.tsv").write_text("x.md\tclause\tOrganisations can be more human, never less.\tHuman Floor\n")
+    (d / ".github/signature-types-floor-removals.tsv").write_text("id\tdr\treason\n")
+    base = commit(d, "base")
+    mutate(d, std); commit(d, "head")
+    r = sh(d, sys.executable, str(S / "check_floor_gate.py"), base, check=False, env={"GITHUB_OUTPUT": str(d / "out.txt")})
+    got = (d / "out.txt").read_text() if (d / "out.txt").exists() else ""
+    ok = r.returncode == 0 and f"needed={'true' if needed else 'false'}" in got
+    results.append(("human-floor-gate: " + name, ok, "needed" if needed else "pass"))
+    print(f"{'ok  ' if ok else 'FAIL'} human-floor-gate: {name}: expected needed={needed}")
+    if not ok: print("    " + (r.stdout + r.stderr + got).replace("\n", "\n    "))
+def w(d, std): (d / "upstream/human-floor-signature-types.json").write_text(json.dumps(std, indent=1))
+fg_case("an ordinary change needs no approval", lambda d, s: (d / "a.md").write_text("x\n"), False)
+fg_case("adding a type needs no approval", lambda d, s: w(d, dict(s, decision_types=s["decision_types"] + [{"id": "approve-x", "floor": "org-choice"}])), False)
+fg_case("removing a type needs the approval", lambda d, s: w(d, dict(s, decision_types=s["decision_types"][1:])), True)
+def flip(d, s):
+    s = json.loads(json.dumps(s)); s["decision_types"][0]["floor"] = "org-choice"; w(d, s)
+fg_case("turning a fixed type into org-choice needs the approval", flip, True)
+def lowerq(d, s):
+    s = json.loads(json.dumps(s)); s["decision_types"][0]["quorum"] = 1; w(d, s)
+fg_case("lowering a quorum needs the approval", lowerq, True, base_mutate=lambda s: s["decision_types"][0].__setitem__("quorum", 2))
+fg_case("changing the removal list needs the approval",
+        lambda d, s: (d / ".github/signature-types-floor-removals.tsv").write_text("id\tdr\treason\nsign-contract\tDR-9001\tx\n"), True)
+fg_case("changing a protected clause needs the approval",
+        lambda d, s: (d / ".github/no-removal/v2.0-baseline.tsv").write_text("x.md\tclause\tOrganisations can be more human.\tHuman Floor\n"), True)
+STDF = dict(STD, type_fields=list(STD.get("type_fields", [])) + ["floor", "quorum"], decision_types=[dict(t, floor="fixed") for t in STD["decision_types"]])
+sig_case("the Standard's own list with floor fixed on every type passes", {}, None, std=STDF)
+sig_case("a floor value other than fixed or org-choice fails",
+         {"org-aion-signature-types/acme.json": full(floor="maybe")}, "SIG-FLOOR-VALUE", std=STDF)
+sig_case("a quorum of zero fails", {"org-aion-signature-types/acme.json": full(quorum=0)}, "SIG-FLOOR-VALUE", std=STDF)
+sig_case("a type of the Standard's own list not fixed fails", {}, "SIG-STD-FLOOR-NOT-FIXED",
+         head_std=dict(STDF, decision_types=[dict(t, floor="org-choice") for t in STD["decision_types"]]), std=STDF)
+
+# ---------- dr-source (DR-0053) ----------
+def ds_case(name, body, code=None):
+    d = repo(); (d / "decisions").mkdir(); (d / "decisions/README.md").write_text("x\n"); base = commit(d, "base")
+    (d / "decisions/DR-9001-x.md").write_text(body); commit(d, "head")
+    expect("dr-source: " + name, sh(d, sys.executable, str(S / "check_dr_source.py"), base, check=False), code)
+GOOD = "# DR-9001\n\n- **Date:** 2026-10-29\n- **Decided by:** the governing seat (GOV) of 49GAION.\n- **Source:** the governing seat's words (translated): \"Confirmed.\"\n\n## Decision\n"
+ds_case("a record with quoted words and a date passes", GOOD)
+ds_case("a record citing its list by path and commit passes", GOOD.replace("the governing seat's words (translated): \"Confirmed.\"", "the list `upstream/PROPOSALS.md@0123abc` approved whole"))
+ds_case("a record with no Source fails", GOOD.replace("- **Source:**", "- **Basis:**"), "DR-SOURCE-MISSING")
+ds_case("a record whose Source quotes nothing fails", GOOD.replace(": \"Confirmed.\"", " in the chat"), "DR-SOURCE-NO-WORDS")
+ds_case("a record with no date fails", GOOD.replace("- **Date:** 2026-10-29\n", ""), "DR-SOURCE-NO-DATE")
 
 # ---------- person-names (fictional name; the real list is never used here) ----------
 expect("person-names: selftest cases", subprocess.run([sys.executable, str(pathlib.Path(__file__).resolve().parent / "person_names_selftest.py")], capture_output=True, text=True))
