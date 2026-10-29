@@ -1,5 +1,5 @@
 # no-removal baseline of v2.0.0, generated from the clean texts by .github/scripts/make_no_removal_baseline.py (DR-0047).
-# Columns: path, kind (heading | id | term | concept), value, note. Presence only, never definition text.
+# Columns: path, kind (heading | id | term | concept | clause), value, note. Presence only, never definition text, except a clause (DR-0051): word for word, in the body.
 # Entries for files not regenerated are carried from the previous baseline.
 49GAION.md	heading	49GAION · the master definition
 49GAION.md	heading	1. The definition
@@ -515,3 +515,50 @@ upstream/README.md	heading	upstream/ · the 49GAION Standard
 registers/HOAC-REGISTER.md	heading	Unit register (file name kept for links)
 registers/HOAC-REGISTER.md	heading	Entries
 registers/HOAC-REGISTER.md	heading	Events
+# v2.1.1 (DR-0051): the protected clauses of the Human Floor, each word for word in the body of its file (kind clause).
+49GAION-FRAMEWORK.md	clause	HF-01 legal accountability	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-02 legal personhood	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-03 mandatory oversight	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-04 purpose and values	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-05 legitimacy and trust	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-06 irreversible risk on behalf of others	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-07 delegating authority	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-08 physical presence	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-09 unprecedented situations	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-10 a fresh live sign-in for every signature	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-11 granting access, budget or power to AI	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-12 the stop	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-13 tacit knowledge and relationships	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-14 the final judge of tests	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-15 root keys	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-16 break-glass access	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-17 the data protection officer	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-18 segregation of duties	Human Floor
+49GAION-FRAMEWORK.md	clause	HF-19 the independent internal-audit line	Human Floor
+49GAION-FRAMEWORK.md	clause	Organisations can be more human, never less, and the system enforces it	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-01** Legal accountability	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-02** Legal personhood: signing contracts, holding bank accounts, holding licences	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-04** Setting purpose and values	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-05** Legitimacy and trust	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-06** Accepting irreversible risk on behalf of others	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-07** Delegating authority	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-03** Mandatory human oversight	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-08** Physical presence	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-09** Fully unprecedented situations	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-10** Identity and sign-in: every signature needs a fresh live sign-in; no stored token	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-11** Granting access, budget or power to AI itself	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-12** The stop button	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-13** Tacit knowledge and relationships	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-14** Final judge of tests: an automated run of a fixed test may close a Work Item; changing a test or its threshold is human-only	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-15** Ownership of root keys	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-16** Break-glass emergency access	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-17** Data protection officer	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-18** Segregation of duties	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	**HF-19** Three Lines Model	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	no change, by anyone, can take a Human Floor task away from a human	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	Moving toward human is always open; moving below the floor is impossible by design.	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	Every item is human-only, whichever group it is in.	Human Floor
+upstream/49GAION-UPSTREAM.md	clause	organisations can be more human, never less	Human Floor
+README.md	clause	Organisations can be more human, never less.	Human Floor
+49GAION.md	clause	the Human Floor, which organisations can make more human, never less	Human Floor
+guide/THE-49GAION-GUIDE-VERSION-2.md	clause	Organisations can be more human, never less, and the system enforces it.	Human Floor

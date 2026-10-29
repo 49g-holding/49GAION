@@ -6,13 +6,16 @@ For each named file, every heading, every section or rule id (§n.n, HF-nn, Rn) 
 the file has a glossary table, every term in its first column, are written as items, in the
 kinds check_no_removal.py reads (heading, id, term). Numbered headings also give a
 "Heading n.n" id. Entries of the previous baseline for files not named are carried over
-unchanged, as are its concepts. Presence only, never definition text (DR-0047, item 4)."""
+unchanged, as are its concepts and its protected clauses (kind clause, DR-0051): a clause is
+never generated and never dropped; it is carried for every file. Presence only, never definition
+text (DR-0047, item 4), except the clauses."""
 import re, sys, pathlib
 prev, out, files = sys.argv[1], sys.argv[2], sys.argv[3:]
 def norm(s): return re.sub(r"\s+", " ", s).strip()
 rows = []
 carried = [l for l in pathlib.Path(prev).read_text(encoding="utf-8").splitlines()
-           if l and not l.startswith("#") and (l.split("\t")[0] == "*" or l.split("\t")[0] not in files)]
+           if l and not l.startswith("#") and (l.split("\t")[0] == "*" or l.split("\t")[0] not in files
+                                                or l.split("\t")[1] == "clause")]
 for f in files:
     t = pathlib.Path(f).read_text(encoding="utf-8")
     seen = set()
@@ -45,7 +48,7 @@ for f in files:
         if r[0] == f and r[1] == "term" and r[2] in t and f"{f}\tterm\t{r[2]}" not in rows:
             rows.append(f"{f}\tterm\t{r[2]}" + (f"\t{r[3]}" if len(r) > 3 else ""))
 header = ["# no-removal baseline of v2.0.0, generated from the clean texts by .github/scripts/make_no_removal_baseline.py (DR-0047).",
-          "# Columns: path, kind (heading | id | term | concept), value, note. Presence only, never definition text.",
+          "# Columns: path, kind (heading | id | term | concept | clause), value, note. Presence only, never definition text, except a clause (DR-0051).",
           "# Entries for files not regenerated are carried from the previous baseline."]
 pathlib.Path(out).write_text("\n".join(header + rows + carried) + "\n", encoding="utf-8")
 print(f"{out}: {len(rows)} generated, {len(carried)} carried")

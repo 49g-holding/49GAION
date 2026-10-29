@@ -1,5 +1,8 @@
 """no-removal: every heading, section/rule/decision id, term and key concept of the 49GAION
-hub baseline is still present. Presence only, never definition text.
+hub baseline is still present. Presence only, never definition text, except for the protected
+clauses: a row of kind "clause" (DR-0051) is a sentence of the Human Floor that must stand,
+word for word up to spacing, in the body of its file, before the list of superseded wording;
+moving it to that list, rewording it or deleting it fails.
 
 Baseline: the file named by NO_REMOVAL_BASELINE; by default the baseline of the release the texts
 are at (state.json): .github/no-removal/v2.0-baseline.tsv from v2.0.0 on, generated from the clean
@@ -44,6 +47,12 @@ missing = []
 for line in lst.read_text(encoding="utf-8").splitlines():
     if not line or line.startswith("#"): continue
     parts = line.split("\t"); path, kind, value = parts[0], parts[1], parts[2]
+    if kind == "clause":
+        t = text(path)
+        if t is None: missing.append(f"{path}: file missing"); continue
+        body = re.split(r"\n##\s+Superseded wording", t, maxsplit=1)[0]
+        if norm(value) not in norm(body): missing.append(f"{path}: clause {value} (PROTECTED-CLAUSE)")
+        continue
     if kind == "concept":
         if not re.search(value, alltext): missing.append(f"concept {parts[3]}")
         continue
