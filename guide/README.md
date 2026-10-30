@@ -4,16 +4,18 @@ The plain-language text of 49GAION: what it is, how it works, and how an organis
 
 | Version | Text | Approved | Record |
 |---|---|---|---|
-| Version 2 | [`THE-49GAION-GUIDE-VERSION-2.md`](THE-49GAION-GUIDE-VERSION-2.md) | 2026-10-28, by the governing seat (GOV) of 49GAION; corrected 2026-10-29, twice | [`DR-0050`](../decisions/DR-0050-the-49gaion-guide-version-2.md); [`DR-0052`](../decisions/DR-0052-two-reviews-of-v2-1-0-corrected.md); [`DR-0053`](../decisions/DR-0053-the-review-rooms-designs-v2-2-0.md) |
+| Version 2 | [`THE-49GAION-GUIDE-VERSION-2.md`](THE-49GAION-GUIDE-VERSION-2.md) | 2026-10-28, by the governing seat (GOV) of 49GAION; corrected 2026-10-29, twice, and 2026-10-30 | [`DR-0050`](../decisions/DR-0050-the-49gaion-guide-version-2.md); [`DR-0052`](../decisions/DR-0052-two-reviews-of-v2-1-0-corrected.md); [`DR-0053`](../decisions/DR-0053-the-review-rooms-designs-v2-2-0.md); [`DR-0054`](../decisions/DR-0054-a-review-of-v2-2-0-corrected.md) |
 | Version 1, replaced whole by Version 2 | `THE-49GAION-GUIDE-VERSION-1.md`, in this repository's history (the release `v2.0.0`) | 2026-10-25, by the governing seat (GOV) of 49GAION | [`DR-0043`](../decisions/DR-0043-the-49gaion-guide-version-1.md) |
 
 ## The PDF
 
-Binary files are kept outside this repository (the `no-binaries` check). The PDF of Version 2 is published on the hub's release page, as an asset of the release `v2.2.0`, under the name `The-49GAION-Guide-Version-2.pdf`. It is the corrected Markdown above (DR-0053), set in the typeface Inter on A4, twelve pages, with no organisation's mark. Its SHA-256:
+Binary files are kept outside this repository (the `no-binaries` check). The PDF of Version 2 is published on the hub's release page, as an asset of the release `v2.2.1`, under the name `The-49GAION-Guide-Version-2.pdf`. It is the corrected Markdown above (DR-0054), set in the typeface Inter on A4, twelve pages, with no organisation's mark. Its SHA-256:
 
 ```
-49f4cd5ae8e8e1912502957fa0216ff70f5548da70becc4e8f78c9f6cb488acf
+187e7af165554f4a38746bea850fc227a63aabf23a4f67bfe6d3b7285ac37512
 ```
+
+The PDF of Version 2 as corrected by DR-0053 is an asset of the release `v2.2.0`; its SHA-256 is `49f4cd5ae8e8e1912502957fa0216ff70f5548da70becc4e8f78c9f6cb488acf`.
 
 The PDF of Version 2 as first corrected (DR-0052) is an asset of the release `v2.1.1`; its SHA-256 is `a6068b7eaaf750a5ea9ee3973c6405b0358a474676821f435a1a4fe717e003eb`.
 
