@@ -268,8 +268,24 @@ def ln_case(name, files, code=None):
     expect("links: " + name, sh(d, sys.executable, str(S / "check_links.py"), check=False), code)
 ln_case("a link to a file of the repository passes", {"a.md": "see [b](docs/b.md#x)\n", "docs/b.md": "b\n"})
 ln_case("a link to a missing file fails", {"a.md": "see [the guide](guide/OLD.md)\n"}, "LINK-DEAD guide/OLD.md")
-ln_case("a link in the list of superseded wording is not followed",
-        {"a.md": "body\n\n## Superseded wording, by version\n\n- [old](guide/OLD.md)\n"})
+ln_case("a link under a heading of superseded wording is followed (DR-0054)",
+        {"a.md": "body\n\n## Superseded wording, by version\n\n- [old](guide/OLD.md)\n"}, "LINK-DEAD guide/OLD.md")
+
+# ---------- withdrawn-wording (DR-0054) ----------
+WL = HUB / ".github/withdrawn-wording.tsv"
+def wd_case(name, files, code=None, lst=None):
+    d = repo()
+    for p, body in files.items():
+        (d / p).parent.mkdir(parents=True, exist_ok=True); (d / p).write_text(body, encoding="utf-8")
+    commit(d)
+    expect("withdrawn-wording: " + name, sh(d, sys.executable, str(S / "check_withdrawn_wording.py"), str(lst or WL), check=False), code)
+wd_case("a text without withdrawn wording passes", {"a.md": "One person may hold every position; the positions stay distinct.\n"})
+wd_case("the phrase one-person organisation fails", {"a.md": "49GAION never speaks of a one-person organisation.\n"}, "WITHDRAWN-WORDING one-person-organisation")
+wd_case("the phrase in a code span still fails", {"a.md": "`one person organization`\n"}, "WITHDRAWN-WORDING one-person-organisation")
+wd_case("the phrase in a decision record passes", {"decisions/DR-9001-x.md": "never a one-person organisation\n", "a.md": "clean\n"})
+wd_case("a list of superseded wording fails", {"a.md": "body\n\n## Superseded wording, by version\n\n- old\n"}, "WITHDRAWN-WORDING superseded-wording-list")
+_e = pathlib.Path(tempfile.mkdtemp()) / "empty.tsv"; _e.write_text("# no rows\n", encoding="utf-8")
+wd_case("an empty list fails closed", {"a.md": "clean\n"}, "WITHDRAWN-WORDING-LIST", lst=_e)
 
 # ---------- human-floor-gate, the detector (DR-0053) ----------
 def fg_case(name, mutate, needed, base_mutate=None):
