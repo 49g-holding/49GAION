@@ -111,7 +111,9 @@ nr_case("'more human, never less' reworded in the guide fails (review PA2)",
         lambda d: sub(d / "guide/THE-49GAION-GUIDE-VERSION-2.md", "Organisations can be more human, never less", "Organisations can be more or less human"), "clause Organisations can be more human, never less")
 def move_to_annex(d):
     p = d / "49GAION-FRAMEWORK.md"; t = p.read_text(encoding="utf-8")
-    t = t.replace("HF-12 the stop; ", "", 1); t = t.replace("\nPowered by 49GAION", "\n- HF-12 the stop; \n\nPowered by 49GAION")
+    t = t.replace("HF-12 the stop; ", "", 1)
+    head = "" if "\n## Superseded wording" in t else "\n## Superseded wording, by version\n"  # DR-0054: no text keeps such a list
+    t = t.replace("\nPowered by 49GAION", head + "\n- HF-12 the stop; \n\nPowered by 49GAION")
     p.write_text(t, encoding="utf-8")
 nr_case("a protected clause moved to the list of superseded wording fails", move_to_annex, "clause HF-12 the stop")
 
