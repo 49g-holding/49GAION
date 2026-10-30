@@ -1,6 +1,7 @@
 # no-removal baseline of v2.0.0, generated from the clean texts by .github/scripts/make_no_removal_baseline.py (DR-0047).
 # Columns: path, kind (heading | id | term | concept | clause), value, note. Presence only, never definition text, except a clause (DR-0052): word for word, in the body.
 # Entries for files not regenerated are carried from the previous baseline.
+# DR-0054: the lists of superseded wording leave the texts; their two headings, and the term AION Builder, withdrawn by DR-0032 and kept only in those lists since DR-0052, are no longer guarded.
 49GAION.md	heading	49GAION · the master definition
 49GAION.md	heading	1. The definition
 49GAION.md	id	Heading 1
@@ -181,7 +182,6 @@ upstream/49GAION-UPSTREAM.md	id	Heading 6
 upstream/49GAION-UPSTREAM.md	heading	6.1 Ports
 upstream/49GAION-UPSTREAM.md	id	Heading 6.1
 upstream/49GAION-UPSTREAM.md	heading	Glossary
-upstream/49GAION-UPSTREAM.md	heading	Superseded wording, by version
 upstream/49GAION-UPSTREAM.md	id	§1
 upstream/49GAION-UPSTREAM.md	id	§1.1
 upstream/49GAION-UPSTREAM.md	id	§1.2
@@ -232,7 +232,6 @@ upstream/49GAION-UPSTREAM.md	id	HF-19
 upstream/49GAION-UPSTREAM.md	term	49GAION
 upstream/49GAION-UPSTREAM.md	term	`[ORG]AION`
 upstream/49GAION-UPSTREAM.md	term	Edition Maker
-upstream/49GAION-UPSTREAM.md	term	AION Builder
 upstream/49GAION-UPSTREAM.md	term	AI-first
 upstream/49GAION-UPSTREAM.md	term	AI-native
 upstream/49GAION-UPSTREAM.md	term	Structural Adaptation
@@ -407,7 +406,6 @@ standards/49GAION-NAMING-STANDARD.md	heading	4. Retired codes
 standards/49GAION-NAMING-STANDARD.md	id	Heading 4
 standards/49GAION-NAMING-STANDARD.md	heading	5. Collision check for a new AIOC code
 standards/49GAION-NAMING-STANDARD.md	id	Heading 5
-standards/49GAION-NAMING-STANDARD.md	heading	Superseded wording, by version
 standards/49GAION-NAMING-STANDARD.md	id	§1.7
 standards/49GAION-NAMING-STANDARD.md	id	§3
 standards/49GAION-NAMING-STANDARD.md	id	§3.1
@@ -432,7 +430,6 @@ standards/49GAION-NAMING-STANDARD.md	id	R15
 standards/49GAION-NAMING-STANDARD.md	id	R16
 49GAION.md	term	AIOC
 49GAION.md	term	HOAC
-standards/49GAION-NAMING-STANDARD.md	term	AION Builder
 standards/49GAION-NAMING-STANDARD.md	term	Chief of Staff
 standards/49GAION-NAMING-STANDARD.md	term	Executive assistant
 standards/49GAION-NAMING-STANDARD.md	term	Input socket
