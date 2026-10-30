@@ -1,0 +1,26 @@
+# DR-0054 · 49GAION — a review of `v2.2.0` corrected: `v2.2.1`
+
+- **Date:** 2026-10-30
+- **Decided by:** the governing seat (GOV) of 49GAION.
+- **Source:**
+  - A review of `v2.2.0` and of the archive of its official texts as PDF, read on 30 October 2026: fourteen points, on content, governance, versions, enforcement and small fixes. The AI hub checked each point against `main`; the triage is kept by the AI hub.
+  - The governing seat's words of 30 October 2026 (translated from Persian):
+    - 11:49 UTC: "This is a review of the final version you gave. See: whichever point holds, correct it; whichever needs my decision, ask me and I will tell you."
+    - 12:11 UTC, answering two of the AI hub's questions by choosing an option:
+      - whether the lists of superseded wording at the end of the public texts are removed or kept (the AI hub recommended removing them): "Remove (recommended)."
+      - whether three acts are signed only by the position itself, never by its Chief of Staff under a grant: a change to the Human Floor list, issuing or widening a Chief of Staff's grant, and bringing a new credential into force (the AI hub recommended yes): "No, the same ruling of 29 October."
+  - The entries of the private decision register that hold these words, by the SHA-256 of each entry as stored (for tracing, not as proof): `8b0e09149d54c24ea501f0ba3d6d647f7765f1db2ce23190a6f93cc04bc92d7e` (11:49 UTC), `c7594cd51f0f66888091d52b6acf5d59472a10af31f5b51226cb455a52c67da9` and `e96caca6673ca3a0db9a59239ef05bbf65b207bae9f01fa908ea2cca15e9408e` (12:11 UTC).
+  - The record is prepared by the AI hub; the governing seat's merge is the decision.
+- **Relation:** item 2 supersedes DR-0047, item 3, as far as it lists the superseded wording at the end of each text; the rest of DR-0047 stands, and a decided text is still never edited in place. Item 1 writes DR-0051 where two texts missed it. Item 5 keeps DR-0053, item 11, as it stands. No rule of the complete definition, the Standard or the Operating Protocol changes.
+- **Number:** this record takes the next free number at merge, after DR-0053.
+
+## Decision
+
+1. **"One-person organisation."** The sentence "49GAION never speaks of a one-person organisation" leaves the Standard (§1.1, item 9) and Edition Maker's requirements (their item on positions), which kept it after DR-0051 had superseded it: one person holding every position is a model 49GAION introduces and promotes, and even then the positions stay distinct (the complete definition, §6, item 4). The check `withdrawn-wording` fails a text, outside the decision records, the raw references and reviews, the release notes and the change logs, that uses the phrase "one-person organisation" again.
+2. **No list of superseded wording in the texts.** The lists "Superseded wording, by version" leave the complete definition, the entry page, the hub's README, the unit register form, the Naming Standard, the Standard, the Operating Protocol, the Library register, the AIOC definition and the AIOC blueprint template; Edition Maker's requirements keep their two sections on the corrections of DR-0049 and DR-0052 as a record of what changed, without the former wording, and the Library's card register keeps its correction without the former wording. A reader of the cold read of 29 October 2026 took wording from such a list for a rule in force. The former wording stays readable at the earlier release tags, and the record that superseded it names what changed. A text that pointed to a list now points to the earlier releases; the four lines of the withdrawn delivery test keep their names in the Standard (§1.4), so that the records written under them still read. The check `withdrawn-wording` also fails a text that carries such a list again.
+3. **The Guide, Version 2, follows the definition at `v2.2.0`.** It said that the gateway lets a listed decision run only with a valid human signature; it now says, as the definition does, a valid signature of the position: its own, or its own Chief of Staff's under its grant (the complete definition, §20, item 3). It also says, as the definition does, that success is checked by a party the governance seat names (the complete definition, §13, item 3), that the sources taken in are returned and deleted at the handover (the complete definition, §10, item 7), that a request is brought as `ADOPTING.md` sets out (the complete definition, §10, item 1), and where the definition stands. It is corrected, not replaced; its PDF is published again with the release.
+4. **Labels.** The Library register's product row named Delivery and Implementation at `v0.2.2`; it now names no version and reads the pin above it. The hub's entry row of the complete definition names its later corrections.
+5. **Not taken.** Signing those three acts only by the position itself: the governing seat keeps its ruling of 29 October 2026 (DR-0053, item 11). The other points of the review that concern the repositories' settings, credentials and releases are the governing seat's own and are not recorded here. One generator of the Library's cards, in the shared checks, is left to a change of its own.
+6. **Version.** The hub, the Operating Protocol and the AIOC repository move to `v2.2.1`. The complete definition changes no word of its body.
+
+Powered by 49GAION

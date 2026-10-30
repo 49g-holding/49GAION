@@ -1,6 +1,6 @@
 # The 49GAION Naming Standard
 
-**Version `v2.2.0` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
+**Version `v2.2.1` · approved by the governing seat (GOV) of 49GAION.** Part of the 49GAION Standard.
 
 ## 1. Purpose and scope
 
@@ -48,7 +48,7 @@ The codes in §4 are retired and never issued again, for any meaning.
 No new AIOC code is used before the collision check in §5 is done and recorded.
 
 ### R7. Versions
-- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.2.0`.
+- 49GAION texts use semantic version tags: `v<major>.<minor>.<patch>`. The current version of this Standard is `v2.2.1`.
 - Blueprint version and deployment release are different dimensions: `v1.4` is not `R003`. A `build_id` is separate from the version.
 
 ### R8. Identifiers and display names are separate
@@ -143,29 +143,3 @@ The same check applies to a new Pod or Cell code. Before a new code is used, che
 3. does not read as a version suffix (`RC`) or a common acronym that misleads (`PR`);
 4. is recorded, with the check, before first use.
 
-## Superseded wording, by version
-
-The wording below left the body of this text when it was written clean at `v2.0.0`. Each entry names what superseded it. Nothing is lost: the layered texts up to `v1.8.0` are kept at their tags.
-
-- **R14, item 5 (seat codes)** · superseded by DR-0004, v1.3.0 (HOAC, Cells and Pods: each seat is a Cell with its own code, R15):
-  *Superseded (DR-0004):* seat codes formed by adding the seat's initials to a HOAC label.
-- **R15, item 2 (example for a Chief of Staff Cell; retired code kept)** · superseded by DR-0028, v1.7.0 (reading note to R15: the example reads `[ORG]CELL-COSSL`; R16, item 2 governs):
-  "Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`
-- **R16, item 2 (the one exception; the clause citing R15's former example)** · superseded by DR-0028, v1.7.0 (the example of R15, item 2 reads `[ORG]CELL-COSSL`) and DR-0030, v1.7.0 ('the one exception' reads 'one of two exceptions'; `[ORG]CELL-GOV`):
-  This is the one exception to the initials of R15, item 2. As in R15's own example ("Source Lifecycle Chief of Staff" → `[ORG]CELL-SLCS`), the AIOC's initials are part of the Cell's own name, the AIOC it serves; R14, item 3 is read with this item.
-- **§3, table row 3, first cell (Executive assistant)** · superseded by DR-0007, v1.5.0 (reading note: reads as a connecting agent, Standard §5.2):
-  A single-function Chief of Staff of the assisting kind
-- **§3, withdrawal notice under the table (the AION Builder's row)** · superseded by DR-0032, v1.8.0 (the AION Builder withdrawn; its row removed from the table):
-  **Withdrawn (DR-0032).** The AION Builder is withdrawn, and its row in the table above with it. `[ORG]AIOC-EB` stays retired (§4).
-
-**`v2.1.0` (DR-0049).**
-
-- **R14, item 4 (Not the filler), second sentence** · superseded by DR-0049 (positions only; the complete definition, §1 item 5):
-  A person's AI assistants are separate AI Cells, each with its own code, attached to that person's Cell.
-
-**`v2.1.1` (DR-0051).**
-
-- **§3, the line on the withdrawn AION Builder** · superseded by DR-0051 (DR-0032 stays in force; `[ORG]AIOC-EB` stays retired, §4):
-  The AION Builder is withdrawn (DR-0032), and its row in the table above with it; `[ORG]AIOC-EB` stays retired (§4).
-- **§3, the sentence on "one-person organisation"** · superseded by DR-0051 (the HOAC Assignment Model; one person may hold every position):
-  "One-person organisation" is not used: 49GAION speaks of positions, all assigned to one person.

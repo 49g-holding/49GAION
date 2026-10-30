@@ -1,6 +1,6 @@
 # 49GAION · the master definition
 
-**Version `v2.2.0` · approved by the governing seat (GOV) of 49GAION.** This page is the short entry to 49GAION: what it is, why it exists and how it is shown, in a few lines each, with the way to the full texts. The complete definition is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md); the rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`) with the Naming Standard. Where texts differ, the order of precedence is the complete definition, then the Standard with the Naming Standard, then every other text, this page included (DR-0041, DR-0042). The plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-2.md) (DR-0050).
+**Version `v2.2.1` · approved by the governing seat (GOV) of 49GAION.** This page is the short entry to 49GAION: what it is, why it exists and how it is shown, in a few lines each, with the way to the full texts. The complete definition is [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md); the rules are in the 49GAION Standard (`upstream/49GAION-UPSTREAM.md`) with the Naming Standard. Where texts differ, the order of precedence is the complete definition, then the Standard with the Naming Standard, then every other text, this page included (DR-0041, DR-0042). The plain-words introduction is [The 49GAION Guide](guide/THE-49GAION-GUIDE-VERSION-2.md) (DR-0050).
 
 ## 1. The definition
 
@@ -74,16 +74,5 @@ Outside text names what the reader gets, the organisation's `[ORG]AION` or AIOC,
 | The owner and the licence | `LICENSE.md` |
 
 Sources: DR-0013, DR-0015, DR-0031, DR-0032, DR-0035, DR-0037, DR-0040, DR-0041, DR-0042, DR-0043, DR-0045. The full page of `v1.8.0`, with its layered additions and readings, is kept at that tag.
-
----
-
-## Superseded wording, by version
-
-**`v2.1.0` (DR-0049, DR-0050).**
-
-- **§3, the sentence on positions, its last clause** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
-  the natural person behind it is known only to Top Management's own mechanism, and the governance seat keeps the final right over who holds any position.
-- **§8, the guide** · superseded by DR-0050 (the Guide, Version 2):
-  | The 49GAION Guide, Version 1 (DR-0043) | [`guide/THE-49GAION-GUIDE-VERSION-1.md`](guide/THE-49GAION-GUIDE-VERSION-1.md) |
 
 Powered by 49GAION

@@ -59,6 +59,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0051`](DR-0051-hoac-assignment-model-in-the-top-management-group.md) | 2026-10-29 | 49GAION — the HOAC Assignment Model, kept only in the Top Management Group | in force |
 | [`DR-0052`](DR-0052-two-reviews-of-v2-1-0-corrected.md) | 2026-10-29 | 49GAION — two reviews of `v2.1.0` corrected: `v2.1.1` | in force |
 | [`DR-0053`](DR-0053-the-review-rooms-designs-v2-2-0.md) | 2026-10-29 | 49GAION — the review room's designs: `v2.2.0` | in force |
+| [`DR-0054`](DR-0054-a-review-of-v2-2-0-corrected.md) | 2026-10-30 | 49GAION — a review of `v2.2.0` corrected: `v2.2.1` | in force |
 
 ## Reading notes
 
@@ -101,5 +102,6 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 - DR-0012, the models Solo and Team and the occupancy rules: superseded (DR-0049); the Overseen link stays. Its lapse rule holds for reversible actions only: an irreversible action under the Overseen link runs only on a clearance (DR-0052).
 - DR-0013 and DR-0015, the link between a position and the natural persons behind it, kept by top management: superseded (DR-0049): that link is the organisation's own mechanism, outside the system; read with DR-0051: it is kept only in the Top Management Group, as the HOAC Assignment Model, an internal human matter that no AI reads.
 - "GOV appoints the first TM", withdrawn by DR-0049, stayed in the Standard's bootstrap (§5.3, items 2 and 6) and left it by DR-0052: the governance seat hands the operation to Top Management by a mandate (the complete definition, Part E, item 3); who holds the position is the organisation's own mechanism.
+- DR-0047, item 3, the list of superseded wording at the end of each text: superseded (DR-0054): the wording a release supersedes stays readable at the earlier release tags, and the record that superseded it names what changed; no text carries such a list.
 
 Powered by 49GAION
