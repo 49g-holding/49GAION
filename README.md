@@ -51,7 +51,7 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 | What | Where |
 |---|---|
-| 0. The complete definition, approved 25 October 2026 and brought to `v2.1.0` on 28 October 2026 (DR-0041, DR-0042, DR-0048) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
+| 0. The complete definition, approved 25 October 2026, brought to `v2.1.0` on 28 October 2026 and corrected since (DR-0041, DR-0042, DR-0048, DR-0051 to DR-0054) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
 | 0, to adopt it: what an organisation does first, in ten steps (DR-0053) | [`ADOPTING.md`](ADOPTING.md) |
 | 0, in plain words. The 49GAION Guide, Version 2, approved 28 October 2026 (DR-0050) | [`guide/THE-49GAION-GUIDE-VERSION-2.md`](guide/THE-49GAION-GUIDE-VERSION-2.md) |
 | 1. The short entry: the master definition | [`49GAION.md`](49GAION.md) |
@@ -67,26 +67,11 @@ The 49GAION Operating Protocol sets how AIOCs, Pods, Cells and the parts work to
 
 - **Changes by pull request** with green checks; `main` is protected; tags `v*` are locked.
 - **No organisation-specific names.** Write 49GAION for the framework and `[ORG]AION` for its product.
-- **Decisions** are recorded in [`decisions/`](decisions/). A decided text is never edited; from `v2.0.0` each release is written clean, and the wording a release superseded is kept at the previous tag and listed at the end of each text (DR-0047).
+- **Decisions** are recorded in [`decisions/`](decisions/). A decided text is never edited; from `v2.0.0` each release is written clean (DR-0047), and the wording a release superseded stays readable at the earlier release tags, named by the record that superseded it; no text carries a list of it (DR-0054).
 - **Owner and licence.** The copyright holder, and the licences of the texts (CC BY 4.0, credit "Powered by 49GAION") and of the code (Apache-2.0), are in [`LICENSE.md`](LICENSE.md).
 
 ## Version
 
-`v2.2.0`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
-
----
-
-## Superseded wording, by version
-
-**`v2.1.0` (DR-0049, DR-0050).**
-
-- **HOAC, the governance seat's right** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
-  The governance seat holds the final right over every position;
-- **AIOC, the Cells** · superseded by DR-0049 (positions only; the complete definition, §1 item 5 and §6):
-  Its Blueprint holds its Cells (the smallest parts, each a fixed seat with a replaceable human or AI filler)
-- **Start here, row 0, the complete definition** · superseded by DR-0050 (the complete definition `v2.1.0`, DR-0048):
-  | 0. The complete definition, approved 25 October 2026 (DR-0041, DR-0042) | [`49GAION-FRAMEWORK.md`](49GAION-FRAMEWORK.md) |
-- **Start here, the guide** · superseded by DR-0050 (the Guide, Version 2):
-  | 0, in plain words. The 49GAION Guide, Version 1, approved 25 October 2026 (DR-0043) | [`guide/THE-49GAION-GUIDE-VERSION-1.md`](guide/THE-49GAION-GUIDE-VERSION-1.md) |
+`v2.2.1`, approved by the governing seat (GOV) of 49GAION. Release notes: [`RELEASE-NOTES/`](RELEASE-NOTES/).
 
 Powered by 49GAION

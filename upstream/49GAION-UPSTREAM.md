@@ -1,6 +1,6 @@
 # 49GAION Standard
 
-**Version `v2.2.0` · approved by the governing seat (GOV) of 49GAION.** Decisions are recorded in `decisions/README.md`. The complete definition of 49GAION, approved by its governing seat on 25 October 2026 with its clarifications (DR-0041, DR-0042), and brought to `v2.1.0` (DR-0048), is `49GAION-FRAMEWORK.md`; this Standard is brought into line with it by DR-0049, corrected by DR-0052 and extended by DR-0053. Where any text differs, the complete definition governs, then this Standard with the Naming Standard, then every other text (DR-0042, the order of precedence).
+**Version `v2.2.1` · approved by the governing seat (GOV) of 49GAION.** Decisions are recorded in `decisions/README.md`. The complete definition of 49GAION, approved by its governing seat on 25 October 2026 with its clarifications (DR-0041, DR-0042), and brought to `v2.1.0` (DR-0048), is `49GAION-FRAMEWORK.md`; this Standard is brought into line with it by DR-0049, corrected by DR-0052 and extended by DR-0053. Where any text differs, the complete definition governs, then this Standard with the Naming Standard, then every other text (DR-0042, the order of precedence).
 
 The 49GAION Standard defines what 49GAION is, its product, its units, its parts and the rules that must hold. It is a definition, not an operating manual: how a particular organisation runs is set in that organisation's own `[ORG]AION`.
 
@@ -30,7 +30,7 @@ In 49GAION and in every `[ORG]AION`, a natural person does not exist as an actor
    - **The link is the organisation's own (DR-0049).** The link between a position and the natural persons who hold it belongs to the organisation's own mechanism for its human side, outside the system: how its positions are assigned and administered, which positions natural persons hold, successors, deputies and boards, and the credentials with which a position's signatures are made. 49GAION does not define that mechanism. Ultimate authority over it derives from the owner and is kept by governance (the complete definition, §6; the complete definition, §15).
    - **No AI part touches it.** No AIOC, Pod, Cell, bot or other AI part holds, reads, writes, stores or infers that link. An AI part addresses a position, through that position's HU port; whoever holds the position under the organisation's mechanism receives it there. Only the tool gateway, which is code and not AI, verifies at sign-in and at signing the credential the organisation's mechanism issued for the signing position, with a fresh live sign-in (HF-10); it records the act under the position's code and time, never a person's identity or any reference to one. Any record of who stood behind a signature is the organisation's own, outside the system.
    - **Content is not an actor.** The rule is about who acts in the system. An organisation's own sources may name people as their content (a contract, a minute, a register of members); that content stays data, under its classification and the restricted partition (§4.4, item 15), and never becomes an actor of the system.
-   - **The owner's right.** The right to decide who holds each position comes from the owner and is exercised through the organisation's own mechanism, under governance's ultimate authority (the complete definition, §6 item 2; the complete definition, §15). Under that mechanism one person may hold several positions, or all of them, where the law allows; the positions stay distinct. Distinct positions are not, by themselves, independent: where the law or a check needs independence in fact, as the internal-audit line does (HF-19), it is held by a position that is independent in fact, from outside the organisation where no position inside can be; the governance seat attests it for the organisation's mechanism with its own signature, and the system records that attestation against the position, never the person. Where the law requires two positions to be held by different natural persons, meeting it is the organisation's own mechanism's duty, outside the system. 49GAION never speaks of a one-person organisation.
+   - **The owner's right.** The right to decide who holds each position comes from the owner and is exercised through the organisation's own mechanism, under governance's ultimate authority (the complete definition, §6 item 2; the complete definition, §15). Under that mechanism one person may hold several positions, or all of them, where the law allows; the positions stay distinct. Distinct positions are not, by themselves, independent: where the law or a check needs independence in fact, as the internal-audit line does (HF-19), it is held by a position that is independent in fact, from outside the organisation where no position inside can be; the governance seat attests it for the organisation's mechanism with its own signature, and the system records that attestation against the position, never the person. Where the law requires two positions to be held by different natural persons, meeting it is the organisation's own mechanism's duty, outside the system. One person holding every position is a model 49GAION introduces and promotes, and even then the positions stay distinct (the complete definition, §6, item 4; DR-0051).
 10. **The human rule, complete (DR-0015).** The directions of GOV of 15 October 2026: "HOACs are, for you, all legal personas whose nature, whose essence, is a human. We do not know them by the name of the person; you know them by their legal character. For you it is entirely enough that one legal persona differs from another. Two HOACs are two different parties for you: if HOAC CTO and HOAC DevOps sign, for you they are two different signers, even if one human stands behind both. In all of 49GAION, regarding a HOAC or a human, only the legal persona is recognised; the only place that links legal personas to natural persons is the human hub, the system's top management; nowhere else is it needed. How top management maps natural persons to legal personas and follows their responsibility, it writes itself." Then: "It is not that the human does not exist; the legal position exists." (translated) Since DR-0048 that mechanism is the organisation's own, outside the system (the complete definition, §6).
     - **Present, never absent.** Every human is present in the system, and decides, signs, approves, answers, contributes and is accountable, as a position: a legal persona with its own code, carrying a HOAC label, whose nature is human. The system knows it only by its legal character. The natural person behind it exists too, outside the system's knowledge (item 9).
     - **Two parties.** Two positions are two parties, and two different signers, for every rule that needs more than one party: two signers, a type marked dual, maker and checker, segregation of duties (HF-18), the signer pair that a risk label selects, and recusal. This holds even when one natural person occupies both positions.
@@ -41,7 +41,7 @@ In 49GAION and in every `[ORG]AION`, a natural person does not exist as an actor
 
 49GAION has one kind of unit, the **AIOC** (AI Operating Core). Inside an AIOC's Blueprint, the smallest part is the **Cell** and a group of Cells is a **Pod**. **HOAC** (Human Oversight & Accountability Control) is not a unit: it is a label of human accountability that sits on a Cell, a Pod or a whole AIOC, at any depth (§4.1).
 
-Sources: DR-0015, DR-0031, DR-0035, DR-0037, DR-0041, DR-0048, DR-0049.
+Sources: DR-0015, DR-0031, DR-0035, DR-0037, DR-0041, DR-0048, DR-0049, DR-0051, DR-0054.
 
 ### 1.2 The seven parts of 49GAION
 
@@ -95,9 +95,16 @@ Sources: DR-0032, DR-0035, DR-0038, DR-0040, DR-0041.
 
 ### 1.4 The delivery test
 
-DR-0032 withdrew the delivery test, with its four lines (D-1 to D-4); the rules it checked stay in force on their own (§1.3, item 2; §1.5; §4.3; §1.7, items 12 and 13), and the former text is in release `v1.7.0`; the withdrawal notice of `v1.8.0` is in the annex "Superseded wording, by version".
+DR-0032 withdrew the delivery test, with its four lines (D-1 to D-4); the rules it checked stay in force on their own (§1.3, item 2; §1.5; §4.3; §1.7, items 12 and 13), and the former text is in release `v1.7.0`; the withdrawal notice is in release `v1.8.0`. The four lines keep their names, so that the records written under them still read:
 
-Sources: DR-0032.
+| Line | Status |
+|---|---|
+| D-1 | Withdrawn (DR-0032) |
+| D-2 | Withdrawn (DR-0032) |
+| D-3 | Withdrawn (DR-0032) |
+| D-4 | Withdrawn (DR-0032) |
+
+Sources: DR-0032, DR-0054.
 
 ### 1.5 The Human Floor
 
@@ -397,7 +404,7 @@ Sources: DR-0042.
 5. An empty seat returns accountability to the position that delegated it, and any AI authority tied to it is suspended until the seat is filled.
 6. **An empty `[ORG]HOAC-GOV` seat.** If the `[ORG]HOAC-GOV` seat is empty, all AI authority in that `[ORG]AION` is suspended until the organisation's constituting authority fills it.
 7. **On the card.** The HOAC label is a field of the card of the Cell, Pod or AIOC that carries it. The card keeps its typed ports and its stop door (§6.1).
-8. **Superseded meaning.** HOAC formerly had another meaning, superseded by DR-0004. It is kept only to read the records written under it, which stay unchanged; the former wording is in the annex "Superseded wording, by version".
+8. **Superseded meaning.** HOAC formerly had another meaning, superseded by DR-0004. It is kept only to read the records written under it, which stay unchanged; the former wording stays readable at the earlier releases.
 9. **A label on a Pod or an AIOC.** When a HOAC label sits on a Pod or an AIOC, a human Cell inside it holds the label. If that Cell, or any Cell carrying a HOAC label, becomes empty or is filled by an AI, the label's powers are held, as for an empty seat (item 5). Held means suspended, as decided in DR-0004, item 4: no one exercises the powers, accountability returns to the delegator (item 5), and any action needing them waits (§4.4, item 9).
 10. **Label holder (DR-0007; DR-0049).** A label on a Pod or an AIOC names its `label_holder`: one human Cell whose parent is that part. A HOAC label is held by one position; a board or any body behind a position is the organisation's own (the complete definition, §6). A Pod of several human positions, each acting as its own position and signing under its own Cell code, stays a Pod of positions: the label is signed for by its `label_holder`, a rule that needs several signers names its signing positions, and each position is its own party and counts once (§1.1, item 10).
 11. **Label order (DR-0007).** Along any `accountable_to` path, labels run GOV, then TM, then ACS. A label sits only on a Cell whose seat kind is human, or on a part with a human `label_holder`. If that seat is empty or filled by an AI, the label is held as in item 9.
@@ -581,7 +588,7 @@ Sources: DR-0007, DR-0041.
 | **49GAION** | The organisation design framework that comprises the AIOCs, the Protocol and the Blueprint, defines how they work together, and builds `[ORG]AION` products. AION stands for AI Operating Nexus |
 | **`[ORG]AION`** | 49GAION's product: the AI Operating Nexus of one organisation (§1.3): the living AION of one organisation, grown from one core, an AIOC at the governance level that builds, changes and improves the organisation and never runs its operation (§1.3, item 1) (DR-0035). It has no other name (DR-0036) |
 | **Edition Maker** | 49GAION Edition Maker, part 6 of 49GAION, belonging to 49GAION itself: the start point that processes every order or request made to 49GAION, through its own intake stages; it takes in what an organisation is for and gives back its own edition of an AION; it hands over no finished design or configuration, and gives them to AI (§1.2) (DR-0035, DR-0037, DR-0038) |
-| **AI-first** | Read as AI-native (DR-0031), which the row AI-native defines; the former definition is in the annex Superseded wording, by version |
+| **AI-first** | Read as AI-native (DR-0031), which the row AI-native defines; the former definition stays readable at the earlier releases |
 | **AI-native** | The design philosophy of 49GAION: an organisation designed from the start so that AI produces its output; humans increase the power of AI and cover its gaps inside the work, and own, set and answer for it above the work; a human seat is accountable for every output; not part of its category or name; it is also live: the design and configuration of the organisation are given to AI, inside it (§1.1, item 2) (DR-0031, DR-0037) |
 | **Structural Adaptation** | The first capability of an `[ORG]AION`: it proposes, at every stage of the organisation's life, the structure that keeps it in balance with its resources and its needs, growing and shrinking it by split and merge of AIOCs, on thresholds the organisation sets, after weighing the options; a human seat decides (§1.3, item 1) (DR-0040) |
 | **Live** | Of an AI-native organisation: its design and configuration are given to AI inside it, its `[ORG]AION`, which keeps them current as AI improves, with open access to the 49GAION Library, while a human seat decides; never a system designed and configured elsewhere and installed as it is (§1.1, item 2) (DR-0037) |
@@ -615,7 +622,7 @@ Sources: DR-0007, DR-0041.
 | **Port / Port card** | One of a unit's ports (one input and one output of each kind, AI and HU, plus the stop door) and its card |
 | **Stop port (stop door)** | The mandatory, queue-less HU port that stops a unit and every unit inside it |
 | **Human Floor** | The work that always stays human, by law or by its nature (HF-01 to HF-19); organisations can be more human, never less; the system enforces it. This holds at the handover; after it, each organisation keeps its own floor (§1.3, item 4) (DR-0035) |
-| **Delivery test** | Withdrawn by DR-0032, with its lines D-1 to D-4 (§1.4); the former text is in the annex Superseded wording, by version |
+| **Delivery test** | Withdrawn by DR-0032, with its lines D-1 to D-4 (§1.4); the former text stays readable at the earlier releases |
 | **Unit (in the rules on ports, stop, restart, register and tests)** | Any AIOC, Pod or Cell. "Unit kind" means the AIOC only (DR-0007) |
 | **Part** | Any AIOC, Pod or Cell, seen as a place in the structure (§1.7) (DR-0007) |
 | **Seat** | A Cell as a fixed place: filled by an AI agent, or held as a human position (§4.1, item 3) (DR-0007, DR-0049) |
@@ -632,9 +639,9 @@ Sources: DR-0007, DR-0041.
 | **Objection path** | The route by which an `[ORG]HOAC-ACS` seat holds an objection open until the HOAC seat accountable for OCO decides (§4.2, item 7) (DR-0007) |
 | **HU** | Human: the type of a port reached by a live human sign-in (§6.1) (DR-0007) |
 | **Label holder** | The one human Cell, inside a Pod or an AIOC, that holds the label on that part (§4.1, item 10) (DR-0007) |
-| **Decision rule** | Withdrawn by DR-0049: a body behind a label is the organisation's own; a label is held by one position (§4.1, item 10); the former definition is in the annex Superseded wording, by version |
+| **Decision rule** | Withdrawn by DR-0049: a body behind a label is the organisation's own; a label is held by one position (§4.1, item 10); the former definition stays readable at the earlier releases |
 | **Authority scope** | The decision types, limits, entity and expiry within which a labelled human Cell signs (§4.4, item 8) (DR-0007) |
-| **Acting filler** | Withdrawn by DR-0049: acting, succession and deputies are the organisation's own mechanism (§4.1, item 12); the former definition is in the annex Superseded wording, by version |
+| **Acting filler** | Withdrawn by DR-0049: acting, succession and deputies are the organisation's own mechanism (§4.1, item 12); the former definition stays readable at the earlier releases |
 | **Shadow run** | A run of a challenger beside the champion on the same cases, with no effect on real work (§2.3, item 4) (DR-0007) |
 | **Judge** | The part, separate from the proposer, that compares challenger and champion case by case (§2.3, item 5) (DR-0007) |
 | **Proposer** | The part that writes and revises challengers (§2.3, item 12) (DR-0007) |
@@ -657,7 +664,7 @@ Sources: DR-0007, DR-0041.
 | **Planned halt** | A halt through running, draining, paused and resuming states, distinct from the stop door (§4.3, item 10) (DR-0010) |
 | **Standing action class** | A class of reversible actions signed once inside an envelope the gateway enforces (§4.4, item 17) (DR-0010) |
 | **Windowed position** | A position run by several AI instances, each a Chief of Staff Cell with its own code and credential, together forming an Office, a Pod of Chief of Staff Cells (§5.2) (DR-0007, DR-0010) |
-| **Holder Chief of Staff** | Renamed Position Chief of Staff by DR-0049; the former definitions are in the annex Superseded wording, by version |
+| **Holder Chief of Staff** | Renamed Position Chief of Staff by DR-0049; the former definitions stay readable at the earlier releases |
 | **Position Chief of Staff** | The Chief of Staff of the connecting kind attached to each position that carries a HOAC label; set up by its own position, which works with AI through it and grants only to it, it serves within the authority that position grants it, which may reach up to full access and the right to sign for it, a type of the Human Floor signature list included; the decision stays the position's (§5.2) (DR-0010, DR-0049, DR-0053) |
 | **Position Principle** | A HOAC is a position, never a person; everything the position carries stays with it whoever holds it; who held it when is the organisation's own record (§5.2) (DR-0011, DR-0049) |
 | **No natural person** | In the system a human exists only as a position, a legal persona; the link to natural persons belongs to the organisation's own mechanism, outside the system, and no AI part touches it (§1.1, item 9) (DR-0013, DR-0049) |
@@ -687,32 +694,32 @@ Sources: DR-0007, DR-0041.
 | **Engine register** | The register at the tool gateway of the engines it may bind, with each engine's family, version, confidentiality ceiling, terms and seats (§4.4, item 11) (DR-0020) |
 | **Two positions, two parties** | Two positions are two parties, and two signers, for every rule that needs more than one party, even when one natural person holds both; no AI part or check compares the natural persons behind positions (§1.1, item 10) (DR-0015) |
 | **Present as a position** | Every human is present in the system, and acts, as a position, a legal persona; the natural person behind it exists outside the system's knowledge, and only the organisation's own mechanism links the two (§1.1, items 9 and 10) (DR-0015, DR-0049) |
-| **HOAC Arrangement Models** | Superseded by DR-0012; the list in force is in the row HOAC Arrangement Models (three); the former definition is in the annex Superseded wording, by version |
-| **Solo Model** | Superseded by DR-0012; the meaning in force is in the row Solo Model (DR-0012); the former definition is in the annex Superseded wording, by version |
-| **Team Model** | Superseded by DR-0012; the meaning in force is in the row Team Model (DR-0012); the former definition is in the annex Superseded wording, by version |
-| **Tiered Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Hybrid Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Self-Arranging Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Overseen Model** | Superseded by DR-0012; the meaning in force is in the row Overseen Model (DR-0012); the former definition is in the annex Superseded wording, by version |
-| **Advised Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Paired Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Rotating Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Interim Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Matrix Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Assisted Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Backup Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Federated Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Shadow Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Pool Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **Elected Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition is in the annex Superseded wording, by version |
-| **HOAC Arrangement Models (three)** | Withdrawn by DR-0049: Solo and Team are the organisation's own mechanism; the Overseen link stays as a link between positions (§5.2); the former definition is in the annex Superseded wording, by version |
-| **Solo Model (DR-0012)** | Withdrawn by DR-0049 (the organisation's own mechanism); the former definition is in the annex Superseded wording, by version |
-| **Team Model (DR-0012)** | Withdrawn by DR-0049 (the organisation's own mechanism); the former definition is in the annex Superseded wording, by version |
+| **HOAC Arrangement Models** | Superseded by DR-0012; the list in force is in the row HOAC Arrangement Models (three); the former definition stays readable at the earlier releases |
+| **Solo Model** | Superseded by DR-0012; the meaning in force is in the row Solo Model (DR-0012); the former definition stays readable at the earlier releases |
+| **Team Model** | Superseded by DR-0012; the meaning in force is in the row Team Model (DR-0012); the former definition stays readable at the earlier releases |
+| **Tiered Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Hybrid Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Self-Arranging Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Overseen Model** | Superseded by DR-0012; the meaning in force is in the row Overseen Model (DR-0012); the former definition stays readable at the earlier releases |
+| **Advised Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Paired Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Rotating Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Interim Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Matrix Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Assisted Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Backup Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Federated Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Shadow Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Pool Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **Elected Model** | Superseded by DR-0012, which withdrew the name as a model name, not renamed; the former definition stays readable at the earlier releases |
+| **HOAC Arrangement Models (three)** | Withdrawn by DR-0049: Solo and Team are the organisation's own mechanism; the Overseen link stays as a link between positions (§5.2); the former definition stays readable at the earlier releases |
+| **Solo Model (DR-0012)** | Withdrawn by DR-0049 (the organisation's own mechanism); the former definition stays readable at the earlier releases |
+| **Team Model (DR-0012)** | Withdrawn by DR-0049 (the organisation's own mechanism); the former definition stays readable at the earlier releases |
 | **Overseen Model (DR-0012)** | The Overseen link: a higher position can stop or override a lower one, with a pre or post timing form; a link between positions (§5.2) (DR-0012, DR-0049) |
 | **position** (entry label) | A register entry for a position and its code; no people; may be public (§5.2) (DR-0011) |
-| **arrangement** (entry label) | Withdrawn by DR-0049; an Overseen link is recorded on the position (§5.2); the former definition is in the annex Superseded wording, by version |
-| **occupancy** (entry label) | Withdrawn by DR-0049: who holds a position is the organisation's own record, outside the system (§5.2); the former definition is in the annex Superseded wording, by version |
-| **handover** (entry label) | Withdrawn by DR-0049: everything a position carries stays with it (§5.2); the former definition is in the annex Superseded wording, by version |
+| **arrangement** (entry label) | Withdrawn by DR-0049; an Overseen link is recorded on the position (§5.2); the former definition stays readable at the earlier releases |
+| **occupancy** (entry label) | Withdrawn by DR-0049: who holds a position is the organisation's own record, outside the system (§5.2); the former definition stays readable at the earlier releases |
+| **handover** (entry label) | Withdrawn by DR-0049: everything a position carries stays with it (§5.2); the former definition stays readable at the earlier releases |
 | **Delegation ladder** | The four levels a human seat sets for its Chief of Staff, per class of act (§5.2) (DR-0010) |
 | **Assistance contract** | The rules for AI that prepares material for a human seat (§5.2) (DR-0010) |
 | **Evidence class** | Proven, measured, cited, hypothesis or not established, on every claim shown for a decision (§5.2) (DR-0010) |
@@ -737,361 +744,5 @@ Sources: DR-0007, DR-0041.
 | **Powered by 49GAION (DR-0041)** | Carried by all the products of an organisation that uses even one item of 49GAION (§1.3, item 3) |
 
 Sources: DR-0004, DR-0007, DR-0011, DR-0012, DR-0031, DR-0032, DR-0041.
-
-## Superseded wording, by version
-
-The wording below left the body of this text when it was written clean at `v2.0.0`. Each entry names what superseded it. Nothing is lost: the layered texts up to `v1.8.0` are kept at their tags.
-
-- **§1.3, item 1 (The product: `[ORG]AION`), last sentence of the DR-0035 addition on the living core** · superseded by DR-0041 (the core is the root; the Top Management Group is the hub of the operation):
-  How the core relates to the root of §1.7, item 13 and to the AI hub of §4.2 is each organisation's own design.
-- **§1.5, HF-10, the item line as read by DR-0042 (every signature)** · superseded by DR-0042, item 2:
-  every approval needs a fresh live sign-in
-- **§1.7, item 13 (The root), the sentence on what the Charter holds** · superseded by DR-0041 (the core holds the human position of the governance seat; the Top Management position sits in the Top Management Group, the first AIOC under the core):
-  The Charter holds the human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`, and their Offices.
-- **§1.7, item 13, the DR-0007 reading note on §5.3** · superseded by DR-0041 (the same placement):
-  §5.3: GOV, then TM, then OCO are all installed in the Charter.
-- **§3.1, item 15 (The Charter in the Library), "What it holds", first clause** · superseded by DR-0041 (the same placement):
-  The human Cells that carry `[ORG]HOAC-GOV` and `[ORG]HOAC-TM`, and their Offices (§1.7, item 13)
-- **§4.1, item 12, the clause on the acting filler** · superseded by DR-0015 (positions, not persons):
-  The acting filler signs with their own identity, under that Cell's code
-- **§4.4, item 8, the clause on two persons** · superseded by DR-0015 (two positions are two parties):
-  two distinct persons, neither of them the requester
-
-- **§1.2, part 6 (withdrawal notice under the table)** · superseded by DR-0032 (AION Builder withdrawn), DR-0035 (49GAION Edition Maker as part 6):
-  **Withdrawn (DR-0032).** The AION Builder, the earlier part 6, is withdrawn. Since DR-0035, part 6 is 49GAION Edition Maker.
-- **§1.1, item 2 (Philosophy, AI-first wording)** · superseded by DR-0031 (Addition: AI-native; 'AI-first, in this item and in the glossary, reads as AI-native'):
-  **Philosophy.** 49GAION is designed AI-first: AI does the work by default, and humans take part where they are needed, as accountable overseers. AI-first is the framework's internal design philosophy, not part of its category or its name.
-- **head, Companions (last sentence)** · superseded by DR-0042 (the order of precedence), with DR-0041 (the complete definition governs):
-  Where a companion and this Standard differ, this Standard governs.
-- **§1.3, item 1 (The product: `[ORG]AION`), the sentence superseded by the living core** · superseded by DR-0035, v1.8.0:
-  49GAION's product is `[ORG]AION`, the AI Operating Nexus of one organisation: a complete organisation design, built for that organisation alone, from which the organisation is built and which belongs entirely to the customer once delivered.
-- **§1.3, item 7 (Library harvest), the harvest superseded by the support line** · superseded by DR-0035, v1.8.0:
-  During the design of an `[ORG]AION`, any capability that is not already in the 49GAION Library has its blueprint added back to the 49GAION Library, generalised (no organisation data) and tested. How customer ownership and the Library harvest relate is to be written into this Standard before the first `[ORG]AION` is delivered to an outside customer.
-- **§1.4 The delivery test (the v1.8.0 withdrawal notice and the table of its lines D-1 to D-4; the pre-withdrawal text of the test is in release v1.7.0 and is not in this chunk)** · superseded by DR-0032, v1.8.0:
-  **Withdrawn (DR-0032).** The delivery test is withdrawn, with its four lines. The rules it checked stay in force on their own: each `[ORG]AION` has its own `[ORG]HOAC-GOV` (§1.3, item 2), the Human Floor (§1.5), the stop door of every AIOC, Pod and Cell (§4.3) and the accountability chain (§1.7, items 12 and 13). The earlier text is in release v1.7.0. Only the ids of its lines are kept, because earlier records cite them.
-  
-  | Line | State |
-  |---|---|
-  | D-1 | Withdrawn (DR-0032) |
-  | D-2 | Withdrawn (DR-0032) |
-  | D-3 | Withdrawn (DR-0032) |
-  | D-4 | Withdrawn (DR-0032) |
-- **§1.7, item 2 (Parent), wording replaced by the Reading notes** · superseded by DR-0007 (Reading notes under §1.7, item 13: only the Charter has no parent; 'the AIOC, Pod or Cell that holds' reads 'the AIOC or Pod that holds'):
-  **Parent.** The AIOC, Pod or Cell that holds another part is its parent. Every part has exactly one parent, or none at the top of the organisation.
-- **§1.7, item 8 (Names and moves), second sentence replaced by the Reading notes** · superseded by DR-0007 (Reading notes under §1.7, item 13: the line of authority follows `accountable_to`; a change of `parent` or of `accountable_to` is `change-parent`):
-  A change of parent changes the part's line of authority, so it needs the approval of the human seat over that part; OCO cannot make it alone.
-- **§2.1, item 6 (Its place), the sentence superseded in part by 'at every level'** · superseded by DR-0035, v1.8.0 (Addition 'which supersedes this item in part: at every level'); 'one AIOC held within TM' also read by DR-0007 (Reading notes and Correction):
-  It is a process held inside the human hub, `[ORG]HOAC-TM` (§4.2, item 2), and carried out jointly by humans and by one AIOC held within TM. That AIOC raises proposals of its own and prepares every proposal for decision; TM decides, including on changes to `[ORG]AIOC-OCO`.
-- **§2.1, items 7 and 8; §2.3, items 6 and 9 (the term 'the Self-Improvement AIOC'), and the Correction itself** · superseded by DR-0007 (Correction: there is no standalone Self-Improvement unit; the term reads 'the AI Cells serving the Self-Improvement process in TM'):
-  §2.1, item 7: **Its records.** The Self-Improvement AIOC reads the shared queue, the gateway logs and the test results directly and read-only, never only through a Panel. These records are kept where OCO cannot change or delete them.
-  §2.1, item 8: **Its own changes.** The Self-Improvement AIOC is maintained through OCO like every AIOC, but any change to it, including its tests and its access to data, needs the approval of `[ORG]HOAC-TM`.
-  §2.3, item 6: **Iteration.** The Self-Improvement AIOC (§2.1, item 6) revises the challenger using the whole history of judgments, for a bounded number of rounds set in the `[ORG]AION`.
-  §2.3, item 9 (clause): Any change to it, its judges or its access to data needs the approval of `[ORG]HOAC-TM`, as for the Self-Improvement AIOC.
-  The Correction as it stood under §2.1, item 7: **Correction (DR-0007).** There is no standalone Self-Improvement unit or unit card. "One AIOC held within TM" (item 6) and "the Self-Improvement AIOC" (items 7 and 8; §2.3, item 6) read "the AI Cells serving the Self-Improvement process in TM". The process and its fields are recorded only on the card of the Cell carrying `[ORG]HOAC-TM` (Protocol, `processes` on the unit card).
-- **§3.1, item 12 (The first assembly), sub-item 'Named now, built later', state of 16 October 2026** · superseded by the sub-item 'State, 19 October 2026' in the same item (Delivery and Implementation written in full, v0.2.0, slices 1 to 4, its own record DR-0004, pinned in the Library register at its merged commit), which labelled this bullet 'kept unedited':
-  **Named now, built later.** Its parts are `DRAFT`, `NOT_RUN`, and Delivery and Implementation is written to slice 1 of 4. This records what is built; it is not yet a rule set.
-- **§4.1 item 8 (former meaning of HOAC)** · superseded by DR-0004:
-  HOAC formerly meant Human Oversight & Accountability Centre, a human unit beside the AIOC with a card of its own.
-- **§4.1 item 10, last sentence** · superseded by DR-0015:
-  One person holding two seats in the same body counts once (HF-18).
-- **§4.1 item 13, first sentence, the clause on persons** · superseded by DR-0015:
-  every person a load line set in the `[ORG]AION`; a person above the line is flagged, also before being named to a seat, and never blocked
-- **§4.4, item 5 (One person, several seats), second sentence** · superseded by DR-0015 (the human rule; §1.1, item 10), v1.8.0 reading note:
-  An approval given twice by the same person, under two Cells, where two people are required is flagged and does not count as dual approval (HF-18).
-- **§4.4, item 12 (Fewer people than the rules need), first sentence: the rule that a control is recorded for fewer distinct people than a rule needs (the three forms of control are kept in the body)** · superseded by DR-0015 (the human rule; §1.1, item 10), v1.8.0 reading note:
-  Where an `[ORG]AION` has fewer distinct people than a rule needs, its GOV records a compensating control for each such rule: an outside reviewer, a review within a set time, or a published log.
-- **§4.4, item 12 (Fewer people than the rules need), last sentence** · superseded by DR-0015 (the human rule; §1.1, item 10), v1.8.0 reading note:
-  Where one person fills both the GOV and the TM Cell, that person signs once under each Cell code, counts once under HF-18, and the rules that need two people run under such a control.
-- **§4.4, item 16 (Signers by risk label), clause in the second sentence** · superseded by DR-0015 (the human rule; §1.1, item 10), v1.8.0 reading note:
-  one person under two seats counts once (HF-18)
-- **§4.4, item 6 (The Human Floor signature list) and its DR-0006 sub-item: the three statements that an `[ORG]AION` never removes a type, now scoped to the edition 49GAION hands over** · superseded by DR-0042, item 1 (Reading, 26 October 2026), folded on the brief's instruction; not labelled superseded in the chunk, recorded here so the former wording is not lost:
-  An `[ORG]AION` may add types to its own copy; it never removes one. | An `[ORG]AION` never removes a type. | types of the 49GAION list are never removed by an `[ORG]AION`.
-- **§5.2, Holder Chief of Staff (DR-0010)** · superseded by DR-0011:
-  It never signs for the holder
-- **§5.2, HOAC Arrangement Models (DR-0011)** · superseded by DR-0012 (direction of GOV of 15 October 2026):
-  **HOAC Arrangement Models (DR-0011).** An open list of named options; a model is not a unit and carries no code. Organisations configure the models they use; the Standard fixes only the shape.
-  - **Solo Model:** one person holds every HOAC position.
-  - **Team Model:** a team holds a position and decides by its own recorded rule.
-  - **Tiered Model:** teams in levels, under a higher team.
-  - **Hybrid Model:** some positions are held by individuals and others by teams, in different scopes at once.
-  - **Self-Arranging Model:** a team designs and tests its own internal arrangement within the scope TM gives it.
-  - **Overseen Model:** a team or position oversees another's work, for example a Quality team overseeing Engineering.
-  - **Advised Model:** a position decides with a standing advisory team that advises but holds no authority.
-  - **Paired Model:** two occupants hold one position jointly, both signing.
-  - **Rotating Model:** occupancy rotates among named members on a recorded schedule.
-  - **Interim Model:** a temporary occupant holds a vacant position until a permanent one is assigned.
-  - **Matrix Model:** one occupant serves two positions or reports along two lines, each recorded.
-  - **Assisted Model:** a position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows.
-  - **Backup Model:** a designated deputy steps in automatically when the occupant is absent.
-  - **Federated Model:** separate units each hold their own positions under a shared top position.
-  - **Shadow Model:** a successor shadows the occupant before handover, without authority.
-  - **Pool Model:** a pool of qualified people, any of whom may fill the position per action under a recorded rule.
-  - **Elected Model:** occupants are chosen by a recorded vote of a defined group.
-  - The list stays open: an organisation may name further models.
-  
-  The model list above is superseded (DR-0012). The direction of GOV of 15 October 2026: "Write only what is really a model and gives a different result; don't add the extras, remove them." (translated)
-- **Glossary row AI-first (line 618)** · superseded by DR-0031 (reading: 'AI-first, in this item and in the glossary, reads as AI-native'):
-  The internal design philosophy of 49GAION: AI does the work by default; not part of its category or name.
-- **Glossary row Parent (line 634)** · superseded by DR-0007 (§1.7 Reading notes: the row reads 'the AIOC or Pod that holds', item 12):
-  The AIOC, Pod or Cell that holds another; recorded in the `parent` field of the inner unit's card and register entry
-- **Glossary row Panel (line 645)** · superseded by DR-0041 (§5.1 item 2 Addition 'panel and back office': 'The only surface humans use' is read with it):
-  The only surface humans use
-- **Glossary row Charter (line 660)** · superseded by DR-0041 (§1.7 item 13 Addition 'the root is the core'):
-  The one root AIOC of an `[ORG]AION`, approved and changed only by GOV; it holds the GOV and TM Cells (§1.7, item 13) (DR-0007)
-- **Glossary row Holder Chief of Staff (line 693)** · superseded by DR-0011 (the clause 'never signs for the holder'; §5.2):
-  The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and never signs for the holder (§5.2) (DR-0010)
-- **Glossary row HOAC Arrangement Models (line 722)** · superseded by DR-0012 (§5.2: HOAC Arrangement Models, three):
-  The open list of named options for how people hold HOAC positions; options, not units, with no codes (§5.2) (DR-0011)
-- **Glossary row Solo Model (line 723)** · superseded by DR-0012 (row Solo Model (DR-0012)):
-  One person holds every HOAC position (§5.2) (DR-0011)
-- **Glossary row Team Model (line 724)** · superseded by DR-0012 (row Team Model (DR-0012)):
-  A team holds a position and decides by its own recorded rule (§5.2) (DR-0011)
-- **Glossary row Tiered Model (line 725)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Teams in levels under a higher team (§5.2) (DR-0011)
-- **Glossary row Hybrid Model (line 726)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Some positions held by individuals, others by teams, in different scopes at once (§5.2) (DR-0011)
-- **Glossary row Self-Arranging Model (line 727)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A team designs and tests its own internal arrangement within the scope TM gives it (§5.2) (DR-0011)
-- **Glossary row Overseen Model (line 728)** · superseded by DR-0012 (row Overseen Model (DR-0012)):
-  A team or position oversees another's work, for example a Quality team overseeing Engineering (§5.2) (DR-0011)
-- **Glossary row Advised Model (line 729)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A position decides with a standing advisory team that advises but holds no authority (§5.2) (DR-0011)
-- **Glossary row Paired Model (line 730)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Two occupants hold one position jointly, both signing (§5.2) (DR-0011)
-- **Glossary row Rotating Model (line 731)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Occupancy rotates among named members on a recorded schedule (§5.2) (DR-0011)
-- **Glossary row Interim Model (line 732)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A temporary occupant holds a vacant position until a permanent one is assigned (§5.2) (DR-0011)
-- **Glossary row Matrix Model (line 733)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  One occupant serves two positions or reports along two lines, each recorded (§5.2) (DR-0011)
-- **Glossary row Assisted Model (line 734)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A position held by one person, with its Chief of Staff carrying delegated work to the maximum the position allows (§5.2) (DR-0011)
-- **Glossary row Backup Model (line 735)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A designated deputy steps in automatically when the occupant is absent (§5.2) (DR-0011)
-- **Glossary row Federated Model (line 736)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Separate units each hold their own positions under a shared top position (§5.2) (DR-0011)
-- **Glossary row Shadow Model (line 737)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A successor shadows the occupant before handover, without authority (§5.2) (DR-0011)
-- **Glossary row Pool Model (line 738)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  A pool of qualified people, any of whom may fill the position per action under a recorded rule (§5.2) (DR-0011)
-- **Glossary row Elected Model (line 739)** · superseded by DR-0012 (name withdrawn as a model name, not renamed):
-  Occupants are chosen by a recorded vote of a defined group (§5.2) (DR-0011)
-
-**`v2.1.0` (DR-0049).** The wording below left the body when the texts were brought into line with the complete definition `v2.1.0` (DR-0048): every place in the system is an AIOC or a HOAC position, and the mechanism behind a position is the organisation's own.
-
-- **The opening paragraph on positions** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  The natural person behind it exists, outside the system's knowledge; the link between a position and the natural persons who occupy it belongs only to `[ORG]HOAC-TM`, in its own mechanism, and no AI part ever touches it.
-- **§1.1, item 7 (Generic)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Organisation names, holders of seats, tools and exact values belong to registers and to each `[ORG]AION`.
-- **§1.1, item 9, "The link is top management's alone"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **The link is top management's alone.** The link between a position and the natural persons who occupy it belongs only to `[ORG]HOAC-TM`, under `[ORG]HOAC-GOV`, in its own mechanism: the arrangement of each position, and the occupancy and handover entries of the private register copy (§5.2, Arranging power and Register entry labels). For `[ORG]HOAC-TM` itself, GOV holds that link; for GOV, the founding configuration.
-- **§1.1, item 9, "No AI part touches it", the gateway sentence** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  An AI part addresses a position, through that position's HU port; whoever occupies the position under the arrangement in force receives it there. Only the tool gateway checks, at sign-in and at signing, that a live sign-in belongs to a current occupant, and it writes the occupant IDs of a decision stamp into top management's records alone.
-- **§1.1, item 9, "The owner's right"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **The owner's right.** The right to fill positions comes from the owner, through the governance seat, which appoints Top Management directly and keeps the final right over who holds any position; Top Management fills the positions below it, in its own mechanism. One person may hold several positions, or all of them, where the law allows; the positions stay distinct. Distinct positions are not, by themselves, independent: where the law or a check needs independence, it is held by a position that is independent in fact, from outside the organisation where no holder inside can be. 49GAION never speaks of a one-person organisation.
-- **§1.1, item 10, "Two parties", the decision rule** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  segregation of duties (HF-18), the members, quorum and majority of a decision rule, the signer pair that a risk label selects, and recusal.
-- **§1.1, item 10, "Nothing compares persons", the gateway sentence** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  The tool gateway checks only that a live sign-in belongs to a current occupant of the signing position (item 9), and applies each position's arrangement as top management recorded it (§5.2).
-- **§1.1, item 10, "Records stay with the position"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Every act is recorded under the position that took it and stays with that position when its occupant changes,
-- **§1.1, item 10, "The rest is top management's"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **The rest is top management's.** The acting, absence, load and coverage of the people behind positions, and how their responsibility is followed, are top management's own mechanism and record, which it writes itself; the AI side measures per position only. A compensating control for one occupant behind several positions is top management's own choice; no rule, gateway or check reads it.
-- **§1.2, the table, row 1 (GOV)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Its holder is recorded in the unit register (`registers/HOAC-REGISTER.md`).
-- **§1.3, capability 2 (Governance and Delegation), the seat** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Every organisation has one governance level; its seat is a board, a board's representative or the owner, and the law,
-- **§1.3, capability 2, what governance keeps** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  the final right over every position,
-- **§1.3, item 5 (Its own parts)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Each `[ORG]AION` has its own owner (its `[ORG]HOAC-GOV`),
-- **§1.5, HF-10** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  every signature needs a fresh live sign-in; no stored owner token
-- **§1.5, the floor table, HF-10 row** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | HF-10 | An approval is accepted without a fresh live sign-in | the owner's seat |
-- **§1.5, the floor table, HF-11 row** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | HF-11 | An AI grants access, budget or power to an AI | the owner's seat |
-- **§1.5, the floor table, HF-16 row** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Break-glass access is used without a human holder, a log and a review
-- **§3.1, Delivery and Implementation, "Three ways in"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  a light design with the owner, every element provisional
-- **§4.1, item 2, the table, Governing Body** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | Governing Body | `[ORG]HOAC-GOV` | The person or group with ultimate accountability for the whole organisation.
-- **§4.1, item 2, the table, Top Management** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | Top Management | `[ORG]HOAC-TM` | The person or group that directs and controls the organisation at the highest level,
-- **§4.1, item 3 (Seats)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  3. **Seats.** A human seat is a Cell whose filler is a human. "The person or group" in the table above, "filler" wherever this Standard uses it, and who fills a seat all name a position and its occupancy (§1.1, item 9): each kind is a position, a legal persona, and who occupies it is each organisation's own decision, top management's own mechanism, which no AI part sees. Every seat is recorded in the unit register (§4.4).
-- **§4.1, item 5** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  5. An empty seat returns accountability to whoever delegated it,
-- **§4.1, item 10 (Label holder or decision rule)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  10. **Label holder or decision rule (DR-0007).** A label on a Pod or an AIOC names its `label_holder`: one human Cell whose parent is that part. A body that decides together names instead a `decision_rule`: member Cells, quorum, majority, chair and casting vote. Each member signs under their own Cell. Each member Cell of the body is its own party and counts once, even when one natural person occupies two member Cells (§1.1, item 10; HF-18).
-- **§4.1, item 11 (Label order)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  or on a part with a human `label_holder` or a `decision_rule`.
-- **§4.1, item 12 (Acting and absence)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  12. **Acting and absence (DR-0007).** A human Cell may have an acting filler for a dated period, appointed with the delegator's signature. Acting-start, acting-end, absent and returned are dated events of the position, recorded in the register. A signature is the position's, made under that Cell's code with a live sign-in that belongs to a current occupant of the position (§1.1, items 9 and 10). A position away without cover is recorded absent; who acts and who is away, as a natural person, is top management's own record. While a seat is empty or absent, the delegator may sign within its own authority. An action is held only when no filled HOAC above it can sign. A retired Cell names `succeeded_by`, and its held actions pass to the successor.
-- **§4.1, item 13 (Load and coverage), the people behind positions** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  The AI side measures load and coverage per position only, and never counts the seats behind one natural person; any load line on the people behind positions is top management's own mechanism and record (§1.1, item 10).
-- **§4.1, item 13, the critical seat** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  is critical: empty or without a deputy, it is shown,
-- **§4.1, item 14 (Signature referral)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  14. **Signature referral (DR-0010).** A seat may mark its signature as personal for some listed types. When such a request is unanswered for a set time, it goes to the seat's deputy, who reaches the seat and returns the seat's own signature, made with the seat's own fresh live sign-in (HF-10) and recorded as obtained through the deputy. The deputy never signs in its place; with no answer the action stays held.
-- **§4.1, item 15, the backup** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  what it returns, its answer time and its backup.
-- **§4.2, item 4, the first TM** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  GOV appoints the first TM.
-- **§4.2, item 5** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  5. Authority flows down by delegation. No one is accountable without authority; the delegator stays accountable. No one delegates more authority than they hold.
-- **§4.2, item 7** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Who holds each role is configured in each organisation.
-- **§4.4, item 1** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  with its code, kind, type, HOAC label, parent, filler and status.
-- **§4.4, item 2** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  A change of filler and a change of parent are recorded events on the existing entry, never new parts.
-- **§4.4, item 3, split write rights** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  `[ORG]HOAC-TM` writes the records of human Cells.
-- **§4.4, item 3, "Register writes", change of filler kind** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  A change of filler kind is written by both writers.
-- **§4.4, item 3, "Holders"** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **Holders (DR-0007).** For every entry added from v1.5.0 on, names of fillers are kept in a separate holders register keyed by Cell code, in a private store outside the repository; the unit register carries structure only, with a pointer to that store. Entries already on the register stay as they are, except the GOV row, which was corrected to seat only under DR-0007; its filler is kept in the holders register.
-- **§4.4, item 4 (Access follows the filled seat)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Access opens only for an active, filled Cell whose filler has passed the seat's fixed test, and closes automatically when the filler changes or the Cell is retired.
-- **§4.4, item 5 (One person, several seats)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  5. **One person, several seats.** When one person fills several human Cells, each signature is recorded with the code of the Cell it is given for.
-- **§4.4, item 6, removing a type** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  A type is removed from the Standard's list only by a decision of 49GAION's governing seat (GOV), recorded in a new DR, with the matching change to `signature-types-floor` in the same PR.
-- **§4.4, item 11 (The tool gateway), its logs** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  they hold only payload hashes, Cell codes and pseudonymous identity references.
-- **§4.4, item 12, the compensating control** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  A compensating control for one occupant behind several positions is top management's own choice, in its own mechanism; no rule requires it, and neither the tool gateway nor any check reads it. Where one is recorded, it is an outside reviewer, a review within a set time, or a published log; it is signed by GOV and recorded as its own register event, with its date and its review date; it is never a standing waiver, and it is reviewed yearly.
-- **§4.4, item 15 (Restricted partition)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  read only by named positions, extending the holders register of item 3.
-- **§5.1, item 7 (Human-led AIOC)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Whatever the filler, a Chief of Staff never signs for its person (Protocol §4.10).
-- **§5.2, connecting agents** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  they report to a human, assist them, and carry their requests to the agents.
-- **§5.2, Delegation ladder** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  matters about people, speaking as the human and every listed type are never delegated.
-- **§5.2, Holder Chief of Staff** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **Holder Chief of Staff (DR-0010).** Every holder of a HOAC label has its own Chief of Staff of the connecting kind (a Cell, an Office, or an AIOC, as in DR-0007), attached to the holder's Cell. It receives, analyses, sorts and simplifies what the AIOCs bring to the holder; manages on the holder's behalf only within authority the holder has delegated to it (§5.2, delegation ladder); advises and proposes where it holds no authority; and carries out the holder's routine actions as its executive assistant. It acts only through the tool gateway with its own credential, within the delegated scope, and every action it takes for the holder is logged. It never acts on its own: with its position's approval, per action or as a standing grant with a set scope and end date, revocable, and checked and logged at the tool gateway, it may act, including signing, up to what the position allows, as assistant and executive assistant. Types in upstream/human-floor-signature-types.json stay with the holder and need the position's own human signature. The holder's HU ports and stop door never pass through it (§4.4, item 6; Protocol §4.10, item 6).
-- **§5.2, Completed staff work** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  only that seat or its acting filler (§4.1, item 12) reopens it,
-- **§5.2, the assistance contract** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  never orders, sequences, hides or waits on the holder;
-- **§5.2, the duty deputy** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  may answer members' recurring asks for a human seat,
-- **§5.2, Position Principle** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **Position Principle (DR-0011).** A HOAC is always defined as a position, never a person, everywhere: in the Blueprint, in the engine and in the naming rule. Every field that points to a human seat takes a position code only. Who held each position at each moment is recorded, and that history never moves. When the occupant changes, everything the position carries (effects, achievements, losses, commitments and open work) passes in full to the new occupant; the accountability record of who held it when stays as history.
-- **§5.2, Arranging power** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **Arranging power (DR-0011).** Assigning occupants to positions is an option managed by `[ORG]HOAC-TM` under `[ORG]HOAC-GOV`. TM arranges the positions below it; GOV arranges TM and sets its limits; GOV is set by the organisation's founding configuration; no position arranges itself. TM may test arrangement models over periods; its fixed duty is a complete record.
-- **§5.2, HOAC Arrangement Models, three (Solo, Team, Overseen)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **HOAC Arrangement Models, three (DR-0012).** A model is not a unit and carries no code; organisations configure the models they use, and the Standard fixes only the shape. A model stays only if it changes who decides or the result of a decision; a future model is admitted only under that test, and the list stays open under it.
-- **Solo Model:** one holder decides alone.
-- **Team Model:** several holders hold one position and decide by a recorded signing rule: any one, majority, or all. Every decision records one named accountable member in the decision stamp, filled at signing; that member must be a current occupant; CI checks the structure only, and the tool gateway checks at signing that the member is a current occupant. Two holders signing together is a Team setting, not a model.
-- **Overseen Model:** a higher position can stop or override; it is a link that combines with Solo or Team and records a timing form. Pre: the action waits at the tool gateway until the overseeing position clears it, or a recorded hold window lapses with no stop. Post: the action runs and can be reversed only by a new signed decision referencing the reversed decision's identifier; the original stays and is marked reversed.
-- **§5.2, Overseen rules** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Overseen rules (DR-0012). A clearance is a stamped decision (overseeing position, occupant IDs, time). A lapse writes a "window lapsed, no stop" entry and counts only if the overseeing position has a holder at that moment and a window is recorded. If the overseeing position is vacant, the held action escalates to the position that set the arrangement (TM, then GOV) and never passes automatically; escalation ends at GOV, and if GOV is vacant the action stays held until GOV is filled through the founding configuration. An arrangement in which GOV is overseen by a lower position is rejected (no loops). The tool gateway marks each tool action reversible or not; an irreversible tool action (sent message, payment, deletion) under the Overseen Model always goes through pre, whatever form is recorded.
-- **§5.2, Occupancy rules** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  Occupancy rules (DR-0012): a temporary occupant, a backup occupant and a rotation among occupants are not models; each change is already an occupancy entry. The names Tiered, Hybrid, Self-Arranging, Advised, Matrix, Assisted, Federated, Shadow, Pool, Elected, Paired, Interim, Backup and Rotating are withdrawn as model names, not renamed; no old name maps to a new one.
-- **§5.2, the arrangement entry** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  An arrangement entry lists every model in use for its scope; models may be combined (for example Team + Overseen). A trial is a time-boxed run of any arrangement model, not a model of its own.
-- **§5.2, Register entry labels** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  **Register entry labels (DR-0011).** The unit register (§4.4) carries four entry labels, which are labels of entries, not units: position, arrangement, occupancy and handover. Position and arrangement entries contain no people and may be public. Occupancy and handover entries carry internal person IDs and stay in each organisation's private register copy, never in a public repository. Each signed decision is stamped with the position code and the occupant ID or IDs at that moment. Occupancy entries carry a valid time and a recorded time; a correction is a new entry. A handover entry lists what passed to the new occupant.
-- **Glossary row Cell** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  a fixed seat with a replaceable filler, human or AI (§1.7) |
-- **Glossary row Filler** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Filler** | The human or AI agent that fills a Cell; replaceable without changing the Cell |
-- **Glossary row Seat** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Seat** | A Cell as a fixed place with a replaceable filler (§4.1, item 3) (DR-0007) |
-- **Glossary row Human seat** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  the sense in which §4.1 item 3 says "a Cell whose filler is a human";
-- **Glossary row Attached Cell** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  An AI Cell that serves one person's Cell, in the same Blueprint, named in `attached_to`; it never signs for that person
-- **Glossary row Decision rule** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Decision rule** | Member Cells, quorum, majority, chair and casting vote of a body that holds a label together (§4.1, item 10) (DR-0007) |
-- **Glossary row Acting filler** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Acting filler** | A person appointed for a dated period to fill a human Cell, signing under their own identity and the Cell's code (§4.1, item 12) (DR-0007) |
-- **Glossary row Holder Chief of Staff** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Holder Chief of Staff** | The Chief of Staff of the connecting kind attached to each holder of a HOAC label; it serves within delegated authority and, with its position's approval, may act for it, including signing, up to what the position allows (§5.2) (DR-0010, DR-0011); the former definition is in the annex Superseded wording, by version |
-- **Glossary row Position Principle** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Position Principle** | A HOAC is a position, never a person; occupancy history is kept and everything the position carries passes in full on a change of occupant (§5.2) (DR-0011) |
-- **Glossary row No natural person** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  the link to natural persons belongs only to top management's own mechanism, and no AI part touches it (§1.1, item 9) (DR-0013) |
-- **Glossary row Two positions, two parties** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  even when one natural person occupies both;
-- **Glossary row Present as a position** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  the natural person behind it exists outside the system's knowledge, and only top management links the two (§1.1, items 9 and 10) (DR-0015) |
-- **Glossary row HOAC Arrangement Models (three)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **HOAC Arrangement Models (three)** | Solo, Team and Overseen; a model stays only if it changes who decides or the result; the list stays open under that test (§5.2) (DR-0012) |
-- **Glossary row Solo Model (DR-0012)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Solo Model (DR-0012)** | One holder decides alone (§5.2) (DR-0012) |
-- **Glossary row Team Model (DR-0012)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Team Model (DR-0012)** | Several holders with a recorded signing rule (any one, majority, all) and one named accountable member in each decision stamp (§5.2) (DR-0012) |
-- **Glossary row Overseen Model (DR-0012)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **Overseen Model (DR-0012)** | A higher position can stop or override; a link combined with Solo or Team, with a pre or post timing form (§5.2) (DR-0012) |
-- **Glossary row arrangement (entry label)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **arrangement** (entry label) | A register entry for the model and arrangement of a position; no people; may be public (§5.2) (DR-0011) |
-- **Glossary row occupancy (entry label)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **occupancy** (entry label) | A register entry of who holds a position, by internal person ID, with valid and recorded time; private register copy only (§5.2) (DR-0011) |
-- **Glossary row handover (entry label)** · superseded by DR-0049: the mechanism behind a position is the organisation's own, outside the system (the complete definition, §6):
-  | **handover** (entry label) | A register entry of a change of occupant listing what passed; private register copy only (§5.2) (DR-0011) |
-
-**`v2.1.1` (DR-0052).** The wording below left the body when two reviews of `v2.1.0` were checked against the complete definition and corrected; items 1 and 2 of DR-0052 are the governing seat's decisions, the rest are corrections to the complete definition.
-
-- **Glossary row AION Builder** · superseded by DR-0051 (the withdrawn name is no longer listed in the glossary; DR-0032 stays in force):
-  | **AION Builder** | Withdrawn by DR-0032 (§1.2); the former text is in the annex Superseded wording, by version |
-
-- **§1.3, item 8 (Customer ownership)** · superseded by DR-0052 (a correction to the complete definition; no new rule): item 7 holds the Library and the central repositories:
-  49GAION's one lever is to be useful, through the support line (item 7).
-- **§1.6, the naming table, the example for a Cell** · superseded by DR-0052 (a correction to the complete definition; no new rule): the code is the retired example of R15 (Naming Standard):
-  | A Cell | `[ORG]CELL-[INITIALS]` | `[ORG]CELL-SLCS`, `TenCELL-TMS` |
-- **§1.7, item 11, Top Cell** · superseded by DR-0052 (a correction to the complete definition; no new rule): a label is held by one position (§4.1, item 10; DR-0049):
-  Co-leadership is a Pod with a decision rule (§4.1, item 10).
-- **§4.4, item 11 (The tool gateway)** · superseded by DR-0052 (a correction to the complete definition; no new rule): the gateway and the stop run as code beside the core (the complete definition, §13, item 1):
-  The tool gateway is a registered part, held in the Charter (§1.7, item 13) and outside every other AIOC, and is never maintained by `[ORG]AIOC-OCO` alone.
-- **§5.1, item 7 (Human-led AIOC)** · superseded by DR-0052, item 2 (the Chief of Staff signs only within its position's grant):
-  Whatever fills it, a Chief of Staff never signs for its position (Protocol §4.10).
-- **§5.2, Position Chief of Staff** · superseded by DR-0052, item 2 (each position sets up its own Chief of Staff and may grant it up to the right to sign):
-  It never acts on its own: with its position's approval, per action or as a standing grant with a set scope and end date, revocable, and checked and logged at the tool gateway, it may act, including signing, up to what the position allows, as assistant and executive assistant.
-- **§5.2, the Overseen link, Pre** · superseded by DR-0052, item 1 (an irreversible action runs only on a clearance):
-  Pre: the action waits at the tool gateway until the overseeing position clears it, or a recorded hold window lapses with no stop.
-- **§5.2, Overseen rules, the lapse** · superseded by DR-0052, item 1:
-  A lapse writes a "window lapsed, no stop" entry and counts only if
-- **§5.2, Overseen rules, irreversible actions** · superseded by DR-0052, item 1:
-  an irreversible tool action (sent message, payment, deletion) under the Overseen link always goes through pre, whatever form is recorded.
-- **§5.3, item 2** · superseded by DR-0052 (a correction to the complete definition; no new rule): the seat hands the operation to Top Management by a mandate; who holds it is the organisation's own mechanism (missed by DR-0049):
-  2. **The human hub first.** GOV appoints `[ORG]HOAC-TM`.
-- **§5.3, item 6** · superseded by DR-0052 (a correction to the complete definition; no new rule):
-  the seat appoints Top Management and hands it the operation by a mandate;
-- **Glossary row Attached Cell** · superseded by DR-0052, item 2:
-  it never signs for that position (§4.4, item 8; Protocol §4.10, item 6;
-- **Glossary row Tool gateway** · superseded by DR-0052 (a correction to the complete definition; no new rule):
-  | **Tool gateway** | The registered part, held in the Charter and outside every other AIOC, that runs
-- **Glossary row Position Chief of Staff** · superseded by DR-0052, item 2:
-  it serves within delegated authority and, with its position's approval, may act for it, including signing, up to what the position allows (§5.2)
-- **Glossary row 49GAION Charter** · superseded by DR-0052 (a correction to the complete definition; no new rule): top management sits in the Top Management Group (the complete definition, §19):
-  The Library part from which every `[ORG]AION`'s Charter is made: the root AIOC, with the GOV and TM Cells and three Pods of shared services, Gateway, Records and Work (§3.1, item 15) (DR-0029)
-- **§5.2, the delegation ladder** · superseded by DR-0052, item 2 (a Chief of Staff signs only within its position's grant):
-  Outside commitments, the Chief of Staff's own limits, matters about people, speaking as the human position and every listed type are never delegated.
-- **§2.3, processes, not persons** · superseded by DR-0052 (a correction to the complete definition; no new rule): positions only (DR-0049):
-  never ranks, scores or watches the occupant of a position, and shows no measure for a single position
-
-**`v2.2.0` (DR-0053).** The wording below left the body when the Standard was brought into line with the complete definition, made clearer after its cold read (DR-0053, item 10), and when the Chief of Staff's grant was written as the governing seat ruled on 29 October 2026 (DR-0053, item 11).
-
-- **§1.3, item 1, Governance and Delegation** · superseded by DR-0053, item 10 (the party that checks Top Management's reports is named by the governance seat):
-  its reports come from the record of the operation and are checked independently, and reports of wrongdoing and stops reach the seat directly, never through any AI.
-- **§4.4, item 8, Bots** · superseded by DR-0053, item 11 (a position may give its own Chief of Staff any authority it holds, a listed type included; the decision stays the position's):
-  No bot signs a listed type: this covers every bot, including one filling a Chief of Staff Cell or an attached AI Cell.
-- **§5.1, item 7 (Human-led AIOC)** · superseded by DR-0053, item 11:
-  Whatever fills it, a Chief of Staff signs for its position only within the grant that position has given it, and never a type of the Human Floor signature list (§4.4, item 8; §5.2, Position Chief of Staff; Protocol §4.10).
-- **§5.2, the delegation ladder** · superseded by DR-0053, item 11:
-  Outside commitments, the Chief of Staff's own limits, matters about people, speaking as the human position and every listed type are never delegated through the ladder; the right to sign for the position comes only from the position's own grant (Position Chief of Staff, below), and never for a listed type.
-- **§5.2, Position Chief of Staff** · superseded by DR-0053, item 11:
-  Each position sets up its own Chief of Staff: what it does for the position, and how far, is that position's grant, which may reach up to the right to sign for it. A standing grant is a standing approval: the position signs it once, with a fresh live sign-in, and it covers only acts that can be undone and do not widen access, budget or authority (the complete definition, §7); any other act needs the grant per action. Types in upstream/human-floor-signature-types.json stay with the position and need the position's own human signature.
-- **Glossary row Attached Cell** · superseded by DR-0053, item 11:
-  | **Attached Cell** | An AI Cell that serves one human position's Cell, in the same Blueprint, named in `attached_to`; it signs for that position only within the grant that position has given it, and never a type of the Human Floor signature list (§4.4, item 8; §5.2; Protocol §4.10, item 6; AIOC definition, `docs/CELLS-AND-PODS.md`, §1, item 9) (DR-0007) |
-- **Glossary row Position Chief of Staff** · superseded by DR-0053, item 11:
-  | **Position Chief of Staff** | The Chief of Staff of the connecting kind attached to each position that carries a HOAC label; set up by its own position, it serves within the authority that position grants it, which may reach up to the right to sign for it, never a type of the Human Floor signature list (§5.2) (DR-0010, DR-0049) |
-- **The rule of the Human Floor signature list (`upstream/human-floor-signature-types.json`)** · superseded by DR-0053, item 11:
-  An AI Cell attached to a human position, including that position's Chief of Staff, never provides that position's signature for a listed type; for any other act it signs only within the grant that position has given it (Standard §5.2; DR-0052).
 
 Powered by 49GAION
