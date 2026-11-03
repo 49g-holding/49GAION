@@ -60,6 +60,7 @@ Each decided subject is one `DR-####` file in this folder, numbered in order and
 | [`DR-0052`](DR-0052-two-reviews-of-v2-1-0-corrected.md) | 2026-10-29 | 49GAION — two reviews of `v2.1.0` corrected: `v2.1.1` | in force |
 | [`DR-0053`](DR-0053-the-review-rooms-designs-v2-2-0.md) | 2026-10-29 | 49GAION — the review room's designs: `v2.2.0` | in force |
 | [`DR-0054`](DR-0054-a-review-of-v2-2-0-corrected.md) | 2026-10-30 | 49GAION — a review of `v2.2.0` corrected: `v2.2.1` | in force |
+| [`DR-0055`](DR-0055-own-token-foundation-outside-49gaion.md) | 2026-11-03 | 49GAION — OWN Token Foundation is outside 49GAION | in force |
 
 ## Reading notes
 
